@@ -84,6 +84,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SoftwarePage.resx">
       <DependentUpon>SoftwarePage.cs</DependentUpon>
@@ -101,8 +102,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <Content Include="Resources\1.jpg" />
+    <Content Include="Resources\2.jpg" />
+    <Content Include="Resources\3.jpg" />
+    <Content Include="Resources\4.jpg" />
+    <Content Include="Resources\5.jpg" />
+    <Content Include="Resources\adguard.png" />
+    <Content Include="Resources\bkavpro.png" />
+    <Content Include="Resources\icons8_Workstation_1.ico" />
+    <Content Include="Resources\kaspersky.png" />
+    <Content Include="Resources\office.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.Slideshow = new System.Windows.Forms.PictureBox();
             this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.lblTitlePage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Slideshow)).BeginInit();
             this.SuspendLayout();
             // 
             // Slideshow
             // 
-            this.Slideshow.Image = ((System.Drawing.Image)(resources.GetObject("Slideshow.Image")));
-            this.Slideshow.Location = new System.Drawing.Point(20, 134);
+            this.Slideshow.Image = global::GUI.Properties.Resources._1;
+            this.Slideshow.Location = new System.Drawing.Point(20, 102);
             this.Slideshow.Name = "Slideshow";
-            this.Slideshow.Size = new System.Drawing.Size(980, 410);
-            this.Slideshow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Slideshow.Size = new System.Drawing.Size(980, 496);
+            this.Slideshow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Slideshow.TabIndex = 0;
             this.Slideshow.TabStop = false;
             // 
@@ -50,16 +50,29 @@
             this.Timer.Interval = 2000;
             this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
+            // lblTitlePage
+            // 
+            this.lblTitlePage.AutoSize = true;
+            this.lblTitlePage.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitlePage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblTitlePage.Location = new System.Drawing.Point(389, 9);
+            this.lblTitlePage.Name = "lblTitlePage";
+            this.lblTitlePage.Size = new System.Drawing.Size(251, 38);
+            this.lblTitlePage.TabIndex = 13;
+            this.lblTitlePage.Text = "Đăng cấp Gaming";
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblTitlePage);
             this.Controls.Add(this.Slideshow);
             this.Name = "HomePage";
             this.Size = new System.Drawing.Size(1020, 684);
             this.Load += new System.EventHandler(this.HomePage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Slideshow)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -67,5 +80,6 @@
 
         private System.Windows.Forms.PictureBox Slideshow;
         private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.Label lblTitlePage;
     }
 }

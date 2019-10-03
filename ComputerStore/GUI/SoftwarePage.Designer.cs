@@ -34,39 +34,40 @@
             this.pnlSoftware6 = new System.Windows.Forms.Panel();
             this.lblUnitPriceSoftware6 = new System.Windows.Forms.Label();
             this.lblNameSoftware6 = new System.Windows.Forms.Label();
-            this.picSoftware6 = new System.Windows.Forms.PictureBox();
             this.pnlSoftware5 = new System.Windows.Forms.Panel();
             this.lblUnitPriceSoftware5 = new System.Windows.Forms.Label();
             this.lblNameSoftware5 = new System.Windows.Forms.Label();
-            this.picSoftware5 = new System.Windows.Forms.PictureBox();
             this.pnlSoftware4 = new System.Windows.Forms.Panel();
             this.lblUnitPriceSoftware4 = new System.Windows.Forms.Label();
             this.lblNameSoftware4 = new System.Windows.Forms.Label();
-            this.picSoftware4 = new System.Windows.Forms.PictureBox();
             this.pnlSoftware3 = new System.Windows.Forms.Panel();
             this.lblUnitPriceSoftware3 = new System.Windows.Forms.Label();
             this.lblNameSoftware3 = new System.Windows.Forms.Label();
-            this.picSoftware3 = new System.Windows.Forms.PictureBox();
             this.pnlSoftware2 = new System.Windows.Forms.Panel();
             this.lblUnitPriceSoftware2 = new System.Windows.Forms.Label();
             this.lblNameSoftware2 = new System.Windows.Forms.Label();
-            this.picSoftware2 = new System.Windows.Forms.PictureBox();
             this.pnlSoftware1 = new System.Windows.Forms.Panel();
             this.lblUnitPriceSoftware1 = new System.Windows.Forms.Label();
             this.lblNameSoftware1 = new System.Windows.Forms.Label();
+            this.picSoftware6 = new System.Windows.Forms.PictureBox();
+            this.picSoftware5 = new System.Windows.Forms.PictureBox();
+            this.picSoftware4 = new System.Windows.Forms.PictureBox();
+            this.picSoftware3 = new System.Windows.Forms.PictureBox();
+            this.picSoftware2 = new System.Windows.Forms.PictureBox();
             this.picSoftware1 = new System.Windows.Forms.PictureBox();
+            this.btnAddNewSoftware = new System.Windows.Forms.Button();
             this.pnlWrapSoftware.SuspendLayout();
             this.pnlSoftware6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware6)).BeginInit();
             this.pnlSoftware5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware5)).BeginInit();
             this.pnlSoftware4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware4)).BeginInit();
             this.pnlSoftware3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware3)).BeginInit();
             this.pnlSoftware2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware2)).BeginInit();
             this.pnlSoftware1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftware6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftware5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftware4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftware3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftware2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSoftware1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,16 +128,6 @@
             this.lblNameSoftware6.Text = "Bkav Pro";
             this.lblNameSoftware6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picSoftware6
-            // 
-            this.picSoftware6.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware6.Image")));
-            this.picSoftware6.Location = new System.Drawing.Point(24, 13);
-            this.picSoftware6.Name = "picSoftware6";
-            this.picSoftware6.Size = new System.Drawing.Size(226, 161);
-            this.picSoftware6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftware6.TabIndex = 1;
-            this.picSoftware6.TabStop = false;
-            // 
             // pnlSoftware5
             // 
             this.pnlSoftware5.BackColor = System.Drawing.Color.White;
@@ -168,16 +159,6 @@
             this.lblNameSoftware5.TabIndex = 5;
             this.lblNameSoftware5.Text = "Bkav Pro";
             this.lblNameSoftware5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picSoftware5
-            // 
-            this.picSoftware5.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware5.Image")));
-            this.picSoftware5.Location = new System.Drawing.Point(24, 13);
-            this.picSoftware5.Name = "picSoftware5";
-            this.picSoftware5.Size = new System.Drawing.Size(226, 161);
-            this.picSoftware5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftware5.TabIndex = 1;
-            this.picSoftware5.TabStop = false;
             // 
             // pnlSoftware4
             // 
@@ -211,16 +192,6 @@
             this.lblNameSoftware4.Text = "Microsoft Office";
             this.lblNameSoftware4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picSoftware4
-            // 
-            this.picSoftware4.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware4.Image")));
-            this.picSoftware4.Location = new System.Drawing.Point(22, 13);
-            this.picSoftware4.Name = "picSoftware4";
-            this.picSoftware4.Size = new System.Drawing.Size(226, 161);
-            this.picSoftware4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftware4.TabIndex = 0;
-            this.picSoftware4.TabStop = false;
-            // 
             // pnlSoftware3
             // 
             this.pnlSoftware3.BackColor = System.Drawing.Color.White;
@@ -252,16 +223,6 @@
             this.lblNameSoftware3.TabIndex = 5;
             this.lblNameSoftware3.Text = "Adguard";
             this.lblNameSoftware3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picSoftware3
-            // 
-            this.picSoftware3.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware3.Image")));
-            this.picSoftware3.Location = new System.Drawing.Point(24, 13);
-            this.picSoftware3.Name = "picSoftware3";
-            this.picSoftware3.Size = new System.Drawing.Size(226, 161);
-            this.picSoftware3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftware3.TabIndex = 1;
-            this.picSoftware3.TabStop = false;
             // 
             // pnlSoftware2
             // 
@@ -295,16 +256,6 @@
             this.lblNameSoftware2.Text = "Kasspersky";
             this.lblNameSoftware2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picSoftware2
-            // 
-            this.picSoftware2.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware2.Image")));
-            this.picSoftware2.Location = new System.Drawing.Point(24, 13);
-            this.picSoftware2.Name = "picSoftware2";
-            this.picSoftware2.Size = new System.Drawing.Size(226, 161);
-            this.picSoftware2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftware2.TabIndex = 1;
-            this.picSoftware2.TabStop = false;
-            // 
             // pnlSoftware1
             // 
             this.pnlSoftware1.BackColor = System.Drawing.Color.White;
@@ -337,6 +288,56 @@
             this.lblNameSoftware1.Text = "Bkav Pro";
             this.lblNameSoftware1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // picSoftware6
+            // 
+            this.picSoftware6.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware6.Image")));
+            this.picSoftware6.Location = new System.Drawing.Point(24, 13);
+            this.picSoftware6.Name = "picSoftware6";
+            this.picSoftware6.Size = new System.Drawing.Size(226, 161);
+            this.picSoftware6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSoftware6.TabIndex = 1;
+            this.picSoftware6.TabStop = false;
+            // 
+            // picSoftware5
+            // 
+            this.picSoftware5.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware5.Image")));
+            this.picSoftware5.Location = new System.Drawing.Point(24, 13);
+            this.picSoftware5.Name = "picSoftware5";
+            this.picSoftware5.Size = new System.Drawing.Size(226, 161);
+            this.picSoftware5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSoftware5.TabIndex = 1;
+            this.picSoftware5.TabStop = false;
+            // 
+            // picSoftware4
+            // 
+            this.picSoftware4.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware4.Image")));
+            this.picSoftware4.Location = new System.Drawing.Point(22, 13);
+            this.picSoftware4.Name = "picSoftware4";
+            this.picSoftware4.Size = new System.Drawing.Size(226, 161);
+            this.picSoftware4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSoftware4.TabIndex = 0;
+            this.picSoftware4.TabStop = false;
+            // 
+            // picSoftware3
+            // 
+            this.picSoftware3.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware3.Image")));
+            this.picSoftware3.Location = new System.Drawing.Point(24, 13);
+            this.picSoftware3.Name = "picSoftware3";
+            this.picSoftware3.Size = new System.Drawing.Size(226, 161);
+            this.picSoftware3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSoftware3.TabIndex = 1;
+            this.picSoftware3.TabStop = false;
+            // 
+            // picSoftware2
+            // 
+            this.picSoftware2.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware2.Image")));
+            this.picSoftware2.Location = new System.Drawing.Point(24, 13);
+            this.picSoftware2.Name = "picSoftware2";
+            this.picSoftware2.Size = new System.Drawing.Size(226, 161);
+            this.picSoftware2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSoftware2.TabIndex = 1;
+            this.picSoftware2.TabStop = false;
+            // 
             // picSoftware1
             // 
             this.picSoftware1.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware1.Image")));
@@ -347,27 +348,44 @@
             this.picSoftware1.TabIndex = 0;
             this.picSoftware1.TabStop = false;
             // 
+            // btnAddNewSoftware
+            // 
+            this.btnAddNewSoftware.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnAddNewSoftware.FlatAppearance.BorderSize = 0;
+            this.btnAddNewSoftware.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewSoftware.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewSoftware.ForeColor = System.Drawing.Color.White;
+            this.btnAddNewSoftware.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewSoftware.Image")));
+            this.btnAddNewSoftware.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddNewSoftware.Location = new System.Drawing.Point(850, 9);
+            this.btnAddNewSoftware.Name = "btnAddNewSoftware";
+            this.btnAddNewSoftware.Size = new System.Drawing.Size(138, 38);
+            this.btnAddNewSoftware.TabIndex = 14;
+            this.btnAddNewSoftware.Text = "   Thêm";
+            this.btnAddNewSoftware.UseVisualStyleBackColor = false;
+            // 
             // SoftwarePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.btnAddNewSoftware);
             this.Controls.Add(this.pnlWrapSoftware);
             this.Controls.Add(this.lblTitlePage);
             this.Name = "SoftwarePage";
             this.Size = new System.Drawing.Size(1020, 684);
             this.pnlWrapSoftware.ResumeLayout(false);
             this.pnlSoftware6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware6)).EndInit();
             this.pnlSoftware5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware5)).EndInit();
             this.pnlSoftware4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware4)).EndInit();
             this.pnlSoftware3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware3)).EndInit();
             this.pnlSoftware2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware2)).EndInit();
             this.pnlSoftware1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftware6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftware5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftware4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftware3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftware2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSoftware1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -401,5 +419,6 @@
         private System.Windows.Forms.Label lblUnitPriceSoftware1;
         private System.Windows.Forms.Label lblNameSoftware1;
         private System.Windows.Forms.PictureBox picSoftware1;
+        private System.Windows.Forms.Button btnAddNewSoftware;
     }
 }

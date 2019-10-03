@@ -47,8 +47,8 @@
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.lblCopyright = new System.Windows.Forms.Label();
             this.pnlWrap = new System.Windows.Forms.Panel();
-            this.softwarePage = new GUI.SoftwarePage();
             this.homePage = new GUI.HomePage();
+            this.softwarePage = new GUI.SoftwarePage();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.pnlLeft.SuspendLayout();
@@ -275,7 +275,7 @@
             this.lblCopyright.AutoSize = true;
             this.lblCopyright.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCopyright.ForeColor = System.Drawing.Color.White;
-            this.lblCopyright.Location = new System.Drawing.Point(473, 6);
+            this.lblCopyright.Location = new System.Drawing.Point(438, 6);
             this.lblCopyright.Name = "lblCopyright";
             this.lblCopyright.Size = new System.Drawing.Size(183, 28);
             this.lblCopyright.TabIndex = 0;
@@ -292,6 +292,14 @@
             this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
             this.pnlWrap.TabIndex = 3;
             // 
+            // homePage
+            // 
+            this.homePage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homePage.Location = new System.Drawing.Point(0, 0);
+            this.homePage.Name = "homePage";
+            this.homePage.Size = new System.Drawing.Size(1020, 684);
+            this.homePage.TabIndex = 1;
+            // 
             // softwarePage
             // 
             this.softwarePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -300,14 +308,6 @@
             this.softwarePage.Name = "softwarePage";
             this.softwarePage.Size = new System.Drawing.Size(1020, 684);
             this.softwarePage.TabIndex = 0;
-            // 
-            // homePage
-            // 
-            this.homePage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homePage.Location = new System.Drawing.Point(0, 0);
-            this.homePage.Name = "homePage";
-            this.homePage.Size = new System.Drawing.Size(1020, 684);
-            this.homePage.TabIndex = 1;
             // 
             // frmMain
             // 

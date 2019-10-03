@@ -20,11 +20,11 @@ namespace GUI
 
         private void LoadNextImage()
         {
-            if(imageNumber == 6)
+            if(imageNumber == 5)
             {
                 imageNumber = 1;
             }
-            Slideshow.ImageLocation = string.Format(@"Resources\{0}.png", imageNumber);
+            Slideshow.ImageLocation = string.Format(@"Resources\{0}.jpg", imageNumber);
             imageNumber++;
         }
 
