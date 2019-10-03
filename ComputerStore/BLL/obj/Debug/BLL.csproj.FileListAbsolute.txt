@@ -1,0 +1,5 @@
+F:\Software\ComputerStore\ComputerStore\BLL\bin\Debug\BLL.dll
+F:\Software\ComputerStore\ComputerStore\BLL\bin\Debug\BLL.pdb
+F:\Software\ComputerStore\ComputerStore\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\Software\ComputerStore\ComputerStore\BLL\obj\Debug\BLL.dll
+F:\Software\ComputerStore\ComputerStore\BLL\obj\Debug\BLL.pdb
