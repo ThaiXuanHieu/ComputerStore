@@ -10,15 +10,18 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class frmMain : Form
+    public partial class frmCustomer : Form
     {
-        public frmMain()
+        public frmCustomer()
         {
             InitializeComponent();
             homePage.Visible = true;
             softwarePage.Visible = false;
             computerPage.Visible = false;
             laptopPage.Visible = false;
+            accessoriesPage.Visible = false;
+            componentsPage.Visible = false;
+            
         }
 
         private void btnHomePage_Click(object sender, EventArgs e)
@@ -27,6 +30,8 @@ namespace GUI
             softwarePage.Visible = false;
             computerPage.Visible = false;
             laptopPage.Visible = false;
+            accessoriesPage.Visible = false;
+            componentsPage.Visible = false;
         }
 
         private void btnSoftwarePage_Click(object sender, EventArgs e)
@@ -35,6 +40,8 @@ namespace GUI
             homePage.Visible = false;
             computerPage.Visible = false;
             laptopPage.Visible = false;
+            accessoriesPage.Visible = false;
+            componentsPage.Visible = false;
         }
 
         private void btnComputerPage_Click(object sender, EventArgs e)
@@ -43,7 +50,9 @@ namespace GUI
             softwarePage.Visible = false;
             homePage.Visible = false;
             laptopPage.Visible = false;
-            
+            accessoriesPage.Visible = false;
+            componentsPage.Visible = false;
+
         }
 
         private void btnLaptopPage_Click(object sender, EventArgs e)
@@ -52,6 +61,29 @@ namespace GUI
             computerPage.Visible = false;
             softwarePage.Visible = false;
             homePage.Visible = false;
+            accessoriesPage.Visible = false;
+            componentsPage.Visible = false;
+        }
+
+        private void btnAccessoriesPage_Click(object sender, EventArgs e)
+        {
+            accessoriesPage.Visible = true;
+            laptopPage.Visible = false;
+            computerPage.Visible = false;
+            softwarePage.Visible = false;
+            homePage.Visible = false;
+            componentsPage.Visible = false;
+        }
+
+        private void btnComponentsPage_Click(object sender, EventArgs e)
+        {
+            componentsPage.Visible = true;
+            accessoriesPage.Visible = false;
+            laptopPage.Visible = false;
+            computerPage.Visible = false;
+            softwarePage.Visible = false;
+            homePage.Visible = false;
+            
         }
     }
 }

@@ -1,7 +1,6 @@
 F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\GUI.exe.config
 F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\GUI.exe
 F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\GUI.pdb
-F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmMain.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.Properties.Resources.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
@@ -15,5 +14,8 @@ F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\MetroFramework.Design.dll
 F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\MetroFramework.dll
 F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\MetroFramework.Fonts.dll
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.ComputerPage.resources
-F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.LaptopPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.ProductManagementPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.AccessoriesPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmCustomer.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.ComponentsPage.resources

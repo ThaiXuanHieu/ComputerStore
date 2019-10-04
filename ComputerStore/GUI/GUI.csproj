@@ -59,17 +59,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessoriesPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccessoriesPage.Designer.cs">
+      <DependentUpon>AccessoriesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComponentsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComponentsPage.Designer.cs">
+      <DependentUpon>ComponentsPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComputerPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ComputerPage.Designer.cs">
       <DependentUpon>ComputerPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
+    <Compile Include="frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <Compile Include="frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
     </Compile>
     <Compile Include="HomePage.cs">
       <SubType>UserControl</SubType>
@@ -97,11 +115,20 @@
     <Compile Include="SoftwarePage.Designer.cs">
       <DependentUpon>SoftwarePage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccessoriesPage.resx">
+      <DependentUpon>AccessoriesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentsPage.resx">
+      <DependentUpon>ComponentsPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ComputerPage.resx">
       <DependentUpon>ComputerPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -154,7 +181,54 @@
     <Content Include="Resources\icons8_Trash_Can_26px.png" />
     <Content Include="Resources\icons8_Workstation_1.ico" />
     <Content Include="Resources\kaspersky.png" />
+    <Content Include="Resources\laptopgaming1.png" />
+    <Content Include="Resources\laptopgaming2.png" />
+    <Content Include="Resources\laptopgaming3.png" />
+    <Content Include="Resources\laptopgaming4.png" />
+    <Content Include="Resources\laptopgaming5.png" />
+    <Content Include="Resources\laptopgaming6.png" />
+    <Content Include="Resources\laptopgraphic1.png" />
+    <Content Include="Resources\laptopgraphic2.png" />
+    <Content Include="Resources\laptopoffice1.png" />
+    <Content Include="Resources\laptopoffice2.png" />
+    <Content Include="Resources\laptopoffice3.png" />
+    <Content Include="Resources\laptopoffice4.png" />
+    <Content Include="Resources\laptopoffice5.png" />
+    <Content Include="Resources\laptopoffice6.png" />
+    <Content Include="Resources\logoacer.png" />
+    <Content Include="Resources\logoasus.png" />
+    <Content Include="Resources\logodell.png" />
+    <Content Include="Resources\logohp.png" />
+    <Content Include="Resources\logomacbook.png" />
+    <Content Include="Resources\logomsi.png" />
+    <Content Include="Resources\macbook1.png" />
+    <Content Include="Resources\macbook2.png" />
+    <Content Include="Resources\macbook3.png" />
+    <Content Include="Resources\macbook4.png" />
+    <Content Include="Resources\macbook5.png" />
+    <Content Include="Resources\macbook6.png" />
     <Content Include="Resources\office.png" />
+    <Content Include="Resources\pcgamming1.png" />
+    <Content Include="Resources\pcgamming2.png" />
+    <Content Include="Resources\pcgamming3.png" />
+    <Content Include="Resources\pcgamming4.png" />
+    <Content Include="Resources\pcgamming5.png" />
+    <Content Include="Resources\pcgamming6.png" />
+    <Content Include="Resources\pcgraphic1.png" />
+    <Content Include="Resources\pcgraphic2.png" />
+    <Content Include="Resources\pcgraphic3.png" />
+    <Content Include="Resources\pcgraphic4.png" />
+    <Content Include="Resources\pcgraphic5.png" />
+    <Content Include="Resources\pcgraphic6.png" />
+    <Content Include="Resources\pcworkstation1.png" />
+    <Content Include="Resources\pcworkstation2.png" />
+    <Content Include="Resources\pcworkstation3.png" />
+    <Content Include="Resources\pcworkstation4.png" />
+    <Content Include="Resources\pcworkstation5.png" />
+    <Content Include="Resources\pcworkstation6.png" />
+    <Content Include="Resources\surface1.png" />
+    <Content Include="Resources\surface2.png" />
+    <Content Include="Resources\surface3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

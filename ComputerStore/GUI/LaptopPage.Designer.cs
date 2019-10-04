@@ -32,125 +32,125 @@
             this.lblTitlePage = new System.Windows.Forms.Label();
             this.TabControlLaptop = new MetroFramework.Controls.MetroTabControl();
             this.TabLaptopGaming = new MetroFramework.Controls.MetroTabPage();
-            this.fPnlWrapComputerGaming = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlPCGaming1 = new System.Windows.Forms.Panel();
+            this.fPnlWrapLaptopGaming = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlLaptopGaming1 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGaming1 = new System.Windows.Forms.Label();
             this.lblNameLaptopGaming1 = new System.Windows.Forms.Label();
-            this.picSoftware3 = new System.Windows.Forms.PictureBox();
-            this.pnlPCGaming2 = new System.Windows.Forms.Panel();
+            this.pnlLaptopGaming2 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGaming2 = new System.Windows.Forms.Label();
             this.lblNameLaptopGaming2 = new System.Windows.Forms.Label();
-            this.picSoftware6 = new System.Windows.Forms.PictureBox();
-            this.pnlPCGaming3 = new System.Windows.Forms.Panel();
+            this.pnlLaptopGaming3 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGaming3 = new System.Windows.Forms.Label();
             this.lblNameLaptopGaming3 = new System.Windows.Forms.Label();
-            this.picSoftware5 = new System.Windows.Forms.PictureBox();
-            this.pnlPCGaming4 = new System.Windows.Forms.Panel();
+            this.pnlLaptopGaming4 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGaming4 = new System.Windows.Forms.Label();
             this.lblNameLaptopGaming4 = new System.Windows.Forms.Label();
-            this.picSoftware4 = new System.Windows.Forms.PictureBox();
-            this.pnlPCGaming5 = new System.Windows.Forms.Panel();
+            this.pnlLaptopGaming5 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGaming5 = new System.Windows.Forms.Label();
             this.lblNameLaptopGaming5 = new System.Windows.Forms.Label();
-            this.picSoftware2 = new System.Windows.Forms.PictureBox();
-            this.pnlPCGaming6 = new System.Windows.Forms.Panel();
+            this.pnlLaptopGaming6 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGaming6 = new System.Windows.Forms.Label();
             this.lblNameLaptopGaming6 = new System.Windows.Forms.Label();
-            this.picSoftware1 = new System.Windows.Forms.PictureBox();
             this.TabLaptopGraphic = new MetroFramework.Controls.MetroTabPage();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.fPnlLaptopGraphic = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGraphic1 = new System.Windows.Forms.Label();
             this.lblNameLaptopGraphic1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGraphic2 = new System.Windows.Forms.Label();
             this.lblNameLaptopGraphic2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGraphic3 = new System.Windows.Forms.Label();
             this.lblNameLaptopGraphic3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGraphic4 = new System.Windows.Forms.Label();
             this.lblNameLaptopGraphic4 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGraphic5 = new System.Windows.Forms.Label();
             this.lblNameLaptopGraphic5 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopGraphic6 = new System.Windows.Forms.Label();
             this.lblNameLaptopGraphic6 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.TabLaptopOffice = new MetroFramework.Controls.MetroTabPage();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.fPnlWrapLaptopOffice = new System.Windows.Forms.FlowLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopOffice1 = new System.Windows.Forms.Label();
             this.lblNameLaptopOffice1 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopOffice2 = new System.Windows.Forms.Label();
             this.lblNameLaptopOffice2 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopOffice3 = new System.Windows.Forms.Label();
             this.lblNameLaptopOffice3 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopOffice4 = new System.Windows.Forms.Label();
             this.lblNameLaptopOffice4 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopOffice5 = new System.Windows.Forms.Label();
             this.lblNameLaptopOffice5 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.lblUnitPriceLaptopOffice6 = new System.Windows.Forms.Label();
             this.lblNameLaptopOffice6 = new System.Windows.Forms.Label();
+            this.picLaptopGaming1 = new System.Windows.Forms.PictureBox();
+            this.picLaptopGaming2 = new System.Windows.Forms.PictureBox();
+            this.picLaptopGaming3 = new System.Windows.Forms.PictureBox();
+            this.picLaptopGaming4 = new System.Windows.Forms.PictureBox();
+            this.picLaptopGaming5 = new System.Windows.Forms.PictureBox();
+            this.picLaptopGaming6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.TabControlLaptop.SuspendLayout();
             this.TabLaptopGaming.SuspendLayout();
-            this.fPnlWrapComputerGaming.SuspendLayout();
-            this.pnlPCGaming1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware3)).BeginInit();
-            this.pnlPCGaming2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware6)).BeginInit();
-            this.pnlPCGaming3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware5)).BeginInit();
-            this.pnlPCGaming4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware4)).BeginInit();
-            this.pnlPCGaming5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware2)).BeginInit();
-            this.pnlPCGaming6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware1)).BeginInit();
+            this.fPnlWrapLaptopGaming.SuspendLayout();
+            this.pnlLaptopGaming1.SuspendLayout();
+            this.pnlLaptopGaming2.SuspendLayout();
+            this.pnlLaptopGaming3.SuspendLayout();
+            this.pnlLaptopGaming4.SuspendLayout();
+            this.pnlLaptopGaming5.SuspendLayout();
+            this.pnlLaptopGaming6.SuspendLayout();
             this.TabLaptopGraphic.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.fPnlLaptopGraphic.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.TabLaptopOffice.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
+            this.fPnlWrapLaptopOffice.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,7 +172,7 @@
             this.TabControlLaptop.Controls.Add(this.TabLaptopOffice);
             this.TabControlLaptop.Location = new System.Drawing.Point(88, 60);
             this.TabControlLaptop.Name = "TabControlLaptop";
-            this.TabControlLaptop.SelectedIndex = 2;
+            this.TabControlLaptop.SelectedIndex = 0;
             this.TabControlLaptop.Size = new System.Drawing.Size(847, 611);
             this.TabControlLaptop.TabIndex = 28;
             this.TabControlLaptop.UseSelectable = true;
@@ -180,7 +180,7 @@
             // TabLaptopGaming
             // 
             this.TabLaptopGaming.BackColor = System.Drawing.SystemColors.Control;
-            this.TabLaptopGaming.Controls.Add(this.fPnlWrapComputerGaming);
+            this.TabLaptopGaming.Controls.Add(this.fPnlWrapLaptopGaming);
             this.TabLaptopGaming.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TabLaptopGaming.HorizontalScrollbarBarColor = true;
             this.TabLaptopGaming.HorizontalScrollbarHighlightOnWheel = false;
@@ -194,31 +194,31 @@
             this.TabLaptopGaming.VerticalScrollbarHighlightOnWheel = false;
             this.TabLaptopGaming.VerticalScrollbarSize = 10;
             // 
-            // fPnlWrapComputerGaming
+            // fPnlWrapLaptopGaming
             // 
-            this.fPnlWrapComputerGaming.AutoScroll = true;
-            this.fPnlWrapComputerGaming.Controls.Add(this.pnlPCGaming1);
-            this.fPnlWrapComputerGaming.Controls.Add(this.pnlPCGaming2);
-            this.fPnlWrapComputerGaming.Controls.Add(this.pnlPCGaming3);
-            this.fPnlWrapComputerGaming.Controls.Add(this.pnlPCGaming4);
-            this.fPnlWrapComputerGaming.Controls.Add(this.pnlPCGaming5);
-            this.fPnlWrapComputerGaming.Controls.Add(this.pnlPCGaming6);
-            this.fPnlWrapComputerGaming.Location = new System.Drawing.Point(-1, 0);
-            this.fPnlWrapComputerGaming.Name = "fPnlWrapComputerGaming";
-            this.fPnlWrapComputerGaming.Size = new System.Drawing.Size(840, 568);
-            this.fPnlWrapComputerGaming.TabIndex = 16;
+            this.fPnlWrapLaptopGaming.AutoScroll = true;
+            this.fPnlWrapLaptopGaming.Controls.Add(this.pnlLaptopGaming1);
+            this.fPnlWrapLaptopGaming.Controls.Add(this.pnlLaptopGaming2);
+            this.fPnlWrapLaptopGaming.Controls.Add(this.pnlLaptopGaming3);
+            this.fPnlWrapLaptopGaming.Controls.Add(this.pnlLaptopGaming4);
+            this.fPnlWrapLaptopGaming.Controls.Add(this.pnlLaptopGaming5);
+            this.fPnlWrapLaptopGaming.Controls.Add(this.pnlLaptopGaming6);
+            this.fPnlWrapLaptopGaming.Location = new System.Drawing.Point(-1, 0);
+            this.fPnlWrapLaptopGaming.Name = "fPnlWrapLaptopGaming";
+            this.fPnlWrapLaptopGaming.Size = new System.Drawing.Size(840, 568);
+            this.fPnlWrapLaptopGaming.TabIndex = 16;
             // 
-            // pnlPCGaming1
+            // pnlLaptopGaming1
             // 
-            this.pnlPCGaming1.BackColor = System.Drawing.Color.White;
-            this.pnlPCGaming1.Controls.Add(this.lblUnitPriceLaptopGaming1);
-            this.pnlPCGaming1.Controls.Add(this.lblNameLaptopGaming1);
-            this.pnlPCGaming1.Controls.Add(this.picSoftware3);
-            this.pnlPCGaming1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlPCGaming1.Location = new System.Drawing.Point(3, 3);
-            this.pnlPCGaming1.Name = "pnlPCGaming1";
-            this.pnlPCGaming1.Size = new System.Drawing.Size(274, 277);
-            this.pnlPCGaming1.TabIndex = 20;
+            this.pnlLaptopGaming1.BackColor = System.Drawing.Color.White;
+            this.pnlLaptopGaming1.Controls.Add(this.lblUnitPriceLaptopGaming1);
+            this.pnlLaptopGaming1.Controls.Add(this.lblNameLaptopGaming1);
+            this.pnlLaptopGaming1.Controls.Add(this.picLaptopGaming1);
+            this.pnlLaptopGaming1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlLaptopGaming1.Location = new System.Drawing.Point(3, 3);
+            this.pnlLaptopGaming1.Name = "pnlLaptopGaming1";
+            this.pnlLaptopGaming1.Size = new System.Drawing.Size(274, 277);
+            this.pnlLaptopGaming1.TabIndex = 20;
             // 
             // lblUnitPriceLaptopGaming1
             // 
@@ -240,27 +240,17 @@
             this.lblNameLaptopGaming1.Text = "Adguard";
             this.lblNameLaptopGaming1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picSoftware3
+            // pnlLaptopGaming2
             // 
-            this.picSoftware3.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware3.Image")));
-            this.picSoftware3.Location = new System.Drawing.Point(24, 13);
-            this.picSoftware3.Name = "picSoftware3";
-            this.picSoftware3.Size = new System.Drawing.Size(226, 161);
-            this.picSoftware3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftware3.TabIndex = 1;
-            this.picSoftware3.TabStop = false;
-            // 
-            // pnlPCGaming2
-            // 
-            this.pnlPCGaming2.BackColor = System.Drawing.Color.White;
-            this.pnlPCGaming2.Controls.Add(this.lblUnitPriceLaptopGaming2);
-            this.pnlPCGaming2.Controls.Add(this.lblNameLaptopGaming2);
-            this.pnlPCGaming2.Controls.Add(this.picSoftware6);
-            this.pnlPCGaming2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlPCGaming2.Location = new System.Drawing.Point(283, 3);
-            this.pnlPCGaming2.Name = "pnlPCGaming2";
-            this.pnlPCGaming2.Size = new System.Drawing.Size(274, 277);
-            this.pnlPCGaming2.TabIndex = 23;
+            this.pnlLaptopGaming2.BackColor = System.Drawing.Color.White;
+            this.pnlLaptopGaming2.Controls.Add(this.lblUnitPriceLaptopGaming2);
+            this.pnlLaptopGaming2.Controls.Add(this.lblNameLaptopGaming2);
+            this.pnlLaptopGaming2.Controls.Add(this.picLaptopGaming2);
+            this.pnlLaptopGaming2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlLaptopGaming2.Location = new System.Drawing.Point(283, 3);
+            this.pnlLaptopGaming2.Name = "pnlLaptopGaming2";
+            this.pnlLaptopGaming2.Size = new System.Drawing.Size(274, 277);
+            this.pnlLaptopGaming2.TabIndex = 23;
             // 
             // lblUnitPriceLaptopGaming2
             // 
@@ -282,27 +272,17 @@
             this.lblNameLaptopGaming2.Text = "Bkav Pro";
             this.lblNameLaptopGaming2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picSoftware6
+            // pnlLaptopGaming3
             // 
-            this.picSoftware6.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware6.Image")));
-            this.picSoftware6.Location = new System.Drawing.Point(24, 13);
-            this.picSoftware6.Name = "picSoftware6";
-            this.picSoftware6.Size = new System.Drawing.Size(226, 161);
-            this.picSoftware6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftware6.TabIndex = 1;
-            this.picSoftware6.TabStop = false;
-            // 
-            // pnlPCGaming3
-            // 
-            this.pnlPCGaming3.BackColor = System.Drawing.Color.White;
-            this.pnlPCGaming3.Controls.Add(this.lblUnitPriceLaptopGaming3);
-            this.pnlPCGaming3.Controls.Add(this.lblNameLaptopGaming3);
-            this.pnlPCGaming3.Controls.Add(this.picSoftware5);
-            this.pnlPCGaming3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlPCGaming3.Location = new System.Drawing.Point(563, 3);
-            this.pnlPCGaming3.Name = "pnlPCGaming3";
-            this.pnlPCGaming3.Size = new System.Drawing.Size(274, 277);
-            this.pnlPCGaming3.TabIndex = 22;
+            this.pnlLaptopGaming3.BackColor = System.Drawing.Color.White;
+            this.pnlLaptopGaming3.Controls.Add(this.lblUnitPriceLaptopGaming3);
+            this.pnlLaptopGaming3.Controls.Add(this.lblNameLaptopGaming3);
+            this.pnlLaptopGaming3.Controls.Add(this.picLaptopGaming3);
+            this.pnlLaptopGaming3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlLaptopGaming3.Location = new System.Drawing.Point(563, 3);
+            this.pnlLaptopGaming3.Name = "pnlLaptopGaming3";
+            this.pnlLaptopGaming3.Size = new System.Drawing.Size(274, 277);
+            this.pnlLaptopGaming3.TabIndex = 22;
             // 
             // lblUnitPriceLaptopGaming3
             // 
@@ -324,27 +304,17 @@
             this.lblNameLaptopGaming3.Text = "Bkav Pro";
             this.lblNameLaptopGaming3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picSoftware5
+            // pnlLaptopGaming4
             // 
-            this.picSoftware5.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware5.Image")));
-            this.picSoftware5.Location = new System.Drawing.Point(24, 13);
-            this.picSoftware5.Name = "picSoftware5";
-            this.picSoftware5.Size = new System.Drawing.Size(226, 161);
-            this.picSoftware5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftware5.TabIndex = 1;
-            this.picSoftware5.TabStop = false;
-            // 
-            // pnlPCGaming4
-            // 
-            this.pnlPCGaming4.BackColor = System.Drawing.Color.White;
-            this.pnlPCGaming4.Controls.Add(this.lblUnitPriceLaptopGaming4);
-            this.pnlPCGaming4.Controls.Add(this.lblNameLaptopGaming4);
-            this.pnlPCGaming4.Controls.Add(this.picSoftware4);
-            this.pnlPCGaming4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlPCGaming4.Location = new System.Drawing.Point(3, 286);
-            this.pnlPCGaming4.Name = "pnlPCGaming4";
-            this.pnlPCGaming4.Size = new System.Drawing.Size(274, 277);
-            this.pnlPCGaming4.TabIndex = 21;
+            this.pnlLaptopGaming4.BackColor = System.Drawing.Color.White;
+            this.pnlLaptopGaming4.Controls.Add(this.lblUnitPriceLaptopGaming4);
+            this.pnlLaptopGaming4.Controls.Add(this.lblNameLaptopGaming4);
+            this.pnlLaptopGaming4.Controls.Add(this.picLaptopGaming4);
+            this.pnlLaptopGaming4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlLaptopGaming4.Location = new System.Drawing.Point(3, 286);
+            this.pnlLaptopGaming4.Name = "pnlLaptopGaming4";
+            this.pnlLaptopGaming4.Size = new System.Drawing.Size(274, 277);
+            this.pnlLaptopGaming4.TabIndex = 21;
             // 
             // lblUnitPriceLaptopGaming4
             // 
@@ -366,27 +336,17 @@
             this.lblNameLaptopGaming4.Text = "Microsoft Office";
             this.lblNameLaptopGaming4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picSoftware4
+            // pnlLaptopGaming5
             // 
-            this.picSoftware4.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware4.Image")));
-            this.picSoftware4.Location = new System.Drawing.Point(22, 13);
-            this.picSoftware4.Name = "picSoftware4";
-            this.picSoftware4.Size = new System.Drawing.Size(226, 161);
-            this.picSoftware4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftware4.TabIndex = 0;
-            this.picSoftware4.TabStop = false;
-            // 
-            // pnlPCGaming5
-            // 
-            this.pnlPCGaming5.BackColor = System.Drawing.Color.White;
-            this.pnlPCGaming5.Controls.Add(this.lblUnitPriceLaptopGaming5);
-            this.pnlPCGaming5.Controls.Add(this.lblNameLaptopGaming5);
-            this.pnlPCGaming5.Controls.Add(this.picSoftware2);
-            this.pnlPCGaming5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlPCGaming5.Location = new System.Drawing.Point(283, 286);
-            this.pnlPCGaming5.Name = "pnlPCGaming5";
-            this.pnlPCGaming5.Size = new System.Drawing.Size(274, 277);
-            this.pnlPCGaming5.TabIndex = 19;
+            this.pnlLaptopGaming5.BackColor = System.Drawing.Color.White;
+            this.pnlLaptopGaming5.Controls.Add(this.lblUnitPriceLaptopGaming5);
+            this.pnlLaptopGaming5.Controls.Add(this.lblNameLaptopGaming5);
+            this.pnlLaptopGaming5.Controls.Add(this.picLaptopGaming5);
+            this.pnlLaptopGaming5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlLaptopGaming5.Location = new System.Drawing.Point(283, 286);
+            this.pnlLaptopGaming5.Name = "pnlLaptopGaming5";
+            this.pnlLaptopGaming5.Size = new System.Drawing.Size(274, 277);
+            this.pnlLaptopGaming5.TabIndex = 19;
             // 
             // lblUnitPriceLaptopGaming5
             // 
@@ -408,27 +368,17 @@
             this.lblNameLaptopGaming5.Text = "Kasspersky";
             this.lblNameLaptopGaming5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picSoftware2
+            // pnlLaptopGaming6
             // 
-            this.picSoftware2.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware2.Image")));
-            this.picSoftware2.Location = new System.Drawing.Point(24, 13);
-            this.picSoftware2.Name = "picSoftware2";
-            this.picSoftware2.Size = new System.Drawing.Size(226, 161);
-            this.picSoftware2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftware2.TabIndex = 1;
-            this.picSoftware2.TabStop = false;
-            // 
-            // pnlPCGaming6
-            // 
-            this.pnlPCGaming6.BackColor = System.Drawing.Color.White;
-            this.pnlPCGaming6.Controls.Add(this.lblUnitPriceLaptopGaming6);
-            this.pnlPCGaming6.Controls.Add(this.lblNameLaptopGaming6);
-            this.pnlPCGaming6.Controls.Add(this.picSoftware1);
-            this.pnlPCGaming6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlPCGaming6.Location = new System.Drawing.Point(563, 286);
-            this.pnlPCGaming6.Name = "pnlPCGaming6";
-            this.pnlPCGaming6.Size = new System.Drawing.Size(274, 277);
-            this.pnlPCGaming6.TabIndex = 18;
+            this.pnlLaptopGaming6.BackColor = System.Drawing.Color.White;
+            this.pnlLaptopGaming6.Controls.Add(this.lblUnitPriceLaptopGaming6);
+            this.pnlLaptopGaming6.Controls.Add(this.lblNameLaptopGaming6);
+            this.pnlLaptopGaming6.Controls.Add(this.picLaptopGaming6);
+            this.pnlLaptopGaming6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlLaptopGaming6.Location = new System.Drawing.Point(563, 286);
+            this.pnlLaptopGaming6.Name = "pnlLaptopGaming6";
+            this.pnlLaptopGaming6.Size = new System.Drawing.Size(274, 277);
+            this.pnlLaptopGaming6.TabIndex = 18;
             // 
             // lblUnitPriceLaptopGaming6
             // 
@@ -450,20 +400,10 @@
             this.lblNameLaptopGaming6.Text = "Bkav Pro";
             this.lblNameLaptopGaming6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picSoftware1
-            // 
-            this.picSoftware1.Image = ((System.Drawing.Image)(resources.GetObject("picSoftware1.Image")));
-            this.picSoftware1.Location = new System.Drawing.Point(22, 13);
-            this.picSoftware1.Name = "picSoftware1";
-            this.picSoftware1.Size = new System.Drawing.Size(226, 161);
-            this.picSoftware1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftware1.TabIndex = 0;
-            this.picSoftware1.TabStop = false;
-            // 
             // TabLaptopGraphic
             // 
             this.TabLaptopGraphic.BackColor = System.Drawing.SystemColors.Control;
-            this.TabLaptopGraphic.Controls.Add(this.flowLayoutPanel1);
+            this.TabLaptopGraphic.Controls.Add(this.fPnlLaptopGraphic);
             this.TabLaptopGraphic.HorizontalScrollbarBarColor = true;
             this.TabLaptopGraphic.HorizontalScrollbarHighlightOnWheel = false;
             this.TabLaptopGraphic.HorizontalScrollbarSize = 10;
@@ -476,19 +416,19 @@
             this.TabLaptopGraphic.VerticalScrollbarHighlightOnWheel = false;
             this.TabLaptopGraphic.VerticalScrollbarSize = 10;
             // 
-            // flowLayoutPanel1
+            // fPnlLaptopGraphic
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.Controls.Add(this.panel5);
-            this.flowLayoutPanel1.Controls.Add(this.panel6);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(-1, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(840, 568);
-            this.flowLayoutPanel1.TabIndex = 17;
+            this.fPnlLaptopGraphic.AutoScroll = true;
+            this.fPnlLaptopGraphic.Controls.Add(this.panel1);
+            this.fPnlLaptopGraphic.Controls.Add(this.panel2);
+            this.fPnlLaptopGraphic.Controls.Add(this.panel3);
+            this.fPnlLaptopGraphic.Controls.Add(this.panel4);
+            this.fPnlLaptopGraphic.Controls.Add(this.panel5);
+            this.fPnlLaptopGraphic.Controls.Add(this.panel6);
+            this.fPnlLaptopGraphic.Location = new System.Drawing.Point(-1, 0);
+            this.fPnlLaptopGraphic.Name = "fPnlLaptopGraphic";
+            this.fPnlLaptopGraphic.Size = new System.Drawing.Size(840, 568);
+            this.fPnlLaptopGraphic.TabIndex = 17;
             // 
             // panel1
             // 
@@ -522,16 +462,6 @@
             this.lblNameLaptopGraphic1.Text = "Adguard";
             this.lblNameLaptopGraphic1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -563,16 +493,6 @@
             this.lblNameLaptopGraphic2.TabIndex = 5;
             this.lblNameLaptopGraphic2.Text = "Bkav Pro";
             this.lblNameLaptopGraphic2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // panel3
             // 
@@ -606,16 +526,6 @@
             this.lblNameLaptopGraphic3.Text = "Bkav Pro";
             this.lblNameLaptopGraphic3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
@@ -647,16 +557,6 @@
             this.lblNameLaptopGraphic4.TabIndex = 5;
             this.lblNameLaptopGraphic4.Text = "Microsoft Office";
             this.lblNameLaptopGraphic4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(22, 13);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
             // 
             // panel5
             // 
@@ -690,16 +590,6 @@
             this.lblNameLaptopGraphic5.Text = "Kasspersky";
             this.lblNameLaptopGraphic5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
@@ -732,20 +622,10 @@
             this.lblNameLaptopGraphic6.Text = "Bkav Pro";
             this.lblNameLaptopGraphic6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(22, 13);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            // 
             // TabLaptopOffice
             // 
             this.TabLaptopOffice.BackColor = System.Drawing.SystemColors.Control;
-            this.TabLaptopOffice.Controls.Add(this.flowLayoutPanel3);
+            this.TabLaptopOffice.Controls.Add(this.fPnlWrapLaptopOffice);
             this.TabLaptopOffice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TabLaptopOffice.HorizontalScrollbarBarColor = true;
             this.TabLaptopOffice.HorizontalScrollbarHighlightOnWheel = false;
@@ -759,19 +639,19 @@
             this.TabLaptopOffice.VerticalScrollbarHighlightOnWheel = false;
             this.TabLaptopOffice.VerticalScrollbarSize = 10;
             // 
-            // flowLayoutPanel3
+            // fPnlWrapLaptopOffice
             // 
-            this.flowLayoutPanel3.AutoScroll = true;
-            this.flowLayoutPanel3.Controls.Add(this.panel7);
-            this.flowLayoutPanel3.Controls.Add(this.panel8);
-            this.flowLayoutPanel3.Controls.Add(this.panel9);
-            this.flowLayoutPanel3.Controls.Add(this.panel10);
-            this.flowLayoutPanel3.Controls.Add(this.panel11);
-            this.flowLayoutPanel3.Controls.Add(this.panel12);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(-1, 0);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(840, 568);
-            this.flowLayoutPanel3.TabIndex = 17;
+            this.fPnlWrapLaptopOffice.AutoScroll = true;
+            this.fPnlWrapLaptopOffice.Controls.Add(this.panel7);
+            this.fPnlWrapLaptopOffice.Controls.Add(this.panel8);
+            this.fPnlWrapLaptopOffice.Controls.Add(this.panel9);
+            this.fPnlWrapLaptopOffice.Controls.Add(this.panel10);
+            this.fPnlWrapLaptopOffice.Controls.Add(this.panel11);
+            this.fPnlWrapLaptopOffice.Controls.Add(this.panel12);
+            this.fPnlWrapLaptopOffice.Location = new System.Drawing.Point(-1, 0);
+            this.fPnlWrapLaptopOffice.Name = "fPnlWrapLaptopOffice";
+            this.fPnlWrapLaptopOffice.Size = new System.Drawing.Size(840, 568);
+            this.fPnlWrapLaptopOffice.TabIndex = 17;
             // 
             // panel7
             // 
@@ -805,16 +685,6 @@
             this.lblNameLaptopOffice1.Text = "Adguard";
             this.lblNameLaptopOffice1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 1;
-            this.pictureBox7.TabStop = false;
-            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
@@ -846,16 +716,6 @@
             this.lblNameLaptopOffice2.TabIndex = 5;
             this.lblNameLaptopOffice2.Text = "Bkav Pro";
             this.lblNameLaptopOffice2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 1;
-            this.pictureBox8.TabStop = false;
             // 
             // panel9
             // 
@@ -889,16 +749,6 @@
             this.lblNameLaptopOffice3.Text = "Bkav Pro";
             this.lblNameLaptopOffice3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 1;
-            this.pictureBox9.TabStop = false;
-            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
@@ -930,16 +780,6 @@
             this.lblNameLaptopOffice4.TabIndex = 5;
             this.lblNameLaptopOffice4.Text = "Microsoft Office";
             this.lblNameLaptopOffice4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(22, 13);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 0;
-            this.pictureBox10.TabStop = false;
             // 
             // panel11
             // 
@@ -973,16 +813,6 @@
             this.lblNameLaptopOffice5.Text = "Kasspersky";
             this.lblNameLaptopOffice5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 1;
-            this.pictureBox11.TabStop = false;
-            // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
@@ -1015,6 +845,176 @@
             this.lblNameLaptopOffice6.Text = "Bkav Pro";
             this.lblNameLaptopOffice6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // picLaptopGaming1
+            // 
+            this.picLaptopGaming1.Image = ((System.Drawing.Image)(resources.GetObject("picLaptopGaming1.Image")));
+            this.picLaptopGaming1.Location = new System.Drawing.Point(24, 13);
+            this.picLaptopGaming1.Name = "picLaptopGaming1";
+            this.picLaptopGaming1.Size = new System.Drawing.Size(226, 161);
+            this.picLaptopGaming1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLaptopGaming1.TabIndex = 1;
+            this.picLaptopGaming1.TabStop = false;
+            // 
+            // picLaptopGaming2
+            // 
+            this.picLaptopGaming2.Image = ((System.Drawing.Image)(resources.GetObject("picLaptopGaming2.Image")));
+            this.picLaptopGaming2.Location = new System.Drawing.Point(24, 13);
+            this.picLaptopGaming2.Name = "picLaptopGaming2";
+            this.picLaptopGaming2.Size = new System.Drawing.Size(226, 161);
+            this.picLaptopGaming2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLaptopGaming2.TabIndex = 1;
+            this.picLaptopGaming2.TabStop = false;
+            // 
+            // picLaptopGaming3
+            // 
+            this.picLaptopGaming3.Image = ((System.Drawing.Image)(resources.GetObject("picLaptopGaming3.Image")));
+            this.picLaptopGaming3.Location = new System.Drawing.Point(24, 13);
+            this.picLaptopGaming3.Name = "picLaptopGaming3";
+            this.picLaptopGaming3.Size = new System.Drawing.Size(226, 161);
+            this.picLaptopGaming3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLaptopGaming3.TabIndex = 1;
+            this.picLaptopGaming3.TabStop = false;
+            // 
+            // picLaptopGaming4
+            // 
+            this.picLaptopGaming4.Image = ((System.Drawing.Image)(resources.GetObject("picLaptopGaming4.Image")));
+            this.picLaptopGaming4.Location = new System.Drawing.Point(22, 13);
+            this.picLaptopGaming4.Name = "picLaptopGaming4";
+            this.picLaptopGaming4.Size = new System.Drawing.Size(226, 161);
+            this.picLaptopGaming4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLaptopGaming4.TabIndex = 0;
+            this.picLaptopGaming4.TabStop = false;
+            // 
+            // picLaptopGaming5
+            // 
+            this.picLaptopGaming5.Image = ((System.Drawing.Image)(resources.GetObject("picLaptopGaming5.Image")));
+            this.picLaptopGaming5.Location = new System.Drawing.Point(24, 13);
+            this.picLaptopGaming5.Name = "picLaptopGaming5";
+            this.picLaptopGaming5.Size = new System.Drawing.Size(226, 161);
+            this.picLaptopGaming5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLaptopGaming5.TabIndex = 1;
+            this.picLaptopGaming5.TabStop = false;
+            // 
+            // picLaptopGaming6
+            // 
+            this.picLaptopGaming6.Image = ((System.Drawing.Image)(resources.GetObject("picLaptopGaming6.Image")));
+            this.picLaptopGaming6.Location = new System.Drawing.Point(22, 13);
+            this.picLaptopGaming6.Name = "picLaptopGaming6";
+            this.picLaptopGaming6.Size = new System.Drawing.Size(226, 161);
+            this.picLaptopGaming6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLaptopGaming6.TabIndex = 0;
+            this.picLaptopGaming6.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(22, 13);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(22, 13);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 1;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 1;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 1;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(22, 13);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 0;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 1;
+            this.pictureBox11.TabStop = false;
+            // 
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
@@ -1035,46 +1035,46 @@
             this.Size = new System.Drawing.Size(1020, 684);
             this.TabControlLaptop.ResumeLayout(false);
             this.TabLaptopGaming.ResumeLayout(false);
-            this.fPnlWrapComputerGaming.ResumeLayout(false);
-            this.pnlPCGaming1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware3)).EndInit();
-            this.pnlPCGaming2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware6)).EndInit();
-            this.pnlPCGaming3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware5)).EndInit();
-            this.pnlPCGaming4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware4)).EndInit();
-            this.pnlPCGaming5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware2)).EndInit();
-            this.pnlPCGaming6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftware1)).EndInit();
+            this.fPnlWrapLaptopGaming.ResumeLayout(false);
+            this.pnlLaptopGaming1.ResumeLayout(false);
+            this.pnlLaptopGaming2.ResumeLayout(false);
+            this.pnlLaptopGaming3.ResumeLayout(false);
+            this.pnlLaptopGaming4.ResumeLayout(false);
+            this.pnlLaptopGaming5.ResumeLayout(false);
+            this.pnlLaptopGaming6.ResumeLayout(false);
             this.TabLaptopGraphic.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.fPnlLaptopGraphic.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.TabLaptopOffice.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
+            this.fPnlWrapLaptopOffice.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLaptopGaming6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1086,33 +1086,33 @@
         private System.Windows.Forms.Label lblTitlePage;
         private MetroFramework.Controls.MetroTabControl TabControlLaptop;
         private MetroFramework.Controls.MetroTabPage TabLaptopGaming;
-        private System.Windows.Forms.FlowLayoutPanel fPnlWrapComputerGaming;
-        private System.Windows.Forms.Panel pnlPCGaming1;
+        private System.Windows.Forms.FlowLayoutPanel fPnlWrapLaptopGaming;
+        private System.Windows.Forms.Panel pnlLaptopGaming1;
         private System.Windows.Forms.Label lblUnitPriceLaptopGaming1;
         private System.Windows.Forms.Label lblNameLaptopGaming1;
-        private System.Windows.Forms.PictureBox picSoftware3;
-        private System.Windows.Forms.Panel pnlPCGaming2;
+        private System.Windows.Forms.PictureBox picLaptopGaming1;
+        private System.Windows.Forms.Panel pnlLaptopGaming2;
         private System.Windows.Forms.Label lblUnitPriceLaptopGaming2;
         private System.Windows.Forms.Label lblNameLaptopGaming2;
-        private System.Windows.Forms.PictureBox picSoftware6;
-        private System.Windows.Forms.Panel pnlPCGaming3;
+        private System.Windows.Forms.PictureBox picLaptopGaming2;
+        private System.Windows.Forms.Panel pnlLaptopGaming3;
         private System.Windows.Forms.Label lblUnitPriceLaptopGaming3;
         private System.Windows.Forms.Label lblNameLaptopGaming3;
-        private System.Windows.Forms.PictureBox picSoftware5;
-        private System.Windows.Forms.Panel pnlPCGaming4;
+        private System.Windows.Forms.PictureBox picLaptopGaming3;
+        private System.Windows.Forms.Panel pnlLaptopGaming4;
         private System.Windows.Forms.Label lblUnitPriceLaptopGaming4;
         private System.Windows.Forms.Label lblNameLaptopGaming4;
-        private System.Windows.Forms.PictureBox picSoftware4;
-        private System.Windows.Forms.Panel pnlPCGaming5;
+        private System.Windows.Forms.PictureBox picLaptopGaming4;
+        private System.Windows.Forms.Panel pnlLaptopGaming5;
         private System.Windows.Forms.Label lblUnitPriceLaptopGaming5;
         private System.Windows.Forms.Label lblNameLaptopGaming5;
-        private System.Windows.Forms.PictureBox picSoftware2;
-        private System.Windows.Forms.Panel pnlPCGaming6;
+        private System.Windows.Forms.PictureBox picLaptopGaming5;
+        private System.Windows.Forms.Panel pnlLaptopGaming6;
         private System.Windows.Forms.Label lblUnitPriceLaptopGaming6;
         private System.Windows.Forms.Label lblNameLaptopGaming6;
-        private System.Windows.Forms.PictureBox picSoftware1;
+        private System.Windows.Forms.PictureBox picLaptopGaming6;
         private MetroFramework.Controls.MetroTabPage TabLaptopGraphic;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel fPnlLaptopGraphic;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblUnitPriceLaptopGraphic1;
         private System.Windows.Forms.Label lblNameLaptopGraphic1;
@@ -1138,7 +1138,7 @@
         private System.Windows.Forms.Label lblNameLaptopGraphic6;
         private System.Windows.Forms.PictureBox pictureBox6;
         private MetroFramework.Controls.MetroTabPage TabLaptopOffice;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel fPnlWrapLaptopOffice;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label lblUnitPriceLaptopOffice1;
         private System.Windows.Forms.Label lblNameLaptopOffice1;

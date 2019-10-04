@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class frmMain
+    partial class frmCustomer
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomer));
             this.pnlTop = new System.Windows.Forms.Panel();
             this.btnSearchSoftware = new System.Windows.Forms.Button();
             this.txtSearchSoftware = new System.Windows.Forms.TextBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlLeft = new System.Windows.Forms.Panel();
-            this.btnWarehouseManagement = new System.Windows.Forms.Button();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnSoftwarePage = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
@@ -51,11 +50,12 @@
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.lblCopyright = new System.Windows.Forms.Label();
             this.pnlWrap = new System.Windows.Forms.Panel();
+            this.accessoriesPage = new GUI.AccessoriesPage();
             this.laptopPage = new GUI.LaptopPage();
             this.computerPage = new GUI.ComputerPage();
             this.homePage = new GUI.HomePage();
             this.softwarePage = new GUI.SoftwarePage();
-            this.btnProductManagement = new System.Windows.Forms.Button();
+            this.componentsPage = new GUI.ComponentsPage();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.pnlLeft.SuspendLayout();
@@ -115,8 +115,6 @@
             // pnlLeft
             // 
             this.pnlLeft.BackColor = System.Drawing.Color.White;
-            this.pnlLeft.Controls.Add(this.btnProductManagement);
-            this.pnlLeft.Controls.Add(this.btnWarehouseManagement);
             this.pnlLeft.Controls.Add(this.bunifuSeparator1);
             this.pnlLeft.Controls.Add(this.btnSoftwarePage);
             this.pnlLeft.Controls.Add(this.btnHelp);
@@ -135,20 +133,6 @@
             this.pnlLeft.Name = "pnlLeft";
             this.pnlLeft.Size = new System.Drawing.Size(317, 727);
             this.pnlLeft.TabIndex = 1;
-            // 
-            // btnWarehouseManagement
-            // 
-            this.btnWarehouseManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnWarehouseManagement.FlatAppearance.BorderSize = 0;
-            this.btnWarehouseManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWarehouseManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWarehouseManagement.ForeColor = System.Drawing.Color.White;
-            this.btnWarehouseManagement.Location = new System.Drawing.Point(10, 564);
-            this.btnWarehouseManagement.Name = "btnWarehouseManagement";
-            this.btnWarehouseManagement.Size = new System.Drawing.Size(295, 61);
-            this.btnWarehouseManagement.TabIndex = 13;
-            this.btnWarehouseManagement.Text = "Quản lý kho";
-            this.btnWarehouseManagement.UseVisualStyleBackColor = false;
             // 
             // bunifuSeparator1
             // 
@@ -219,6 +203,7 @@
             this.btnComponentsPage.TabIndex = 8;
             this.btnComponentsPage.Text = "Linh kiện máy tính";
             this.btnComponentsPage.UseVisualStyleBackColor = false;
+            this.btnComponentsPage.Click += new System.EventHandler(this.btnComponentsPage_Click);
             // 
             // btnAccessoriesPage
             // 
@@ -233,6 +218,7 @@
             this.btnAccessoriesPage.TabIndex = 7;
             this.btnAccessoriesPage.Text = "Gaming gear - Phụ kiện";
             this.btnAccessoriesPage.UseVisualStyleBackColor = false;
+            this.btnAccessoriesPage.Click += new System.EventHandler(this.btnAccessoriesPage_Click);
             // 
             // btnLaptopPage
             // 
@@ -350,6 +336,8 @@
             // pnlWrap
             // 
             this.pnlWrap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlWrap.Controls.Add(this.componentsPage);
+            this.pnlWrap.Controls.Add(this.accessoriesPage);
             this.pnlWrap.Controls.Add(this.laptopPage);
             this.pnlWrap.Controls.Add(this.computerPage);
             this.pnlWrap.Controls.Add(this.homePage);
@@ -359,6 +347,14 @@
             this.pnlWrap.Name = "pnlWrap";
             this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
             this.pnlWrap.TabIndex = 3;
+            // 
+            // accessoriesPage
+            // 
+            this.accessoriesPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accessoriesPage.Location = new System.Drawing.Point(0, 0);
+            this.accessoriesPage.Name = "accessoriesPage";
+            this.accessoriesPage.Size = new System.Drawing.Size(1020, 684);
+            this.accessoriesPage.TabIndex = 4;
             // 
             // laptopPage
             // 
@@ -394,21 +390,15 @@
             this.softwarePage.Size = new System.Drawing.Size(1020, 684);
             this.softwarePage.TabIndex = 0;
             // 
-            // btnProductManagement
+            // componentsPage
             // 
-            this.btnProductManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnProductManagement.FlatAppearance.BorderSize = 0;
-            this.btnProductManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductManagement.ForeColor = System.Drawing.Color.White;
-            this.btnProductManagement.Location = new System.Drawing.Point(10, 506);
-            this.btnProductManagement.Name = "btnProductManagement";
-            this.btnProductManagement.Size = new System.Drawing.Size(295, 61);
-            this.btnProductManagement.TabIndex = 14;
-            this.btnProductManagement.Text = "Quản lý sản phẩm";
-            this.btnProductManagement.UseVisualStyleBackColor = false;
+            this.componentsPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.componentsPage.Location = new System.Drawing.Point(0, 0);
+            this.componentsPage.Name = "componentsPage";
+            this.componentsPage.Size = new System.Drawing.Size(1020, 684);
+            this.componentsPage.TabIndex = 5;
             // 
-            // frmMain
+            // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -420,7 +410,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "frmMain";
+            this.Name = "frmCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Computer Store";
             this.pnlTop.ResumeLayout(false);
@@ -461,10 +451,10 @@
         private System.Windows.Forms.Button btnSearchSoftware;
         private System.Windows.Forms.TextBox txtSearchSoftware;
         private ComputerPage computerPage;
-        private System.Windows.Forms.Button btnWarehouseManagement;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private LaptopPage laptopPage;
-        private System.Windows.Forms.Button btnProductManagement;
+        private AccessoriesPage accessoriesPage;
+        private ComponentsPage componentsPage;
     }
 }
 

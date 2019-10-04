@@ -35,6 +35,7 @@
             this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.btnSearchProduct = new System.Windows.Forms.Button();
             this.txtSearchSoftware = new System.Windows.Forms.TextBox();
+            this.lblListProducts = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +56,7 @@
             this.dgvProducts.Location = new System.Drawing.Point(18, 222);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.RowTemplate.Height = 24;
-            this.dgvProducts.Size = new System.Drawing.Size(986, 380);
+            this.dgvProducts.Size = new System.Drawing.Size(986, 448);
             this.dgvProducts.TabIndex = 23;
             // 
             // btnAddProduct
@@ -67,7 +68,7 @@
             this.btnAddProduct.ForeColor = System.Drawing.Color.White;
             this.btnAddProduct.Image = global::GUI.Properties.Resources.icons8_Plus_Math_26px;
             this.btnAddProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddProduct.Location = new System.Drawing.Point(18, 166);
+            this.btnAddProduct.Location = new System.Drawing.Point(18, 108);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(134, 40);
             this.btnAddProduct.TabIndex = 24;
@@ -83,7 +84,7 @@
             this.btnEditProduct.ForeColor = System.Drawing.Color.Black;
             this.btnEditProduct.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
             this.btnEditProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditProduct.Location = new System.Drawing.Point(158, 166);
+            this.btnEditProduct.Location = new System.Drawing.Point(158, 108);
             this.btnEditProduct.Name = "btnEditProduct";
             this.btnEditProduct.Size = new System.Drawing.Size(134, 40);
             this.btnEditProduct.TabIndex = 25;
@@ -96,10 +97,10 @@
             this.btnDeleteProduct.FlatAppearance.BorderSize = 0;
             this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteProduct.ForeColor = System.Drawing.Color.White;
             this.btnDeleteProduct.Image = global::GUI.Properties.Resources.icons8_Trash_Can_26px;
             this.btnDeleteProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeleteProduct.Location = new System.Drawing.Point(298, 166);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(298, 108);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
             this.btnDeleteProduct.Size = new System.Drawing.Size(134, 40);
             this.btnDeleteProduct.TabIndex = 26;
@@ -115,7 +116,7 @@
             this.btnSearchProduct.ForeColor = System.Drawing.Color.White;
             this.btnSearchProduct.Image = global::GUI.Properties.Resources.icons8_Search_26px;
             this.btnSearchProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchProduct.Location = new System.Drawing.Point(853, 166);
+            this.btnSearchProduct.Location = new System.Drawing.Point(852, 108);
             this.btnSearchProduct.Name = "btnSearchProduct";
             this.btnSearchProduct.Size = new System.Drawing.Size(151, 40);
             this.btnSearchProduct.TabIndex = 28;
@@ -125,16 +126,28 @@
             // txtSearchSoftware
             // 
             this.txtSearchSoftware.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchSoftware.Location = new System.Drawing.Point(573, 166);
+            this.txtSearchSoftware.Location = new System.Drawing.Point(572, 108);
             this.txtSearchSoftware.Multiline = true;
             this.txtSearchSoftware.Name = "txtSearchSoftware";
             this.txtSearchSoftware.Size = new System.Drawing.Size(274, 40);
             this.txtSearchSoftware.TabIndex = 27;
             // 
+            // lblListProducts
+            // 
+            this.lblListProducts.AutoSize = true;
+            this.lblListProducts.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblListProducts.Location = new System.Drawing.Point(359, 172);
+            this.lblListProducts.Name = "lblListProducts";
+            this.lblListProducts.Size = new System.Drawing.Size(287, 38);
+            this.lblListProducts.TabIndex = 29;
+            this.lblListProducts.Text = "Danh sách sản phẩm";
+            // 
             // ProductManagementPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblListProducts);
             this.Controls.Add(this.btnSearchProduct);
             this.Controls.Add(this.txtSearchSoftware);
             this.Controls.Add(this.btnDeleteProduct);
@@ -159,5 +172,6 @@
         private System.Windows.Forms.Button btnDeleteProduct;
         private System.Windows.Forms.Button btnSearchProduct;
         private System.Windows.Forms.TextBox txtSearchSoftware;
+        private System.Windows.Forms.Label lblListProducts;
     }
 }
