@@ -17,17 +17,40 @@ namespace GUI
             InitializeComponent();
             homePage.Visible = true;
             softwarePage.Visible = false;
+            computerPage.Visible = false;
+            laptopPage.Visible = false;
         }
 
         private void btnHomePage_Click(object sender, EventArgs e)
         {
             homePage.Visible = true;
             softwarePage.Visible = false;
+            computerPage.Visible = false;
+            laptopPage.Visible = false;
         }
 
         private void btnSoftwarePage_Click(object sender, EventArgs e)
         {
             softwarePage.Visible = true;
+            homePage.Visible = false;
+            computerPage.Visible = false;
+            laptopPage.Visible = false;
+        }
+
+        private void btnComputerPage_Click(object sender, EventArgs e)
+        {
+            computerPage.Visible = true;
+            softwarePage.Visible = false;
+            homePage.Visible = false;
+            laptopPage.Visible = false;
+            
+        }
+
+        private void btnLaptopPage_Click(object sender, EventArgs e)
+        {
+            laptopPage.Visible = true;
+            computerPage.Visible = false;
+            softwarePage.Visible = false;
             homePage.Visible = false;
         }
     }

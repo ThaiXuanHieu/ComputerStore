@@ -30,8 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.btnSearchSoftware = new System.Windows.Forms.Button();
+            this.txtSearchSoftware = new System.Windows.Forms.TextBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlLeft = new System.Windows.Forms.Panel();
+            this.btnWarehouseManagement = new System.Windows.Forms.Button();
+            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnSoftwarePage = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
@@ -47,8 +51,11 @@
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.lblCopyright = new System.Windows.Forms.Label();
             this.pnlWrap = new System.Windows.Forms.Panel();
+            this.laptopPage = new GUI.LaptopPage();
+            this.computerPage = new GUI.ComputerPage();
             this.homePage = new GUI.HomePage();
             this.softwarePage = new GUI.SoftwarePage();
+            this.btnProductManagement = new System.Windows.Forms.Button();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.pnlLeft.SuspendLayout();
@@ -60,12 +67,39 @@
             // pnlTop
             // 
             this.pnlTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.pnlTop.Controls.Add(this.btnSearchSoftware);
+            this.pnlTop.Controls.Add(this.txtSearchSoftware);
             this.pnlTop.Controls.Add(this.btnMenu);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(1337, 46);
             this.pnlTop.TabIndex = 0;
+            // 
+            // btnSearchSoftware
+            // 
+            this.btnSearchSoftware.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
+            this.btnSearchSoftware.FlatAppearance.BorderSize = 0;
+            this.btnSearchSoftware.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchSoftware.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchSoftware.ForeColor = System.Drawing.Color.White;
+            this.btnSearchSoftware.Image = global::GUI.Properties.Resources.icons8_Search_26px;
+            this.btnSearchSoftware.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearchSoftware.Location = new System.Drawing.Point(600, 3);
+            this.btnSearchSoftware.Name = "btnSearchSoftware";
+            this.btnSearchSoftware.Size = new System.Drawing.Size(151, 38);
+            this.btnSearchSoftware.TabIndex = 21;
+            this.btnSearchSoftware.Text = "     Tìm kiếm";
+            this.btnSearchSoftware.UseVisualStyleBackColor = false;
+            // 
+            // txtSearchSoftware
+            // 
+            this.txtSearchSoftware.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchSoftware.Location = new System.Drawing.Point(317, 3);
+            this.txtSearchSoftware.Multiline = true;
+            this.txtSearchSoftware.Name = "txtSearchSoftware";
+            this.txtSearchSoftware.Size = new System.Drawing.Size(274, 38);
+            this.txtSearchSoftware.TabIndex = 20;
             // 
             // btnMenu
             // 
@@ -81,6 +115,9 @@
             // pnlLeft
             // 
             this.pnlLeft.BackColor = System.Drawing.Color.White;
+            this.pnlLeft.Controls.Add(this.btnProductManagement);
+            this.pnlLeft.Controls.Add(this.btnWarehouseManagement);
+            this.pnlLeft.Controls.Add(this.bunifuSeparator1);
             this.pnlLeft.Controls.Add(this.btnSoftwarePage);
             this.pnlLeft.Controls.Add(this.btnHelp);
             this.pnlLeft.Controls.Add(this.btnInfo);
@@ -98,6 +135,33 @@
             this.pnlLeft.Name = "pnlLeft";
             this.pnlLeft.Size = new System.Drawing.Size(317, 727);
             this.pnlLeft.TabIndex = 1;
+            // 
+            // btnWarehouseManagement
+            // 
+            this.btnWarehouseManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnWarehouseManagement.FlatAppearance.BorderSize = 0;
+            this.btnWarehouseManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWarehouseManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWarehouseManagement.ForeColor = System.Drawing.Color.White;
+            this.btnWarehouseManagement.Location = new System.Drawing.Point(10, 564);
+            this.btnWarehouseManagement.Name = "btnWarehouseManagement";
+            this.btnWarehouseManagement.Size = new System.Drawing.Size(295, 61);
+            this.btnWarehouseManagement.TabIndex = 13;
+            this.btnWarehouseManagement.Text = "Quản lý kho";
+            this.btnWarehouseManagement.UseVisualStyleBackColor = false;
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(10, 461);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(297, 43);
+            this.bunifuSeparator1.TabIndex = 12;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
             // 
             // btnSoftwarePage
             // 
@@ -183,6 +247,7 @@
             this.btnLaptopPage.TabIndex = 6;
             this.btnLaptopPage.Text = "Laptop - Macbook";
             this.btnLaptopPage.UseVisualStyleBackColor = false;
+            this.btnLaptopPage.Click += new System.EventHandler(this.btnLaptopPage_Click);
             // 
             // btnComputerPage
             // 
@@ -197,6 +262,7 @@
             this.btnComputerPage.TabIndex = 5;
             this.btnComputerPage.Text = "PC - Workstation";
             this.btnComputerPage.UseVisualStyleBackColor = false;
+            this.btnComputerPage.Click += new System.EventHandler(this.btnComputerPage_Click);
             // 
             // btnHomePage
             // 
@@ -284,6 +350,8 @@
             // pnlWrap
             // 
             this.pnlWrap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlWrap.Controls.Add(this.laptopPage);
+            this.pnlWrap.Controls.Add(this.computerPage);
             this.pnlWrap.Controls.Add(this.homePage);
             this.pnlWrap.Controls.Add(this.softwarePage);
             this.pnlWrap.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -291,6 +359,23 @@
             this.pnlWrap.Name = "pnlWrap";
             this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
             this.pnlWrap.TabIndex = 3;
+            // 
+            // laptopPage
+            // 
+            this.laptopPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.laptopPage.Location = new System.Drawing.Point(0, 0);
+            this.laptopPage.Name = "laptopPage";
+            this.laptopPage.Size = new System.Drawing.Size(1020, 684);
+            this.laptopPage.TabIndex = 3;
+            // 
+            // computerPage
+            // 
+            this.computerPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.computerPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.computerPage.Location = new System.Drawing.Point(0, 0);
+            this.computerPage.Name = "computerPage";
+            this.computerPage.Size = new System.Drawing.Size(1020, 684);
+            this.computerPage.TabIndex = 2;
             // 
             // homePage
             // 
@@ -309,6 +394,20 @@
             this.softwarePage.Size = new System.Drawing.Size(1020, 684);
             this.softwarePage.TabIndex = 0;
             // 
+            // btnProductManagement
+            // 
+            this.btnProductManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnProductManagement.FlatAppearance.BorderSize = 0;
+            this.btnProductManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductManagement.ForeColor = System.Drawing.Color.White;
+            this.btnProductManagement.Location = new System.Drawing.Point(10, 506);
+            this.btnProductManagement.Name = "btnProductManagement";
+            this.btnProductManagement.Size = new System.Drawing.Size(295, 61);
+            this.btnProductManagement.TabIndex = 14;
+            this.btnProductManagement.Text = "Quản lý sản phẩm";
+            this.btnProductManagement.UseVisualStyleBackColor = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -325,6 +424,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Computer Store";
             this.pnlTop.ResumeLayout(false);
+            this.pnlTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             this.pnlLeft.ResumeLayout(false);
             this.pnlLeft.PerformLayout();
@@ -358,6 +458,13 @@
         private System.Windows.Forms.Button btnSoftwarePage;
         private SoftwarePage softwarePage;
         private HomePage homePage;
+        private System.Windows.Forms.Button btnSearchSoftware;
+        private System.Windows.Forms.TextBox txtSearchSoftware;
+        private ComputerPage computerPage;
+        private System.Windows.Forms.Button btnWarehouseManagement;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private LaptopPage laptopPage;
+        private System.Windows.Forms.Button btnProductManagement;
     }
 }
 

@@ -11,4 +11,9 @@ F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\Bunifu_UI_v1.52.dll
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.csproj.CopyComplete
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.SoftwarePage.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.HomePage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\MetroFramework.Design.dll
+F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\MetroFramework.dll
+F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\MetroFramework.Fonts.dll
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.ComputerPage.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.LaptopPage.resources
