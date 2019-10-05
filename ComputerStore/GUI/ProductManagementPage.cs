@@ -16,5 +16,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void ProductManagementPage_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

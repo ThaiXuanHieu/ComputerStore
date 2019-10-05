@@ -34,7 +34,7 @@
             this.txtSearchSoftware = new System.Windows.Forms.TextBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlLeft = new System.Windows.Forms.Panel();
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.Separator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnSoftwarePage = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
@@ -43,19 +43,19 @@
             this.btnLaptopPage = new System.Windows.Forms.Button();
             this.btnComputerPage = new System.Windows.Forms.Button();
             this.btnHomePage = new System.Windows.Forms.Button();
-            this.lblNameAdmin = new System.Windows.Forms.Label();
+            this.lblNameCustomer = new System.Windows.Forms.Label();
             this.picAvatar = new System.Windows.Forms.PictureBox();
             this.Separator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.Separator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.lblCopyright = new System.Windows.Forms.Label();
             this.pnlWrap = new System.Windows.Forms.Panel();
+            this.componentsPage = new GUI.ComponentsPage();
             this.accessoriesPage = new GUI.AccessoriesPage();
             this.laptopPage = new GUI.LaptopPage();
             this.computerPage = new GUI.ComputerPage();
             this.homePage = new GUI.HomePage();
             this.softwarePage = new GUI.SoftwarePage();
-            this.componentsPage = new GUI.ComponentsPage();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.pnlLeft.SuspendLayout();
@@ -115,7 +115,7 @@
             // pnlLeft
             // 
             this.pnlLeft.BackColor = System.Drawing.Color.White;
-            this.pnlLeft.Controls.Add(this.bunifuSeparator1);
+            this.pnlLeft.Controls.Add(this.Separator3);
             this.pnlLeft.Controls.Add(this.btnSoftwarePage);
             this.pnlLeft.Controls.Add(this.btnHelp);
             this.pnlLeft.Controls.Add(this.btnInfo);
@@ -124,7 +124,7 @@
             this.pnlLeft.Controls.Add(this.btnLaptopPage);
             this.pnlLeft.Controls.Add(this.btnComputerPage);
             this.pnlLeft.Controls.Add(this.btnHomePage);
-            this.pnlLeft.Controls.Add(this.lblNameAdmin);
+            this.pnlLeft.Controls.Add(this.lblNameCustomer);
             this.pnlLeft.Controls.Add(this.picAvatar);
             this.pnlLeft.Controls.Add(this.Separator2);
             this.pnlLeft.Controls.Add(this.Separator1);
@@ -134,18 +134,18 @@
             this.pnlLeft.Size = new System.Drawing.Size(317, 727);
             this.pnlLeft.TabIndex = 1;
             // 
-            // bunifuSeparator1
+            // Separator3
             // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(10, 461);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(297, 43);
-            this.bunifuSeparator1.TabIndex = 12;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
+            this.Separator3.BackColor = System.Drawing.Color.Transparent;
+            this.Separator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.Separator3.LineThickness = 1;
+            this.Separator3.Location = new System.Drawing.Point(10, 461);
+            this.Separator3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Separator3.Name = "Separator3";
+            this.Separator3.Size = new System.Drawing.Size(297, 43);
+            this.Separator3.TabIndex = 12;
+            this.Separator3.Transparency = 255;
+            this.Separator3.Vertical = false;
             // 
             // btnSoftwarePage
             // 
@@ -265,16 +265,16 @@
             this.btnHomePage.UseVisualStyleBackColor = false;
             this.btnHomePage.Click += new System.EventHandler(this.btnHomePage_Click);
             // 
-            // lblNameAdmin
+            // lblNameCustomer
             // 
-            this.lblNameAdmin.AutoSize = true;
-            this.lblNameAdmin.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameAdmin.ForeColor = System.Drawing.Color.Black;
-            this.lblNameAdmin.Location = new System.Drawing.Point(82, 16);
-            this.lblNameAdmin.Name = "lblNameAdmin";
-            this.lblNameAdmin.Size = new System.Drawing.Size(206, 38);
-            this.lblNameAdmin.TabIndex = 3;
-            this.lblNameAdmin.Text = "Thái Xuân Hiếu";
+            this.lblNameCustomer.AutoSize = true;
+            this.lblNameCustomer.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameCustomer.ForeColor = System.Drawing.Color.Black;
+            this.lblNameCustomer.Location = new System.Drawing.Point(82, 16);
+            this.lblNameCustomer.Name = "lblNameCustomer";
+            this.lblNameCustomer.Size = new System.Drawing.Size(206, 38);
+            this.lblNameCustomer.TabIndex = 3;
+            this.lblNameCustomer.Text = "Thái Xuân Hiếu";
             // 
             // picAvatar
             // 
@@ -348,6 +348,14 @@
             this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
             this.pnlWrap.TabIndex = 3;
             // 
+            // componentsPage
+            // 
+            this.componentsPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.componentsPage.Location = new System.Drawing.Point(0, 0);
+            this.componentsPage.Name = "componentsPage";
+            this.componentsPage.Size = new System.Drawing.Size(1020, 684);
+            this.componentsPage.TabIndex = 5;
+            // 
             // accessoriesPage
             // 
             this.accessoriesPage.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -390,14 +398,6 @@
             this.softwarePage.Size = new System.Drawing.Size(1020, 684);
             this.softwarePage.TabIndex = 0;
             // 
-            // componentsPage
-            // 
-            this.componentsPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.componentsPage.Location = new System.Drawing.Point(0, 0);
-            this.componentsPage.Name = "componentsPage";
-            this.componentsPage.Size = new System.Drawing.Size(1020, 684);
-            this.componentsPage.TabIndex = 5;
-            // 
             // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -435,7 +435,7 @@
         private System.Windows.Forms.Panel pnlWrap;
         private Bunifu.Framework.UI.BunifuSeparator Separator2;
         private Bunifu.Framework.UI.BunifuSeparator Separator1;
-        private System.Windows.Forms.Label lblNameAdmin;
+        private System.Windows.Forms.Label lblNameCustomer;
         private System.Windows.Forms.PictureBox picAvatar;
         private System.Windows.Forms.Button btnHomePage;
         private System.Windows.Forms.PictureBox btnMenu;
@@ -451,7 +451,7 @@
         private System.Windows.Forms.Button btnSearchSoftware;
         private System.Windows.Forms.TextBox txtSearchSoftware;
         private ComputerPage computerPage;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuSeparator Separator3;
         private LaptopPage laptopPage;
         private AccessoriesPage accessoriesPage;
         private ComponentsPage componentsPage;

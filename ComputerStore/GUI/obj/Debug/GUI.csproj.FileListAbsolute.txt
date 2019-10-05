@@ -19,3 +19,5 @@ F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.ProductManagementPage.
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.AccessoriesPage.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmCustomer.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.ComponentsPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmUser.resources

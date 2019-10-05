@@ -33,15 +33,14 @@
             this.lblCopyright = new System.Windows.Forms.Label();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.btnSoftwarePage = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
-            this.btnComponentsPage = new System.Windows.Forms.Button();
-            this.btnAccessoriesPage = new System.Windows.Forms.Button();
-            this.btnLaptopPage = new System.Windows.Forms.Button();
-            this.btnComputerPage = new System.Windows.Forms.Button();
-            this.btnHomePage = new System.Windows.Forms.Button();
-            this.lblNameAdmin = new System.Windows.Forms.Label();
+            this.btnCreateOrdersPage = new System.Windows.Forms.Button();
+            this.btnSupplierManagementPage = new System.Windows.Forms.Button();
+            this.btnCustomerManagementPage = new System.Windows.Forms.Button();
+            this.btnWarehouseManagementPage = new System.Windows.Forms.Button();
+            this.btnProductManagementPage = new System.Windows.Forms.Button();
+            this.lblNameUser = new System.Windows.Forms.Label();
             this.picAvatar = new System.Windows.Forms.PictureBox();
             this.Separator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.Separator1 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -50,6 +49,7 @@
             this.txtSearchSoftware = new System.Windows.Forms.TextBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlWrap = new System.Windows.Forms.Panel();
+            this.btnStatisticalPage = new System.Windows.Forms.Button();
             this.pnlBottom.SuspendLayout();
             this.pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
@@ -81,16 +81,16 @@
             // pnlLeft
             // 
             this.pnlLeft.BackColor = System.Drawing.Color.White;
+            this.pnlLeft.Controls.Add(this.btnStatisticalPage);
+            this.pnlLeft.Controls.Add(this.btnCreateOrdersPage);
             this.pnlLeft.Controls.Add(this.bunifuSeparator1);
-            this.pnlLeft.Controls.Add(this.btnSoftwarePage);
             this.pnlLeft.Controls.Add(this.btnHelp);
             this.pnlLeft.Controls.Add(this.btnInfo);
-            this.pnlLeft.Controls.Add(this.btnComponentsPage);
-            this.pnlLeft.Controls.Add(this.btnAccessoriesPage);
-            this.pnlLeft.Controls.Add(this.btnLaptopPage);
-            this.pnlLeft.Controls.Add(this.btnComputerPage);
-            this.pnlLeft.Controls.Add(this.btnHomePage);
-            this.pnlLeft.Controls.Add(this.lblNameAdmin);
+            this.pnlLeft.Controls.Add(this.btnSupplierManagementPage);
+            this.pnlLeft.Controls.Add(this.btnCustomerManagementPage);
+            this.pnlLeft.Controls.Add(this.btnWarehouseManagementPage);
+            this.pnlLeft.Controls.Add(this.btnProductManagementPage);
+            this.pnlLeft.Controls.Add(this.lblNameUser);
             this.pnlLeft.Controls.Add(this.picAvatar);
             this.pnlLeft.Controls.Add(this.Separator2);
             this.pnlLeft.Controls.Add(this.Separator1);
@@ -112,20 +112,6 @@
             this.bunifuSeparator1.TabIndex = 12;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
-            // 
-            // btnSoftwarePage
-            // 
-            this.btnSoftwarePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnSoftwarePage.FlatAppearance.BorderSize = 0;
-            this.btnSoftwarePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSoftwarePage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSoftwarePage.ForeColor = System.Drawing.Color.White;
-            this.btnSoftwarePage.Location = new System.Drawing.Point(12, 393);
-            this.btnSoftwarePage.Name = "btnSoftwarePage";
-            this.btnSoftwarePage.Size = new System.Drawing.Size(295, 61);
-            this.btnSoftwarePage.TabIndex = 11;
-            this.btnSoftwarePage.Text = "Phần mềm";
-            this.btnSoftwarePage.UseVisualStyleBackColor = false;
             // 
             // btnHelp
             // 
@@ -155,86 +141,86 @@
             this.btnInfo.Text = "Thông tin";
             this.btnInfo.UseVisualStyleBackColor = false;
             // 
-            // btnComponentsPage
+            // btnCreateOrdersPage
             // 
-            this.btnComponentsPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnComponentsPage.FlatAppearance.BorderSize = 0;
-            this.btnComponentsPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnComponentsPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComponentsPage.ForeColor = System.Drawing.Color.White;
-            this.btnComponentsPage.Location = new System.Drawing.Point(12, 335);
-            this.btnComponentsPage.Name = "btnComponentsPage";
-            this.btnComponentsPage.Size = new System.Drawing.Size(295, 61);
-            this.btnComponentsPage.TabIndex = 8;
-            this.btnComponentsPage.Text = "Linh kiện máy tính";
-            this.btnComponentsPage.UseVisualStyleBackColor = false;
+            this.btnCreateOrdersPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnCreateOrdersPage.FlatAppearance.BorderSize = 0;
+            this.btnCreateOrdersPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateOrdersPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateOrdersPage.ForeColor = System.Drawing.Color.White;
+            this.btnCreateOrdersPage.Location = new System.Drawing.Point(10, 102);
+            this.btnCreateOrdersPage.Name = "btnCreateOrdersPage";
+            this.btnCreateOrdersPage.Size = new System.Drawing.Size(295, 61);
+            this.btnCreateOrdersPage.TabIndex = 8;
+            this.btnCreateOrdersPage.Text = "Tạo hóa đơn";
+            this.btnCreateOrdersPage.UseVisualStyleBackColor = false;
             // 
-            // btnAccessoriesPage
+            // btnSupplierManagementPage
             // 
-            this.btnAccessoriesPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnAccessoriesPage.FlatAppearance.BorderSize = 0;
-            this.btnAccessoriesPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccessoriesPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccessoriesPage.ForeColor = System.Drawing.Color.White;
-            this.btnAccessoriesPage.Location = new System.Drawing.Point(12, 277);
-            this.btnAccessoriesPage.Name = "btnAccessoriesPage";
-            this.btnAccessoriesPage.Size = new System.Drawing.Size(295, 61);
-            this.btnAccessoriesPage.TabIndex = 7;
-            this.btnAccessoriesPage.Text = "Gaming gear - Phụ kiện";
-            this.btnAccessoriesPage.UseVisualStyleBackColor = false;
+            this.btnSupplierManagementPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnSupplierManagementPage.FlatAppearance.BorderSize = 0;
+            this.btnSupplierManagementPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSupplierManagementPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupplierManagementPage.ForeColor = System.Drawing.Color.White;
+            this.btnSupplierManagementPage.Location = new System.Drawing.Point(10, 334);
+            this.btnSupplierManagementPage.Name = "btnSupplierManagementPage";
+            this.btnSupplierManagementPage.Size = new System.Drawing.Size(295, 61);
+            this.btnSupplierManagementPage.TabIndex = 7;
+            this.btnSupplierManagementPage.Text = "Quản lý nhà cung cấp";
+            this.btnSupplierManagementPage.UseVisualStyleBackColor = false;
             // 
-            // btnLaptopPage
+            // btnCustomerManagementPage
             // 
-            this.btnLaptopPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnLaptopPage.FlatAppearance.BorderSize = 0;
-            this.btnLaptopPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLaptopPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLaptopPage.ForeColor = System.Drawing.Color.White;
-            this.btnLaptopPage.Location = new System.Drawing.Point(12, 219);
-            this.btnLaptopPage.Name = "btnLaptopPage";
-            this.btnLaptopPage.Size = new System.Drawing.Size(295, 61);
-            this.btnLaptopPage.TabIndex = 6;
-            this.btnLaptopPage.Text = "Laptop - Macbook";
-            this.btnLaptopPage.UseVisualStyleBackColor = false;
+            this.btnCustomerManagementPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnCustomerManagementPage.FlatAppearance.BorderSize = 0;
+            this.btnCustomerManagementPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomerManagementPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomerManagementPage.ForeColor = System.Drawing.Color.White;
+            this.btnCustomerManagementPage.Location = new System.Drawing.Point(10, 276);
+            this.btnCustomerManagementPage.Name = "btnCustomerManagementPage";
+            this.btnCustomerManagementPage.Size = new System.Drawing.Size(295, 61);
+            this.btnCustomerManagementPage.TabIndex = 6;
+            this.btnCustomerManagementPage.Text = "Quản lý khách hàng";
+            this.btnCustomerManagementPage.UseVisualStyleBackColor = false;
             // 
-            // btnComputerPage
+            // btnWarehouseManagementPage
             // 
-            this.btnComputerPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnComputerPage.FlatAppearance.BorderSize = 0;
-            this.btnComputerPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnComputerPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComputerPage.ForeColor = System.Drawing.Color.White;
-            this.btnComputerPage.Location = new System.Drawing.Point(12, 161);
-            this.btnComputerPage.Name = "btnComputerPage";
-            this.btnComputerPage.Size = new System.Drawing.Size(295, 61);
-            this.btnComputerPage.TabIndex = 5;
-            this.btnComputerPage.Text = "PC - Workstation";
-            this.btnComputerPage.UseVisualStyleBackColor = false;
+            this.btnWarehouseManagementPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnWarehouseManagementPage.FlatAppearance.BorderSize = 0;
+            this.btnWarehouseManagementPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWarehouseManagementPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWarehouseManagementPage.ForeColor = System.Drawing.Color.White;
+            this.btnWarehouseManagementPage.Location = new System.Drawing.Point(10, 218);
+            this.btnWarehouseManagementPage.Name = "btnWarehouseManagementPage";
+            this.btnWarehouseManagementPage.Size = new System.Drawing.Size(295, 61);
+            this.btnWarehouseManagementPage.TabIndex = 5;
+            this.btnWarehouseManagementPage.Text = "Quản lý kho";
+            this.btnWarehouseManagementPage.UseVisualStyleBackColor = false;
             // 
-            // btnHomePage
+            // btnProductManagementPage
             // 
-            this.btnHomePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnHomePage.FlatAppearance.BorderSize = 0;
-            this.btnHomePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHomePage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHomePage.ForeColor = System.Drawing.Color.White;
-            this.btnHomePage.Location = new System.Drawing.Point(12, 103);
-            this.btnHomePage.Name = "btnHomePage";
-            this.btnHomePage.Size = new System.Drawing.Size(295, 61);
-            this.btnHomePage.TabIndex = 4;
-            this.btnHomePage.Text = "Trang chủ";
-            this.btnHomePage.UseVisualStyleBackColor = false;
+            this.btnProductManagementPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnProductManagementPage.FlatAppearance.BorderSize = 0;
+            this.btnProductManagementPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductManagementPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductManagementPage.ForeColor = System.Drawing.Color.White;
+            this.btnProductManagementPage.Location = new System.Drawing.Point(10, 160);
+            this.btnProductManagementPage.Name = "btnProductManagementPage";
+            this.btnProductManagementPage.Size = new System.Drawing.Size(295, 61);
+            this.btnProductManagementPage.TabIndex = 4;
+            this.btnProductManagementPage.Text = "Quản lý sản phẩm";
+            this.btnProductManagementPage.UseVisualStyleBackColor = false;
             // 
-            // lblNameAdmin
+            // lblNameUser
             // 
-            this.lblNameAdmin.AutoSize = true;
-            this.lblNameAdmin.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameAdmin.ForeColor = System.Drawing.Color.Black;
-            this.lblNameAdmin.Location = new System.Drawing.Point(82, 16);
-            this.lblNameAdmin.Name = "lblNameAdmin";
-            this.lblNameAdmin.Size = new System.Drawing.Size(206, 38);
-            this.lblNameAdmin.TabIndex = 3;
-            this.lblNameAdmin.Text = "Thái Xuân Hiếu";
+            this.lblNameUser.AutoSize = true;
+            this.lblNameUser.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameUser.ForeColor = System.Drawing.Color.Black;
+            this.lblNameUser.Location = new System.Drawing.Point(82, 16);
+            this.lblNameUser.Name = "lblNameUser";
+            this.lblNameUser.Size = new System.Drawing.Size(206, 38);
+            this.lblNameUser.TabIndex = 3;
+            this.lblNameUser.Text = "Thái Xuân Hiếu";
             // 
             // picAvatar
             // 
@@ -328,6 +314,20 @@
             this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
             this.pnlWrap.TabIndex = 6;
             // 
+            // btnStatisticalPage
+            // 
+            this.btnStatisticalPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnStatisticalPage.FlatAppearance.BorderSize = 0;
+            this.btnStatisticalPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatisticalPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatisticalPage.ForeColor = System.Drawing.Color.White;
+            this.btnStatisticalPage.Location = new System.Drawing.Point(10, 393);
+            this.btnStatisticalPage.Name = "btnStatisticalPage";
+            this.btnStatisticalPage.Size = new System.Drawing.Size(295, 61);
+            this.btnStatisticalPage.TabIndex = 13;
+            this.btnStatisticalPage.Text = "Thống kê";
+            this.btnStatisticalPage.UseVisualStyleBackColor = false;
+            // 
             // frmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -358,15 +358,14 @@
         private System.Windows.Forms.Label lblCopyright;
         private System.Windows.Forms.Panel pnlLeft;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
-        private System.Windows.Forms.Button btnSoftwarePage;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Button btnInfo;
-        private System.Windows.Forms.Button btnComponentsPage;
-        private System.Windows.Forms.Button btnAccessoriesPage;
-        private System.Windows.Forms.Button btnLaptopPage;
-        private System.Windows.Forms.Button btnComputerPage;
-        private System.Windows.Forms.Button btnHomePage;
-        private System.Windows.Forms.Label lblNameAdmin;
+        private System.Windows.Forms.Button btnCreateOrdersPage;
+        private System.Windows.Forms.Button btnSupplierManagementPage;
+        private System.Windows.Forms.Button btnCustomerManagementPage;
+        private System.Windows.Forms.Button btnWarehouseManagementPage;
+        private System.Windows.Forms.Button btnProductManagementPage;
+        private System.Windows.Forms.Label lblNameUser;
         private System.Windows.Forms.PictureBox picAvatar;
         private Bunifu.Framework.UI.BunifuSeparator Separator2;
         private Bunifu.Framework.UI.BunifuSeparator Separator1;
@@ -375,5 +374,6 @@
         private System.Windows.Forms.TextBox txtSearchSoftware;
         private System.Windows.Forms.PictureBox btnMenu;
         private System.Windows.Forms.Panel pnlWrap;
+        private System.Windows.Forms.Button btnStatisticalPage;
     }
 }
