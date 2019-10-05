@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomer));
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.btnSearchSoftware = new System.Windows.Forms.Button();
-            this.txtSearchSoftware = new System.Windows.Forms.TextBox();
-            this.btnMenu = new System.Windows.Forms.PictureBox();
+            this.txtSearchProduct = new System.Windows.Forms.TextBox();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.Separator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnSoftwarePage = new System.Windows.Forms.Button();
@@ -44,7 +42,6 @@
             this.btnComputerPage = new System.Windows.Forms.Button();
             this.btnHomePage = new System.Windows.Forms.Button();
             this.lblNameCustomer = new System.Windows.Forms.Label();
-            this.picAvatar = new System.Windows.Forms.PictureBox();
             this.Separator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.Separator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnlBottom = new System.Windows.Forms.Panel();
@@ -56,19 +53,22 @@
             this.computerPage = new GUI.ComputerPage();
             this.homePage = new GUI.HomePage();
             this.softwarePage = new GUI.SoftwarePage();
+            this.picAvatar = new System.Windows.Forms.PictureBox();
+            this.btnSearchProduct = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.pnlLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.pnlBottom.SuspendLayout();
             this.pnlWrap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTop
             // 
             this.pnlTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.pnlTop.Controls.Add(this.btnSearchSoftware);
-            this.pnlTop.Controls.Add(this.txtSearchSoftware);
+            this.pnlTop.Controls.Add(this.btnSearchProduct);
+            this.pnlTop.Controls.Add(this.txtSearchProduct);
             this.pnlTop.Controls.Add(this.btnMenu);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
@@ -76,41 +76,14 @@
             this.pnlTop.Size = new System.Drawing.Size(1337, 46);
             this.pnlTop.TabIndex = 0;
             // 
-            // btnSearchSoftware
+            // txtSearchProduct
             // 
-            this.btnSearchSoftware.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
-            this.btnSearchSoftware.FlatAppearance.BorderSize = 0;
-            this.btnSearchSoftware.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchSoftware.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchSoftware.ForeColor = System.Drawing.Color.White;
-            this.btnSearchSoftware.Image = global::GUI.Properties.Resources.icons8_Search_26px;
-            this.btnSearchSoftware.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchSoftware.Location = new System.Drawing.Point(600, 3);
-            this.btnSearchSoftware.Name = "btnSearchSoftware";
-            this.btnSearchSoftware.Size = new System.Drawing.Size(151, 38);
-            this.btnSearchSoftware.TabIndex = 21;
-            this.btnSearchSoftware.Text = "     Tìm kiếm";
-            this.btnSearchSoftware.UseVisualStyleBackColor = false;
-            // 
-            // txtSearchSoftware
-            // 
-            this.txtSearchSoftware.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchSoftware.Location = new System.Drawing.Point(317, 3);
-            this.txtSearchSoftware.Multiline = true;
-            this.txtSearchSoftware.Name = "txtSearchSoftware";
-            this.txtSearchSoftware.Size = new System.Drawing.Size(274, 38);
-            this.txtSearchSoftware.TabIndex = 20;
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(12, 3);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(55, 40);
-            this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMenu.TabIndex = 3;
-            this.btnMenu.TabStop = false;
+            this.txtSearchProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchProduct.Location = new System.Drawing.Point(317, 3);
+            this.txtSearchProduct.Multiline = true;
+            this.txtSearchProduct.Name = "txtSearchProduct";
+            this.txtSearchProduct.Size = new System.Drawing.Size(274, 38);
+            this.txtSearchProduct.TabIndex = 20;
             // 
             // pnlLeft
             // 
@@ -276,16 +249,6 @@
             this.lblNameCustomer.TabIndex = 3;
             this.lblNameCustomer.Text = "Thái Xuân Hiếu";
             // 
-            // picAvatar
-            // 
-            this.picAvatar.Image = ((System.Drawing.Image)(resources.GetObject("picAvatar.Image")));
-            this.picAvatar.Location = new System.Drawing.Point(13, 6);
-            this.picAvatar.Name = "picAvatar";
-            this.picAvatar.Size = new System.Drawing.Size(63, 55);
-            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAvatar.TabIndex = 2;
-            this.picAvatar.TabStop = false;
-            // 
             // Separator2
             // 
             this.Separator2.BackColor = System.Drawing.Color.Transparent;
@@ -398,6 +361,43 @@
             this.softwarePage.Size = new System.Drawing.Size(1020, 684);
             this.softwarePage.TabIndex = 0;
             // 
+            // picAvatar
+            // 
+            this.picAvatar.Image = ((System.Drawing.Image)(resources.GetObject("picAvatar.Image")));
+            this.picAvatar.Location = new System.Drawing.Point(13, 6);
+            this.picAvatar.Name = "picAvatar";
+            this.picAvatar.Size = new System.Drawing.Size(63, 55);
+            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAvatar.TabIndex = 2;
+            this.picAvatar.TabStop = false;
+            // 
+            // btnSearchProduct
+            // 
+            this.btnSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
+            this.btnSearchProduct.FlatAppearance.BorderSize = 0;
+            this.btnSearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchProduct.ForeColor = System.Drawing.Color.White;
+            this.btnSearchProduct.Image = global::GUI.Properties.Resources.icons8_Search_26px;
+            this.btnSearchProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearchProduct.Location = new System.Drawing.Point(600, 3);
+            this.btnSearchProduct.Name = "btnSearchProduct";
+            this.btnSearchProduct.Size = new System.Drawing.Size(151, 38);
+            this.btnSearchProduct.TabIndex = 21;
+            this.btnSearchProduct.Text = "     Tìm kiếm";
+            this.btnSearchProduct.UseVisualStyleBackColor = false;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
+            this.btnMenu.Location = new System.Drawing.Point(12, 3);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(55, 40);
+            this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMenu.TabIndex = 3;
+            this.btnMenu.TabStop = false;
+            // 
             // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -415,13 +415,13 @@
             this.Text = "Computer Store";
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             this.pnlLeft.ResumeLayout(false);
             this.pnlLeft.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.pnlBottom.ResumeLayout(false);
             this.pnlBottom.PerformLayout();
             this.pnlWrap.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -448,8 +448,8 @@
         private System.Windows.Forms.Button btnSoftwarePage;
         private SoftwarePage softwarePage;
         private HomePage homePage;
-        private System.Windows.Forms.Button btnSearchSoftware;
-        private System.Windows.Forms.TextBox txtSearchSoftware;
+        private System.Windows.Forms.Button btnSearchProduct;
+        private System.Windows.Forms.TextBox txtSearchProduct;
         private ComputerPage computerPage;
         private Bunifu.Framework.UI.BunifuSeparator Separator3;
         private LaptopPage laptopPage;

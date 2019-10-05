@@ -20,4 +20,11 @@ F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.AccessoriesPage.resour
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmCustomer.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.ComponentsPage.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
-F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmUser.resources
+F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\Bunifu.Core.dll
+F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.CustomerManagementPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.SupplierManagementPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.WarehouseManagementPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmAdmin.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmLogin.resources

@@ -80,17 +80,29 @@
     <Compile Include="ComputerPage.Designer.cs">
       <DependentUpon>ComputerPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerManagementPage.Designer.cs">
+      <DependentUpon>CustomerManagementPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUser.cs">
+    <Compile Include="frmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUser.Designer.cs">
-      <DependentUpon>frmUser.cs</DependentUpon>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="HomePage.cs">
       <SubType>UserControl</SubType>
@@ -118,6 +130,18 @@
     <Compile Include="SoftwarePage.Designer.cs">
       <DependentUpon>SoftwarePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="SupplierManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SupplierManagementPage.Designer.cs">
+      <DependentUpon>SupplierManagementPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WarehouseManagementPage.Designer.cs">
+      <DependentUpon>WarehouseManagementPage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AccessoriesPage.resx">
       <DependentUpon>AccessoriesPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,11 +151,17 @@
     <EmbeddedResource Include="ComputerPage.resx">
       <DependentUpon>ComputerPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerManagementPage.resx">
+      <DependentUpon>CustomerManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUser.resx">
-      <DependentUpon>frmUser.cs</DependentUpon>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -154,6 +184,12 @@
     </Compile>
     <EmbeddedResource Include="SoftwarePage.resx">
       <DependentUpon>SoftwarePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierManagementPage.resx">
+      <DependentUpon>SupplierManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseManagementPage.resx">
+      <DependentUpon>WarehouseManagementPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
