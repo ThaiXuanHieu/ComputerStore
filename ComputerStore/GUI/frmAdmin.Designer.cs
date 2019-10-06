@@ -344,7 +344,7 @@
             this.productManagementPage.Size = new System.Drawing.Size(1020, 684);
             this.productManagementPage.TabIndex = 0;
             // 
-            // frmUser
+            // frmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -354,7 +354,9 @@
             this.Controls.Add(this.pnlLeft);
             this.Controls.Add(this.pnlTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmUser";
+            this.MaximizeBox = false;
+            this.Name = "frmAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Computer Store";
             this.pnlBottom.ResumeLayout(false);
             this.pnlBottom.PerformLayout();

@@ -4,3 +4,6 @@ F:\Software\ComputerStore\ComputerStore\BLL\obj\Debug\BLL.csproj.CoreCompileInpu
 F:\Software\ComputerStore\ComputerStore\BLL\obj\Debug\BLL.dll
 F:\Software\ComputerStore\ComputerStore\BLL\obj\Debug\BLL.pdb
 F:\Software\ComputerStore\ComputerStore\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+F:\Software\ComputerStore\ComputerStore\BLL\bin\Debug\DAL.dll
+F:\Software\ComputerStore\ComputerStore\BLL\bin\Debug\DAL.pdb
+F:\Software\ComputerStore\ComputerStore\BLL\obj\Debug\BLL.csproj.CopyComplete

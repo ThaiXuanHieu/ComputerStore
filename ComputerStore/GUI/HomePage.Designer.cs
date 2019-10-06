@@ -50,7 +50,7 @@
             // 
             // Slideshow
             // 
-            this.Slideshow.Image = global::GUI.Properties.Resources._1;
+            this.Slideshow.Image = ((System.Drawing.Image)(resources.GetObject("Slideshow.Image")));
             this.Slideshow.Location = new System.Drawing.Point(20, 85);
             this.Slideshow.Name = "Slideshow";
             this.Slideshow.Size = new System.Drawing.Size(980, 496);

@@ -53,5 +53,19 @@ namespace GUI
         {
             Timer.Start();
         }
+
+        private void btnSignin_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text.Equals("admin") && txtPassword.Text.Equals("123456"))
+            {
+                frmAdmin admin = new frmAdmin();
+                admin.Show();
+            }
+            else
+            {
+                frmCustomer customer = new frmCustomer();
+                customer.Show();
+            }
+        }
     }
 }

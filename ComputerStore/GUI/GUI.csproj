@@ -205,7 +205,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{d6967b58-49a5-469b-a470-b7e142e0d7fb}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{dbf0be25-9118-4d9d-838d-fab49e590db6}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\1.jpg" />
     <Content Include="Resources\2.jpg" />
@@ -214,26 +223,47 @@
     <Content Include="Resources\5.jpg" />
     <Content Include="Resources\adguard.png" />
     <Content Include="Resources\bkavpro.png" />
+    <Content Include="Resources\card1.png" />
+    <Content Include="Resources\card2.png" />
+    <Content Include="Resources\card3.png" />
+    <Content Include="Resources\card4.png" />
+    <Content Include="Resources\card5.png" />
+    <Content Include="Resources\card6.png" />
+    <Content Include="Resources\cpu1.png" />
+    <Content Include="Resources\cpu2.png" />
+    <Content Include="Resources\cpu3.png" />
+    <Content Include="Resources\cpu4.png" />
+    <Content Include="Resources\cpu5.png" />
+    <Content Include="Resources\cpu6.png" />
+    <Content Include="Resources\gaming1.png" />
+    <Content Include="Resources\gaming2.png" />
+    <Content Include="Resources\gaming3.png" />
+    <Content Include="Resources\gaming4.png" />
+    <Content Include="Resources\gaming5.png" />
+    <Content Include="Resources\gaming6.png" />
+    <Content Include="Resources\graphic1.png" />
+    <Content Include="Resources\graphic2.png" />
+    <Content Include="Resources\hdd1.png" />
+    <Content Include="Resources\hdd2.png" />
+    <Content Include="Resources\hdd3.png" />
+    <Content Include="Resources\headphone1.png" />
+    <Content Include="Resources\headphone2.png" />
+    <Content Include="Resources\headphone3.png" />
+    <Content Include="Resources\headphone4.png" />
+    <Content Include="Resources\headphone5.png" />
+    <Content Include="Resources\headphone6.png" />
     <Content Include="Resources\icons8_Edit_26px.png" />
     <Content Include="Resources\icons8_Plus_Math_26px.png" />
     <Content Include="Resources\icons8_Search_26px.png" />
     <Content Include="Resources\icons8_Trash_Can_26px.png" />
     <Content Include="Resources\icons8_Workstation_1.ico" />
     <Content Include="Resources\kaspersky.png" />
-    <Content Include="Resources\laptopgaming1.png" />
-    <Content Include="Resources\laptopgaming2.png" />
-    <Content Include="Resources\laptopgaming3.png" />
-    <Content Include="Resources\laptopgaming4.png" />
-    <Content Include="Resources\laptopgaming5.png" />
-    <Content Include="Resources\laptopgaming6.png" />
-    <Content Include="Resources\laptopgraphic1.png" />
-    <Content Include="Resources\laptopgraphic2.png" />
-    <Content Include="Resources\laptopoffice1.png" />
-    <Content Include="Resources\laptopoffice2.png" />
-    <Content Include="Resources\laptopoffice3.png" />
-    <Content Include="Resources\laptopoffice4.png" />
-    <Content Include="Resources\laptopoffice5.png" />
-    <Content Include="Resources\laptopoffice6.png" />
+    <Content Include="Resources\keyboard1.png" />
+    <Content Include="Resources\keyboard2.png" />
+    <Content Include="Resources\keyboard3.png" />
+    <Content Include="Resources\keyboard4.png" />
+    <Content Include="Resources\keyboard5.png" />
+    <Content Include="Resources\keyboard6.png" />
     <Content Include="Resources\logoacer.png" />
     <Content Include="Resources\logoasus.png" />
     <Content Include="Resources\logodell.png" />
@@ -246,7 +276,19 @@
     <Content Include="Resources\macbook4.png" />
     <Content Include="Resources\macbook5.png" />
     <Content Include="Resources\macbook6.png" />
+    <Content Include="Resources\mouse1.png" />
+    <Content Include="Resources\mouse2.png" />
+    <Content Include="Resources\mouse3.png" />
+    <Content Include="Resources\mouse4.png" />
+    <Content Include="Resources\mouse5.png" />
+    <Content Include="Resources\mouse6.png" />
     <Content Include="Resources\office.png" />
+    <Content Include="Resources\office1.png" />
+    <Content Include="Resources\office2.png" />
+    <Content Include="Resources\office3.png" />
+    <Content Include="Resources\office4.png" />
+    <Content Include="Resources\office5.png" />
+    <Content Include="Resources\office6.png" />
     <Content Include="Resources\pcgamming1.png" />
     <Content Include="Resources\pcgamming2.png" />
     <Content Include="Resources\pcgamming3.png" />
@@ -259,15 +301,18 @@
     <Content Include="Resources\pcgraphic4.png" />
     <Content Include="Resources\pcgraphic5.png" />
     <Content Include="Resources\pcgraphic6.png" />
-    <Content Include="Resources\pcworkstation1.png" />
-    <Content Include="Resources\pcworkstation2.png" />
-    <Content Include="Resources\pcworkstation3.png" />
-    <Content Include="Resources\pcworkstation4.png" />
-    <Content Include="Resources\pcworkstation5.png" />
-    <Content Include="Resources\pcworkstation6.png" />
+    <Content Include="Resources\ssd1.jpg" />
+    <Content Include="Resources\ssd2.jpg" />
+    <Content Include="Resources\ssd3.jpg" />
     <Content Include="Resources\surface1.png" />
     <Content Include="Resources\surface2.png" />
     <Content Include="Resources\surface3.png" />
+    <Content Include="Resources\workstation1.png" />
+    <Content Include="Resources\workstation2.png" />
+    <Content Include="Resources\workstation3.png" />
+    <Content Include="Resources\workstation4.png" />
+    <Content Include="Resources\workstation5.png" />
+    <Content Include="Resources\workstation6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

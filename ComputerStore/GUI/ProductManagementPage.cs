@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace GUI
 {
@@ -19,7 +20,7 @@ namespace GUI
 
         private void ProductManagementPage_Load(object sender, EventArgs e)
         {
-            
+            dgvProducts.DataSource = ProductsBLL.Instance.Select();
         }
     }
 }
