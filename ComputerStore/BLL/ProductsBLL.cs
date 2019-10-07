@@ -12,22 +12,24 @@ namespace BLL
     {
         private static ProductsBLL instance;
 
-        public ProductsBLL()
-        {
-
-        }
-
         public static ProductsBLL Instance
         {
             get
             {
-                if(instance == null)
+                if (instance == null)
                 {
                     instance = new ProductsBLL();
                 }
                 return instance;
             }
         }
+
+        public ProductsBLL()
+        {
+
+        }
+
+        
 
         public DataTable Select()
         {

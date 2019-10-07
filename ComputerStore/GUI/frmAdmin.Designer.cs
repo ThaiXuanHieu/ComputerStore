@@ -34,7 +34,7 @@
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.btnStatisticalPage = new System.Windows.Forms.Button();
             this.btnCreateOrdersPage = new System.Windows.Forms.Button();
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.Separator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnHelp = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.btnSupplierManagementPage = new System.Windows.Forms.Button();
@@ -48,9 +48,9 @@
             this.pnlTop = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlWrap = new System.Windows.Forms.Panel();
-            this.customerManagementPage = new GUI.CustomerManagementPage();
-            this.supplierManagementPage = new GUI.SupplierManagementPage();
             this.warehouseManagementPage = new GUI.WarehouseManagementPage();
+            this.supplierManagementPage = new GUI.SupplierManagementPage();
+            this.customerManagementPage = new GUI.CustomerManagementPage();
             this.productManagementPage = new GUI.ProductManagementPage();
             this.pnlBottom.SuspendLayout();
             this.pnlLeft.SuspendLayout();
@@ -86,7 +86,7 @@
             this.pnlLeft.BackColor = System.Drawing.Color.White;
             this.pnlLeft.Controls.Add(this.btnStatisticalPage);
             this.pnlLeft.Controls.Add(this.btnCreateOrdersPage);
-            this.pnlLeft.Controls.Add(this.bunifuSeparator1);
+            this.pnlLeft.Controls.Add(this.Separator3);
             this.pnlLeft.Controls.Add(this.btnHelp);
             this.pnlLeft.Controls.Add(this.btnInfo);
             this.pnlLeft.Controls.Add(this.btnSupplierManagementPage);
@@ -131,18 +131,18 @@
             this.btnCreateOrdersPage.Text = "Tạo hóa đơn";
             this.btnCreateOrdersPage.UseVisualStyleBackColor = false;
             // 
-            // bunifuSeparator1
+            // Separator3
             // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(10, 461);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(297, 43);
-            this.bunifuSeparator1.TabIndex = 12;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
+            this.Separator3.BackColor = System.Drawing.Color.Transparent;
+            this.Separator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.Separator3.LineThickness = 1;
+            this.Separator3.Location = new System.Drawing.Point(10, 461);
+            this.Separator3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Separator3.Name = "Separator3";
+            this.Separator3.Size = new System.Drawing.Size(297, 43);
+            this.Separator3.TabIndex = 12;
+            this.Separator3.Transparency = 255;
+            this.Separator3.Vertical = false;
             // 
             // btnHelp
             // 
@@ -302,31 +302,15 @@
             // 
             // pnlWrap
             // 
+            this.pnlWrap.Controls.Add(this.productManagementPage);
             this.pnlWrap.Controls.Add(this.customerManagementPage);
             this.pnlWrap.Controls.Add(this.supplierManagementPage);
             this.pnlWrap.Controls.Add(this.warehouseManagementPage);
-            this.pnlWrap.Controls.Add(this.productManagementPage);
             this.pnlWrap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlWrap.Location = new System.Drawing.Point(317, 46);
             this.pnlWrap.Name = "pnlWrap";
             this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
             this.pnlWrap.TabIndex = 6;
-            // 
-            // customerManagementPage
-            // 
-            this.customerManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customerManagementPage.Location = new System.Drawing.Point(0, 0);
-            this.customerManagementPage.Name = "customerManagementPage";
-            this.customerManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.customerManagementPage.TabIndex = 3;
-            // 
-            // supplierManagementPage
-            // 
-            this.supplierManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.supplierManagementPage.Location = new System.Drawing.Point(0, 0);
-            this.supplierManagementPage.Name = "supplierManagementPage";
-            this.supplierManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.supplierManagementPage.TabIndex = 2;
             // 
             // warehouseManagementPage
             // 
@@ -334,7 +318,23 @@
             this.warehouseManagementPage.Location = new System.Drawing.Point(0, 0);
             this.warehouseManagementPage.Name = "warehouseManagementPage";
             this.warehouseManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.warehouseManagementPage.TabIndex = 1;
+            this.warehouseManagementPage.TabIndex = 0;
+            // 
+            // supplierManagementPage
+            // 
+            this.supplierManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.supplierManagementPage.Location = new System.Drawing.Point(0, 0);
+            this.supplierManagementPage.Name = "supplierManagementPage";
+            this.supplierManagementPage.Size = new System.Drawing.Size(1020, 684);
+            this.supplierManagementPage.TabIndex = 1;
+            // 
+            // customerManagementPage
+            // 
+            this.customerManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customerManagementPage.Location = new System.Drawing.Point(0, 0);
+            this.customerManagementPage.Name = "customerManagementPage";
+            this.customerManagementPage.Size = new System.Drawing.Size(1020, 684);
+            this.customerManagementPage.TabIndex = 2;
             // 
             // productManagementPage
             // 
@@ -342,7 +342,7 @@
             this.productManagementPage.Location = new System.Drawing.Point(0, 0);
             this.productManagementPage.Name = "productManagementPage";
             this.productManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.productManagementPage.TabIndex = 0;
+            this.productManagementPage.TabIndex = 3;
             // 
             // frmAdmin
             // 
@@ -375,7 +375,7 @@
         private System.Windows.Forms.Panel pnlBottom;
         private System.Windows.Forms.Label lblCopyright;
         private System.Windows.Forms.Panel pnlLeft;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuSeparator Separator3;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Button btnCreateOrdersPage;
@@ -389,8 +389,8 @@
         private Bunifu.Framework.UI.BunifuSeparator Separator1;
         private System.Windows.Forms.Panel pnlTop;
         private System.Windows.Forms.PictureBox btnMenu;
-        private System.Windows.Forms.Panel pnlWrap;
         private System.Windows.Forms.Button btnStatisticalPage;
+        private System.Windows.Forms.Panel pnlWrap;
         private ProductManagementPage productManagementPage;
         private CustomerManagementPage customerManagementPage;
         private SupplierManagementPage supplierManagementPage;

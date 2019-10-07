@@ -88,7 +88,7 @@
             this.dgvProducts.EnableHeadersVisualStyles = false;
             this.dgvProducts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dgvProducts.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvProducts.HeaderBgColor = System.Drawing.Color.Empty;
+            //this.dgvProducts.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvProducts.HeaderForeColor = System.Drawing.Color.White;
             this.dgvProducts.Location = new System.Drawing.Point(18, 233);
             this.dgvProducts.Name = "dgvProducts";
@@ -159,7 +159,7 @@
             this.btnDeleteProduct.Name = "btnDeleteProduct";
             this.btnDeleteProduct.Size = new System.Drawing.Size(134, 40);
             this.btnDeleteProduct.TabIndex = 34;
-            this.btnDeleteProduct.Text = "   Sửa";
+            this.btnDeleteProduct.Text = "   Xóa";
             this.btnDeleteProduct.UseVisualStyleBackColor = false;
             // 
             // btnEditProduct

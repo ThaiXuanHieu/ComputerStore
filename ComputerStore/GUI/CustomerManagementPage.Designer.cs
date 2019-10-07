@@ -88,7 +88,7 @@
             this.dgvCustomers.EnableHeadersVisualStyles = false;
             this.dgvCustomers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dgvCustomers.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvCustomers.HeaderBgColor = System.Drawing.Color.Empty;
+            //this.dgvCustomers.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvCustomers.HeaderForeColor = System.Drawing.Color.White;
             this.dgvCustomers.Location = new System.Drawing.Point(18, 233);
             this.dgvCustomers.Name = "dgvCustomers";
@@ -159,7 +159,7 @@
             this.btnDeleteCustomer.Name = "btnDeleteCustomer";
             this.btnDeleteCustomer.Size = new System.Drawing.Size(134, 40);
             this.btnDeleteCustomer.TabIndex = 42;
-            this.btnDeleteCustomer.Text = "   Sửa";
+            this.btnDeleteCustomer.Text = "   Xóa";
             this.btnDeleteCustomer.UseVisualStyleBackColor = false;
             // 
             // btnEditCustomer

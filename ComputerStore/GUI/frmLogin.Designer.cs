@@ -53,6 +53,7 @@
             // 
             // pnlTop
             // 
+            this.pnlTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
             this.pnlTop.Controls.Add(this.lbl);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
@@ -64,7 +65,7 @@
             // 
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.lbl.ForeColor = System.Drawing.Color.White;
             this.lbl.Location = new System.Drawing.Point(75, 9);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(225, 38);
@@ -240,6 +241,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(377, 430);
             this.Controls.Add(this.pnlSignin);
             this.Controls.Add(this.pnlTop);

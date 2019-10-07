@@ -51,7 +51,7 @@ namespace GUI
             productManagementPage.Visible = false;
             warehouseManagementPage.Visible = false;
             customerManagementPage.Visible = false;
-            
+
         }
     }
 }

@@ -12,16 +12,11 @@ namespace DAL
         private DBConnection dbConnection;
         private static ProductsDAL instance;
 
-        public ProductsDAL()
-        {
-            dbConnection = new DBConnection();
-        }
-
         public static ProductsDAL Instance
         {
             get
             {
-                if(instance == null)
+                if (instance == null)
                 {
                     instance = new ProductsDAL();
                 }
@@ -29,13 +24,19 @@ namespace DAL
             }
         }
 
+        public ProductsDAL()
+        {
+            dbConnection = new DBConnection();
+        }
+
+        
+
         public DataTable Select()
         {
-            string query = "SELECT * FROM Products WHERE CategoryID = @CategoryID";
-            SqlParameter[] parameters = new SqlParameter[1];
-            parameters[0] = new SqlParameter("@CategoryID", SqlDbType.VarChar);
-            parameters[0].Value = 1;
-            return dbConnection.ExecuteSelectQuery(query, parameters);
+            string query = "SELECT p.ProductID, p.ProductName, c.CategoryName, s.CompanyName, p.Unit, p.Price " +
+                "FROM Products AS p INNER JOIN Categories AS c" 
+                + " ON p.CategoryID = c.CategoryID INNER JOIN Suppliers AS s ON p.SupplierID = s.SupplierID";
+            return dbConnection.ExecuteSelectQuery(query);
         }
     }
 }

@@ -39,6 +39,22 @@ namespace DAL
             return connection;
         }
 
+        public DataTable ExecuteSelectQuery(string query)
+        {
+            DataTable dataTable = new DataTable();
+            DataSet dataSet = new DataSet();
+            using (command = new SqlCommand())
+            {
+                command.Connection = openConnection();
+                command.CommandText = query;
+                command.ExecuteNonQuery();
+                adapter.SelectCommand = command;
+                adapter.Fill(dataSet);
+                dataTable = dataSet.Tables[0];
+            }
+            return dataTable;
+        }
+
         public DataTable ExecuteSelectQuery(string query, SqlParameter[] parameters)
         {
             DataTable dataTable = new DataTable();
