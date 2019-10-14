@@ -7,3 +7,5 @@ F:\Software\ComputerStore\ComputerStore\BLL\obj\Debug\BLL.csprojAssemblyReferenc
 F:\Software\ComputerStore\ComputerStore\BLL\bin\Debug\DAL.dll
 F:\Software\ComputerStore\ComputerStore\BLL\bin\Debug\DAL.pdb
 F:\Software\ComputerStore\ComputerStore\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\Software\ComputerStore\ComputerStore\BLL\bin\Debug\DTO.dll
+F:\Software\ComputerStore\ComputerStore\BLL\bin\Debug\DTO.pdb

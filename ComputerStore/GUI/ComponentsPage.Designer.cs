@@ -35,122 +35,122 @@
             this.pnlCPU1 = new System.Windows.Forms.Panel();
             this.lblUnitPriceCPU1 = new System.Windows.Forms.Label();
             this.lblNameCUP1 = new System.Windows.Forms.Label();
+            this.picCPU1 = new System.Windows.Forms.PictureBox();
             this.pnlCPU2 = new System.Windows.Forms.Panel();
             this.lblUnitPriceCPU2 = new System.Windows.Forms.Label();
             this.lblNameCUP2 = new System.Windows.Forms.Label();
+            this.picCPU2 = new System.Windows.Forms.PictureBox();
             this.pnlCPU3 = new System.Windows.Forms.Panel();
             this.lblUnitPriceCPU3 = new System.Windows.Forms.Label();
             this.lblNameCUP3 = new System.Windows.Forms.Label();
+            this.picCPU3 = new System.Windows.Forms.PictureBox();
             this.pnlCPU4 = new System.Windows.Forms.Panel();
             this.lblUnitPriceCPU4 = new System.Windows.Forms.Label();
             this.lblNameCUP4 = new System.Windows.Forms.Label();
+            this.picCPU4 = new System.Windows.Forms.PictureBox();
             this.pnlCPU5 = new System.Windows.Forms.Panel();
             this.lblUnitPriceCPU5 = new System.Windows.Forms.Label();
             this.lblNameCUP5 = new System.Windows.Forms.Label();
+            this.picCPU5 = new System.Windows.Forms.PictureBox();
             this.pnlCPU6 = new System.Windows.Forms.Panel();
             this.lblUnitPriceCPU6 = new System.Windows.Forms.Label();
             this.lblNameCUP6 = new System.Windows.Forms.Label();
+            this.picCPU6 = new System.Windows.Forms.PictureBox();
             this.TabCardGraphic = new MetroFramework.Controls.MetroTabPage();
             this.fPnlWrapCardGraphic = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceKeyboard1 = new System.Windows.Forms.Label();
-            this.lblNameKeyboard1 = new System.Windows.Forms.Label();
+            this.lblUnitPriceCard1 = new System.Windows.Forms.Label();
+            this.lblNameCard1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceKeyboard2 = new System.Windows.Forms.Label();
-            this.lblNameKeyboard2 = new System.Windows.Forms.Label();
+            this.lblUnitPriceCard2 = new System.Windows.Forms.Label();
+            this.lblNameCard2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceKeyboard3 = new System.Windows.Forms.Label();
-            this.lblNameKeyboard3 = new System.Windows.Forms.Label();
+            this.lblUnitPriceCard3 = new System.Windows.Forms.Label();
+            this.lblNameCard3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceKeyboard4 = new System.Windows.Forms.Label();
-            this.lblNameKeyboard4 = new System.Windows.Forms.Label();
+            this.lblUnitPriceCard4 = new System.Windows.Forms.Label();
+            this.lblNameCard4 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceKeyboard5 = new System.Windows.Forms.Label();
-            this.lblNameKeyboard5 = new System.Windows.Forms.Label();
+            this.lblUnitPriceCard5 = new System.Windows.Forms.Label();
+            this.lblNameCard5 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceKeyboard6 = new System.Windows.Forms.Label();
-            this.lblNameKeyboard6 = new System.Windows.Forms.Label();
+            this.lblUnitPriceCard6 = new System.Windows.Forms.Label();
+            this.lblNameCard6 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.TabHardDisk = new MetroFramework.Controls.MetroTabPage();
             this.fPnlWrapHardDisk = new System.Windows.Forms.FlowLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceHeadphone1 = new System.Windows.Forms.Label();
-            this.lblNameHeadphone1 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceHeadphone2 = new System.Windows.Forms.Label();
-            this.lblNameHeadphone2 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceHeadphone3 = new System.Windows.Forms.Label();
-            this.lblNameHeadphone3 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceHeadphone4 = new System.Windows.Forms.Label();
-            this.lblNameHeadphone4 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceHeadphone5 = new System.Windows.Forms.Label();
-            this.lblNameHeadphone5 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.lblUnitPriceHeadphone6 = new System.Windows.Forms.Label();
-            this.lblNamePCWorkstation6 = new System.Windows.Forms.Label();
-            this.picCPU1 = new System.Windows.Forms.PictureBox();
-            this.picCPU2 = new System.Windows.Forms.PictureBox();
-            this.picCPU3 = new System.Windows.Forms.PictureBox();
-            this.picCPU4 = new System.Windows.Forms.PictureBox();
-            this.picCPU5 = new System.Windows.Forms.PictureBox();
-            this.picCPU6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.lblUnitPriceHardDisk1 = new System.Windows.Forms.Label();
+            this.lblNameHardDisk1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.lblUnitPriceHardDisk2 = new System.Windows.Forms.Label();
+            this.lblNameHardDisk2 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.lblUnitPriceHardDisk3 = new System.Windows.Forms.Label();
+            this.lblNameHardDisk3 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.lblUnitPriceHardDisk4 = new System.Windows.Forms.Label();
+            this.lblNameHardDisk4 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.lblUnitPriceHardDisk5 = new System.Windows.Forms.Label();
+            this.lblNameHardDisk5 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.lblUnitPriceHardDisk6 = new System.Windows.Forms.Label();
+            this.lblNameHardDisk6 = new System.Windows.Forms.Label();
             this.lblNameHeadphone6 = new System.Windows.Forms.PictureBox();
             this.lblTitlePage = new System.Windows.Forms.Label();
             this.TabControlComponents.SuspendLayout();
             this.TabCPU.SuspendLayout();
             this.fPnlWrapCPU.SuspendLayout();
             this.pnlCPU1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU1)).BeginInit();
             this.pnlCPU2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU2)).BeginInit();
             this.pnlCPU3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU3)).BeginInit();
             this.pnlCPU4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU4)).BeginInit();
             this.pnlCPU5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU5)).BeginInit();
             this.pnlCPU6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU6)).BeginInit();
             this.TabCardGraphic.SuspendLayout();
             this.fPnlWrapCardGraphic.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.TabHardDisk.SuspendLayout();
             this.fPnlWrapHardDisk.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lblNameHeadphone6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -226,8 +226,18 @@
             this.lblNameCUP1.Name = "lblNameCUP1";
             this.lblNameCUP1.Size = new System.Drawing.Size(226, 37);
             this.lblNameCUP1.TabIndex = 5;
-            this.lblNameCUP1.Text = "Adguard";
+            this.lblNameCUP1.Text = "CUP 1";
             this.lblNameCUP1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picCPU1
+            // 
+            this.picCPU1.Image = ((System.Drawing.Image)(resources.GetObject("picCPU1.Image")));
+            this.picCPU1.Location = new System.Drawing.Point(24, 13);
+            this.picCPU1.Name = "picCPU1";
+            this.picCPU1.Size = new System.Drawing.Size(226, 161);
+            this.picCPU1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCPU1.TabIndex = 1;
+            this.picCPU1.TabStop = false;
             // 
             // pnlCPU2
             // 
@@ -258,8 +268,18 @@
             this.lblNameCUP2.Name = "lblNameCUP2";
             this.lblNameCUP2.Size = new System.Drawing.Size(226, 37);
             this.lblNameCUP2.TabIndex = 5;
-            this.lblNameCUP2.Text = "Bkav Pro";
+            this.lblNameCUP2.Text = "CUP 2";
             this.lblNameCUP2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picCPU2
+            // 
+            this.picCPU2.Image = ((System.Drawing.Image)(resources.GetObject("picCPU2.Image")));
+            this.picCPU2.Location = new System.Drawing.Point(24, 13);
+            this.picCPU2.Name = "picCPU2";
+            this.picCPU2.Size = new System.Drawing.Size(226, 161);
+            this.picCPU2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCPU2.TabIndex = 1;
+            this.picCPU2.TabStop = false;
             // 
             // pnlCPU3
             // 
@@ -290,8 +310,18 @@
             this.lblNameCUP3.Name = "lblNameCUP3";
             this.lblNameCUP3.Size = new System.Drawing.Size(226, 37);
             this.lblNameCUP3.TabIndex = 5;
-            this.lblNameCUP3.Text = "Bkav Pro";
+            this.lblNameCUP3.Text = "CUP 3";
             this.lblNameCUP3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picCPU3
+            // 
+            this.picCPU3.Image = ((System.Drawing.Image)(resources.GetObject("picCPU3.Image")));
+            this.picCPU3.Location = new System.Drawing.Point(24, 13);
+            this.picCPU3.Name = "picCPU3";
+            this.picCPU3.Size = new System.Drawing.Size(226, 161);
+            this.picCPU3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCPU3.TabIndex = 1;
+            this.picCPU3.TabStop = false;
             // 
             // pnlCPU4
             // 
@@ -322,8 +352,18 @@
             this.lblNameCUP4.Name = "lblNameCUP4";
             this.lblNameCUP4.Size = new System.Drawing.Size(226, 37);
             this.lblNameCUP4.TabIndex = 5;
-            this.lblNameCUP4.Text = "Microsoft Office";
+            this.lblNameCUP4.Text = "CUP 4";
             this.lblNameCUP4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picCPU4
+            // 
+            this.picCPU4.Image = ((System.Drawing.Image)(resources.GetObject("picCPU4.Image")));
+            this.picCPU4.Location = new System.Drawing.Point(22, 13);
+            this.picCPU4.Name = "picCPU4";
+            this.picCPU4.Size = new System.Drawing.Size(226, 161);
+            this.picCPU4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCPU4.TabIndex = 0;
+            this.picCPU4.TabStop = false;
             // 
             // pnlCPU5
             // 
@@ -354,8 +394,18 @@
             this.lblNameCUP5.Name = "lblNameCUP5";
             this.lblNameCUP5.Size = new System.Drawing.Size(226, 37);
             this.lblNameCUP5.TabIndex = 3;
-            this.lblNameCUP5.Text = "Kasspersky";
+            this.lblNameCUP5.Text = "CUP 5";
             this.lblNameCUP5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picCPU5
+            // 
+            this.picCPU5.Image = ((System.Drawing.Image)(resources.GetObject("picCPU5.Image")));
+            this.picCPU5.Location = new System.Drawing.Point(24, 13);
+            this.picCPU5.Name = "picCPU5";
+            this.picCPU5.Size = new System.Drawing.Size(226, 161);
+            this.picCPU5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCPU5.TabIndex = 1;
+            this.picCPU5.TabStop = false;
             // 
             // pnlCPU6
             // 
@@ -386,8 +436,18 @@
             this.lblNameCUP6.Name = "lblNameCUP6";
             this.lblNameCUP6.Size = new System.Drawing.Size(226, 37);
             this.lblNameCUP6.TabIndex = 1;
-            this.lblNameCUP6.Text = "Bkav Pro";
+            this.lblNameCUP6.Text = "CUP 6";
             this.lblNameCUP6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picCPU6
+            // 
+            this.picCPU6.Image = ((System.Drawing.Image)(resources.GetObject("picCPU6.Image")));
+            this.picCPU6.Location = new System.Drawing.Point(22, 13);
+            this.picCPU6.Name = "picCPU6";
+            this.picCPU6.Size = new System.Drawing.Size(226, 161);
+            this.picCPU6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCPU6.TabIndex = 0;
+            this.picCPU6.TabStop = false;
             // 
             // TabCardGraphic
             // 
@@ -422,8 +482,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.lblUnitPriceKeyboard1);
-            this.panel1.Controls.Add(this.lblNameKeyboard1);
+            this.panel1.Controls.Add(this.lblUnitPriceCard1);
+            this.panel1.Controls.Add(this.lblNameCard1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -431,31 +491,41 @@
             this.panel1.Size = new System.Drawing.Size(274, 277);
             this.panel1.TabIndex = 20;
             // 
-            // lblUnitPriceKeyboard1
+            // lblUnitPriceCard1
             // 
-            this.lblUnitPriceKeyboard1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceKeyboard1.Location = new System.Drawing.Point(24, 225);
-            this.lblUnitPriceKeyboard1.Name = "lblUnitPriceKeyboard1";
-            this.lblUnitPriceKeyboard1.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceKeyboard1.TabIndex = 6;
-            this.lblUnitPriceKeyboard1.Text = "299.000 VND";
-            this.lblUnitPriceKeyboard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUnitPriceCard1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceCard1.Location = new System.Drawing.Point(24, 225);
+            this.lblUnitPriceCard1.Name = "lblUnitPriceCard1";
+            this.lblUnitPriceCard1.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceCard1.TabIndex = 6;
+            this.lblUnitPriceCard1.Text = "299.000 VND";
+            this.lblUnitPriceCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblNameKeyboard1
+            // lblNameCard1
             // 
-            this.lblNameKeyboard1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameKeyboard1.Location = new System.Drawing.Point(24, 188);
-            this.lblNameKeyboard1.Name = "lblNameKeyboard1";
-            this.lblNameKeyboard1.Size = new System.Drawing.Size(226, 37);
-            this.lblNameKeyboard1.TabIndex = 5;
-            this.lblNameKeyboard1.Text = "Adguard";
-            this.lblNameKeyboard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNameCard1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameCard1.Location = new System.Drawing.Point(24, 188);
+            this.lblNameCard1.Name = "lblNameCard1";
+            this.lblNameCard1.Size = new System.Drawing.Size(226, 37);
+            this.lblNameCard1.TabIndex = 5;
+            this.lblNameCard1.Text = "CARD 1";
+            this.lblNameCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.lblUnitPriceKeyboard2);
-            this.panel2.Controls.Add(this.lblNameKeyboard2);
+            this.panel2.Controls.Add(this.lblUnitPriceCard2);
+            this.panel2.Controls.Add(this.lblNameCard2);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel2.Location = new System.Drawing.Point(283, 3);
@@ -463,31 +533,41 @@
             this.panel2.Size = new System.Drawing.Size(274, 277);
             this.panel2.TabIndex = 23;
             // 
-            // lblUnitPriceKeyboard2
+            // lblUnitPriceCard2
             // 
-            this.lblUnitPriceKeyboard2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceKeyboard2.Location = new System.Drawing.Point(24, 230);
-            this.lblUnitPriceKeyboard2.Name = "lblUnitPriceKeyboard2";
-            this.lblUnitPriceKeyboard2.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceKeyboard2.TabIndex = 6;
-            this.lblUnitPriceKeyboard2.Text = "299.000 VND";
-            this.lblUnitPriceKeyboard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUnitPriceCard2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceCard2.Location = new System.Drawing.Point(24, 230);
+            this.lblUnitPriceCard2.Name = "lblUnitPriceCard2";
+            this.lblUnitPriceCard2.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceCard2.TabIndex = 6;
+            this.lblUnitPriceCard2.Text = "299.000 VND";
+            this.lblUnitPriceCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblNameKeyboard2
+            // lblNameCard2
             // 
-            this.lblNameKeyboard2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameKeyboard2.Location = new System.Drawing.Point(24, 193);
-            this.lblNameKeyboard2.Name = "lblNameKeyboard2";
-            this.lblNameKeyboard2.Size = new System.Drawing.Size(226, 37);
-            this.lblNameKeyboard2.TabIndex = 5;
-            this.lblNameKeyboard2.Text = "Bkav Pro";
-            this.lblNameKeyboard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNameCard2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameCard2.Location = new System.Drawing.Point(24, 193);
+            this.lblNameCard2.Name = "lblNameCard2";
+            this.lblNameCard2.Size = new System.Drawing.Size(226, 37);
+            this.lblNameCard2.TabIndex = 5;
+            this.lblNameCard2.Text = "CARD 2";
+            this.lblNameCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.lblUnitPriceKeyboard3);
-            this.panel3.Controls.Add(this.lblNameKeyboard3);
+            this.panel3.Controls.Add(this.lblUnitPriceCard3);
+            this.panel3.Controls.Add(this.lblNameCard3);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel3.Location = new System.Drawing.Point(563, 3);
@@ -495,31 +575,41 @@
             this.panel3.Size = new System.Drawing.Size(274, 277);
             this.panel3.TabIndex = 22;
             // 
-            // lblUnitPriceKeyboard3
+            // lblUnitPriceCard3
             // 
-            this.lblUnitPriceKeyboard3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceKeyboard3.Location = new System.Drawing.Point(24, 230);
-            this.lblUnitPriceKeyboard3.Name = "lblUnitPriceKeyboard3";
-            this.lblUnitPriceKeyboard3.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceKeyboard3.TabIndex = 6;
-            this.lblUnitPriceKeyboard3.Text = "299.000 VND";
-            this.lblUnitPriceKeyboard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUnitPriceCard3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceCard3.Location = new System.Drawing.Point(24, 230);
+            this.lblUnitPriceCard3.Name = "lblUnitPriceCard3";
+            this.lblUnitPriceCard3.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceCard3.TabIndex = 6;
+            this.lblUnitPriceCard3.Text = "299.000 VND";
+            this.lblUnitPriceCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblNameKeyboard3
+            // lblNameCard3
             // 
-            this.lblNameKeyboard3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameKeyboard3.Location = new System.Drawing.Point(24, 193);
-            this.lblNameKeyboard3.Name = "lblNameKeyboard3";
-            this.lblNameKeyboard3.Size = new System.Drawing.Size(226, 37);
-            this.lblNameKeyboard3.TabIndex = 5;
-            this.lblNameKeyboard3.Text = "Bkav Pro";
-            this.lblNameKeyboard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNameCard3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameCard3.Location = new System.Drawing.Point(24, 193);
+            this.lblNameCard3.Name = "lblNameCard3";
+            this.lblNameCard3.Size = new System.Drawing.Size(226, 37);
+            this.lblNameCard3.TabIndex = 5;
+            this.lblNameCard3.Text = "CARD 3";
+            this.lblNameCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.lblUnitPriceKeyboard4);
-            this.panel4.Controls.Add(this.lblNameKeyboard4);
+            this.panel4.Controls.Add(this.lblUnitPriceCard4);
+            this.panel4.Controls.Add(this.lblNameCard4);
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel4.Location = new System.Drawing.Point(3, 286);
@@ -527,31 +617,41 @@
             this.panel4.Size = new System.Drawing.Size(274, 277);
             this.panel4.TabIndex = 21;
             // 
-            // lblUnitPriceKeyboard4
+            // lblUnitPriceCard4
             // 
-            this.lblUnitPriceKeyboard4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceKeyboard4.Location = new System.Drawing.Point(22, 230);
-            this.lblUnitPriceKeyboard4.Name = "lblUnitPriceKeyboard4";
-            this.lblUnitPriceKeyboard4.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceKeyboard4.TabIndex = 6;
-            this.lblUnitPriceKeyboard4.Text = "299.000 VND";
-            this.lblUnitPriceKeyboard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUnitPriceCard4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceCard4.Location = new System.Drawing.Point(22, 230);
+            this.lblUnitPriceCard4.Name = "lblUnitPriceCard4";
+            this.lblUnitPriceCard4.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceCard4.TabIndex = 6;
+            this.lblUnitPriceCard4.Text = "299.000 VND";
+            this.lblUnitPriceCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblNameKeyboard4
+            // lblNameCard4
             // 
-            this.lblNameKeyboard4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameKeyboard4.Location = new System.Drawing.Point(22, 193);
-            this.lblNameKeyboard4.Name = "lblNameKeyboard4";
-            this.lblNameKeyboard4.Size = new System.Drawing.Size(226, 37);
-            this.lblNameKeyboard4.TabIndex = 5;
-            this.lblNameKeyboard4.Text = "Microsoft Office";
-            this.lblNameKeyboard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNameCard4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameCard4.Location = new System.Drawing.Point(22, 193);
+            this.lblNameCard4.Name = "lblNameCard4";
+            this.lblNameCard4.Size = new System.Drawing.Size(226, 37);
+            this.lblNameCard4.TabIndex = 5;
+            this.lblNameCard4.Text = "CARD 4";
+            this.lblNameCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(22, 13);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.lblUnitPriceKeyboard5);
-            this.panel5.Controls.Add(this.lblNameKeyboard5);
+            this.panel5.Controls.Add(this.lblUnitPriceCard5);
+            this.panel5.Controls.Add(this.lblNameCard5);
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel5.Location = new System.Drawing.Point(283, 286);
@@ -559,31 +659,41 @@
             this.panel5.Size = new System.Drawing.Size(274, 277);
             this.panel5.TabIndex = 19;
             // 
-            // lblUnitPriceKeyboard5
+            // lblUnitPriceCard5
             // 
-            this.lblUnitPriceKeyboard5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceKeyboard5.Location = new System.Drawing.Point(24, 225);
-            this.lblUnitPriceKeyboard5.Name = "lblUnitPriceKeyboard5";
-            this.lblUnitPriceKeyboard5.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceKeyboard5.TabIndex = 4;
-            this.lblUnitPriceKeyboard5.Text = "299.000 VND";
-            this.lblUnitPriceKeyboard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUnitPriceCard5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceCard5.Location = new System.Drawing.Point(24, 225);
+            this.lblUnitPriceCard5.Name = "lblUnitPriceCard5";
+            this.lblUnitPriceCard5.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceCard5.TabIndex = 4;
+            this.lblUnitPriceCard5.Text = "299.000 VND";
+            this.lblUnitPriceCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblNameKeyboard5
+            // lblNameCard5
             // 
-            this.lblNameKeyboard5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameKeyboard5.Location = new System.Drawing.Point(24, 188);
-            this.lblNameKeyboard5.Name = "lblNameKeyboard5";
-            this.lblNameKeyboard5.Size = new System.Drawing.Size(226, 37);
-            this.lblNameKeyboard5.TabIndex = 3;
-            this.lblNameKeyboard5.Text = "Kasspersky";
-            this.lblNameKeyboard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNameCard5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameCard5.Location = new System.Drawing.Point(24, 188);
+            this.lblNameCard5.Name = "lblNameCard5";
+            this.lblNameCard5.Size = new System.Drawing.Size(226, 37);
+            this.lblNameCard5.TabIndex = 3;
+            this.lblNameCard5.Text = "CARD 5";
+            this.lblNameCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.lblUnitPriceKeyboard6);
-            this.panel6.Controls.Add(this.lblNameKeyboard6);
+            this.panel6.Controls.Add(this.lblUnitPriceCard6);
+            this.panel6.Controls.Add(this.lblNameCard6);
             this.panel6.Controls.Add(this.pictureBox6);
             this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel6.Location = new System.Drawing.Point(563, 286);
@@ -591,25 +701,35 @@
             this.panel6.Size = new System.Drawing.Size(274, 277);
             this.panel6.TabIndex = 18;
             // 
-            // lblUnitPriceKeyboard6
+            // lblUnitPriceCard6
             // 
-            this.lblUnitPriceKeyboard6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceKeyboard6.Location = new System.Drawing.Point(22, 225);
-            this.lblUnitPriceKeyboard6.Name = "lblUnitPriceKeyboard6";
-            this.lblUnitPriceKeyboard6.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceKeyboard6.TabIndex = 2;
-            this.lblUnitPriceKeyboard6.Text = "299.000 VND";
-            this.lblUnitPriceKeyboard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUnitPriceCard6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceCard6.Location = new System.Drawing.Point(22, 225);
+            this.lblUnitPriceCard6.Name = "lblUnitPriceCard6";
+            this.lblUnitPriceCard6.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceCard6.TabIndex = 2;
+            this.lblUnitPriceCard6.Text = "299.000 VND";
+            this.lblUnitPriceCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblNameKeyboard6
+            // lblNameCard6
             // 
-            this.lblNameKeyboard6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameKeyboard6.Location = new System.Drawing.Point(22, 188);
-            this.lblNameKeyboard6.Name = "lblNameKeyboard6";
-            this.lblNameKeyboard6.Size = new System.Drawing.Size(226, 37);
-            this.lblNameKeyboard6.TabIndex = 1;
-            this.lblNameKeyboard6.Text = "Bkav Pro";
-            this.lblNameKeyboard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNameCard6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameCard6.Location = new System.Drawing.Point(22, 188);
+            this.lblNameCard6.Name = "lblNameCard6";
+            this.lblNameCard6.Size = new System.Drawing.Size(226, 37);
+            this.lblNameCard6.TabIndex = 1;
+            this.lblNameCard6.Text = "CARD 6";
+            this.lblNameCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(22, 13);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
             // 
             // TabHardDisk
             // 
@@ -645,8 +765,8 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.lblUnitPriceHeadphone1);
-            this.panel7.Controls.Add(this.lblNameHeadphone1);
+            this.panel7.Controls.Add(this.lblUnitPriceHardDisk1);
+            this.panel7.Controls.Add(this.lblNameHardDisk1);
             this.panel7.Controls.Add(this.pictureBox7);
             this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel7.Location = new System.Drawing.Point(3, 3);
@@ -654,305 +774,25 @@
             this.panel7.Size = new System.Drawing.Size(274, 277);
             this.panel7.TabIndex = 20;
             // 
-            // lblUnitPriceHeadphone1
+            // lblUnitPriceHardDisk1
             // 
-            this.lblUnitPriceHeadphone1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceHeadphone1.Location = new System.Drawing.Point(24, 225);
-            this.lblUnitPriceHeadphone1.Name = "lblUnitPriceHeadphone1";
-            this.lblUnitPriceHeadphone1.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceHeadphone1.TabIndex = 6;
-            this.lblUnitPriceHeadphone1.Text = "299.000 VND";
-            this.lblUnitPriceHeadphone1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUnitPriceHardDisk1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceHardDisk1.Location = new System.Drawing.Point(24, 225);
+            this.lblUnitPriceHardDisk1.Name = "lblUnitPriceHardDisk1";
+            this.lblUnitPriceHardDisk1.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceHardDisk1.TabIndex = 6;
+            this.lblUnitPriceHardDisk1.Text = "299.000 VND";
+            this.lblUnitPriceHardDisk1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblNameHeadphone1
+            // lblNameHardDisk1
             // 
-            this.lblNameHeadphone1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameHeadphone1.Location = new System.Drawing.Point(24, 188);
-            this.lblNameHeadphone1.Name = "lblNameHeadphone1";
-            this.lblNameHeadphone1.Size = new System.Drawing.Size(226, 37);
-            this.lblNameHeadphone1.TabIndex = 5;
-            this.lblNameHeadphone1.Text = "Adguard";
-            this.lblNameHeadphone1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.lblUnitPriceHeadphone2);
-            this.panel8.Controls.Add(this.lblNameHeadphone2);
-            this.panel8.Controls.Add(this.pictureBox8);
-            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel8.Location = new System.Drawing.Point(283, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(274, 277);
-            this.panel8.TabIndex = 23;
-            // 
-            // lblUnitPriceHeadphone2
-            // 
-            this.lblUnitPriceHeadphone2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceHeadphone2.Location = new System.Drawing.Point(24, 230);
-            this.lblUnitPriceHeadphone2.Name = "lblUnitPriceHeadphone2";
-            this.lblUnitPriceHeadphone2.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceHeadphone2.TabIndex = 6;
-            this.lblUnitPriceHeadphone2.Text = "299.000 VND";
-            this.lblUnitPriceHeadphone2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblNameHeadphone2
-            // 
-            this.lblNameHeadphone2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameHeadphone2.Location = new System.Drawing.Point(24, 193);
-            this.lblNameHeadphone2.Name = "lblNameHeadphone2";
-            this.lblNameHeadphone2.Size = new System.Drawing.Size(226, 37);
-            this.lblNameHeadphone2.TabIndex = 5;
-            this.lblNameHeadphone2.Text = "Bkav Pro";
-            this.lblNameHeadphone2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.lblUnitPriceHeadphone3);
-            this.panel9.Controls.Add(this.lblNameHeadphone3);
-            this.panel9.Controls.Add(this.pictureBox9);
-            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel9.Location = new System.Drawing.Point(563, 3);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(274, 277);
-            this.panel9.TabIndex = 22;
-            // 
-            // lblUnitPriceHeadphone3
-            // 
-            this.lblUnitPriceHeadphone3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceHeadphone3.Location = new System.Drawing.Point(24, 230);
-            this.lblUnitPriceHeadphone3.Name = "lblUnitPriceHeadphone3";
-            this.lblUnitPriceHeadphone3.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceHeadphone3.TabIndex = 6;
-            this.lblUnitPriceHeadphone3.Text = "299.000 VND";
-            this.lblUnitPriceHeadphone3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblNameHeadphone3
-            // 
-            this.lblNameHeadphone3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameHeadphone3.Location = new System.Drawing.Point(24, 193);
-            this.lblNameHeadphone3.Name = "lblNameHeadphone3";
-            this.lblNameHeadphone3.Size = new System.Drawing.Size(226, 37);
-            this.lblNameHeadphone3.TabIndex = 5;
-            this.lblNameHeadphone3.Text = "Bkav Pro";
-            this.lblNameHeadphone3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.lblUnitPriceHeadphone4);
-            this.panel10.Controls.Add(this.lblNameHeadphone4);
-            this.panel10.Controls.Add(this.pictureBox10);
-            this.panel10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel10.Location = new System.Drawing.Point(3, 286);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(274, 277);
-            this.panel10.TabIndex = 21;
-            // 
-            // lblUnitPriceHeadphone4
-            // 
-            this.lblUnitPriceHeadphone4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceHeadphone4.Location = new System.Drawing.Point(22, 230);
-            this.lblUnitPriceHeadphone4.Name = "lblUnitPriceHeadphone4";
-            this.lblUnitPriceHeadphone4.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceHeadphone4.TabIndex = 6;
-            this.lblUnitPriceHeadphone4.Text = "299.000 VND";
-            this.lblUnitPriceHeadphone4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblNameHeadphone4
-            // 
-            this.lblNameHeadphone4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameHeadphone4.Location = new System.Drawing.Point(22, 193);
-            this.lblNameHeadphone4.Name = "lblNameHeadphone4";
-            this.lblNameHeadphone4.Size = new System.Drawing.Size(226, 37);
-            this.lblNameHeadphone4.TabIndex = 5;
-            this.lblNameHeadphone4.Text = "Microsoft Office";
-            this.lblNameHeadphone4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Controls.Add(this.lblUnitPriceHeadphone5);
-            this.panel11.Controls.Add(this.lblNameHeadphone5);
-            this.panel11.Controls.Add(this.pictureBox11);
-            this.panel11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel11.Location = new System.Drawing.Point(283, 286);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(274, 277);
-            this.panel11.TabIndex = 19;
-            // 
-            // lblUnitPriceHeadphone5
-            // 
-            this.lblUnitPriceHeadphone5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceHeadphone5.Location = new System.Drawing.Point(24, 225);
-            this.lblUnitPriceHeadphone5.Name = "lblUnitPriceHeadphone5";
-            this.lblUnitPriceHeadphone5.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceHeadphone5.TabIndex = 4;
-            this.lblUnitPriceHeadphone5.Text = "299.000 VND";
-            this.lblUnitPriceHeadphone5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblNameHeadphone5
-            // 
-            this.lblNameHeadphone5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameHeadphone5.Location = new System.Drawing.Point(24, 188);
-            this.lblNameHeadphone5.Name = "lblNameHeadphone5";
-            this.lblNameHeadphone5.Size = new System.Drawing.Size(226, 37);
-            this.lblNameHeadphone5.TabIndex = 3;
-            this.lblNameHeadphone5.Text = "Kasspersky";
-            this.lblNameHeadphone5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Controls.Add(this.lblUnitPriceHeadphone6);
-            this.panel12.Controls.Add(this.lblNamePCWorkstation6);
-            this.panel12.Controls.Add(this.lblNameHeadphone6);
-            this.panel12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel12.Location = new System.Drawing.Point(563, 286);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(274, 277);
-            this.panel12.TabIndex = 18;
-            // 
-            // lblUnitPriceHeadphone6
-            // 
-            this.lblUnitPriceHeadphone6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceHeadphone6.Location = new System.Drawing.Point(22, 225);
-            this.lblUnitPriceHeadphone6.Name = "lblUnitPriceHeadphone6";
-            this.lblUnitPriceHeadphone6.Size = new System.Drawing.Size(226, 37);
-            this.lblUnitPriceHeadphone6.TabIndex = 2;
-            this.lblUnitPriceHeadphone6.Text = "299.000 VND";
-            this.lblUnitPriceHeadphone6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblNamePCWorkstation6
-            // 
-            this.lblNamePCWorkstation6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNamePCWorkstation6.Location = new System.Drawing.Point(22, 188);
-            this.lblNamePCWorkstation6.Name = "lblNamePCWorkstation6";
-            this.lblNamePCWorkstation6.Size = new System.Drawing.Size(226, 37);
-            this.lblNamePCWorkstation6.TabIndex = 1;
-            this.lblNamePCWorkstation6.Text = "Bkav Pro";
-            this.lblNamePCWorkstation6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picCPU1
-            // 
-            this.picCPU1.Image = ((System.Drawing.Image)(resources.GetObject("picCPU1.Image")));
-            this.picCPU1.Location = new System.Drawing.Point(24, 13);
-            this.picCPU1.Name = "picCPU1";
-            this.picCPU1.Size = new System.Drawing.Size(226, 161);
-            this.picCPU1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCPU1.TabIndex = 1;
-            this.picCPU1.TabStop = false;
-            // 
-            // picCPU2
-            // 
-            this.picCPU2.Image = ((System.Drawing.Image)(resources.GetObject("picCPU2.Image")));
-            this.picCPU2.Location = new System.Drawing.Point(24, 13);
-            this.picCPU2.Name = "picCPU2";
-            this.picCPU2.Size = new System.Drawing.Size(226, 161);
-            this.picCPU2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCPU2.TabIndex = 1;
-            this.picCPU2.TabStop = false;
-            // 
-            // picCPU3
-            // 
-            this.picCPU3.Image = ((System.Drawing.Image)(resources.GetObject("picCPU3.Image")));
-            this.picCPU3.Location = new System.Drawing.Point(24, 13);
-            this.picCPU3.Name = "picCPU3";
-            this.picCPU3.Size = new System.Drawing.Size(226, 161);
-            this.picCPU3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCPU3.TabIndex = 1;
-            this.picCPU3.TabStop = false;
-            // 
-            // picCPU4
-            // 
-            this.picCPU4.Image = ((System.Drawing.Image)(resources.GetObject("picCPU4.Image")));
-            this.picCPU4.Location = new System.Drawing.Point(22, 13);
-            this.picCPU4.Name = "picCPU4";
-            this.picCPU4.Size = new System.Drawing.Size(226, 161);
-            this.picCPU4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCPU4.TabIndex = 0;
-            this.picCPU4.TabStop = false;
-            // 
-            // picCPU5
-            // 
-            this.picCPU5.Image = ((System.Drawing.Image)(resources.GetObject("picCPU5.Image")));
-            this.picCPU5.Location = new System.Drawing.Point(24, 13);
-            this.picCPU5.Name = "picCPU5";
-            this.picCPU5.Size = new System.Drawing.Size(226, 161);
-            this.picCPU5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCPU5.TabIndex = 1;
-            this.picCPU5.TabStop = false;
-            // 
-            // picCPU6
-            // 
-            this.picCPU6.Image = ((System.Drawing.Image)(resources.GetObject("picCPU6.Image")));
-            this.picCPU6.Location = new System.Drawing.Point(22, 13);
-            this.picCPU6.Name = "picCPU6";
-            this.picCPU6.Size = new System.Drawing.Size(226, 161);
-            this.picCPU6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCPU6.TabIndex = 0;
-            this.picCPU6.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(22, 13);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(24, 13);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(22, 13);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
+            this.lblNameHardDisk1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameHardDisk1.Location = new System.Drawing.Point(24, 188);
+            this.lblNameHardDisk1.Name = "lblNameHardDisk1";
+            this.lblNameHardDisk1.Size = new System.Drawing.Size(226, 37);
+            this.lblNameHardDisk1.TabIndex = 5;
+            this.lblNameHardDisk1.Text = "HARD DISK 1";
+            this.lblNameHardDisk1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox7
             // 
@@ -964,6 +804,38 @@
             this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Controls.Add(this.lblUnitPriceHardDisk2);
+            this.panel8.Controls.Add(this.lblNameHardDisk2);
+            this.panel8.Controls.Add(this.pictureBox8);
+            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel8.Location = new System.Drawing.Point(283, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(274, 277);
+            this.panel8.TabIndex = 23;
+            // 
+            // lblUnitPriceHardDisk2
+            // 
+            this.lblUnitPriceHardDisk2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceHardDisk2.Location = new System.Drawing.Point(24, 230);
+            this.lblUnitPriceHardDisk2.Name = "lblUnitPriceHardDisk2";
+            this.lblUnitPriceHardDisk2.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceHardDisk2.TabIndex = 6;
+            this.lblUnitPriceHardDisk2.Text = "299.000 VND";
+            this.lblUnitPriceHardDisk2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNameHardDisk2
+            // 
+            this.lblNameHardDisk2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameHardDisk2.Location = new System.Drawing.Point(24, 193);
+            this.lblNameHardDisk2.Name = "lblNameHardDisk2";
+            this.lblNameHardDisk2.Size = new System.Drawing.Size(226, 37);
+            this.lblNameHardDisk2.TabIndex = 5;
+            this.lblNameHardDisk2.Text = "HARD DISK 2";
+            this.lblNameHardDisk2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
@@ -973,6 +845,38 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 1;
             this.pictureBox8.TabStop = false;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Controls.Add(this.lblUnitPriceHardDisk3);
+            this.panel9.Controls.Add(this.lblNameHardDisk3);
+            this.panel9.Controls.Add(this.pictureBox9);
+            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel9.Location = new System.Drawing.Point(563, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(274, 277);
+            this.panel9.TabIndex = 22;
+            // 
+            // lblUnitPriceHardDisk3
+            // 
+            this.lblUnitPriceHardDisk3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceHardDisk3.Location = new System.Drawing.Point(24, 230);
+            this.lblUnitPriceHardDisk3.Name = "lblUnitPriceHardDisk3";
+            this.lblUnitPriceHardDisk3.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceHardDisk3.TabIndex = 6;
+            this.lblUnitPriceHardDisk3.Text = "299.000 VND";
+            this.lblUnitPriceHardDisk3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNameHardDisk3
+            // 
+            this.lblNameHardDisk3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameHardDisk3.Location = new System.Drawing.Point(24, 193);
+            this.lblNameHardDisk3.Name = "lblNameHardDisk3";
+            this.lblNameHardDisk3.Size = new System.Drawing.Size(226, 37);
+            this.lblNameHardDisk3.TabIndex = 5;
+            this.lblNameHardDisk3.Text = "HARD DISK 3";
+            this.lblNameHardDisk3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox9
             // 
@@ -984,6 +888,38 @@
             this.pictureBox9.TabIndex = 1;
             this.pictureBox9.TabStop = false;
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Controls.Add(this.lblUnitPriceHardDisk4);
+            this.panel10.Controls.Add(this.lblNameHardDisk4);
+            this.panel10.Controls.Add(this.pictureBox10);
+            this.panel10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel10.Location = new System.Drawing.Point(3, 286);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(274, 277);
+            this.panel10.TabIndex = 21;
+            // 
+            // lblUnitPriceHardDisk4
+            // 
+            this.lblUnitPriceHardDisk4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceHardDisk4.Location = new System.Drawing.Point(22, 230);
+            this.lblUnitPriceHardDisk4.Name = "lblUnitPriceHardDisk4";
+            this.lblUnitPriceHardDisk4.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceHardDisk4.TabIndex = 6;
+            this.lblUnitPriceHardDisk4.Text = "299.000 VND";
+            this.lblUnitPriceHardDisk4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNameHardDisk4
+            // 
+            this.lblNameHardDisk4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameHardDisk4.Location = new System.Drawing.Point(22, 193);
+            this.lblNameHardDisk4.Name = "lblNameHardDisk4";
+            this.lblNameHardDisk4.Size = new System.Drawing.Size(226, 37);
+            this.lblNameHardDisk4.TabIndex = 5;
+            this.lblNameHardDisk4.Text = "HARD DISK 4";
+            this.lblNameHardDisk4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
@@ -994,6 +930,38 @@
             this.pictureBox10.TabIndex = 0;
             this.pictureBox10.TabStop = false;
             // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.White;
+            this.panel11.Controls.Add(this.lblUnitPriceHardDisk5);
+            this.panel11.Controls.Add(this.lblNameHardDisk5);
+            this.panel11.Controls.Add(this.pictureBox11);
+            this.panel11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel11.Location = new System.Drawing.Point(283, 286);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(274, 277);
+            this.panel11.TabIndex = 19;
+            // 
+            // lblUnitPriceHardDisk5
+            // 
+            this.lblUnitPriceHardDisk5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceHardDisk5.Location = new System.Drawing.Point(24, 225);
+            this.lblUnitPriceHardDisk5.Name = "lblUnitPriceHardDisk5";
+            this.lblUnitPriceHardDisk5.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceHardDisk5.TabIndex = 4;
+            this.lblUnitPriceHardDisk5.Text = "299.000 VND";
+            this.lblUnitPriceHardDisk5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNameHardDisk5
+            // 
+            this.lblNameHardDisk5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameHardDisk5.Location = new System.Drawing.Point(24, 188);
+            this.lblNameHardDisk5.Name = "lblNameHardDisk5";
+            this.lblNameHardDisk5.Size = new System.Drawing.Size(226, 37);
+            this.lblNameHardDisk5.TabIndex = 3;
+            this.lblNameHardDisk5.Text = "HARD DISK 5";
+            this.lblNameHardDisk5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
@@ -1003,6 +971,38 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 1;
             this.pictureBox11.TabStop = false;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.Controls.Add(this.lblUnitPriceHardDisk6);
+            this.panel12.Controls.Add(this.lblNameHardDisk6);
+            this.panel12.Controls.Add(this.lblNameHeadphone6);
+            this.panel12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel12.Location = new System.Drawing.Point(563, 286);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(274, 277);
+            this.panel12.TabIndex = 18;
+            // 
+            // lblUnitPriceHardDisk6
+            // 
+            this.lblUnitPriceHardDisk6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitPriceHardDisk6.Location = new System.Drawing.Point(22, 225);
+            this.lblUnitPriceHardDisk6.Name = "lblUnitPriceHardDisk6";
+            this.lblUnitPriceHardDisk6.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceHardDisk6.TabIndex = 2;
+            this.lblUnitPriceHardDisk6.Text = "299.000 VND";
+            this.lblUnitPriceHardDisk6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNameHardDisk6
+            // 
+            this.lblNameHardDisk6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameHardDisk6.Location = new System.Drawing.Point(22, 188);
+            this.lblNameHardDisk6.Name = "lblNameHardDisk6";
+            this.lblNameHardDisk6.Size = new System.Drawing.Size(226, 37);
+            this.lblNameHardDisk6.TabIndex = 1;
+            this.lblNameHardDisk6.Text = "HARD DISK 6";
+            this.lblNameHardDisk6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblNameHeadphone6
             // 
@@ -1037,44 +1037,44 @@
             this.TabCPU.ResumeLayout(false);
             this.fPnlWrapCPU.ResumeLayout(false);
             this.pnlCPU1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU1)).EndInit();
             this.pnlCPU2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU2)).EndInit();
             this.pnlCPU3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU3)).EndInit();
             this.pnlCPU4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU4)).EndInit();
             this.pnlCPU5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU5)).EndInit();
             this.pnlCPU6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picCPU6)).EndInit();
             this.TabCardGraphic.ResumeLayout(false);
             this.fPnlWrapCardGraphic.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.TabHardDisk.ResumeLayout(false);
             this.fPnlWrapHardDisk.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPU6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lblNameHeadphone6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1113,54 +1113,54 @@
         private MetroFramework.Controls.MetroTabPage TabCardGraphic;
         private System.Windows.Forms.FlowLayoutPanel fPnlWrapCardGraphic;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblUnitPriceKeyboard1;
-        private System.Windows.Forms.Label lblNameKeyboard1;
+        private System.Windows.Forms.Label lblUnitPriceCard1;
+        private System.Windows.Forms.Label lblNameCard1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblUnitPriceKeyboard2;
-        private System.Windows.Forms.Label lblNameKeyboard2;
+        private System.Windows.Forms.Label lblUnitPriceCard2;
+        private System.Windows.Forms.Label lblNameCard2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lblUnitPriceKeyboard3;
-        private System.Windows.Forms.Label lblNameKeyboard3;
+        private System.Windows.Forms.Label lblUnitPriceCard3;
+        private System.Windows.Forms.Label lblNameCard3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lblUnitPriceKeyboard4;
-        private System.Windows.Forms.Label lblNameKeyboard4;
+        private System.Windows.Forms.Label lblUnitPriceCard4;
+        private System.Windows.Forms.Label lblNameCard4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lblUnitPriceKeyboard5;
-        private System.Windows.Forms.Label lblNameKeyboard5;
+        private System.Windows.Forms.Label lblUnitPriceCard5;
+        private System.Windows.Forms.Label lblNameCard5;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lblUnitPriceKeyboard6;
-        private System.Windows.Forms.Label lblNameKeyboard6;
+        private System.Windows.Forms.Label lblUnitPriceCard6;
+        private System.Windows.Forms.Label lblNameCard6;
         private System.Windows.Forms.PictureBox pictureBox6;
         private MetroFramework.Controls.MetroTabPage TabHardDisk;
         private System.Windows.Forms.FlowLayoutPanel fPnlWrapHardDisk;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label lblUnitPriceHeadphone1;
-        private System.Windows.Forms.Label lblNameHeadphone1;
+        private System.Windows.Forms.Label lblUnitPriceHardDisk1;
+        private System.Windows.Forms.Label lblNameHardDisk1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label lblUnitPriceHeadphone2;
-        private System.Windows.Forms.Label lblNameHeadphone2;
+        private System.Windows.Forms.Label lblUnitPriceHardDisk2;
+        private System.Windows.Forms.Label lblNameHardDisk2;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label lblUnitPriceHeadphone3;
-        private System.Windows.Forms.Label lblNameHeadphone3;
+        private System.Windows.Forms.Label lblUnitPriceHardDisk3;
+        private System.Windows.Forms.Label lblNameHardDisk3;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label lblUnitPriceHeadphone4;
-        private System.Windows.Forms.Label lblNameHeadphone4;
+        private System.Windows.Forms.Label lblUnitPriceHardDisk4;
+        private System.Windows.Forms.Label lblNameHardDisk4;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label lblUnitPriceHeadphone5;
-        private System.Windows.Forms.Label lblNameHeadphone5;
+        private System.Windows.Forms.Label lblUnitPriceHardDisk5;
+        private System.Windows.Forms.Label lblNameHardDisk5;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label lblUnitPriceHeadphone6;
-        private System.Windows.Forms.Label lblNamePCWorkstation6;
+        private System.Windows.Forms.Label lblUnitPriceHardDisk6;
+        private System.Windows.Forms.Label lblNameHardDisk6;
         private System.Windows.Forms.PictureBox lblNameHeadphone6;
         private System.Windows.Forms.Label lblTitlePage;
     }

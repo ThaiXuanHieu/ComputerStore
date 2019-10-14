@@ -15,10 +15,6 @@ namespace GUI
         public ProductManagementPage()
         {
             InitializeComponent();
-        }
-
-        private void ProductManagementPage_Load(object sender, EventArgs e)
-        {
             dgvProducts.DataSource = ProductsBLL.Instance.Select();
         }
     }

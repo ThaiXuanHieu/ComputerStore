@@ -12,9 +12,10 @@ namespace GUI
 {
     public partial class frmAdmin : Form
     {
-        public frmAdmin()
+        public frmAdmin(string _fullName)
         {
             InitializeComponent();
+            lblNameUser.Text = _fullName;
             productManagementPage.Visible = true;
             warehouseManagementPage.Visible = false;
             customerManagementPage.Visible = false;

@@ -3,3 +3,7 @@ F:\Software\ComputerStore\ComputerStore\DAL\bin\Debug\DAL.pdb
 F:\Software\ComputerStore\ComputerStore\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 F:\Software\ComputerStore\ComputerStore\DAL\obj\Debug\DAL.dll
 F:\Software\ComputerStore\ComputerStore\DAL\obj\Debug\DAL.pdb
+F:\Software\ComputerStore\ComputerStore\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\Software\ComputerStore\ComputerStore\DAL\bin\Debug\DTO.dll
+F:\Software\ComputerStore\ComputerStore\DAL\bin\Debug\DTO.pdb
+F:\Software\ComputerStore\ComputerStore\DAL\obj\Debug\DAL.csproj.CopyComplete

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -56,15 +58,34 @@ namespace GUI
 
         private void btnSignin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text.Equals("admin") && txtPassword.Text.Equals("123456"))
+            UsersDTO user =  UsersBLL.Instance.Select(txtUsername.Text, txtPassword.Text);
+            if (user.UserName.Equals("admin") && user.Password.Equals("123456"))
             {
-                frmAdmin admin = new frmAdmin();
+                frmAdmin admin = new frmAdmin(user.FullName);
                 admin.Show();
+            }
+            else if(user.UserName.Equals(txtUsername.Text) && user.Password.Equals(txtPassword.Text))
+            {
+                frmCustomer customer = new frmCustomer(user.FullName);
+                customer.Show();
+            }
+            else if(user == null)
+            {
+                MessageBox.Show("Tài khoản này không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            if (txtPasswordNew.Text.Equals(txtReEnterPassword.Text))
+            {
+                UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, txtPasswordNew.Text);
+                MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                frmCustomer customer = new frmCustomer();
-                customer.Show();
+                MessageBox.Show("ĐĂNG KÝ KHÔNG THÀNH CÔNG\nMẬT KHẨU XÁC THỰC PHẢI KHỚP VỚI MẬT KHẨU", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
         }
     }

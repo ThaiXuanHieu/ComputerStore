@@ -43,7 +43,8 @@ namespace DAL
         {
             DataTable dataTable = new DataTable();
             DataSet dataSet = new DataSet();
-            using (command = new SqlCommand())
+            command = new SqlCommand();
+            try
             {
                 command.Connection = openConnection();
                 command.CommandText = query;
@@ -51,6 +52,10 @@ namespace DAL
                 adapter.SelectCommand = command;
                 adapter.Fill(dataSet);
                 dataTable = dataSet.Tables[0];
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return dataTable;
         }
@@ -59,7 +64,8 @@ namespace DAL
         {
             DataTable dataTable = new DataTable();
             DataSet dataSet = new DataSet();
-            using (command = new SqlCommand())
+            command = new SqlCommand();
+            try
             {
                 command.Connection = openConnection();
                 command.CommandText = query;
@@ -69,12 +75,18 @@ namespace DAL
                 adapter.Fill(dataSet);
                 dataTable = dataSet.Tables[0];
             }
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             return dataTable;
         }
 
         public void ExecuteInsertQuery(string query, SqlParameter[] parameters)
         {
-            using (command = new SqlCommand())
+            command = new SqlCommand();
+
+            try
             {
                 command.Connection = openConnection();
                 command.CommandText = query;
@@ -82,17 +94,26 @@ namespace DAL
                 command.ExecuteNonQuery();
                 adapter.InsertCommand = command;
             }
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public void ExecuteUpdateQuery(string query, SqlParameter[] parameters)
         {
-            using (command = new SqlCommand())
+            command = new SqlCommand();
+            try
             {
                 command.Connection = openConnection();
                 command.CommandText = query;
                 command.Parameters.AddRange(parameters);
                 command.ExecuteNonQuery();
                 adapter.UpdateCommand = command;
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

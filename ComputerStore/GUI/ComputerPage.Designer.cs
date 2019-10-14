@@ -237,7 +237,7 @@
             this.lblNamePCGaming1.Name = "lblNamePCGaming1";
             this.lblNamePCGaming1.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGaming1.TabIndex = 5;
-            this.lblNamePCGaming1.Text = "Adguard";
+            this.lblNamePCGaming1.Text = "PC Gaming 1";
             this.lblNamePCGaming1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picPCGaming1
@@ -279,7 +279,7 @@
             this.lblNamePCGaming2.Name = "lblNamePCGaming2";
             this.lblNamePCGaming2.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGaming2.TabIndex = 5;
-            this.lblNamePCGaming2.Text = "Bkav Pro";
+            this.lblNamePCGaming2.Text = "PC Gaming 2";
             this.lblNamePCGaming2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picPCGaming2
@@ -321,7 +321,7 @@
             this.lblNamePCGaming3.Name = "lblNamePCGaming3";
             this.lblNamePCGaming3.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGaming3.TabIndex = 5;
-            this.lblNamePCGaming3.Text = "Bkav Pro";
+            this.lblNamePCGaming3.Text = "PC Gaming 3";
             this.lblNamePCGaming3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picPCGaming3
@@ -363,7 +363,7 @@
             this.lblNamePCGaming4.Name = "lblNamePCGaming4";
             this.lblNamePCGaming4.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGaming4.TabIndex = 5;
-            this.lblNamePCGaming4.Text = "Microsoft Office";
+            this.lblNamePCGaming4.Text = "PC Gaming 4";
             this.lblNamePCGaming4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picPCGaming4
@@ -405,7 +405,7 @@
             this.lblNamePCGaming5.Name = "lblNamePCGaming5";
             this.lblNamePCGaming5.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGaming5.TabIndex = 3;
-            this.lblNamePCGaming5.Text = "Kasspersky";
+            this.lblNamePCGaming5.Text = "PC Gaming 5";
             this.lblNamePCGaming5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picPCGaming5
@@ -447,7 +447,7 @@
             this.lblNamePCGaming6.Name = "lblNamePCGaming6";
             this.lblNamePCGaming6.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGaming6.TabIndex = 1;
-            this.lblNamePCGaming6.Text = "Bkav Pro";
+            this.lblNamePCGaming6.Text = "PC Gaming 6";
             this.lblNamePCGaming6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picPCGaming6
@@ -519,7 +519,7 @@
             this.lblNamePCGraphic1.Name = "lblNamePCGraphic1";
             this.lblNamePCGraphic1.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGraphic1.TabIndex = 5;
-            this.lblNamePCGraphic1.Text = "Adguard";
+            this.lblNamePCGraphic1.Text = "PC Graphic 1";
             this.lblNamePCGraphic1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
@@ -561,7 +561,7 @@
             this.lblNamePCGraphic2.Name = "lblNamePCGraphic2";
             this.lblNamePCGraphic2.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGraphic2.TabIndex = 5;
-            this.lblNamePCGraphic2.Text = "Bkav Pro";
+            this.lblNamePCGraphic2.Text = "PC Graphic 2";
             this.lblNamePCGraphic2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox2
@@ -603,7 +603,7 @@
             this.lblNamePCGraphic3.Name = "lblNamePCGraphic3";
             this.lblNamePCGraphic3.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGraphic3.TabIndex = 5;
-            this.lblNamePCGraphic3.Text = "Bkav Pro";
+            this.lblNamePCGraphic3.Text = "PC Graphic 3";
             this.lblNamePCGraphic3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox3
@@ -645,7 +645,7 @@
             this.lblNamePCGraphic4.Name = "lblNamePCGraphic4";
             this.lblNamePCGraphic4.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGraphic4.TabIndex = 5;
-            this.lblNamePCGraphic4.Text = "Microsoft Office";
+            this.lblNamePCGraphic4.Text = "PC Graphic 4";
             this.lblNamePCGraphic4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox4
@@ -687,7 +687,7 @@
             this.lblNamePCGraphic5.Name = "lblNamePCGraphic5";
             this.lblNamePCGraphic5.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGraphic5.TabIndex = 3;
-            this.lblNamePCGraphic5.Text = "Kasspersky";
+            this.lblNamePCGraphic5.Text = "PC Graphic 5";
             this.lblNamePCGraphic5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox5
@@ -729,7 +729,7 @@
             this.lblNamePCGraphic6.Name = "lblNamePCGraphic6";
             this.lblNamePCGraphic6.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCGraphic6.TabIndex = 1;
-            this.lblNamePCGraphic6.Text = "Bkav Pro";
+            this.lblNamePCGraphic6.Text = "PC Graphic 6";
             this.lblNamePCGraphic6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox6
@@ -802,7 +802,7 @@
             this.lblNamePCWorkstation1.Name = "lblNamePCWorkstation1";
             this.lblNamePCWorkstation1.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCWorkstation1.TabIndex = 5;
-            this.lblNamePCWorkstation1.Text = "Adguard";
+            this.lblNamePCWorkstation1.Text = "Workstation 1";
             this.lblNamePCWorkstation1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox7
@@ -844,7 +844,7 @@
             this.lblNamePCWorkstation2.Name = "lblNamePCWorkstation2";
             this.lblNamePCWorkstation2.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCWorkstation2.TabIndex = 5;
-            this.lblNamePCWorkstation2.Text = "Bkav Pro";
+            this.lblNamePCWorkstation2.Text = "Workstation 2";
             this.lblNamePCWorkstation2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox8
@@ -886,7 +886,7 @@
             this.lblNamePCWorkstation3.Name = "lblNamePCWorkstation3";
             this.lblNamePCWorkstation3.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCWorkstation3.TabIndex = 5;
-            this.lblNamePCWorkstation3.Text = "Bkav Pro";
+            this.lblNamePCWorkstation3.Text = "Workstation 3";
             this.lblNamePCWorkstation3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox9
@@ -928,7 +928,7 @@
             this.lblNamePCWorkstation4.Name = "lblNamePCWorkstation4";
             this.lblNamePCWorkstation4.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCWorkstation4.TabIndex = 5;
-            this.lblNamePCWorkstation4.Text = "Microsoft Office";
+            this.lblNamePCWorkstation4.Text = "Workstation 4";
             this.lblNamePCWorkstation4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox10
@@ -970,7 +970,7 @@
             this.lblNamePCWorkstation5.Name = "lblNamePCWorkstation5";
             this.lblNamePCWorkstation5.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCWorkstation5.TabIndex = 3;
-            this.lblNamePCWorkstation5.Text = "Kasspersky";
+            this.lblNamePCWorkstation5.Text = "Workstation 5";
             this.lblNamePCWorkstation5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox11
@@ -1012,7 +1012,7 @@
             this.lblNamePCWorkstation6.Name = "lblNamePCWorkstation6";
             this.lblNamePCWorkstation6.Size = new System.Drawing.Size(226, 37);
             this.lblNamePCWorkstation6.TabIndex = 1;
-            this.lblNamePCWorkstation6.Text = "Bkav Pro";
+            this.lblNamePCWorkstation6.Text = "Workstation 6";
             this.lblNamePCWorkstation6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox12

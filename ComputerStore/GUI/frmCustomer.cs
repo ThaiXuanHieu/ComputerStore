@@ -12,9 +12,10 @@ namespace GUI
 {
     public partial class frmCustomer : Form
     {
-        public frmCustomer()
+        public frmCustomer(string _fullName)
         {
             InitializeComponent();
+            lblNameCustomer.Text = _fullName;
             homePage.Visible = true;
             softwarePage.Visible = false;
             computerPage.Visible = false;
