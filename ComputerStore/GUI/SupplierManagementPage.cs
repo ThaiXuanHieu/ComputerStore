@@ -16,5 +16,11 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        public void DisplayData()
+        {
+
+        }
+
     }
 }

@@ -58,29 +58,48 @@ namespace GUI
 
         private void btnSignin_Click(object sender, EventArgs e)
         {
-            UsersDTO user =  UsersBLL.Instance.Select(txtUsername.Text, txtPassword.Text);
-            if (user.UserName.Equals("admin") && user.Password.Equals("123456"))
+            try
             {
-                frmAdmin admin = new frmAdmin(user.FullName);
-                admin.Show();
+                UsersDTO user = UsersBLL.Instance.Select(txtUsername.Text, txtPassword.Text);
+                if (user.UserName.Equals("admin") && user.Password.Equals("123456"))
+                {
+                    frmAdmin admin = new frmAdmin(user.FullName);
+                    admin.Show();
+                }
+                else if (user.UserName.Equals(txtUsername.Text) && user.Password.Equals(txtPassword.Text))
+                {
+                    frmCustomer customer = new frmCustomer(user.FullName);
+                    customer.Show();
+                }
+                
             }
-            else if(user.UserName.Equals(txtUsername.Text) && user.Password.Equals(txtPassword.Text))
+            catch (Exception)
             {
-                frmCustomer customer = new frmCustomer(user.FullName);
-                customer.Show();
+
+                MessageBox.Show("TÀI KHOẢN NÀY KHÔNG TỒN TẠI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if(user == null)
-            {
-                MessageBox.Show("Tài khoản này không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
         }
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
+            try
+            {
+                UsersDTO user= UsersBLL.Instance.Select(txtUsernameNew.Text, txtPasswordNew.Text);
+                if (!(user.UserName.Equals(txtUsernameNew.Text) && user.Password.Equals(txtPasswordNew.Text)))
+                {
+                    UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, txtPasswordNew.Text);
+                    MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TÀI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             if (txtPasswordNew.Text.Equals(txtReEnterPassword.Text))
             {
-                UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, txtPasswordNew.Text);
-                MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
             }
             else
             {

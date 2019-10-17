@@ -22,7 +22,7 @@ namespace GUI
             laptopPage.Visible = false;
             accessoriesPage.Visible = false;
             componentsPage.Visible = false;
-            
+
         }
 
         private void btnHomePage_Click(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace GUI
             computerPage.Visible = false;
             softwarePage.Visible = false;
             homePage.Visible = false;
-            
+
         }
     }
 }

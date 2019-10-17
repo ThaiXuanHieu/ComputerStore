@@ -35,8 +35,8 @@
             this.btnStatisticalPage = new System.Windows.Forms.Button();
             this.btnCreateOrdersPage = new System.Windows.Forms.Button();
             this.Separator3 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.btnHelp = new System.Windows.Forms.Button();
-            this.btnInfo = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnProfile = new System.Windows.Forms.Button();
             this.btnSupplierManagementPage = new System.Windows.Forms.Button();
             this.btnCustomerManagementPage = new System.Windows.Forms.Button();
             this.btnWarehouseManagementPage = new System.Windows.Forms.Button();
@@ -48,16 +48,11 @@
             this.pnlTop = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlWrap = new System.Windows.Forms.Panel();
-            this.warehouseManagementPage = new GUI.WarehouseManagementPage();
-            this.supplierManagementPage = new GUI.SupplierManagementPage();
-            this.customerManagementPage = new GUI.CustomerManagementPage();
-            this.productManagementPage = new GUI.ProductManagementPage();
             this.pnlBottom.SuspendLayout();
             this.pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
-            this.pnlWrap.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBottom
@@ -87,8 +82,8 @@
             this.pnlLeft.Controls.Add(this.btnStatisticalPage);
             this.pnlLeft.Controls.Add(this.btnCreateOrdersPage);
             this.pnlLeft.Controls.Add(this.Separator3);
-            this.pnlLeft.Controls.Add(this.btnHelp);
-            this.pnlLeft.Controls.Add(this.btnInfo);
+            this.pnlLeft.Controls.Add(this.btnLogout);
+            this.pnlLeft.Controls.Add(this.btnProfile);
             this.pnlLeft.Controls.Add(this.btnSupplierManagementPage);
             this.pnlLeft.Controls.Add(this.btnCustomerManagementPage);
             this.pnlLeft.Controls.Add(this.btnWarehouseManagementPage);
@@ -144,33 +139,33 @@
             this.Separator3.Transparency = 255;
             this.Separator3.Vertical = false;
             // 
-            // btnHelp
+            // btnLogout
             // 
-            this.btnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnHelp.FlatAppearance.BorderSize = 0;
-            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHelp.ForeColor = System.Drawing.Color.White;
-            this.btnHelp.Location = new System.Drawing.Point(167, 675);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(140, 40);
-            this.btnHelp.TabIndex = 10;
-            this.btnHelp.Text = "Trợ giúp";
-            this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(167, 675);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(140, 40);
+            this.btnLogout.TabIndex = 10;
+            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.UseVisualStyleBackColor = false;
             // 
-            // btnInfo
+            // btnProfile
             // 
-            this.btnInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnInfo.FlatAppearance.BorderSize = 0;
-            this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfo.ForeColor = System.Drawing.Color.White;
-            this.btnInfo.Location = new System.Drawing.Point(12, 674);
-            this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(140, 40);
-            this.btnInfo.TabIndex = 9;
-            this.btnInfo.Text = "Thông tin";
-            this.btnInfo.UseVisualStyleBackColor = false;
+            this.btnProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnProfile.FlatAppearance.BorderSize = 0;
+            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.ForeColor = System.Drawing.Color.White;
+            this.btnProfile.Location = new System.Drawing.Point(12, 674);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(140, 40);
+            this.btnProfile.TabIndex = 9;
+            this.btnProfile.Text = "Hồ sơ";
+            this.btnProfile.UseVisualStyleBackColor = false;
             // 
             // btnSupplierManagementPage
             // 
@@ -302,47 +297,11 @@
             // 
             // pnlWrap
             // 
-            this.pnlWrap.Controls.Add(this.productManagementPage);
-            this.pnlWrap.Controls.Add(this.customerManagementPage);
-            this.pnlWrap.Controls.Add(this.supplierManagementPage);
-            this.pnlWrap.Controls.Add(this.warehouseManagementPage);
             this.pnlWrap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlWrap.Location = new System.Drawing.Point(317, 46);
             this.pnlWrap.Name = "pnlWrap";
             this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
             this.pnlWrap.TabIndex = 6;
-            // 
-            // warehouseManagementPage
-            // 
-            this.warehouseManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.warehouseManagementPage.Location = new System.Drawing.Point(0, 0);
-            this.warehouseManagementPage.Name = "warehouseManagementPage";
-            this.warehouseManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.warehouseManagementPage.TabIndex = 0;
-            // 
-            // supplierManagementPage
-            // 
-            this.supplierManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.supplierManagementPage.Location = new System.Drawing.Point(0, 0);
-            this.supplierManagementPage.Name = "supplierManagementPage";
-            this.supplierManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.supplierManagementPage.TabIndex = 1;
-            // 
-            // customerManagementPage
-            // 
-            this.customerManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customerManagementPage.Location = new System.Drawing.Point(0, 0);
-            this.customerManagementPage.Name = "customerManagementPage";
-            this.customerManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.customerManagementPage.TabIndex = 2;
-            // 
-            // productManagementPage
-            // 
-            this.productManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.productManagementPage.Location = new System.Drawing.Point(0, 0);
-            this.productManagementPage.Name = "productManagementPage";
-            this.productManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.productManagementPage.TabIndex = 3;
             // 
             // frmAdmin
             // 
@@ -365,7 +324,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.pnlTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
-            this.pnlWrap.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -376,8 +334,8 @@
         private System.Windows.Forms.Label lblCopyright;
         private System.Windows.Forms.Panel pnlLeft;
         private Bunifu.Framework.UI.BunifuSeparator Separator3;
-        private System.Windows.Forms.Button btnHelp;
-        private System.Windows.Forms.Button btnInfo;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button btnCreateOrdersPage;
         private System.Windows.Forms.Button btnSupplierManagementPage;
         private System.Windows.Forms.Button btnCustomerManagementPage;
@@ -392,8 +350,5 @@
         private System.Windows.Forms.Button btnStatisticalPage;
         private System.Windows.Forms.Panel pnlWrap;
         private ProductManagementPage productManagementPage;
-        private CustomerManagementPage customerManagementPage;
-        private SupplierManagementPage supplierManagementPage;
-        private WarehouseManagementPage warehouseManagementPage;
     }
 }
