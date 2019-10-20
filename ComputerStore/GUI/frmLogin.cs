@@ -86,26 +86,17 @@ namespace GUI
             try
             {
                 UsersDTO user= UsersBLL.Instance.Select(txtUsernameNew.Text, txtPasswordNew.Text);
-                if (!(user.UserName.Equals(txtUsernameNew.Text) && user.Password.Equals(txtPasswordNew.Text)))
+                if ((user.UserName.Equals(txtUsernameNew.Text) && user.Password.Equals(txtPasswordNew.Text)))
                 {
-                    UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, txtPasswordNew.Text);
-                    MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TÀI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception)
             {
-
-                MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TÀI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, txtPasswordNew.Text);
+                MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (txtPasswordNew.Text.Equals(txtReEnterPassword.Text))
-            {
-                
-            }
-            else
-            {
-                MessageBox.Show("ĐĂNG KÝ KHÔNG THÀNH CÔNG\nMẬT KHẨU XÁC THỰC PHẢI KHỚP VỚI MẬT KHẨU", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
+            
         }
     }
 }
