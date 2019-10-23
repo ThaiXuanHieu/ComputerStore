@@ -36,10 +36,6 @@
             this.lblListProducts = new System.Windows.Forms.Label();
             this.txtSearchProduct = new System.Windows.Forms.TextBox();
             this.lblTitlePage = new System.Windows.Forms.Label();
-            this.btnSearchProduct = new System.Windows.Forms.Button();
-            this.btnDeleteProduct = new System.Windows.Forms.Button();
-            this.btnEditProduct = new System.Windows.Forms.Button();
-            this.btnAddProduct = new System.Windows.Forms.Button();
             this.dgvProducts = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.grbInfo = new System.Windows.Forms.GroupBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
@@ -52,6 +48,11 @@
             this.lblCompanyName = new System.Windows.Forms.Label();
             this.txtContactName = new System.Windows.Forms.TextBox();
             this.lblContactName = new System.Windows.Forms.Label();
+            this.btnSearchProduct = new System.Windows.Forms.Button();
+            this.btnDeleteProduct = new System.Windows.Forms.Button();
+            this.btnEditProduct = new System.Windows.Forms.Button();
+            this.btnAddProduct = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.grbInfo.SuspendLayout();
             this.SuspendLayout();
@@ -70,10 +71,10 @@
             // txtSearchProduct
             // 
             this.txtSearchProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchProduct.Location = new System.Drawing.Point(572, 262);
+            this.txtSearchProduct.Location = new System.Drawing.Point(578, 262);
             this.txtSearchProduct.Multiline = true;
             this.txtSearchProduct.Name = "txtSearchProduct";
-            this.txtSearchProduct.Size = new System.Drawing.Size(274, 40);
+            this.txtSearchProduct.Size = new System.Drawing.Size(268, 40);
             this.txtSearchProduct.TabIndex = 35;
             // 
             // lblTitlePage
@@ -87,74 +88,11 @@
             this.lblTitlePage.TabIndex = 31;
             this.lblTitlePage.Text = "Quản lý kho";
             // 
-            // btnSearchProduct
-            // 
-            this.btnSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
-            this.btnSearchProduct.FlatAppearance.BorderSize = 0;
-            this.btnSearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchProduct.ForeColor = System.Drawing.Color.White;
-            this.btnSearchProduct.Image = global::GUI.Properties.Resources.icons8_Search_26px;
-            this.btnSearchProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchProduct.Location = new System.Drawing.Point(852, 262);
-            this.btnSearchProduct.Name = "btnSearchProduct";
-            this.btnSearchProduct.Size = new System.Drawing.Size(151, 40);
-            this.btnSearchProduct.TabIndex = 36;
-            this.btnSearchProduct.Text = "     Tìm kiếm";
-            this.btnSearchProduct.UseVisualStyleBackColor = false;
-            // 
-            // btnDeleteProduct
-            // 
-            this.btnDeleteProduct.BackColor = System.Drawing.Color.Red;
-            this.btnDeleteProduct.FlatAppearance.BorderSize = 0;
-            this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteProduct.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteProduct.Image = global::GUI.Properties.Resources.icons8_Trash_Can_26px;
-            this.btnDeleteProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeleteProduct.Location = new System.Drawing.Point(298, 262);
-            this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(134, 40);
-            this.btnDeleteProduct.TabIndex = 34;
-            this.btnDeleteProduct.Text = "   Xóa";
-            this.btnDeleteProduct.UseVisualStyleBackColor = false;
-            // 
-            // btnEditProduct
-            // 
-            this.btnEditProduct.BackColor = System.Drawing.Color.Gold;
-            this.btnEditProduct.FlatAppearance.BorderSize = 0;
-            this.btnEditProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnEditProduct.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
-            this.btnEditProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditProduct.Location = new System.Drawing.Point(158, 262);
-            this.btnEditProduct.Name = "btnEditProduct";
-            this.btnEditProduct.Size = new System.Drawing.Size(134, 40);
-            this.btnEditProduct.TabIndex = 33;
-            this.btnEditProduct.Text = "   Sửa";
-            this.btnEditProduct.UseVisualStyleBackColor = false;
-            // 
-            // btnAddProduct
-            // 
-            this.btnAddProduct.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAddProduct.FlatAppearance.BorderSize = 0;
-            this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProduct.ForeColor = System.Drawing.Color.White;
-            this.btnAddProduct.Image = global::GUI.Properties.Resources.icons8_Plus_Math_26px;
-            this.btnAddProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddProduct.Location = new System.Drawing.Point(18, 262);
-            this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(134, 40);
-            this.btnAddProduct.TabIndex = 32;
-            this.btnAddProduct.Text = "   Thêm";
-            this.btnAddProduct.UseVisualStyleBackColor = false;
-            // 
             // dgvProducts
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvProducts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProducts.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvProducts.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvProducts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -167,7 +105,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducts.ColumnHeadersHeight = 45;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,7 +131,7 @@
             this.dgvProducts.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvProducts.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvProducts.RowTemplate.Height = 24;
+            this.dgvProducts.RowTemplate.Height = 45;
             this.dgvProducts.Size = new System.Drawing.Size(985, 313);
             this.dgvProducts.TabIndex = 57;
             // 
@@ -312,10 +250,96 @@
             this.lblContactName.TabIndex = 55;
             this.lblContactName.Text = "Tên liên hệ :";
             // 
+            // btnSearchProduct
+            // 
+            this.btnSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(132)))), ((int)(((byte)(150)))));
+            this.btnSearchProduct.FlatAppearance.BorderSize = 0;
+            this.btnSearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchProduct.ForeColor = System.Drawing.Color.White;
+            this.btnSearchProduct.Image = global::GUI.Properties.Resources.icons8_Search_26px;
+            this.btnSearchProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearchProduct.Location = new System.Drawing.Point(852, 262);
+            this.btnSearchProduct.Name = "btnSearchProduct";
+            this.btnSearchProduct.Size = new System.Drawing.Size(151, 40);
+            this.btnSearchProduct.TabIndex = 36;
+            this.btnSearchProduct.Text = "     Tìm kiếm";
+            this.btnSearchProduct.UseVisualStyleBackColor = false;
+            this.btnSearchProduct.Click += new System.EventHandler(this.btnSearchProduct_Click);
+            // 
+            // btnDeleteProduct
+            // 
+            this.btnDeleteProduct.BackColor = System.Drawing.Color.Red;
+            this.btnDeleteProduct.FlatAppearance.BorderSize = 0;
+            this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteProduct.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteProduct.Image = global::GUI.Properties.Resources.icons8_Trash_Can_26px;
+            this.btnDeleteProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeleteProduct.Location = new System.Drawing.Point(298, 262);
+            this.btnDeleteProduct.Name = "btnDeleteProduct";
+            this.btnDeleteProduct.Size = new System.Drawing.Size(134, 40);
+            this.btnDeleteProduct.TabIndex = 34;
+            this.btnDeleteProduct.Text = "   Xóa";
+            this.btnDeleteProduct.UseVisualStyleBackColor = false;
+            this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
+            // 
+            // btnEditProduct
+            // 
+            this.btnEditProduct.BackColor = System.Drawing.Color.Gold;
+            this.btnEditProduct.FlatAppearance.BorderSize = 0;
+            this.btnEditProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnEditProduct.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
+            this.btnEditProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditProduct.Location = new System.Drawing.Point(158, 262);
+            this.btnEditProduct.Name = "btnEditProduct";
+            this.btnEditProduct.Size = new System.Drawing.Size(134, 40);
+            this.btnEditProduct.TabIndex = 33;
+            this.btnEditProduct.Text = "   Sửa";
+            this.btnEditProduct.UseVisualStyleBackColor = false;
+            this.btnEditProduct.Click += new System.EventHandler(this.btnEditProduct_Click);
+            // 
+            // btnAddProduct
+            // 
+            this.btnAddProduct.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddProduct.FlatAppearance.BorderSize = 0;
+            this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProduct.ForeColor = System.Drawing.Color.White;
+            this.btnAddProduct.Image = global::GUI.Properties.Resources.icons8_Plus_Math_26px;
+            this.btnAddProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddProduct.Location = new System.Drawing.Point(18, 262);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Size = new System.Drawing.Size(134, 40);
+            this.btnAddProduct.TabIndex = 32;
+            this.btnAddProduct.Text = "   Thêm";
+            this.btnAddProduct.UseVisualStyleBackColor = false;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Image = global::GUI.Properties.Resources.icons8_Save_26px;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(438, 262);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(134, 40);
+            this.btnSave.TabIndex = 59;
+            this.btnSave.Text = "   Ghi";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // WarehouseManagementPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.grbInfo);
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.lblListProducts);
@@ -355,5 +379,6 @@
         private System.Windows.Forms.Label lblCompanyName;
         private System.Windows.Forms.TextBox txtContactName;
         private System.Windows.Forms.Label lblContactName;
+        private System.Windows.Forms.Button btnSave;
     }
 }

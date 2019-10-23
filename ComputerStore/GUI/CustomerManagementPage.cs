@@ -21,5 +21,30 @@ namespace GUI
         {
 
         }
+
+        private void btnSearchCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

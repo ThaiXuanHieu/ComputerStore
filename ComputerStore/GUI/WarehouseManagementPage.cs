@@ -16,5 +16,30 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditProduct_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteProduct_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearchProduct_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -22,5 +22,29 @@ namespace GUI
 
         }
 
+        private void btnAddSupplier_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditSupplier_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteSupplier_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearchSupplier_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

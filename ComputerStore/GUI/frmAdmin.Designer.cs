@@ -48,11 +48,16 @@
             this.pnlTop = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlWrap = new System.Windows.Forms.Panel();
+            this.warehouseManagementPage = new GUI.WarehouseManagementPage();
+            this.supplierManagementPage = new GUI.SupplierManagementPage();
+            this.customerManagementPage = new GUI.CustomerManagementPage();
+            this.productManagementPage = new GUI.ProductManagementPage();
             this.pnlBottom.SuspendLayout();
             this.pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
+            this.pnlWrap.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBottom
@@ -297,11 +302,47 @@
             // 
             // pnlWrap
             // 
+            this.pnlWrap.Controls.Add(this.productManagementPage);
+            this.pnlWrap.Controls.Add(this.customerManagementPage);
+            this.pnlWrap.Controls.Add(this.supplierManagementPage);
+            this.pnlWrap.Controls.Add(this.warehouseManagementPage);
             this.pnlWrap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlWrap.Location = new System.Drawing.Point(317, 46);
             this.pnlWrap.Name = "pnlWrap";
             this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
             this.pnlWrap.TabIndex = 6;
+            // 
+            // warehouseManagementPage
+            // 
+            this.warehouseManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.warehouseManagementPage.Location = new System.Drawing.Point(0, 0);
+            this.warehouseManagementPage.Name = "warehouseManagementPage";
+            this.warehouseManagementPage.Size = new System.Drawing.Size(1020, 684);
+            this.warehouseManagementPage.TabIndex = 0;
+            // 
+            // supplierManagementPage
+            // 
+            this.supplierManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.supplierManagementPage.Location = new System.Drawing.Point(0, 0);
+            this.supplierManagementPage.Name = "supplierManagementPage";
+            this.supplierManagementPage.Size = new System.Drawing.Size(1020, 684);
+            this.supplierManagementPage.TabIndex = 1;
+            // 
+            // customerManagementPage
+            // 
+            this.customerManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customerManagementPage.Location = new System.Drawing.Point(0, 0);
+            this.customerManagementPage.Name = "customerManagementPage";
+            this.customerManagementPage.Size = new System.Drawing.Size(1020, 684);
+            this.customerManagementPage.TabIndex = 2;
+            // 
+            // productManagementPage
+            // 
+            this.productManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.productManagementPage.Location = new System.Drawing.Point(0, 0);
+            this.productManagementPage.Name = "productManagementPage";
+            this.productManagementPage.Size = new System.Drawing.Size(1020, 684);
+            this.productManagementPage.TabIndex = 3;
             // 
             // frmAdmin
             // 
@@ -324,6 +365,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.pnlTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
+            this.pnlWrap.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -350,5 +392,8 @@
         private System.Windows.Forms.Button btnStatisticalPage;
         private System.Windows.Forms.Panel pnlWrap;
         private ProductManagementPage productManagementPage;
+        private CustomerManagementPage customerManagementPage;
+        private SupplierManagementPage supplierManagementPage;
+        private WarehouseManagementPage warehouseManagementPage;
     }
 }

@@ -254,6 +254,7 @@
     <Content Include="Resources\headphone6.png" />
     <Content Include="Resources\icons8_Edit_26px.png" />
     <Content Include="Resources\icons8_Plus_Math_26px.png" />
+    <Content Include="Resources\icons8_Save_26px.png" />
     <Content Include="Resources\icons8_Search_26px.png" />
     <Content Include="Resources\icons8_Trash_Can_26px.png" />
     <Content Include="Resources\icons8_Workstation_1.ico" />

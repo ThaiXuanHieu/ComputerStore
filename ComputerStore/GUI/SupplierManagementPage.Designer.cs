@@ -36,10 +36,6 @@
             this.lblListSupplier = new System.Windows.Forms.Label();
             this.txtSearchSupplier = new System.Windows.Forms.TextBox();
             this.lblTitlePage = new System.Windows.Forms.Label();
-            this.btnSearchSupplier = new System.Windows.Forms.Button();
-            this.btnDeleteSupplier = new System.Windows.Forms.Button();
-            this.btnEditSupplier = new System.Windows.Forms.Button();
-            this.btnAddSupplier = new System.Windows.Forms.Button();
             this.grbInfoSupplier = new System.Windows.Forms.GroupBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.lblPhone = new System.Windows.Forms.Label();
@@ -52,6 +48,11 @@
             this.txtContactName = new System.Windows.Forms.TextBox();
             this.lblContactName = new System.Windows.Forms.Label();
             this.dgvSuppliers = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnSearchSupplier = new System.Windows.Forms.Button();
+            this.btnDeleteSupplier = new System.Windows.Forms.Button();
+            this.btnEditSupplier = new System.Windows.Forms.Button();
+            this.btnAddSupplier = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.grbInfoSupplier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuppliers)).BeginInit();
             this.SuspendLayout();
@@ -70,10 +71,10 @@
             // txtSearchSupplier
             // 
             this.txtSearchSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchSupplier.Location = new System.Drawing.Point(572, 262);
+            this.txtSearchSupplier.Location = new System.Drawing.Point(578, 262);
             this.txtSearchSupplier.Multiline = true;
             this.txtSearchSupplier.Name = "txtSearchSupplier";
-            this.txtSearchSupplier.Size = new System.Drawing.Size(274, 40);
+            this.txtSearchSupplier.Size = new System.Drawing.Size(268, 40);
             this.txtSearchSupplier.TabIndex = 51;
             // 
             // lblTitlePage
@@ -86,70 +87,6 @@
             this.lblTitlePage.Size = new System.Drawing.Size(300, 38);
             this.lblTitlePage.TabIndex = 47;
             this.lblTitlePage.Text = "Quản lý nhà cung cấp";
-            // 
-            // btnSearchSupplier
-            // 
-            this.btnSearchSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
-            this.btnSearchSupplier.FlatAppearance.BorderSize = 0;
-            this.btnSearchSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchSupplier.ForeColor = System.Drawing.Color.White;
-            this.btnSearchSupplier.Image = global::GUI.Properties.Resources.icons8_Search_26px;
-            this.btnSearchSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchSupplier.Location = new System.Drawing.Point(852, 262);
-            this.btnSearchSupplier.Name = "btnSearchSupplier";
-            this.btnSearchSupplier.Size = new System.Drawing.Size(151, 40);
-            this.btnSearchSupplier.TabIndex = 52;
-            this.btnSearchSupplier.Text = "     Tìm kiếm";
-            this.btnSearchSupplier.UseVisualStyleBackColor = false;
-            // 
-            // btnDeleteSupplier
-            // 
-            this.btnDeleteSupplier.BackColor = System.Drawing.Color.Red;
-            this.btnDeleteSupplier.FlatAppearance.BorderSize = 0;
-            this.btnDeleteSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteSupplier.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteSupplier.Image = global::GUI.Properties.Resources.icons8_Trash_Can_26px;
-            this.btnDeleteSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeleteSupplier.Location = new System.Drawing.Point(298, 262);
-            this.btnDeleteSupplier.Name = "btnDeleteSupplier";
-            this.btnDeleteSupplier.Size = new System.Drawing.Size(134, 40);
-            this.btnDeleteSupplier.TabIndex = 50;
-            this.btnDeleteSupplier.Text = "   Xóa";
-            this.btnDeleteSupplier.UseVisualStyleBackColor = false;
-            // 
-            // btnEditSupplier
-            // 
-            this.btnEditSupplier.BackColor = System.Drawing.Color.Gold;
-            this.btnEditSupplier.FlatAppearance.BorderSize = 0;
-            this.btnEditSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditSupplier.ForeColor = System.Drawing.Color.Black;
-            this.btnEditSupplier.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
-            this.btnEditSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditSupplier.Location = new System.Drawing.Point(158, 262);
-            this.btnEditSupplier.Name = "btnEditSupplier";
-            this.btnEditSupplier.Size = new System.Drawing.Size(134, 40);
-            this.btnEditSupplier.TabIndex = 49;
-            this.btnEditSupplier.Text = "   Sửa";
-            this.btnEditSupplier.UseVisualStyleBackColor = false;
-            // 
-            // btnAddSupplier
-            // 
-            this.btnAddSupplier.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAddSupplier.FlatAppearance.BorderSize = 0;
-            this.btnAddSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSupplier.ForeColor = System.Drawing.Color.White;
-            this.btnAddSupplier.Image = global::GUI.Properties.Resources.icons8_Plus_Math_26px;
-            this.btnAddSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddSupplier.Location = new System.Drawing.Point(18, 262);
-            this.btnAddSupplier.Name = "btnAddSupplier";
-            this.btnAddSupplier.Size = new System.Drawing.Size(134, 40);
-            this.btnAddSupplier.TabIndex = 48;
-            this.btnAddSupplier.Text = "   Thêm";
-            this.btnAddSupplier.UseVisualStyleBackColor = false;
             // 
             // grbInfoSupplier
             // 
@@ -270,6 +207,7 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvSuppliers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvSuppliers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSuppliers.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvSuppliers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvSuppliers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -282,7 +220,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvSuppliers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvSuppliers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSuppliers.ColumnHeadersHeight = 45;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -308,14 +246,100 @@
             this.dgvSuppliers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvSuppliers.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvSuppliers.RowTemplate.Height = 24;
+            this.dgvSuppliers.RowTemplate.Height = 45;
             this.dgvSuppliers.Size = new System.Drawing.Size(985, 313);
             this.dgvSuppliers.TabIndex = 56;
+            // 
+            // btnSearchSupplier
+            // 
+            this.btnSearchSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(132)))), ((int)(((byte)(150)))));
+            this.btnSearchSupplier.FlatAppearance.BorderSize = 0;
+            this.btnSearchSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchSupplier.ForeColor = System.Drawing.Color.White;
+            this.btnSearchSupplier.Image = global::GUI.Properties.Resources.icons8_Search_26px;
+            this.btnSearchSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearchSupplier.Location = new System.Drawing.Point(852, 262);
+            this.btnSearchSupplier.Name = "btnSearchSupplier";
+            this.btnSearchSupplier.Size = new System.Drawing.Size(151, 40);
+            this.btnSearchSupplier.TabIndex = 52;
+            this.btnSearchSupplier.Text = "     Tìm kiếm";
+            this.btnSearchSupplier.UseVisualStyleBackColor = false;
+            this.btnSearchSupplier.Click += new System.EventHandler(this.btnSearchSupplier_Click);
+            // 
+            // btnDeleteSupplier
+            // 
+            this.btnDeleteSupplier.BackColor = System.Drawing.Color.Red;
+            this.btnDeleteSupplier.FlatAppearance.BorderSize = 0;
+            this.btnDeleteSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteSupplier.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteSupplier.Image = global::GUI.Properties.Resources.icons8_Trash_Can_26px;
+            this.btnDeleteSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeleteSupplier.Location = new System.Drawing.Point(298, 262);
+            this.btnDeleteSupplier.Name = "btnDeleteSupplier";
+            this.btnDeleteSupplier.Size = new System.Drawing.Size(134, 40);
+            this.btnDeleteSupplier.TabIndex = 50;
+            this.btnDeleteSupplier.Text = "   Xóa";
+            this.btnDeleteSupplier.UseVisualStyleBackColor = false;
+            this.btnDeleteSupplier.Click += new System.EventHandler(this.btnDeleteSupplier_Click);
+            // 
+            // btnEditSupplier
+            // 
+            this.btnEditSupplier.BackColor = System.Drawing.Color.Gold;
+            this.btnEditSupplier.FlatAppearance.BorderSize = 0;
+            this.btnEditSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditSupplier.ForeColor = System.Drawing.Color.Black;
+            this.btnEditSupplier.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
+            this.btnEditSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditSupplier.Location = new System.Drawing.Point(158, 262);
+            this.btnEditSupplier.Name = "btnEditSupplier";
+            this.btnEditSupplier.Size = new System.Drawing.Size(134, 40);
+            this.btnEditSupplier.TabIndex = 49;
+            this.btnEditSupplier.Text = "   Sửa";
+            this.btnEditSupplier.UseVisualStyleBackColor = false;
+            this.btnEditSupplier.Click += new System.EventHandler(this.btnEditSupplier_Click);
+            // 
+            // btnAddSupplier
+            // 
+            this.btnAddSupplier.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddSupplier.FlatAppearance.BorderSize = 0;
+            this.btnAddSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSupplier.ForeColor = System.Drawing.Color.White;
+            this.btnAddSupplier.Image = global::GUI.Properties.Resources.icons8_Plus_Math_26px;
+            this.btnAddSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddSupplier.Location = new System.Drawing.Point(18, 262);
+            this.btnAddSupplier.Name = "btnAddSupplier";
+            this.btnAddSupplier.Size = new System.Drawing.Size(134, 40);
+            this.btnAddSupplier.TabIndex = 48;
+            this.btnAddSupplier.Text = "   Thêm";
+            this.btnAddSupplier.UseVisualStyleBackColor = false;
+            this.btnAddSupplier.Click += new System.EventHandler(this.btnAddSupplier_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Image = global::GUI.Properties.Resources.icons8_Save_26px;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(438, 262);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(134, 40);
+            this.btnSave.TabIndex = 57;
+            this.btnSave.Text = "   Ghi";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // SupplierManagementPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgvSuppliers);
             this.Controls.Add(this.grbInfoSupplier);
             this.Controls.Add(this.lblListSupplier);
@@ -355,5 +379,6 @@
         private System.Windows.Forms.TextBox txtContactName;
         private System.Windows.Forms.Label lblContactName;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvSuppliers;
+        private System.Windows.Forms.Button btnSave;
     }
 }

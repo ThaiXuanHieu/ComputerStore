@@ -35,5 +35,10 @@ namespace BLL
         {
             return ProductsDAL.Instance.Select();
         }
+
+        public void Insert(int _categoryID, int _supplierID, int _productID, string _productName, string _productImage, string _unit, string _price)
+        {
+            ProductsDAL.Instance.Insert(_categoryID, _supplierID, _productID, _productName, _productImage, _unit, _price);
+        }
     }
 }

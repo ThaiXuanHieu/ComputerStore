@@ -36,10 +36,6 @@
             this.lblListCustomer = new System.Windows.Forms.Label();
             this.txtSearchCustomer = new System.Windows.Forms.TextBox();
             this.lblTitlePage = new System.Windows.Forms.Label();
-            this.btnSearchCustomer = new System.Windows.Forms.Button();
-            this.btnDeleteCustomer = new System.Windows.Forms.Button();
-            this.btnEditCustomer = new System.Windows.Forms.Button();
-            this.btnAddCustomer = new System.Windows.Forms.Button();
             this.grbInfoCustomer = new System.Windows.Forms.GroupBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.lblPhone = new System.Windows.Forms.Label();
@@ -52,6 +48,11 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.lblLastName = new System.Windows.Forms.Label();
             this.dgvCustomers = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnSearchCustomer = new System.Windows.Forms.Button();
+            this.btnDeleteCustomer = new System.Windows.Forms.Button();
+            this.btnEditCustomer = new System.Windows.Forms.Button();
+            this.btnAddCustomer = new System.Windows.Forms.Button();
             this.grbInfoCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
             this.SuspendLayout();
@@ -70,11 +71,11 @@
             // txtSearchCustomer
             // 
             this.txtSearchCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchCustomer.Location = new System.Drawing.Point(572, 262);
+            this.txtSearchCustomer.Location = new System.Drawing.Point(578, 262);
             this.txtSearchCustomer.Multiline = true;
             this.txtSearchCustomer.Name = "txtSearchCustomer";
-            this.txtSearchCustomer.Size = new System.Drawing.Size(274, 40);
-            this.txtSearchCustomer.TabIndex = 43;
+            this.txtSearchCustomer.Size = new System.Drawing.Size(268, 40);
+            this.txtSearchCustomer.TabIndex = 3;
             // 
             // lblTitlePage
             // 
@@ -86,70 +87,6 @@
             this.lblTitlePage.Size = new System.Drawing.Size(278, 38);
             this.lblTitlePage.TabIndex = 39;
             this.lblTitlePage.Text = "Quản lý khách hàng";
-            // 
-            // btnSearchCustomer
-            // 
-            this.btnSearchCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
-            this.btnSearchCustomer.FlatAppearance.BorderSize = 0;
-            this.btnSearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchCustomer.ForeColor = System.Drawing.Color.White;
-            this.btnSearchCustomer.Image = global::GUI.Properties.Resources.icons8_Search_26px;
-            this.btnSearchCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchCustomer.Location = new System.Drawing.Point(852, 262);
-            this.btnSearchCustomer.Name = "btnSearchCustomer";
-            this.btnSearchCustomer.Size = new System.Drawing.Size(151, 40);
-            this.btnSearchCustomer.TabIndex = 44;
-            this.btnSearchCustomer.Text = "     Tìm kiếm";
-            this.btnSearchCustomer.UseVisualStyleBackColor = false;
-            // 
-            // btnDeleteCustomer
-            // 
-            this.btnDeleteCustomer.BackColor = System.Drawing.Color.Red;
-            this.btnDeleteCustomer.FlatAppearance.BorderSize = 0;
-            this.btnDeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteCustomer.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteCustomer.Image = global::GUI.Properties.Resources.icons8_Trash_Can_26px;
-            this.btnDeleteCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeleteCustomer.Location = new System.Drawing.Point(298, 262);
-            this.btnDeleteCustomer.Name = "btnDeleteCustomer";
-            this.btnDeleteCustomer.Size = new System.Drawing.Size(134, 40);
-            this.btnDeleteCustomer.TabIndex = 42;
-            this.btnDeleteCustomer.Text = "   Xóa";
-            this.btnDeleteCustomer.UseVisualStyleBackColor = false;
-            // 
-            // btnEditCustomer
-            // 
-            this.btnEditCustomer.BackColor = System.Drawing.Color.Gold;
-            this.btnEditCustomer.FlatAppearance.BorderSize = 0;
-            this.btnEditCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditCustomer.ForeColor = System.Drawing.Color.Black;
-            this.btnEditCustomer.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
-            this.btnEditCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditCustomer.Location = new System.Drawing.Point(158, 262);
-            this.btnEditCustomer.Name = "btnEditCustomer";
-            this.btnEditCustomer.Size = new System.Drawing.Size(134, 40);
-            this.btnEditCustomer.TabIndex = 41;
-            this.btnEditCustomer.Text = "   Sửa";
-            this.btnEditCustomer.UseVisualStyleBackColor = false;
-            // 
-            // btnAddCustomer
-            // 
-            this.btnAddCustomer.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAddCustomer.FlatAppearance.BorderSize = 0;
-            this.btnAddCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCustomer.ForeColor = System.Drawing.Color.White;
-            this.btnAddCustomer.Image = global::GUI.Properties.Resources.icons8_Plus_Math_26px;
-            this.btnAddCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddCustomer.Location = new System.Drawing.Point(18, 262);
-            this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.Size = new System.Drawing.Size(134, 40);
-            this.btnAddCustomer.TabIndex = 40;
-            this.btnAddCustomer.Text = "   Thêm";
-            this.btnAddCustomer.UseVisualStyleBackColor = false;
             // 
             // grbInfoCustomer
             // 
@@ -178,7 +115,7 @@
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(178, 34);
-            this.txtPhone.TabIndex = 64;
+            this.txtPhone.TabIndex = 4;
             // 
             // lblPhone
             // 
@@ -197,7 +134,7 @@
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(289, 34);
-            this.txtEmail.TabIndex = 62;
+            this.txtEmail.TabIndex = 3;
             // 
             // lblEmail
             // 
@@ -216,7 +153,7 @@
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(289, 34);
-            this.txtAddress.TabIndex = 60;
+            this.txtAddress.TabIndex = 2;
             // 
             // lblAddress
             // 
@@ -235,7 +172,7 @@
             this.txtFirstName.Multiline = true;
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(207, 34);
-            this.txtFirstName.TabIndex = 58;
+            this.txtFirstName.TabIndex = 1;
             // 
             // lblFirstName
             // 
@@ -254,7 +191,7 @@
             this.txtLastName.Multiline = true;
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(207, 34);
-            this.txtLastName.TabIndex = 56;
+            this.txtLastName.TabIndex = 0;
             // 
             // lblLastName
             // 
@@ -270,6 +207,7 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCustomers.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -282,7 +220,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCustomers.ColumnHeadersHeight = 45;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -308,14 +246,100 @@
             this.dgvCustomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvCustomers.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvCustomers.RowTemplate.Height = 24;
+            this.dgvCustomers.RowTemplate.Height = 45;
             this.dgvCustomers.Size = new System.Drawing.Size(985, 313);
             this.dgvCustomers.TabIndex = 48;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Image = global::GUI.Properties.Resources.icons8_Save_26px;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(438, 262);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(134, 40);
+            this.btnSave.TabIndex = 49;
+            this.btnSave.Text = "   Ghi";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnSearchCustomer
+            // 
+            this.btnSearchCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(132)))), ((int)(((byte)(150)))));
+            this.btnSearchCustomer.FlatAppearance.BorderSize = 0;
+            this.btnSearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnSearchCustomer.Image = global::GUI.Properties.Resources.icons8_Search_26px;
+            this.btnSearchCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearchCustomer.Location = new System.Drawing.Point(852, 262);
+            this.btnSearchCustomer.Name = "btnSearchCustomer";
+            this.btnSearchCustomer.Size = new System.Drawing.Size(151, 40);
+            this.btnSearchCustomer.TabIndex = 4;
+            this.btnSearchCustomer.Text = "     Tìm kiếm";
+            this.btnSearchCustomer.UseVisualStyleBackColor = false;
+            this.btnSearchCustomer.Click += new System.EventHandler(this.btnSearchCustomer_Click);
+            // 
+            // btnDeleteCustomer
+            // 
+            this.btnDeleteCustomer.BackColor = System.Drawing.Color.Red;
+            this.btnDeleteCustomer.FlatAppearance.BorderSize = 0;
+            this.btnDeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteCustomer.Image = global::GUI.Properties.Resources.icons8_Trash_Can_26px;
+            this.btnDeleteCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeleteCustomer.Location = new System.Drawing.Point(298, 262);
+            this.btnDeleteCustomer.Name = "btnDeleteCustomer";
+            this.btnDeleteCustomer.Size = new System.Drawing.Size(134, 40);
+            this.btnDeleteCustomer.TabIndex = 2;
+            this.btnDeleteCustomer.Text = "   Xóa";
+            this.btnDeleteCustomer.UseVisualStyleBackColor = false;
+            this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
+            // 
+            // btnEditCustomer
+            // 
+            this.btnEditCustomer.BackColor = System.Drawing.Color.Gold;
+            this.btnEditCustomer.FlatAppearance.BorderSize = 0;
+            this.btnEditCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditCustomer.ForeColor = System.Drawing.Color.Black;
+            this.btnEditCustomer.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
+            this.btnEditCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditCustomer.Location = new System.Drawing.Point(158, 262);
+            this.btnEditCustomer.Name = "btnEditCustomer";
+            this.btnEditCustomer.Size = new System.Drawing.Size(134, 40);
+            this.btnEditCustomer.TabIndex = 1;
+            this.btnEditCustomer.Text = "   Sửa";
+            this.btnEditCustomer.UseVisualStyleBackColor = false;
+            this.btnEditCustomer.Click += new System.EventHandler(this.btnEditCustomer_Click);
+            // 
+            // btnAddCustomer
+            // 
+            this.btnAddCustomer.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddCustomer.FlatAppearance.BorderSize = 0;
+            this.btnAddCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnAddCustomer.Image = global::GUI.Properties.Resources.icons8_Plus_Math_26px;
+            this.btnAddCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddCustomer.Location = new System.Drawing.Point(18, 262);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(134, 40);
+            this.btnAddCustomer.TabIndex = 0;
+            this.btnAddCustomer.Text = "   Thêm";
+            this.btnAddCustomer.UseVisualStyleBackColor = false;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
             // CustomerManagementPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgvCustomers);
             this.Controls.Add(this.grbInfoCustomer);
             this.Controls.Add(this.lblListCustomer);
@@ -355,5 +379,6 @@
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Label lblLastName;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvCustomers;
+        private System.Windows.Forms.Button btnSave;
     }
 }
