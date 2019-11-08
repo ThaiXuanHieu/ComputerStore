@@ -53,14 +53,14 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.grbAvatar = new System.Windows.Forms.GroupBox();
             this.btnChangeImage = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picAvatar = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.lblTitlePage = new System.Windows.Forms.Label();
             this.grbUserInfo.SuspendLayout();
             this.grbChangePassword.SuspendLayout();
             this.grbMainInfo.SuspendLayout();
             this.grbAvatar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // grbUserInfo
@@ -292,7 +292,7 @@
             // grbAvatar
             // 
             this.grbAvatar.Controls.Add(this.btnChangeImage);
-            this.grbAvatar.Controls.Add(this.pictureBox1);
+            this.grbAvatar.Controls.Add(this.picAvatar);
             this.grbAvatar.Location = new System.Drawing.Point(7, 50);
             this.grbAvatar.Name = "grbAvatar";
             this.grbAvatar.Size = new System.Drawing.Size(500, 200);
@@ -310,16 +310,18 @@
             this.btnChangeImage.TabIndex = 1;
             this.btnChangeImage.Text = "Chỉnh sửa";
             this.btnChangeImage.UseVisualStyleBackColor = true;
+            this.btnChangeImage.Click += new System.EventHandler(this.btnChangeImage_Click);
             // 
-            // pictureBox1
+            // picAvatar
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 160);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.picAvatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picAvatar.Image = ((System.Drawing.Image)(resources.GetObject("picAvatar.Image")));
+            this.picAvatar.Location = new System.Drawing.Point(6, 33);
+            this.picAvatar.Name = "picAvatar";
+            this.picAvatar.Size = new System.Drawing.Size(146, 160);
+            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAvatar.TabIndex = 0;
+            this.picAvatar.TabStop = false;
             // 
             // btnSave
             // 
@@ -363,7 +365,7 @@
             this.grbMainInfo.ResumeLayout(false);
             this.grbMainInfo.PerformLayout();
             this.grbAvatar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,7 +385,7 @@
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.GroupBox grbAvatar;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picAvatar;
         private System.Windows.Forms.GroupBox grbChangePassword;
         private System.Windows.Forms.Label lblReEnterPassword;
         private System.Windows.Forms.Label lblNewPassword;
