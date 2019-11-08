@@ -28,22 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductManagementPage));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lblListProducts = new System.Windows.Forms.Label();
             this.txtSearchProduct = new System.Windows.Forms.TextBox();
             this.lblTitlePage = new System.Windows.Forms.Label();
             this.grbInfoProduct = new System.Windows.Forms.GroupBox();
-            this.btnChooseImageProduct = new System.Windows.Forms.Button();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.btnChangeImage = new System.Windows.Forms.Button();
             this.picImageProduct = new System.Windows.Forms.PictureBox();
-            this.lblImageProduct = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
             this.txtUnit = new System.Windows.Forms.TextBox();
             this.lblUnit = new System.Windows.Forms.Label();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.lblPrice = new System.Windows.Forms.Label();
             this.cbSupplier = new System.Windows.Forms.ComboBox();
@@ -52,36 +48,28 @@
             this.lblCategories = new System.Windows.Forms.Label();
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.lblProductName = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
             this.btnSearchProduct = new System.Windows.Forms.Button();
             this.btnDeleteProduct = new System.Windows.Forms.Button();
-            this.btnEditProduct = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.dgvProducts = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.lblListProducts = new System.Windows.Forms.Label();
+            this.btnEditProduct = new System.Windows.Forms.Button();
             this.grbInfoProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImageProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblListProducts
-            // 
-            this.lblListProducts.AutoSize = true;
-            this.lblListProducts.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblListProducts.Location = new System.Drawing.Point(359, 312);
-            this.lblListProducts.Name = "lblListProducts";
-            this.lblListProducts.Size = new System.Drawing.Size(287, 38);
-            this.lblListProducts.TabIndex = 45;
-            this.lblListProducts.Text = "Danh sách sản phẩm";
-            // 
             // txtSearchProduct
             // 
             this.txtSearchProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchProduct.ForeColor = System.Drawing.Color.Black;
             this.txtSearchProduct.Location = new System.Drawing.Point(578, 262);
             this.txtSearchProduct.Multiline = true;
             this.txtSearchProduct.Name = "txtSearchProduct";
             this.txtSearchProduct.Size = new System.Drawing.Size(268, 40);
             this.txtSearchProduct.TabIndex = 43;
+            this.txtSearchProduct.Text = "Nhập tên sản phẩm...";
             // 
             // lblTitlePage
             // 
@@ -96,12 +84,13 @@
             // 
             // grbInfoProduct
             // 
-            this.grbInfoProduct.Controls.Add(this.btnChooseImageProduct);
+            this.grbInfoProduct.Controls.Add(this.lblDescription);
+            this.grbInfoProduct.Controls.Add(this.btnChangeImage);
             this.grbInfoProduct.Controls.Add(this.picImageProduct);
-            this.grbInfoProduct.Controls.Add(this.lblImageProduct);
             this.grbInfoProduct.Controls.Add(this.lbl);
             this.grbInfoProduct.Controls.Add(this.txtUnit);
             this.grbInfoProduct.Controls.Add(this.lblUnit);
+            this.grbInfoProduct.Controls.Add(this.txtDescription);
             this.grbInfoProduct.Controls.Add(this.txtPrice);
             this.grbInfoProduct.Controls.Add(this.lblPrice);
             this.grbInfoProduct.Controls.Add(this.cbSupplier);
@@ -118,39 +107,40 @@
             this.grbInfoProduct.TabStop = false;
             this.grbInfoProduct.Text = "Thông tin sản phẩm";
             // 
-            // btnChooseImageProduct
+            // lblDescription
             // 
-            this.btnChooseImageProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(98)))), ((int)(((byte)(104)))));
-            this.btnChooseImageProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChooseImageProduct.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChooseImageProduct.ForeColor = System.Drawing.Color.White;
-            this.btnChooseImageProduct.Location = new System.Drawing.Point(604, 26);
-            this.btnChooseImageProduct.Name = "btnChooseImageProduct";
-            this.btnChooseImageProduct.Size = new System.Drawing.Size(122, 36);
-            this.btnChooseImageProduct.TabIndex = 69;
-            this.btnChooseImageProduct.Text = "Chọn";
-            this.btnChooseImageProduct.UseVisualStyleBackColor = false;
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.Location = new System.Drawing.Point(414, 46);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(90, 32);
+            this.lblDescription.TabIndex = 71;
+            this.lblDescription.Text = "Mô tả :";
+            // 
+            // btnChangeImage
+            // 
+            this.btnChangeImage.BackColor = System.Drawing.Color.Transparent;
+            this.btnChangeImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangeImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeImage.ForeColor = System.Drawing.Color.Black;
+            this.btnChangeImage.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
+            this.btnChangeImage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChangeImage.Location = new System.Drawing.Point(762, 132);
+            this.btnChangeImage.Name = "btnChangeImage";
+            this.btnChangeImage.Size = new System.Drawing.Size(45, 38);
+            this.btnChangeImage.TabIndex = 70;
+            this.btnChangeImage.UseVisualStyleBackColor = false;
+            this.btnChangeImage.Click += new System.EventHandler(this.btnChangeIamge_Click);
             // 
             // picImageProduct
             // 
             this.picImageProduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picImageProduct.Image = ((System.Drawing.Image)(resources.GetObject("picImageProduct.Image")));
             this.picImageProduct.Location = new System.Drawing.Point(760, 18);
             this.picImageProduct.Name = "picImageProduct";
             this.picImageProduct.Size = new System.Drawing.Size(219, 154);
-            this.picImageProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picImageProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picImageProduct.TabIndex = 68;
             this.picImageProduct.TabStop = false;
-            // 
-            // lblImageProduct
-            // 
-            this.lblImageProduct.AutoSize = true;
-            this.lblImageProduct.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImageProduct.Location = new System.Drawing.Point(468, 30);
-            this.lblImageProduct.Name = "lblImageProduct";
-            this.lblImageProduct.Size = new System.Drawing.Size(125, 32);
-            this.lblImageProduct.TabIndex = 67;
-            this.lblImageProduct.Text = "Hình ảnh :";
             // 
             // lbl
             // 
@@ -165,21 +155,30 @@
             // txtUnit
             // 
             this.txtUnit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUnit.Location = new System.Drawing.Point(620, 128);
+            this.txtUnit.Location = new System.Drawing.Point(535, 131);
             this.txtUnit.Multiline = true;
             this.txtUnit.Name = "txtUnit";
-            this.txtUnit.Size = new System.Drawing.Size(106, 34);
+            this.txtUnit.Size = new System.Drawing.Size(136, 34);
             this.txtUnit.TabIndex = 65;
             // 
             // lblUnit
             // 
             this.lblUnit.AutoSize = true;
             this.lblUnit.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnit.Location = new System.Drawing.Point(468, 130);
+            this.lblUnit.Location = new System.Drawing.Point(414, 132);
             this.lblUnit.Name = "lblUnit";
-            this.lblUnit.Size = new System.Drawing.Size(146, 32);
+            this.lblUnit.Size = new System.Drawing.Size(108, 32);
             this.lblUnit.TabIndex = 64;
-            this.lblUnit.Text = "Đơn vị tính :";
+            this.lblUnit.Text = "ĐV tính :";
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescription.Location = new System.Drawing.Point(535, 46);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(207, 34);
+            this.txtDescription.TabIndex = 63;
             // 
             // txtPrice
             // 
@@ -194,7 +193,7 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(468, 89);
+            this.lblPrice.Location = new System.Drawing.Point(414, 90);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(61, 32);
             this.lblPrice.TabIndex = 62;
@@ -205,7 +204,7 @@
             this.cbSupplier.FormattingEnabled = true;
             this.cbSupplier.Location = new System.Drawing.Point(188, 128);
             this.cbSupplier.Name = "cbSupplier";
-            this.cbSupplier.Size = new System.Drawing.Size(265, 36);
+            this.cbSupplier.Size = new System.Drawing.Size(207, 36);
             this.cbSupplier.TabIndex = 61;
             // 
             // lblSupplier
@@ -223,7 +222,7 @@
             this.cbCategories.FormattingEnabled = true;
             this.cbCategories.Location = new System.Drawing.Point(188, 86);
             this.cbCategories.Name = "cbCategories";
-            this.cbCategories.Size = new System.Drawing.Size(265, 36);
+            this.cbCategories.Size = new System.Drawing.Size(207, 36);
             this.cbCategories.TabIndex = 59;
             // 
             // lblCategories
@@ -254,6 +253,23 @@
             this.lblProductName.Size = new System.Drawing.Size(176, 32);
             this.lblProductName.TabIndex = 55;
             this.lblProductName.Text = "Tên sản phẩm :";
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Image = global::GUI.Properties.Resources.icons8_Save_26px;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(438, 262);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(134, 40);
+            this.btnSave.TabIndex = 50;
+            this.btnSave.Text = "   Ghi";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnSearchProduct
             // 
@@ -289,23 +305,6 @@
             this.btnDeleteProduct.UseVisualStyleBackColor = false;
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
-            // btnEditProduct
-            // 
-            this.btnEditProduct.BackColor = System.Drawing.Color.Gold;
-            this.btnEditProduct.FlatAppearance.BorderSize = 0;
-            this.btnEditProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnEditProduct.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
-            this.btnEditProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditProduct.Location = new System.Drawing.Point(158, 262);
-            this.btnEditProduct.Name = "btnEditProduct";
-            this.btnEditProduct.Size = new System.Drawing.Size(134, 40);
-            this.btnEditProduct.TabIndex = 41;
-            this.btnEditProduct.Text = "   Sửa";
-            this.btnEditProduct.UseVisualStyleBackColor = false;
-            this.btnEditProduct.Click += new System.EventHandler(this.btnEditProduct_Click);
-            // 
             // btnAddProduct
             // 
             this.btnAddProduct.BackColor = System.Drawing.Color.DodgerBlue;
@@ -323,69 +322,61 @@
             this.btnAddProduct.UseVisualStyleBackColor = false;
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Image = global::GUI.Properties.Resources.icons8_Save_26px;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(438, 262);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(134, 40);
-            this.btnSave.TabIndex = 50;
-            this.btnSave.Text = "   Ghi";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // dgvProducts
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvProducts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvProducts.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvProducts.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvProducts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvProducts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducts.Location = new System.Drawing.Point(18, 358);
+            this.dgvProducts.Name = "dgvProducts";
+            this.dgvProducts.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvProducts.ColumnHeadersHeight = 45;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvProducts.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvProducts.DoubleBuffered = true;
-            this.dgvProducts.EnableHeadersVisualStyles = false;
-            this.dgvProducts.HeaderBgColor = System.Drawing.Color.DodgerBlue;
-            this.dgvProducts.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvProducts.Location = new System.Drawing.Point(18, 358);
-            this.dgvProducts.Name = "dgvProducts";
-            this.dgvProducts.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProducts.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvProducts.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvProducts.RowTemplate.Height = 45;
+            this.dgvProducts.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvProducts.RowTemplate.Height = 24;
             this.dgvProducts.Size = new System.Drawing.Size(985, 313);
-            this.dgvProducts.TabIndex = 58;
+            this.dgvProducts.TabIndex = 51;
+            this.dgvProducts.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_RowEnter);
+            // 
+            // lblListProducts
+            // 
+            this.lblListProducts.AutoSize = true;
+            this.lblListProducts.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblListProducts.Location = new System.Drawing.Point(359, 312);
+            this.lblListProducts.Name = "lblListProducts";
+            this.lblListProducts.Size = new System.Drawing.Size(287, 38);
+            this.lblListProducts.TabIndex = 45;
+            this.lblListProducts.Text = "Danh sách sản phẩm";
+            // 
+            // btnEditProduct
+            // 
+            this.btnEditProduct.BackColor = System.Drawing.Color.Gold;
+            this.btnEditProduct.FlatAppearance.BorderSize = 0;
+            this.btnEditProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnEditProduct.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
+            this.btnEditProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditProduct.Location = new System.Drawing.Point(158, 262);
+            this.btnEditProduct.Name = "btnEditProduct";
+            this.btnEditProduct.Size = new System.Drawing.Size(134, 40);
+            this.btnEditProduct.TabIndex = 41;
+            this.btnEditProduct.Text = "   Sửa";
+            this.btnEditProduct.UseVisualStyleBackColor = false;
+            this.btnEditProduct.Click += new System.EventHandler(this.btnEditProduct_Click);
             // 
             // ProductManagementPage
             // 
@@ -403,6 +394,7 @@
             this.Controls.Add(this.lblTitlePage);
             this.Name = "ProductManagementPage";
             this.Size = new System.Drawing.Size(1020, 684);
+            this.Load += new System.EventHandler(this.ProductManagementPage_Load);
             this.grbInfoProduct.ResumeLayout(false);
             this.grbInfoProduct.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImageProduct)).EndInit();
@@ -413,11 +405,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblListProducts;
         private System.Windows.Forms.Button btnSearchProduct;
         private System.Windows.Forms.TextBox txtSearchProduct;
         private System.Windows.Forms.Button btnDeleteProduct;
-        private System.Windows.Forms.Button btnEditProduct;
         private System.Windows.Forms.Button btnAddProduct;
         private System.Windows.Forms.Label lblTitlePage;
         private System.Windows.Forms.GroupBox grbInfoProduct;
@@ -434,8 +424,11 @@
         private System.Windows.Forms.ComboBox cbCategories;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.PictureBox picImageProduct;
-        private System.Windows.Forms.Label lblImageProduct;
-        private System.Windows.Forms.Button btnChooseImageProduct;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvProducts;
+        private System.Windows.Forms.DataGridView dgvProducts;
+        private System.Windows.Forms.Button btnChangeImage;
+        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.Label lblListProducts;
+        private System.Windows.Forms.Button btnEditProduct;
     }
 }

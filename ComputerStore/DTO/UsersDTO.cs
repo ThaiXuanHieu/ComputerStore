@@ -12,6 +12,8 @@ namespace DTO
         private string fullName;
         private string userName;
         private string password;
+        private string email;
+        private string phone;
 
         public int UserID
         {
@@ -33,5 +35,8 @@ namespace DTO
             get { return password; }
             set { password = value; }
         }
+
+        public string Email { get => email; set => email = value; }
+        public string Phone { get => phone; set => phone = value; }
     }
 }

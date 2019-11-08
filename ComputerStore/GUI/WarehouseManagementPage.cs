@@ -22,11 +22,6 @@ namespace GUI
 
         }
 
-        private void btnEditProduct_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
 

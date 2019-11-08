@@ -12,6 +12,7 @@ namespace DTO
         private int supplierID;
         private int productID;
         private string productName;
+        private string productImage;
         private string unit;
         private int price;
         private string description;
@@ -42,6 +43,13 @@ namespace DTO
             get { return productName; }
             set { productName = value; }
         }
+
+        public string ProductImage
+        {
+            get { return productImage; }
+            set { productImage = value; }
+        }
+
         public string Unit
         {
             get { return unit; }

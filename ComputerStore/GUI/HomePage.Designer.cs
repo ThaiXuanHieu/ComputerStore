@@ -72,7 +72,7 @@
             this.lblTitlePage.Name = "lblTitlePage";
             this.lblTitlePage.Size = new System.Drawing.Size(251, 38);
             this.lblTitlePage.TabIndex = 13;
-            this.lblTitlePage.Text = "Đăng cấp Gaming";
+            this.lblTitlePage.Text = "Đẳng cấp Gaming";
             // 
             // picLogoMacbook
             // 

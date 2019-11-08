@@ -116,5 +116,24 @@ namespace DAL
                 MessageBox.Show(e.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
+        public void ExecuteDeleteQuery(string query, SqlParameter[] parameters)
+        {
+            command = new SqlCommand();
+            try
+            {
+                command.Connection = openConnection();
+                command.CommandText = query;
+                command.Parameters.AddRange(parameters);
+                command.ExecuteNonQuery();
+                adapter.DeleteCommand = command;
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show(e.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }

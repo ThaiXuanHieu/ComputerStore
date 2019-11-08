@@ -68,6 +68,12 @@
     <Compile Include="AccessoriesPage.Designer.cs">
       <DependentUpon>AccessoriesPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="CategoryManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CategoryManagementPage.Designer.cs">
+      <DependentUpon>CategoryManagementPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComponentsPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -80,6 +86,18 @@
     <Compile Include="ComputerPage.Designer.cs">
       <DependentUpon>ComputerPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersManagementPage.Designer.cs">
+      <DependentUpon>OrdersManagementPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerManagementPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,12 +109,6 @@
     </Compile>
     <Compile Include="frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAdmin.Designer.cs">
-      <DependentUpon>frmAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -136,6 +148,12 @@
     <Compile Include="SupplierManagementPage.Designer.cs">
       <DependentUpon>SupplierManagementPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserPage.Designer.cs">
+      <DependentUpon>UserPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="WarehouseManagementPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -145,20 +163,26 @@
     <EmbeddedResource Include="AccessoriesPage.resx">
       <DependentUpon>AccessoriesPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CategoryManagementPage.resx">
+      <DependentUpon>CategoryManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ComponentsPage.resx">
       <DependentUpon>ComponentsPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ComputerPage.resx">
       <DependentUpon>ComputerPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersManagementPage.resx">
+      <DependentUpon>OrdersManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerManagementPage.resx">
       <DependentUpon>CustomerManagementPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAdmin.resx">
-      <DependentUpon>frmAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -188,6 +212,9 @@
     <EmbeddedResource Include="SupplierManagementPage.resx">
       <DependentUpon>SupplierManagementPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserPage.resx">
+      <DependentUpon>UserPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WarehouseManagementPage.resx">
       <DependentUpon>WarehouseManagementPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +243,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\Resources\icons8_Purchase_Order_26px.png" />
+    <None Include="bin\Debug\Resources\icons8_Paper_Money_26px.png" />
+    <None Include="bin\Debug\Resources\icons8_Print_26px.png" />
     <Content Include="Resources\1.jpg" />
     <Content Include="Resources\2.jpg" />
     <Content Include="Resources\3.jpg" />

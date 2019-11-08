@@ -14,82 +14,196 @@ namespace GUI
 {
     public partial class ProductManagementPage : UserControl
     {
+        private bool isNew = false;
+        string imageLocation = "";
+
         public ProductManagementPage()
         {
             InitializeComponent();
+            
+        }
+
+        private void ProductManagementPage_Load(object sender, EventArgs e)
+        {
             DisplayData();
+            isEnabled(false);
         }
 
         public void DisplayData()
         {
-            dgvProducts.DataSource = ProductsBLL.Instance.Select();
-            
-            
+            // Load Data vào dgvProducts
+            //dgvProducts.DataSource = ProductsBLL.Instance.GetAll();
         }
 
-        private void btnAddProduct_Click(object sender, EventArgs e)
+        private void LoadData()
         {
-            txtProductName.Text = "";
-            txtPrice.Text = "";
-            txtUnit.Text = "";
-            picImageProduct.Image = null;
-            txtProductName.Focus();
-
             // Load data ComboBox Categories
-            List<CategoriesDTO> categories = new List<CategoriesDTO>();
-            DataTable dataTableCategories = CategoriesBLL.Instance.Select();
-            foreach (DataRow dataRow in dataTableCategories.Rows)
-            {
-                CategoriesDTO category = new CategoriesDTO();
-                category.CategoryID = Int32.Parse(dataRow["CategoryID"].ToString());
-                category.CategoryName = dataRow["CategoryName"].ToString();
-                category.Description = dataRow["Description"].ToString();
-
-                categories.Add(category);
-            }
-            cbCategories.DataSource = categories;
+            //List<CategoriesDTO> categories = CategoriesBLL.Instance.GetCategories();
+            //cbCategories.DataSource = categories;
             cbCategories.DisplayMember = "CategoryName";
 
             // Load data ComboBox Supplier
 
-            List<SuppliersDTO> suppliers = new List<SuppliersDTO>();
-            DataTable dataTableSuppliers = SuppliersBLL.Instance.Select();
-            foreach(DataRow dataRow in dataTableSuppliers.Rows)
-            {
-                SuppliersDTO supplier = new SuppliersDTO();
-                supplier.SupplierID = Int32.Parse(dataRow["SupplierID"].ToString());
-                supplier.CompanyName = dataRow["CompanyName"].ToString();
-                supplier.ContactName = dataRow["ContactName"].ToString();
-                supplier.Address = dataRow["Address"].ToString();
-                supplier.Phone = dataRow["Phone"].ToString();
-                supplier.Email = dataRow["Email"].ToString();
-
-                suppliers.Add(supplier);
-            }
-            cbSupplier.DataSource = suppliers;
+            //List<SuppliersDTO> suppliers = SuppliersBLL.Instance.GetSuppliers();
+            //cbSupplier.DataSource = suppliers;
             cbSupplier.DisplayMember = "CompanyName";
+        }
 
+        private void isEnabled(bool enabled)
+        {
+            // Có hay Không cho phép nhập
+            txtProductName.Enabled = enabled;
+            txtPrice.Enabled = enabled;
+            txtUnit.Enabled = enabled;
+            txtDescription.Enabled = enabled;
+            cbCategories.Enabled = enabled;
+            cbSupplier.Enabled = enabled;
+
+            // Có hay Không cho phép nhấn
+            btnAddProduct.Enabled = !enabled;
+            btnDeleteProduct.Enabled = !enabled;
+            btnEditProduct.Enabled = !enabled;
+            btnSave.Enabled = enabled;
+            btnChangeImage.Enabled = enabled;
+        }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            isEnabled(true);
+            isNew = true;
+
+            txtProductName.Clear();
+            txtPrice.Clear();
+            txtUnit.Clear();
+            txtSearchProduct.Clear();
+            txtDescription.Clear();
+            picImageProduct.Image = null;
+            picImageProduct.ImageLocation = "";
+            txtProductName.Focus();
+
+            LoadData();
 
         }
 
+        
+
         private void btnSearchProduct_Click(object sender, EventArgs e)
         {
-
+            // Select with SearchString
+            //dgvProducts.DataSource = ProductsBLL.Instance.GetProductBySearchString(txtSearchProduct.Text);
+            
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            // Insert
 
-        }
+            if (isNew == true)
+            {
+                if (txtProductName.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập tên cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                if (txtPrice.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập giá cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                if (txtUnit.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập đơn vị tính cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                if (picImageProduct.ImageLocation == "")
+                {
+                    MessageBox.Show("Vui lòng chọn ảnh cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
 
-        private void btnDeleteProduct_Click(object sender, EventArgs e)
-        {
+                string productImage = picImageProduct.ImageLocation;
+                //string nameImage = imgPath.Substring(imgPath.LastIndexOf('\\') + 1);
+                //int row = dgvProducts.CurrentRow.Index;
+                //string nameImage = dgvProducts.Rows[row].Cells[4].Value.ToString();
+                CategoriesDTO category = cbCategories.SelectedValue as CategoriesDTO;
+                SuppliersDTO supplier = cbSupplier.SelectedValue as SuppliersDTO;
+                //ProductsBLL.Instance.Insert(category.CategoryID, supplier.SupplierID, txtProductName.Text, productImage, txtUnit.Text, Convert.ToDouble(txtPrice.Text), txtDescription.Text);
+            }
+            else
+            {
+                int row = dgvProducts.CurrentRow.Index;
+                int productID = Convert.ToInt32(dgvProducts.Rows[row].Cells[2].Value.ToString());
+                string productImage = imageLocation;
+                CategoriesDTO category = cbCategories.SelectedValue as CategoriesDTO;
+                SuppliersDTO supplier = cbSupplier.SelectedValue as SuppliersDTO;
+                //ProductsBLL.Instance.Update(category.CategoryID, supplier.SupplierID, productID, txtProductName.Text, productImage, txtUnit.Text, Convert.ToDouble(txtPrice.Text), txtDescription.Text);
+            }
+            
 
+            DisplayData();
+            isEnabled(false);
         }
 
         private void btnEditProduct_Click(object sender, EventArgs e)
         {
-
+            isEnabled(true);
+            txtProductName.Focus();
+            isNew = false;
         }
+
+        private void btnDeleteProduct_Click(object sender, EventArgs e)
+        {
+            // Delete
+            DialogResult dialog = new DialogResult();
+            dialog = MessageBox.Show("Chắc chắn xóa sản phẩm đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == System.Windows.Forms.DialogResult.No) return;
+
+            int row = dgvProducts.CurrentRow.Index;
+            int productID = Convert.ToInt32(dgvProducts.Rows[row].Cells[2].Value.ToString());
+            //ProductsBLL.Instance.DeleteByProductID(productID);
+
+            DisplayData();
+        }
+
+        private void dgvProducts_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+
+            LoadData();
+            int row = e.RowIndex;
+
+            cbCategories.Text = dgvProducts.Rows[row].Cells[0].Value.ToString();
+            cbSupplier.Text = dgvProducts.Rows[row].Cells[1].Value.ToString();
+            txtProductName.Text = dgvProducts.Rows[row].Cells[3].Value.ToString();
+            imageLocation = dgvProducts.Rows[row].Cells[4].Value.ToString();
+            Bitmap bitmap = new Bitmap(imageLocation);
+            picImageProduct.Image = bitmap;
+            txtUnit.Text = dgvProducts.Rows[row].Cells[5].Value.ToString();
+            txtPrice.Text = dgvProducts.Rows[row].Cells[6].Value.ToString();
+            txtDescription.Text = dgvProducts.Rows[row].Cells[7].ToString();
+
+            
+        }
+
+        private void btnChangeIamge_Click(object sender, EventArgs e)
+        {
+            imageLocation = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;..."; ;
+
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    imageLocation = dialog.FileName;
+                    picImageProduct.ImageLocation = imageLocation;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi! Không thể tải ảnh lên", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        
     }
 }

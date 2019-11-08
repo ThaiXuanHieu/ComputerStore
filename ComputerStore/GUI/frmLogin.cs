@@ -15,10 +15,12 @@ namespace GUI
     public partial class frmLogin : Form
     {
         bool hidden;
+        bool hidden1;
         public frmLogin()
         {
             InitializeComponent();
             hidden = true;
+            hidden1 = true;
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -56,15 +58,51 @@ namespace GUI
             Timer.Start();
         }
 
+        private void llbBack1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Timer1.Start();
+        }
+
+        private void llbForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Timer1.Start();
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            if (hidden1)
+            {
+                pnlRight.Width = pnlRight.Width + 10;
+                if (pnlRight.Width >= 280)
+                {
+                    Timer1.Stop();
+                    hidden1 = false;
+                    this.Refresh();
+                }
+
+            }
+            else
+            {
+                pnlRight.Width = pnlRight.Width - 10;
+                if (pnlRight.Width <= 10)
+                {
+                    Timer1.Stop();
+                    hidden1 = true;
+                    this.Refresh();
+                }
+            }
+        }
+
         private void btnSignin_Click(object sender, EventArgs e)
         {
             try
             {
-                UsersDTO user = UsersBLL.Instance.Select(txtUsername.Text, txtPassword.Text);
+                UsersDTO user = UsersBLL.Instance.GetByUerNameAndPassword(txtUsername.Text, txtPassword.Text);
                 if (user.UserName.Equals("admin") && user.Password.Equals("123456"))
                 {
                     frmAdmin admin = new frmAdmin(user.FullName);
                     admin.Show();
+                    
                 }
                 else if (user.UserName.Equals(txtUsername.Text) && user.Password.Equals(txtPassword.Text))
                 {
@@ -85,7 +123,7 @@ namespace GUI
         {
             try
             {
-                UsersDTO user= UsersBLL.Instance.Select(txtUsernameNew.Text, txtPasswordNew.Text);
+                UsersDTO user= UsersBLL.Instance.GetByUerNameAndPassword(txtUsernameNew.Text, txtPasswordNew.Text);
                 if ((user.UserName.Equals(txtUsernameNew.Text) && user.Password.Equals(txtPasswordNew.Text)))
                 {
                     MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TÀI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -98,5 +136,7 @@ namespace GUI
             }
             
         }
+
+        
     }
 }

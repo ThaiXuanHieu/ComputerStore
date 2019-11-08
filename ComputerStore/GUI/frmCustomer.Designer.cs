@@ -50,12 +50,13 @@
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.lblCopyright = new System.Windows.Forms.Label();
             this.pnlWrap = new System.Windows.Forms.Panel();
-            this.softwarePage = new GUI.SoftwarePage();
-            this.componentsPage = new GUI.ComponentsPage();
-            this.accessoriesPage = new GUI.AccessoriesPage();
-            this.laptopPage = new GUI.LaptopPage();
-            this.computerPage = new GUI.ComputerPage();
             this.homePage = new GUI.HomePage();
+            this.computerPage = new GUI.ComputerPage();
+            this.laptopPage = new GUI.LaptopPage();
+            this.accessoriesPage = new GUI.AccessoriesPage();
+            this.componentsPage = new GUI.ComponentsPage();
+            this.softwarePage = new GUI.SoftwarePage();
+            this.btnCart = new System.Windows.Forms.Button();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.pnlLeft.SuspendLayout();
@@ -116,6 +117,7 @@
             // 
             this.pnlLeft.BackColor = System.Drawing.Color.White;
             this.pnlLeft.Controls.Add(this.Separator3);
+            this.pnlLeft.Controls.Add(this.btnCart);
             this.pnlLeft.Controls.Add(this.btnSoftwarePage);
             this.pnlLeft.Controls.Add(this.btnLogout);
             this.pnlLeft.Controls.Add(this.btnProfile);
@@ -139,7 +141,7 @@
             this.Separator3.BackColor = System.Drawing.Color.Transparent;
             this.Separator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.Separator3.LineThickness = 1;
-            this.Separator3.Location = new System.Drawing.Point(10, 461);
+            this.Separator3.Location = new System.Drawing.Point(8, 151);
             this.Separator3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Separator3.Name = "Separator3";
             this.Separator3.Size = new System.Drawing.Size(297, 43);
@@ -154,7 +156,7 @@
             this.btnSoftwarePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSoftwarePage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSoftwarePage.ForeColor = System.Drawing.Color.White;
-            this.btnSoftwarePage.Location = new System.Drawing.Point(12, 393);
+            this.btnSoftwarePage.Location = new System.Drawing.Point(10, 491);
             this.btnSoftwarePage.Name = "btnSoftwarePage";
             this.btnSoftwarePage.Size = new System.Drawing.Size(295, 61);
             this.btnSoftwarePage.TabIndex = 11;
@@ -169,7 +171,7 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(167, 675);
+            this.btnLogout.Location = new System.Drawing.Point(165, 104);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(140, 40);
             this.btnLogout.TabIndex = 10;
@@ -183,7 +185,7 @@
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.ForeColor = System.Drawing.Color.White;
-            this.btnProfile.Location = new System.Drawing.Point(12, 674);
+            this.btnProfile.Location = new System.Drawing.Point(10, 104);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(140, 40);
             this.btnProfile.TabIndex = 9;
@@ -197,7 +199,7 @@
             this.btnComponentsPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComponentsPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComponentsPage.ForeColor = System.Drawing.Color.White;
-            this.btnComponentsPage.Location = new System.Drawing.Point(12, 335);
+            this.btnComponentsPage.Location = new System.Drawing.Point(10, 433);
             this.btnComponentsPage.Name = "btnComponentsPage";
             this.btnComponentsPage.Size = new System.Drawing.Size(295, 61);
             this.btnComponentsPage.TabIndex = 8;
@@ -212,7 +214,7 @@
             this.btnAccessoriesPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccessoriesPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccessoriesPage.ForeColor = System.Drawing.Color.White;
-            this.btnAccessoriesPage.Location = new System.Drawing.Point(12, 277);
+            this.btnAccessoriesPage.Location = new System.Drawing.Point(10, 375);
             this.btnAccessoriesPage.Name = "btnAccessoriesPage";
             this.btnAccessoriesPage.Size = new System.Drawing.Size(295, 61);
             this.btnAccessoriesPage.TabIndex = 7;
@@ -227,7 +229,7 @@
             this.btnLaptopPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLaptopPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLaptopPage.ForeColor = System.Drawing.Color.White;
-            this.btnLaptopPage.Location = new System.Drawing.Point(12, 219);
+            this.btnLaptopPage.Location = new System.Drawing.Point(10, 317);
             this.btnLaptopPage.Name = "btnLaptopPage";
             this.btnLaptopPage.Size = new System.Drawing.Size(295, 61);
             this.btnLaptopPage.TabIndex = 6;
@@ -242,7 +244,7 @@
             this.btnComputerPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComputerPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComputerPage.ForeColor = System.Drawing.Color.White;
-            this.btnComputerPage.Location = new System.Drawing.Point(12, 161);
+            this.btnComputerPage.Location = new System.Drawing.Point(10, 259);
             this.btnComputerPage.Name = "btnComputerPage";
             this.btnComputerPage.Size = new System.Drawing.Size(295, 61);
             this.btnComputerPage.TabIndex = 5;
@@ -257,7 +259,7 @@
             this.btnHomePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHomePage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHomePage.ForeColor = System.Drawing.Color.White;
-            this.btnHomePage.Location = new System.Drawing.Point(12, 103);
+            this.btnHomePage.Location = new System.Drawing.Point(10, 201);
             this.btnHomePage.Name = "btnHomePage";
             this.btnHomePage.Size = new System.Drawing.Size(295, 61);
             this.btnHomePage.TabIndex = 4;
@@ -291,7 +293,7 @@
             this.Separator2.BackColor = System.Drawing.Color.Transparent;
             this.Separator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.Separator2.LineThickness = 1;
-            this.Separator2.Location = new System.Drawing.Point(13, 641);
+            this.Separator2.Location = new System.Drawing.Point(10, 641);
             this.Separator2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Separator2.Name = "Separator2";
             this.Separator2.Size = new System.Drawing.Size(297, 43);
@@ -304,7 +306,7 @@
             this.Separator1.BackColor = System.Drawing.Color.Transparent;
             this.Separator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.Separator1.LineThickness = 1;
-            this.Separator1.Location = new System.Drawing.Point(13, 52);
+            this.Separator1.Location = new System.Drawing.Point(10, 68);
             this.Separator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Separator1.Name = "Separator1";
             this.Separator1.Size = new System.Drawing.Size(297, 43);
@@ -348,38 +350,13 @@
             this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
             this.pnlWrap.TabIndex = 3;
             // 
-            // softwarePage
+            // homePage
             // 
-            this.softwarePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.softwarePage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.softwarePage.Location = new System.Drawing.Point(0, 0);
-            this.softwarePage.Name = "softwarePage";
-            this.softwarePage.Size = new System.Drawing.Size(1020, 684);
-            this.softwarePage.TabIndex = 0;
-            // 
-            // componentsPage
-            // 
-            this.componentsPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.componentsPage.Location = new System.Drawing.Point(0, 0);
-            this.componentsPage.Name = "componentsPage";
-            this.componentsPage.Size = new System.Drawing.Size(1020, 684);
-            this.componentsPage.TabIndex = 1;
-            // 
-            // accessoriesPage
-            // 
-            this.accessoriesPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.accessoriesPage.Location = new System.Drawing.Point(0, 0);
-            this.accessoriesPage.Name = "accessoriesPage";
-            this.accessoriesPage.Size = new System.Drawing.Size(1020, 684);
-            this.accessoriesPage.TabIndex = 2;
-            // 
-            // laptopPage
-            // 
-            this.laptopPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.laptopPage.Location = new System.Drawing.Point(0, 0);
-            this.laptopPage.Name = "laptopPage";
-            this.laptopPage.Size = new System.Drawing.Size(1020, 684);
-            this.laptopPage.TabIndex = 3;
+            this.homePage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homePage.Location = new System.Drawing.Point(0, 0);
+            this.homePage.Name = "homePage";
+            this.homePage.Size = new System.Drawing.Size(1020, 684);
+            this.homePage.TabIndex = 5;
             // 
             // computerPage
             // 
@@ -390,13 +367,53 @@
             this.computerPage.Size = new System.Drawing.Size(1020, 684);
             this.computerPage.TabIndex = 4;
             // 
-            // homePage
+            // laptopPage
             // 
-            this.homePage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homePage.Location = new System.Drawing.Point(0, 0);
-            this.homePage.Name = "homePage";
-            this.homePage.Size = new System.Drawing.Size(1020, 684);
-            this.homePage.TabIndex = 5;
+            this.laptopPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.laptopPage.Location = new System.Drawing.Point(0, 0);
+            this.laptopPage.Name = "laptopPage";
+            this.laptopPage.Size = new System.Drawing.Size(1020, 684);
+            this.laptopPage.TabIndex = 3;
+            // 
+            // accessoriesPage
+            // 
+            this.accessoriesPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accessoriesPage.Location = new System.Drawing.Point(0, 0);
+            this.accessoriesPage.Name = "accessoriesPage";
+            this.accessoriesPage.Size = new System.Drawing.Size(1020, 684);
+            this.accessoriesPage.TabIndex = 2;
+            // 
+            // componentsPage
+            // 
+            this.componentsPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.componentsPage.Location = new System.Drawing.Point(0, 0);
+            this.componentsPage.Name = "componentsPage";
+            this.componentsPage.Size = new System.Drawing.Size(1020, 684);
+            this.componentsPage.TabIndex = 1;
+            // 
+            // softwarePage
+            // 
+            this.softwarePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.softwarePage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.softwarePage.Location = new System.Drawing.Point(0, 0);
+            this.softwarePage.Name = "softwarePage";
+            this.softwarePage.Size = new System.Drawing.Size(1020, 684);
+            this.softwarePage.TabIndex = 0;
+            // 
+            // btnCart
+            // 
+            this.btnCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnCart.FlatAppearance.BorderSize = 0;
+            this.btnCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCart.ForeColor = System.Drawing.Color.White;
+            this.btnCart.Location = new System.Drawing.Point(10, 542);
+            this.btnCart.Name = "btnCart";
+            this.btnCart.Size = new System.Drawing.Size(295, 61);
+            this.btnCart.TabIndex = 11;
+            this.btnCart.Text = "Giỏ hàng";
+            this.btnCart.UseVisualStyleBackColor = false;
+            this.btnCart.Click += new System.EventHandler(this.btnSoftwarePage_Click);
             // 
             // frmCustomer
             // 
@@ -455,6 +472,7 @@
         private LaptopPage laptopPage;
         private ComputerPage computerPage;
         private HomePage homePage;
+        private System.Windows.Forms.Button btnCart;
     }
 }
 

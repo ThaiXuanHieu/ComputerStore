@@ -29,15 +29,10 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblListProducts = new System.Windows.Forms.Label();
             this.txtSearchProduct = new System.Windows.Forms.TextBox();
             this.lblTitlePage = new System.Windows.Forms.Label();
-            this.dgvProducts = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.grbInfo = new System.Windows.Forms.GroupBox();
+            this.grbInfoProduct = new System.Windows.Forms.GroupBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.lblPhone = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -50,11 +45,12 @@
             this.lblContactName = new System.Windows.Forms.Label();
             this.btnSearchProduct = new System.Windows.Forms.Button();
             this.btnDeleteProduct = new System.Windows.Forms.Button();
-            this.btnEditProduct = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.btnEditProduct = new System.Windows.Forms.Button();
+            this.grbInfoProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
-            this.grbInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblListProducts
@@ -76,6 +72,7 @@
             this.txtSearchProduct.Name = "txtSearchProduct";
             this.txtSearchProduct.Size = new System.Drawing.Size(268, 40);
             this.txtSearchProduct.TabIndex = 35;
+            this.txtSearchProduct.Text = "Nhập tên sản phẩm...";
             // 
             // lblTitlePage
             // 
@@ -88,72 +85,25 @@
             this.lblTitlePage.TabIndex = 31;
             this.lblTitlePage.Text = "Quản lý kho";
             // 
-            // dgvProducts
+            // grbInfoProduct
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvProducts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvProducts.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvProducts.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvProducts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvProducts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvProducts.ColumnHeadersHeight = 45;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvProducts.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvProducts.DoubleBuffered = true;
-            this.dgvProducts.EnableHeadersVisualStyles = false;
-            this.dgvProducts.HeaderBgColor = System.Drawing.Color.DodgerBlue;
-            this.dgvProducts.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvProducts.Location = new System.Drawing.Point(18, 358);
-            this.dgvProducts.Name = "dgvProducts";
-            this.dgvProducts.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProducts.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvProducts.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvProducts.RowTemplate.Height = 45;
-            this.dgvProducts.Size = new System.Drawing.Size(985, 313);
-            this.dgvProducts.TabIndex = 57;
-            // 
-            // grbInfo
-            // 
-            this.grbInfo.Controls.Add(this.txtPhone);
-            this.grbInfo.Controls.Add(this.lblPhone);
-            this.grbInfo.Controls.Add(this.txtEmail);
-            this.grbInfo.Controls.Add(this.lblEmail);
-            this.grbInfo.Controls.Add(this.txtAddress);
-            this.grbInfo.Controls.Add(this.lblAddress);
-            this.grbInfo.Controls.Add(this.txtCompanyName);
-            this.grbInfo.Controls.Add(this.lblCompanyName);
-            this.grbInfo.Controls.Add(this.txtContactName);
-            this.grbInfo.Controls.Add(this.lblContactName);
-            this.grbInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbInfo.Location = new System.Drawing.Point(18, 66);
-            this.grbInfo.Name = "grbInfo";
-            this.grbInfo.Size = new System.Drawing.Size(985, 178);
-            this.grbInfo.TabIndex = 58;
-            this.grbInfo.TabStop = false;
-            this.grbInfo.Text = "Thông tin nhà cung cấp";
+            this.grbInfoProduct.Controls.Add(this.txtPhone);
+            this.grbInfoProduct.Controls.Add(this.lblPhone);
+            this.grbInfoProduct.Controls.Add(this.txtEmail);
+            this.grbInfoProduct.Controls.Add(this.lblEmail);
+            this.grbInfoProduct.Controls.Add(this.txtAddress);
+            this.grbInfoProduct.Controls.Add(this.lblAddress);
+            this.grbInfoProduct.Controls.Add(this.txtCompanyName);
+            this.grbInfoProduct.Controls.Add(this.lblCompanyName);
+            this.grbInfoProduct.Controls.Add(this.txtContactName);
+            this.grbInfoProduct.Controls.Add(this.lblContactName);
+            this.grbInfoProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbInfoProduct.Location = new System.Drawing.Point(18, 66);
+            this.grbInfoProduct.Name = "grbInfoProduct";
+            this.grbInfoProduct.Size = new System.Drawing.Size(985, 178);
+            this.grbInfoProduct.TabIndex = 58;
+            this.grbInfoProduct.TabStop = false;
+            this.grbInfoProduct.Text = "Thông tin sản phẩm";
             // 
             // txtPhone
             // 
@@ -284,23 +234,6 @@
             this.btnDeleteProduct.UseVisualStyleBackColor = false;
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
-            // btnEditProduct
-            // 
-            this.btnEditProduct.BackColor = System.Drawing.Color.Gold;
-            this.btnEditProduct.FlatAppearance.BorderSize = 0;
-            this.btnEditProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnEditProduct.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
-            this.btnEditProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditProduct.Location = new System.Drawing.Point(158, 262);
-            this.btnEditProduct.Name = "btnEditProduct";
-            this.btnEditProduct.Size = new System.Drawing.Size(134, 40);
-            this.btnEditProduct.TabIndex = 33;
-            this.btnEditProduct.Text = "   Sửa";
-            this.btnEditProduct.UseVisualStyleBackColor = false;
-            this.btnEditProduct.Click += new System.EventHandler(this.btnEditProduct_Click);
-            // 
             // btnAddProduct
             // 
             this.btnAddProduct.BackColor = System.Drawing.Color.DodgerBlue;
@@ -335,25 +268,59 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // dgvProducts
+            // 
+            this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducts.Location = new System.Drawing.Point(18, 358);
+            this.dgvProducts.Name = "dgvProducts";
+            this.dgvProducts.RowTemplate.Height = 24;
+            this.dgvProducts.Size = new System.Drawing.Size(985, 313);
+            this.dgvProducts.TabIndex = 60;
+            // 
+            // btnEditProduct
+            // 
+            this.btnEditProduct.BackColor = System.Drawing.Color.Gold;
+            this.btnEditProduct.FlatAppearance.BorderSize = 0;
+            this.btnEditProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnEditProduct.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
+            this.btnEditProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditProduct.Location = new System.Drawing.Point(158, 262);
+            this.btnEditProduct.Name = "btnEditProduct";
+            this.btnEditProduct.Size = new System.Drawing.Size(134, 40);
+            this.btnEditProduct.TabIndex = 61;
+            this.btnEditProduct.Text = "   Sửa";
+            this.btnEditProduct.UseVisualStyleBackColor = false;
+            // 
             // WarehouseManagementPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.grbInfo);
+            this.Controls.Add(this.btnEditProduct);
             this.Controls.Add(this.dgvProducts);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.grbInfoProduct);
             this.Controls.Add(this.lblListProducts);
             this.Controls.Add(this.btnSearchProduct);
             this.Controls.Add(this.txtSearchProduct);
             this.Controls.Add(this.btnDeleteProduct);
-            this.Controls.Add(this.btnEditProduct);
             this.Controls.Add(this.btnAddProduct);
             this.Controls.Add(this.lblTitlePage);
             this.Name = "WarehouseManagementPage";
             this.Size = new System.Drawing.Size(1020, 684);
+            this.grbInfoProduct.ResumeLayout(false);
+            this.grbInfoProduct.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
-            this.grbInfo.ResumeLayout(false);
-            this.grbInfo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,11 +331,9 @@
         private System.Windows.Forms.Button btnSearchProduct;
         private System.Windows.Forms.TextBox txtSearchProduct;
         private System.Windows.Forms.Button btnDeleteProduct;
-        private System.Windows.Forms.Button btnEditProduct;
         private System.Windows.Forms.Button btnAddProduct;
         private System.Windows.Forms.Label lblTitlePage;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvProducts;
-        private System.Windows.Forms.GroupBox grbInfo;
+        private System.Windows.Forms.GroupBox grbInfoProduct;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.TextBox txtEmail;
@@ -380,5 +345,7 @@
         private System.Windows.Forms.TextBox txtContactName;
         private System.Windows.Forms.Label lblContactName;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DataGridView dgvProducts;
+        private System.Windows.Forms.Button btnEditProduct;
     }
 }

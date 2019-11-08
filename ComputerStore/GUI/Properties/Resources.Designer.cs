@@ -103,9 +103,39 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Paper_Money_26px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Paper_Money_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Plus_Math_26px {
             get {
                 object obj = ResourceManager.GetObject("icons8_Plus_Math_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Print_26px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Print_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Purchase_Order_26px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Purchase_Order_26px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

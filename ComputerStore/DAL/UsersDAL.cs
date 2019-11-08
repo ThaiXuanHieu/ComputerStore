@@ -32,9 +32,16 @@ namespace DAL
         }
 
 
+        public DataTable Select()
+        {
+            string query = "SELECT * FROM Users";
+
+            return dbConnection.ExecuteSelectQuery(query);
+        }
+
         public DataTable Select(string _userName, string _password)
         {
-            string query = "SELECT FullName, UserName, Password FROM Users WHERE UserName = @userName AND Password = @password";
+            string query = "SELECT * FROM Users WHERE UserName = @userName AND Password = @password";
             SqlParameter[] parameters = new SqlParameter[2];
             parameters[0] = new SqlParameter("@userName", SqlDbType.VarChar);
             parameters[0].Value = _userName;

@@ -34,6 +34,7 @@
             this.TabLaptopGaming = new MetroFramework.Controls.MetroTabPage();
             this.fPnlWrapLaptopGaming = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlLaptopGaming1 = new System.Windows.Forms.Panel();
+            this.btnAddToCart = new System.Windows.Forms.Button();
             this.lblUnitPriceLaptopGaming1 = new System.Windows.Forms.Label();
             this.lblNameLaptopGaming1 = new System.Windows.Forms.Label();
             this.picLaptopGaming1 = new System.Windows.Forms.PictureBox();
@@ -109,6 +110,7 @@
             this.lblUnitPriceLaptopOffice6 = new System.Windows.Forms.Label();
             this.lblNameLaptopOffice6 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.btnDetail = new System.Windows.Forms.Button();
             this.TabControlLaptop.SuspendLayout();
             this.TabLaptopGaming.SuspendLayout();
             this.fPnlWrapLaptopGaming.SuspendLayout();
@@ -172,7 +174,7 @@
             this.TabControlLaptop.Controls.Add(this.TabLaptopOffice);
             this.TabControlLaptop.Location = new System.Drawing.Point(88, 60);
             this.TabControlLaptop.Name = "TabControlLaptop";
-            this.TabControlLaptop.SelectedIndex = 2;
+            this.TabControlLaptop.SelectedIndex = 0;
             this.TabControlLaptop.Size = new System.Drawing.Size(847, 611);
             this.TabControlLaptop.TabIndex = 28;
             this.TabControlLaptop.UseSelectable = true;
@@ -211,6 +213,8 @@
             // pnlLaptopGaming1
             // 
             this.pnlLaptopGaming1.BackColor = System.Drawing.Color.White;
+            this.pnlLaptopGaming1.Controls.Add(this.btnDetail);
+            this.pnlLaptopGaming1.Controls.Add(this.btnAddToCart);
             this.pnlLaptopGaming1.Controls.Add(this.lblUnitPriceLaptopGaming1);
             this.pnlLaptopGaming1.Controls.Add(this.lblNameLaptopGaming1);
             this.pnlLaptopGaming1.Controls.Add(this.picLaptopGaming1);
@@ -220,12 +224,22 @@
             this.pnlLaptopGaming1.Size = new System.Drawing.Size(274, 277);
             this.pnlLaptopGaming1.TabIndex = 20;
             // 
+            // btnAddToCart
+            // 
+            this.btnAddToCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddToCart.Image = ((System.Drawing.Image)(resources.GetObject("btnAddToCart.Image")));
+            this.btnAddToCart.Location = new System.Drawing.Point(4, 230);
+            this.btnAddToCart.Name = "btnAddToCart";
+            this.btnAddToCart.Size = new System.Drawing.Size(49, 44);
+            this.btnAddToCart.TabIndex = 7;
+            this.btnAddToCart.UseVisualStyleBackColor = true;
+            // 
             // lblUnitPriceLaptopGaming1
             // 
             this.lblUnitPriceLaptopGaming1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGaming1.Location = new System.Drawing.Point(24, 225);
+            this.lblUnitPriceLaptopGaming1.Location = new System.Drawing.Point(59, 214);
             this.lblUnitPriceLaptopGaming1.Name = "lblUnitPriceLaptopGaming1";
-            this.lblUnitPriceLaptopGaming1.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGaming1.Size = new System.Drawing.Size(152, 37);
             this.lblUnitPriceLaptopGaming1.TabIndex = 6;
             this.lblUnitPriceLaptopGaming1.Text = "299.000 VND";
             this.lblUnitPriceLaptopGaming1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -233,7 +247,7 @@
             // lblNameLaptopGaming1
             // 
             this.lblNameLaptopGaming1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGaming1.Location = new System.Drawing.Point(24, 188);
+            this.lblNameLaptopGaming1.Location = new System.Drawing.Point(24, 177);
             this.lblNameLaptopGaming1.Name = "lblNameLaptopGaming1";
             this.lblNameLaptopGaming1.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGaming1.TabIndex = 5;
@@ -265,9 +279,9 @@
             // lblUnitPriceLaptopGaming2
             // 
             this.lblUnitPriceLaptopGaming2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGaming2.Location = new System.Drawing.Point(24, 230);
+            this.lblUnitPriceLaptopGaming2.Location = new System.Drawing.Point(59, 214);
             this.lblUnitPriceLaptopGaming2.Name = "lblUnitPriceLaptopGaming2";
-            this.lblUnitPriceLaptopGaming2.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGaming2.Size = new System.Drawing.Size(151, 37);
             this.lblUnitPriceLaptopGaming2.TabIndex = 6;
             this.lblUnitPriceLaptopGaming2.Text = "299.000 VND";
             this.lblUnitPriceLaptopGaming2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -275,7 +289,7 @@
             // lblNameLaptopGaming2
             // 
             this.lblNameLaptopGaming2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGaming2.Location = new System.Drawing.Point(24, 193);
+            this.lblNameLaptopGaming2.Location = new System.Drawing.Point(24, 177);
             this.lblNameLaptopGaming2.Name = "lblNameLaptopGaming2";
             this.lblNameLaptopGaming2.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGaming2.TabIndex = 5;
@@ -307,9 +321,9 @@
             // lblUnitPriceLaptopGaming3
             // 
             this.lblUnitPriceLaptopGaming3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGaming3.Location = new System.Drawing.Point(24, 230);
+            this.lblUnitPriceLaptopGaming3.Location = new System.Drawing.Point(59, 214);
             this.lblUnitPriceLaptopGaming3.Name = "lblUnitPriceLaptopGaming3";
-            this.lblUnitPriceLaptopGaming3.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGaming3.Size = new System.Drawing.Size(152, 37);
             this.lblUnitPriceLaptopGaming3.TabIndex = 6;
             this.lblUnitPriceLaptopGaming3.Text = "299.000 VND";
             this.lblUnitPriceLaptopGaming3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -317,7 +331,7 @@
             // lblNameLaptopGaming3
             // 
             this.lblNameLaptopGaming3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGaming3.Location = new System.Drawing.Point(24, 193);
+            this.lblNameLaptopGaming3.Location = new System.Drawing.Point(24, 177);
             this.lblNameLaptopGaming3.Name = "lblNameLaptopGaming3";
             this.lblNameLaptopGaming3.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGaming3.TabIndex = 5;
@@ -349,9 +363,9 @@
             // lblUnitPriceLaptopGaming4
             // 
             this.lblUnitPriceLaptopGaming4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGaming4.Location = new System.Drawing.Point(22, 230);
+            this.lblUnitPriceLaptopGaming4.Location = new System.Drawing.Point(64, 214);
             this.lblUnitPriceLaptopGaming4.Name = "lblUnitPriceLaptopGaming4";
-            this.lblUnitPriceLaptopGaming4.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGaming4.Size = new System.Drawing.Size(147, 37);
             this.lblUnitPriceLaptopGaming4.TabIndex = 6;
             this.lblUnitPriceLaptopGaming4.Text = "299.000 VND";
             this.lblUnitPriceLaptopGaming4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -359,7 +373,7 @@
             // lblNameLaptopGaming4
             // 
             this.lblNameLaptopGaming4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGaming4.Location = new System.Drawing.Point(22, 193);
+            this.lblNameLaptopGaming4.Location = new System.Drawing.Point(24, 177);
             this.lblNameLaptopGaming4.Name = "lblNameLaptopGaming4";
             this.lblNameLaptopGaming4.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGaming4.TabIndex = 5;
@@ -391,9 +405,9 @@
             // lblUnitPriceLaptopGaming5
             // 
             this.lblUnitPriceLaptopGaming5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGaming5.Location = new System.Drawing.Point(24, 225);
+            this.lblUnitPriceLaptopGaming5.Location = new System.Drawing.Point(59, 214);
             this.lblUnitPriceLaptopGaming5.Name = "lblUnitPriceLaptopGaming5";
-            this.lblUnitPriceLaptopGaming5.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGaming5.Size = new System.Drawing.Size(151, 37);
             this.lblUnitPriceLaptopGaming5.TabIndex = 4;
             this.lblUnitPriceLaptopGaming5.Text = "299.000 VND";
             this.lblUnitPriceLaptopGaming5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -401,7 +415,7 @@
             // lblNameLaptopGaming5
             // 
             this.lblNameLaptopGaming5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGaming5.Location = new System.Drawing.Point(24, 188);
+            this.lblNameLaptopGaming5.Location = new System.Drawing.Point(24, 177);
             this.lblNameLaptopGaming5.Name = "lblNameLaptopGaming5";
             this.lblNameLaptopGaming5.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGaming5.TabIndex = 3;
@@ -433,9 +447,9 @@
             // lblUnitPriceLaptopGaming6
             // 
             this.lblUnitPriceLaptopGaming6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGaming6.Location = new System.Drawing.Point(22, 225);
+            this.lblUnitPriceLaptopGaming6.Location = new System.Drawing.Point(64, 214);
             this.lblUnitPriceLaptopGaming6.Name = "lblUnitPriceLaptopGaming6";
-            this.lblUnitPriceLaptopGaming6.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGaming6.Size = new System.Drawing.Size(147, 37);
             this.lblUnitPriceLaptopGaming6.TabIndex = 2;
             this.lblUnitPriceLaptopGaming6.Text = "299.000 VND";
             this.lblUnitPriceLaptopGaming6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -443,7 +457,7 @@
             // lblNameLaptopGaming6
             // 
             this.lblNameLaptopGaming6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGaming6.Location = new System.Drawing.Point(22, 188);
+            this.lblNameLaptopGaming6.Location = new System.Drawing.Point(24, 177);
             this.lblNameLaptopGaming6.Name = "lblNameLaptopGaming6";
             this.lblNameLaptopGaming6.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGaming6.TabIndex = 1;
@@ -505,9 +519,9 @@
             // lblUnitPriceLaptopGraphic1
             // 
             this.lblUnitPriceLaptopGraphic1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGraphic1.Location = new System.Drawing.Point(24, 225);
+            this.lblUnitPriceLaptopGraphic1.Location = new System.Drawing.Point(57, 212);
             this.lblUnitPriceLaptopGraphic1.Name = "lblUnitPriceLaptopGraphic1";
-            this.lblUnitPriceLaptopGraphic1.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGraphic1.Size = new System.Drawing.Size(149, 37);
             this.lblUnitPriceLaptopGraphic1.TabIndex = 6;
             this.lblUnitPriceLaptopGraphic1.Text = "299.000 VND";
             this.lblUnitPriceLaptopGraphic1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -515,7 +529,7 @@
             // lblNameLaptopGraphic1
             // 
             this.lblNameLaptopGraphic1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGraphic1.Location = new System.Drawing.Point(24, 188);
+            this.lblNameLaptopGraphic1.Location = new System.Drawing.Point(24, 175);
             this.lblNameLaptopGraphic1.Name = "lblNameLaptopGraphic1";
             this.lblNameLaptopGraphic1.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGraphic1.TabIndex = 5;
@@ -547,9 +561,9 @@
             // lblUnitPriceLaptopGraphic2
             // 
             this.lblUnitPriceLaptopGraphic2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGraphic2.Location = new System.Drawing.Point(24, 230);
+            this.lblUnitPriceLaptopGraphic2.Location = new System.Drawing.Point(61, 214);
             this.lblUnitPriceLaptopGraphic2.Name = "lblUnitPriceLaptopGraphic2";
-            this.lblUnitPriceLaptopGraphic2.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGraphic2.Size = new System.Drawing.Size(147, 37);
             this.lblUnitPriceLaptopGraphic2.TabIndex = 6;
             this.lblUnitPriceLaptopGraphic2.Text = "299.000 VND";
             this.lblUnitPriceLaptopGraphic2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -557,7 +571,7 @@
             // lblNameLaptopGraphic2
             // 
             this.lblNameLaptopGraphic2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGraphic2.Location = new System.Drawing.Point(24, 193);
+            this.lblNameLaptopGraphic2.Location = new System.Drawing.Point(24, 177);
             this.lblNameLaptopGraphic2.Name = "lblNameLaptopGraphic2";
             this.lblNameLaptopGraphic2.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGraphic2.TabIndex = 5;
@@ -589,9 +603,9 @@
             // lblUnitPriceLaptopGraphic3
             // 
             this.lblUnitPriceLaptopGraphic3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGraphic3.Location = new System.Drawing.Point(24, 230);
+            this.lblUnitPriceLaptopGraphic3.Location = new System.Drawing.Point(59, 212);
             this.lblUnitPriceLaptopGraphic3.Name = "lblUnitPriceLaptopGraphic3";
-            this.lblUnitPriceLaptopGraphic3.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGraphic3.Size = new System.Drawing.Size(150, 37);
             this.lblUnitPriceLaptopGraphic3.TabIndex = 6;
             this.lblUnitPriceLaptopGraphic3.Text = "299.000 VND";
             this.lblUnitPriceLaptopGraphic3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -599,7 +613,7 @@
             // lblNameLaptopGraphic3
             // 
             this.lblNameLaptopGraphic3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGraphic3.Location = new System.Drawing.Point(24, 193);
+            this.lblNameLaptopGraphic3.Location = new System.Drawing.Point(24, 175);
             this.lblNameLaptopGraphic3.Name = "lblNameLaptopGraphic3";
             this.lblNameLaptopGraphic3.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGraphic3.TabIndex = 5;
@@ -631,9 +645,9 @@
             // lblUnitPriceLaptopGraphic4
             // 
             this.lblUnitPriceLaptopGraphic4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGraphic4.Location = new System.Drawing.Point(22, 230);
+            this.lblUnitPriceLaptopGraphic4.Location = new System.Drawing.Point(62, 213);
             this.lblUnitPriceLaptopGraphic4.Name = "lblUnitPriceLaptopGraphic4";
-            this.lblUnitPriceLaptopGraphic4.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGraphic4.Size = new System.Drawing.Size(144, 37);
             this.lblUnitPriceLaptopGraphic4.TabIndex = 6;
             this.lblUnitPriceLaptopGraphic4.Text = "299.000 VND";
             this.lblUnitPriceLaptopGraphic4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -641,7 +655,7 @@
             // lblNameLaptopGraphic4
             // 
             this.lblNameLaptopGraphic4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGraphic4.Location = new System.Drawing.Point(22, 193);
+            this.lblNameLaptopGraphic4.Location = new System.Drawing.Point(24, 176);
             this.lblNameLaptopGraphic4.Name = "lblNameLaptopGraphic4";
             this.lblNameLaptopGraphic4.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGraphic4.TabIndex = 5;
@@ -673,9 +687,9 @@
             // lblUnitPriceLaptopGraphic5
             // 
             this.lblUnitPriceLaptopGraphic5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGraphic5.Location = new System.Drawing.Point(24, 225);
+            this.lblUnitPriceLaptopGraphic5.Location = new System.Drawing.Point(59, 213);
             this.lblUnitPriceLaptopGraphic5.Name = "lblUnitPriceLaptopGraphic5";
-            this.lblUnitPriceLaptopGraphic5.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGraphic5.Size = new System.Drawing.Size(149, 37);
             this.lblUnitPriceLaptopGraphic5.TabIndex = 4;
             this.lblUnitPriceLaptopGraphic5.Text = "299.000 VND";
             this.lblUnitPriceLaptopGraphic5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -683,7 +697,7 @@
             // lblNameLaptopGraphic5
             // 
             this.lblNameLaptopGraphic5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGraphic5.Location = new System.Drawing.Point(24, 188);
+            this.lblNameLaptopGraphic5.Location = new System.Drawing.Point(24, 176);
             this.lblNameLaptopGraphic5.Name = "lblNameLaptopGraphic5";
             this.lblNameLaptopGraphic5.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGraphic5.TabIndex = 3;
@@ -715,9 +729,9 @@
             // lblUnitPriceLaptopGraphic6
             // 
             this.lblUnitPriceLaptopGraphic6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopGraphic6.Location = new System.Drawing.Point(22, 225);
+            this.lblUnitPriceLaptopGraphic6.Location = new System.Drawing.Point(57, 213);
             this.lblUnitPriceLaptopGraphic6.Name = "lblUnitPriceLaptopGraphic6";
-            this.lblUnitPriceLaptopGraphic6.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopGraphic6.Size = new System.Drawing.Size(152, 37);
             this.lblUnitPriceLaptopGraphic6.TabIndex = 2;
             this.lblUnitPriceLaptopGraphic6.Text = "299.000 VND";
             this.lblUnitPriceLaptopGraphic6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -725,7 +739,7 @@
             // lblNameLaptopGraphic6
             // 
             this.lblNameLaptopGraphic6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopGraphic6.Location = new System.Drawing.Point(22, 188);
+            this.lblNameLaptopGraphic6.Location = new System.Drawing.Point(22, 176);
             this.lblNameLaptopGraphic6.Name = "lblNameLaptopGraphic6";
             this.lblNameLaptopGraphic6.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopGraphic6.TabIndex = 1;
@@ -788,9 +802,9 @@
             // lblUnitPriceLaptopOffice1
             // 
             this.lblUnitPriceLaptopOffice1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopOffice1.Location = new System.Drawing.Point(24, 225);
+            this.lblUnitPriceLaptopOffice1.Location = new System.Drawing.Point(65, 213);
             this.lblUnitPriceLaptopOffice1.Name = "lblUnitPriceLaptopOffice1";
-            this.lblUnitPriceLaptopOffice1.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopOffice1.Size = new System.Drawing.Size(132, 37);
             this.lblUnitPriceLaptopOffice1.TabIndex = 6;
             this.lblUnitPriceLaptopOffice1.Text = "299.000 VND";
             this.lblUnitPriceLaptopOffice1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -798,7 +812,7 @@
             // lblNameLaptopOffice1
             // 
             this.lblNameLaptopOffice1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopOffice1.Location = new System.Drawing.Point(24, 188);
+            this.lblNameLaptopOffice1.Location = new System.Drawing.Point(22, 176);
             this.lblNameLaptopOffice1.Name = "lblNameLaptopOffice1";
             this.lblNameLaptopOffice1.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopOffice1.TabIndex = 5;
@@ -830,9 +844,9 @@
             // lblUnitPriceLaptopOffice2
             // 
             this.lblUnitPriceLaptopOffice2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopOffice2.Location = new System.Drawing.Point(24, 230);
+            this.lblUnitPriceLaptopOffice2.Location = new System.Drawing.Point(68, 213);
             this.lblUnitPriceLaptopOffice2.Name = "lblUnitPriceLaptopOffice2";
-            this.lblUnitPriceLaptopOffice2.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopOffice2.Size = new System.Drawing.Size(135, 37);
             this.lblUnitPriceLaptopOffice2.TabIndex = 6;
             this.lblUnitPriceLaptopOffice2.Text = "299.000 VND";
             this.lblUnitPriceLaptopOffice2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -840,7 +854,7 @@
             // lblNameLaptopOffice2
             // 
             this.lblNameLaptopOffice2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopOffice2.Location = new System.Drawing.Point(24, 193);
+            this.lblNameLaptopOffice2.Location = new System.Drawing.Point(24, 176);
             this.lblNameLaptopOffice2.Name = "lblNameLaptopOffice2";
             this.lblNameLaptopOffice2.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopOffice2.TabIndex = 5;
@@ -872,9 +886,9 @@
             // lblUnitPriceLaptopOffice3
             // 
             this.lblUnitPriceLaptopOffice3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopOffice3.Location = new System.Drawing.Point(24, 230);
+            this.lblUnitPriceLaptopOffice3.Location = new System.Drawing.Point(69, 213);
             this.lblUnitPriceLaptopOffice3.Name = "lblUnitPriceLaptopOffice3";
-            this.lblUnitPriceLaptopOffice3.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopOffice3.Size = new System.Drawing.Size(133, 37);
             this.lblUnitPriceLaptopOffice3.TabIndex = 6;
             this.lblUnitPriceLaptopOffice3.Text = "299.000 VND";
             this.lblUnitPriceLaptopOffice3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -882,7 +896,7 @@
             // lblNameLaptopOffice3
             // 
             this.lblNameLaptopOffice3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopOffice3.Location = new System.Drawing.Point(24, 193);
+            this.lblNameLaptopOffice3.Location = new System.Drawing.Point(24, 176);
             this.lblNameLaptopOffice3.Name = "lblNameLaptopOffice3";
             this.lblNameLaptopOffice3.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopOffice3.TabIndex = 5;
@@ -914,9 +928,9 @@
             // lblUnitPriceLaptopOffice4
             // 
             this.lblUnitPriceLaptopOffice4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopOffice4.Location = new System.Drawing.Point(22, 230);
+            this.lblUnitPriceLaptopOffice4.Location = new System.Drawing.Point(59, 213);
             this.lblUnitPriceLaptopOffice4.Name = "lblUnitPriceLaptopOffice4";
-            this.lblUnitPriceLaptopOffice4.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopOffice4.Size = new System.Drawing.Size(148, 37);
             this.lblUnitPriceLaptopOffice4.TabIndex = 6;
             this.lblUnitPriceLaptopOffice4.Text = "299.000 VND";
             this.lblUnitPriceLaptopOffice4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -924,7 +938,7 @@
             // lblNameLaptopOffice4
             // 
             this.lblNameLaptopOffice4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopOffice4.Location = new System.Drawing.Point(22, 193);
+            this.lblNameLaptopOffice4.Location = new System.Drawing.Point(22, 176);
             this.lblNameLaptopOffice4.Name = "lblNameLaptopOffice4";
             this.lblNameLaptopOffice4.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopOffice4.TabIndex = 5;
@@ -956,9 +970,9 @@
             // lblUnitPriceLaptopOffice5
             // 
             this.lblUnitPriceLaptopOffice5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopOffice5.Location = new System.Drawing.Point(24, 225);
+            this.lblUnitPriceLaptopOffice5.Location = new System.Drawing.Point(65, 213);
             this.lblUnitPriceLaptopOffice5.Name = "lblUnitPriceLaptopOffice5";
-            this.lblUnitPriceLaptopOffice5.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopOffice5.Size = new System.Drawing.Size(138, 37);
             this.lblUnitPriceLaptopOffice5.TabIndex = 4;
             this.lblUnitPriceLaptopOffice5.Text = "299.000 VND";
             this.lblUnitPriceLaptopOffice5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -966,7 +980,7 @@
             // lblNameLaptopOffice5
             // 
             this.lblNameLaptopOffice5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopOffice5.Location = new System.Drawing.Point(24, 188);
+            this.lblNameLaptopOffice5.Location = new System.Drawing.Point(24, 176);
             this.lblNameLaptopOffice5.Name = "lblNameLaptopOffice5";
             this.lblNameLaptopOffice5.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopOffice5.TabIndex = 3;
@@ -998,9 +1012,9 @@
             // lblUnitPriceLaptopOffice6
             // 
             this.lblUnitPriceLaptopOffice6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitPriceLaptopOffice6.Location = new System.Drawing.Point(22, 225);
+            this.lblUnitPriceLaptopOffice6.Location = new System.Drawing.Point(61, 213);
             this.lblUnitPriceLaptopOffice6.Name = "lblUnitPriceLaptopOffice6";
-            this.lblUnitPriceLaptopOffice6.Size = new System.Drawing.Size(226, 37);
+            this.lblUnitPriceLaptopOffice6.Size = new System.Drawing.Size(141, 37);
             this.lblUnitPriceLaptopOffice6.TabIndex = 2;
             this.lblUnitPriceLaptopOffice6.Text = "299.000 VND";
             this.lblUnitPriceLaptopOffice6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1008,7 +1022,7 @@
             // lblNameLaptopOffice6
             // 
             this.lblNameLaptopOffice6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameLaptopOffice6.Location = new System.Drawing.Point(22, 188);
+            this.lblNameLaptopOffice6.Location = new System.Drawing.Point(22, 176);
             this.lblNameLaptopOffice6.Name = "lblNameLaptopOffice6";
             this.lblNameLaptopOffice6.Size = new System.Drawing.Size(226, 37);
             this.lblNameLaptopOffice6.TabIndex = 1;
@@ -1024,6 +1038,16 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 0;
             this.pictureBox12.TabStop = false;
+            // 
+            // btnDetail
+            // 
+            this.btnDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetail.Image = ((System.Drawing.Image)(resources.GetObject("btnDetail.Image")));
+            this.btnDetail.Location = new System.Drawing.Point(222, 230);
+            this.btnDetail.Name = "btnDetail";
+            this.btnDetail.Size = new System.Drawing.Size(49, 44);
+            this.btnDetail.TabIndex = 7;
+            this.btnDetail.UseVisualStyleBackColor = true;
             // 
             // LaptopPage
             // 
@@ -1163,5 +1187,7 @@
         private System.Windows.Forms.Label lblUnitPriceLaptopOffice6;
         private System.Windows.Forms.Label lblNameLaptopOffice6;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Button btnAddToCart;
+        private System.Windows.Forms.Button btnDetail;
     }
 }

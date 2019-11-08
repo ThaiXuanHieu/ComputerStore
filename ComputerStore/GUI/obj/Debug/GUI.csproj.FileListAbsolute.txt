@@ -26,11 +26,14 @@ F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuD
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.CustomerManagementPage.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.SupplierManagementPage.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.WarehouseManagementPage.resources
-F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmAdmin.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmLogin.resources
 F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\BLL.dll
 F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\DTO.dll
-F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\DAL.dll
 F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\BLL.pdb
 F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\DTO.pdb
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.CategoryManagementPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.OrdersManagementPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.UserPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\DAL.dll
 F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\DAL.pdb
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmAdmin.resources

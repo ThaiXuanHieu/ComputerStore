@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblListCustomer = new System.Windows.Forms.Label();
             this.txtSearchCustomer = new System.Windows.Forms.TextBox();
             this.lblTitlePage = new System.Windows.Forms.Label();
@@ -47,11 +43,11 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.lblLastName = new System.Windows.Forms.Label();
-            this.dgvCustomers = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.dgvCustomers = new System.Windows.Forms.DataGridView();
+            this.btnEditCustomer = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnSearchCustomer = new System.Windows.Forms.Button();
             this.btnDeleteCustomer = new System.Windows.Forms.Button();
-            this.btnEditCustomer = new System.Windows.Forms.Button();
             this.btnAddCustomer = new System.Windows.Forms.Button();
             this.grbInfoCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
@@ -75,7 +71,8 @@
             this.txtSearchCustomer.Multiline = true;
             this.txtSearchCustomer.Name = "txtSearchCustomer";
             this.txtSearchCustomer.Size = new System.Drawing.Size(268, 40);
-            this.txtSearchCustomer.TabIndex = 3;
+            this.txtSearchCustomer.TabIndex = 4;
+            this.txtSearchCustomer.Text = "Nhập tên khách hàng...";
             // 
             // lblTitlePage
             // 
@@ -205,50 +202,39 @@
             // 
             // dgvCustomers
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCustomers.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCustomers.ColumnHeadersHeight = 45;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCustomers.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvCustomers.DoubleBuffered = true;
-            this.dgvCustomers.EnableHeadersVisualStyles = false;
-            this.dgvCustomers.HeaderBgColor = System.Drawing.Color.DodgerBlue;
-            this.dgvCustomers.HeaderForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCustomers.Location = new System.Drawing.Point(18, 358);
             this.dgvCustomers.Name = "dgvCustomers";
-            this.dgvCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvCustomers.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvCustomers.RowTemplate.Height = 45;
+            this.dgvCustomers.RowTemplate.Height = 24;
             this.dgvCustomers.Size = new System.Drawing.Size(985, 313);
-            this.dgvCustomers.TabIndex = 48;
+            this.dgvCustomers.TabIndex = 52;
+            this.dgvCustomers.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomers_RowEnter);
+            // 
+            // btnEditCustomer
+            // 
+            this.btnEditCustomer.BackColor = System.Drawing.Color.Gold;
+            this.btnEditCustomer.FlatAppearance.BorderSize = 0;
+            this.btnEditCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditCustomer.ForeColor = System.Drawing.Color.Black;
+            this.btnEditCustomer.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
+            this.btnEditCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditCustomer.Location = new System.Drawing.Point(158, 262);
+            this.btnEditCustomer.Name = "btnEditCustomer";
+            this.btnEditCustomer.Size = new System.Drawing.Size(134, 40);
+            this.btnEditCustomer.TabIndex = 1;
+            this.btnEditCustomer.Text = "   Sửa";
+            this.btnEditCustomer.UseVisualStyleBackColor = false;
+            this.btnEditCustomer.Click += new System.EventHandler(this.btnEditCustomer_Click);
             // 
             // btnSave
             // 
@@ -262,7 +248,7 @@
             this.btnSave.Location = new System.Drawing.Point(438, 262);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(134, 40);
-            this.btnSave.TabIndex = 49;
+            this.btnSave.TabIndex = 3;
             this.btnSave.Text = "   Ghi";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -279,7 +265,7 @@
             this.btnSearchCustomer.Location = new System.Drawing.Point(852, 262);
             this.btnSearchCustomer.Name = "btnSearchCustomer";
             this.btnSearchCustomer.Size = new System.Drawing.Size(151, 40);
-            this.btnSearchCustomer.TabIndex = 4;
+            this.btnSearchCustomer.TabIndex = 5;
             this.btnSearchCustomer.Text = "     Tìm kiếm";
             this.btnSearchCustomer.UseVisualStyleBackColor = false;
             this.btnSearchCustomer.Click += new System.EventHandler(this.btnSearchCustomer_Click);
@@ -300,23 +286,6 @@
             this.btnDeleteCustomer.Text = "   Xóa";
             this.btnDeleteCustomer.UseVisualStyleBackColor = false;
             this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
-            // 
-            // btnEditCustomer
-            // 
-            this.btnEditCustomer.BackColor = System.Drawing.Color.Gold;
-            this.btnEditCustomer.FlatAppearance.BorderSize = 0;
-            this.btnEditCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditCustomer.ForeColor = System.Drawing.Color.Black;
-            this.btnEditCustomer.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
-            this.btnEditCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditCustomer.Location = new System.Drawing.Point(158, 262);
-            this.btnEditCustomer.Name = "btnEditCustomer";
-            this.btnEditCustomer.Size = new System.Drawing.Size(134, 40);
-            this.btnEditCustomer.TabIndex = 1;
-            this.btnEditCustomer.Text = "   Sửa";
-            this.btnEditCustomer.UseVisualStyleBackColor = false;
-            this.btnEditCustomer.Click += new System.EventHandler(this.btnEditCustomer_Click);
             // 
             // btnAddCustomer
             // 
@@ -339,18 +308,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnEditCustomer);
             this.Controls.Add(this.dgvCustomers);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.grbInfoCustomer);
             this.Controls.Add(this.lblListCustomer);
             this.Controls.Add(this.btnSearchCustomer);
             this.Controls.Add(this.txtSearchCustomer);
             this.Controls.Add(this.btnDeleteCustomer);
-            this.Controls.Add(this.btnEditCustomer);
             this.Controls.Add(this.btnAddCustomer);
             this.Controls.Add(this.lblTitlePage);
             this.Name = "CustomerManagementPage";
             this.Size = new System.Drawing.Size(1020, 684);
+            this.Load += new System.EventHandler(this.CustomerManagementPage_Load);
             this.grbInfoCustomer.ResumeLayout(false);
             this.grbInfoCustomer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
@@ -364,7 +334,6 @@
         private System.Windows.Forms.Button btnSearchCustomer;
         private System.Windows.Forms.TextBox txtSearchCustomer;
         private System.Windows.Forms.Button btnDeleteCustomer;
-        private System.Windows.Forms.Button btnEditCustomer;
         private System.Windows.Forms.Button btnAddCustomer;
         private System.Windows.Forms.Label lblTitlePage;
         private System.Windows.Forms.GroupBox grbInfoCustomer;
@@ -378,7 +347,8 @@
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Label lblLastName;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvCustomers;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DataGridView dgvCustomers;
+        private System.Windows.Forms.Button btnEditCustomer;
     }
 }
