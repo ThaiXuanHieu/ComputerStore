@@ -16,5 +16,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void StatisticalPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
