@@ -28,7 +28,7 @@ namespace GUI
         public void DisplayData()
         {
             // Load Data
-            //dgvCustomers.DataSource = CustomersBLL.Instance.GetAll();
+            dgvCustomers.DataSource = CustomersBLL.Instance.GetAll();
         }
 
         private void isEnabled(bool enabled)
@@ -51,7 +51,7 @@ namespace GUI
         private void btnSearchCustomer_Click(object sender, EventArgs e)
         {
             // Select with SearchString
-            //dgvCustomers.DataSource = CustomersBLL.Instance.GetCategoryBySearchString(txtSearchCustomer.Text);
+            dgvCustomers.DataSource = CustomersBLL.Instance.GetCategoryBySearchString(txtSearchCustomer.Text);
         }
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
@@ -97,13 +97,13 @@ namespace GUI
                     return;
                 }
 
-                //CustomersBLL.Instance.Insert(txtFirstName.Text, txtLastName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
+                CustomersBLL.Instance.Insert(txtFirstName.Text, txtLastName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
             }
             else
             {
                 int row = dgvCustomers.CurrentRow.Index;
                 int customerID = Convert.ToInt32(dgvCustomers.Rows[row].Cells[0].Value.ToString());
-                //CustomersBLL.Instance.Update(customerID, txtFirstName.Text, txtLastName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
+                CustomersBLL.Instance.Update(customerID, txtFirstName.Text, txtLastName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
             }
 
 
@@ -120,7 +120,7 @@ namespace GUI
 
             int row = dgvCustomers.CurrentRow.Index;
             int customerID = Convert.ToInt32(dgvCustomers.Rows[row].Cells[0].Value.ToString());
-            //CustomersBLL.Instance.DeleteByCustomerID(Convert.ToInt32(customerID));
+            CustomersBLL.Instance.DeleteByCustomerID(Convert.ToInt32(customerID));
 
             DisplayData();
         }

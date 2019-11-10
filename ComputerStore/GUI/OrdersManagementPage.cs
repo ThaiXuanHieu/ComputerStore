@@ -32,9 +32,7 @@ namespace GUI
 
         private void OrdersManagementPage_Load(object sender, EventArgs e)
         {
-            //DisplayData();
-            txtLastName.Enabled = false;
-            txtFirstName.Enabled = false;
+            DisplayData();
             btnPay.Enabled = false;
             btnPrinter.Enabled = false;
             isEnabled(false);
@@ -43,20 +41,23 @@ namespace GUI
         public void DisplayData()
         {
             // Load Data
-            //dgvProducts.DataSource = ProductsBLL.Instance.GetColumn();   
+            dgvProducts.DataSource = ProductsBLL.Instance.GetColumn();
+
+            // Load Data to cbProducts
+
+            DataTable dtProducts = ProductsBLL.Instance.GetAll();
+            cbProducts.DataSource = dtProducts;
+            cbProducts.DisplayMember = "ProductName";
+            cbProducts.ValueMember = "ProductID";
         }
 
         private void isEnabled(bool enabled)
         {
             // Có hay Không cho phép nhập
-            txtProductName.Enabled = enabled;
-            txtProductID.Enabled = enabled;
+            cbProducts.Enabled = enabled;
             txtQuantity.Enabled = enabled;
             txtPrice.Enabled = enabled;
-            txtUnit.Enabled = enabled;
             
-
-
             // Có hay Không cho phép nhấn
             btnAddOrder.Enabled = !enabled;
             btnDeleteOrder.Enabled = !enabled;
@@ -72,10 +73,12 @@ namespace GUI
             btnPay.Enabled = true;
             btnPrinter.Enabled = true;
             lblAmount.Text = "";
-            //CustomersBLL.Instance.Insert("", "", "", "", "");
-            //customer = CustomersBLL.Instance.GetFirstCustomer();
-            //OrdersBLL.Instance.Insert(customer.CustomerID, DateTime.Now, 0);
-            //orders = OrdersBLL.Instance.GetFirstOrders();
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            CustomersBLL.Instance.Insert("", "", "", "", "");
+            customer = CustomersBLL.Instance.GetFirstCustomer();
+            OrdersBLL.Instance.Insert(customer.CustomerID, DateTime.Now, 0);
+            orders = OrdersBLL.Instance.GetFirstOrders();
         }
 
         private void btnPay_Click(object sender, EventArgs e)
@@ -94,13 +97,13 @@ namespace GUI
                 return;
             }
 
-            for(var row = 0; row < dgvOrderDetails.Rows.Count - 1; row++)
+            for(var row = 0; row < dgvOrderDetails.Rows.Count; row++)
             {
                 totalAmount += Convert.ToDouble(dgvOrderDetails.Rows[row].Cells["Amount"].Value.ToString());
             }
             lblAmount.Text = totalAmount.ToString();
-
-            //OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, Convert.ToDouble(lblAmount.Text));
+            CustomersBLL.Instance.Update(customer.CustomerID, txtFirstName.Text, txtLastName.Text, "", "", "");
+            OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, Convert.ToDouble(lblAmount.Text));
         }
 
         private void llbBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -111,7 +114,7 @@ namespace GUI
         private void llbListOrders_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Timer.Start();
-            ///dgvListOrders.DataSource = OrdersBLL.Instance.GetAll();
+            dgvListOrders.DataSource = OrdersBLL.Instance.GetAll();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -144,35 +147,10 @@ namespace GUI
             isEnabled(true);
             isNew = true;
 
-            txtProductName.Clear();
-            txtProductID.Clear();
             txtQuantity.Clear();
-            txtUnit.Clear();
-            txtPrice.Clear();
             txtLastName.Clear();
             txtFirstName.Clear();
-            txtProductName.Focus();
-        }
-
-        private void btnEditOrder_Click(object sender, EventArgs e)
-        {
-            isEnabled(true);
-            txtProductName.Focus();
-            isNew = false;
-        }
-
-        private void btnDeleteOrder_Click(object sender, EventArgs e)
-        {
-            // Delete với id
-            DialogResult dialog = new DialogResult();
-            dialog = MessageBox.Show("Chắc chắn xóa ... đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dialog == System.Windows.Forms.DialogResult.No) return;
-
-            int row = dgvOrderDetails.CurrentRow.Index;
-            int orderID = Convert.ToInt32(dgvOrderDetails.Rows[row].Cells[0].Value.ToString());
-            //OrderDetailsBLL.Instance.DeleteByOrderID(orderID);
-
-            DisplayData();
+            cbProducts.Focus();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -180,11 +158,6 @@ namespace GUI
             // Thêm mới
             if (isNew == true)
             {
-                if (txtProductName.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập tên sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
                 if (txtQuantity.Text == "")
                 {
                     MessageBox.Show("Vui lòng nhập số lượng sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -197,17 +170,17 @@ namespace GUI
                 }
 
                 amount = Convert.ToDouble(txtPrice.Text) * Convert.ToInt32(txtQuantity.Text);
-                //OrderDetailsBLL.Instance.Insert(orders.OrderID, Convert.ToInt32(txtProductID.Text), Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
-                //dgvOrderDetails.DataSource = OrderDetailsBLL.Instance.GetByOrderID(orders.OrderID);
+                OrderDetailsBLL.Instance.Insert(orders.OrderID, Convert.ToInt32(cbProducts.SelectedValue.ToString()), Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
+                dgvOrderDetails.DataSource = OrderDetailsBLL.Instance.GetByOrderID(orders.OrderID);
             }
             else
             {
                 // Sửa và lưu
                 int row = dgvOrderDetails.CurrentRow.Index;
                 int orderID = Convert.ToInt32(dgvOrderDetails.Rows[row].Cells[0].Value.ToString());
-                int productID = Convert.ToInt32(txtProductID.Text);
+                int productID = Convert.ToInt32(cbProducts.SelectedValue.ToString());
                 amount = Convert.ToDouble(txtPrice.Text) * Convert.ToInt32(txtQuantity.Text);
-                //OrderDetailsBLL.Instance.Update(orderID, productID, Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
+                OrderDetailsBLL.Instance.Update(orderID, productID, Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
                 
             }
 
@@ -216,28 +189,47 @@ namespace GUI
             isEnabled(false);
         }
 
+        private void btnEditOrder_Click(object sender, EventArgs e)
+        {
+            isEnabled(true);
+            cbProducts.Focus();
+            isNew = false;
+        }
+
+        private void btnDeleteOrder_Click(object sender, EventArgs e)
+        {
+            // Delete với id
+            DialogResult dialog = new DialogResult();
+            dialog = MessageBox.Show("Chắc chắn xóa ... đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == System.Windows.Forms.DialogResult.No) return;
+
+            int row = dgvOrderDetails.CurrentRow.Index;
+            int orderID = Convert.ToInt32(dgvOrderDetails.Rows[row].Cells[0].Value.ToString());
+            OrderDetailsBLL.Instance.DeleteByOrderID(orderID);
+
+            DisplayData();
+        }
+
         // Tìm kiếm sản phẩm
         private void btnSearchProduct_Click(object sender, EventArgs e)
         {
-            //dgvProducts.DataSource = ProductsBLL.Instance.GetColumnProductBySearchString(txtSearchProduct.Text);
+            dgvProducts.DataSource = ProductsBLL.Instance.GetColumnProductBySearchString(txtSearchProduct.Text);
         }
 
         private void dgvProducts_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             int row = e.RowIndex;
 
-            txtProductID.Text = dgvProducts.Rows[row].Cells[0].Value.ToString();
-            txtProductName.Text = dgvProducts.Rows[row].Cells[1].Value.ToString();
-            txtUnit.Text = dgvProducts.Rows[row].Cells[2].Value.ToString();
+            cbProducts.SelectedValue = dgvProducts.Rows[row].Cells[0].Value.ToString();
             txtPrice.Text = dgvProducts.Rows[row].Cells[3].Value.ToString();
         }
 
         private void dgvOrderDetails_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             int row = e.RowIndex;
-
-            txtProductID.Text = dgvOrderDetails.Rows[row].Cells[1].Value.ToString();
+            cbProducts.SelectedValue = dgvOrderDetails.Rows[row].Cells[1].Value.ToString();
             txtQuantity.Text = dgvOrderDetails.Rows[row].Cells[2].Value.ToString();
+            txtPrice.Text = dgvOrderDetails.Rows[row].Cells[3].Value.ToString();
         }
 
         private void btnAddOrders_Click(object sender, EventArgs e)
@@ -252,7 +244,15 @@ namespace GUI
 
         private void btnDeleteOrders_Click(object sender, EventArgs e)
         {
+            DialogResult dialog = new DialogResult();
+            dialog = MessageBox.Show("Chắc chắn xóa ... đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == System.Windows.Forms.DialogResult.No) return;
 
+            int row = dgvOrderDetails.CurrentRow.Index;
+            int orderID = Convert.ToInt32(dgvListOrders.Rows[row].Cells[0].Value.ToString());
+            OrdersBLL.Instance.DeleteByOrderID(orderID);
+
+            DisplayData();
         }
 
         private void btnSearchOrders_Click(object sender, EventArgs e)

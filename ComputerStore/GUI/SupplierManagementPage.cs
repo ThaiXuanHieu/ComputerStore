@@ -23,7 +23,7 @@ namespace GUI
         public void DisplayData()
         {
             // Load Data
-            //dgvSuppliers.DataSource = SuppliersBLL.Instance.GetAll();
+            dgvSuppliers.DataSource = SuppliersBLL.Instance.GetAll();
         }
 
         private void isEnabled(bool enabled)
@@ -73,7 +73,7 @@ namespace GUI
 
             int row = dgvSuppliers.CurrentRow.Index;
             int supplierID = Convert.ToInt32(dgvSuppliers.Rows[row].Cells[0].Value.ToString());
-            //SuppliersBLL.Instance.DeleteBySupplierID(supplierID);
+            SuppliersBLL.Instance.DeleteBySupplierID(supplierID);
 
             DisplayData();
         }
@@ -108,13 +108,13 @@ namespace GUI
                     return;
                 }
 
-                //SuppliersBLL.Instance.Insert(txtCompanyName.Text, txtContactName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
+                SuppliersBLL.Instance.Insert(txtCompanyName.Text, txtContactName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
             }
             else
             {
                 int row = dgvSuppliers.CurrentRow.Index;
                 int supplierID = Convert.ToInt32(dgvSuppliers.Rows[row].Cells[0].Value.ToString());
-                //CustomersBLL.Instance.Update(supplierID, txtContactName.Text, txtContactName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
+                CustomersBLL.Instance.Update(supplierID, txtContactName.Text, txtContactName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
             }
 
 
@@ -125,7 +125,7 @@ namespace GUI
         private void btnSearchSupplier_Click(object sender, EventArgs e)
         {
             // Select with SearchString
-            //dgvSuppliers.DataSource = SuppliersBLL.Instance.GetSupplierBySearchString(txtSearchSupplier.Text);
+            dgvSuppliers.DataSource = SuppliersBLL.Instance.GetSupplierBySearchString(txtSearchSupplier.Text);
         }
 
         private void dgvSuppliers_RowEnter(object sender, DataGridViewCellEventArgs e)

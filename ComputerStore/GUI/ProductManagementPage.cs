@@ -32,21 +32,23 @@ namespace GUI
         public void DisplayData()
         {
             // Load Data vào dgvProducts
-            //dgvProducts.DataSource = ProductsBLL.Instance.GetAll();
+            dgvProducts.DataSource = ProductsBLL.Instance.GetAll();
         }
 
         private void LoadData()
         {
             // Load data ComboBox Categories
-            //List<CategoriesDTO> categories = CategoriesBLL.Instance.GetCategories();
-            //cbCategories.DataSource = categories;
+            DataTable dtCategories = CategoriesBLL.Instance.GetAll(); 
+            cbCategories.DataSource = dtCategories;
             cbCategories.DisplayMember = "CategoryName";
+            cbCategories.ValueMember = "CategoryID";
 
             // Load data ComboBox Supplier
 
-            //List<SuppliersDTO> suppliers = SuppliersBLL.Instance.GetSuppliers();
-            //cbSupplier.DataSource = suppliers;
+            DataTable dtSuppliers = SuppliersBLL.Instance.GetAll();
+            cbSupplier.DataSource = dtSuppliers;
             cbSupplier.DisplayMember = "CompanyName";
+            cbSupplier.ValueMember = "SupplierID";
         }
 
         private void isEnabled(bool enabled)
@@ -85,12 +87,10 @@ namespace GUI
 
         }
 
-        
-
         private void btnSearchProduct_Click(object sender, EventArgs e)
         {
             // Select with SearchString
-            //dgvProducts.DataSource = ProductsBLL.Instance.GetProductBySearchString(txtSearchProduct.Text);
+            dgvProducts.DataSource = ProductsBLL.Instance.GetProductBySearchString(txtSearchProduct.Text);
             
         }
 
@@ -125,18 +125,14 @@ namespace GUI
                 //string nameImage = imgPath.Substring(imgPath.LastIndexOf('\\') + 1);
                 //int row = dgvProducts.CurrentRow.Index;
                 //string nameImage = dgvProducts.Rows[row].Cells[4].Value.ToString();
-                CategoriesDTO category = cbCategories.SelectedValue as CategoriesDTO;
-                SuppliersDTO supplier = cbSupplier.SelectedValue as SuppliersDTO;
-                //ProductsBLL.Instance.Insert(category.CategoryID, supplier.SupplierID, txtProductName.Text, productImage, txtUnit.Text, Convert.ToDouble(txtPrice.Text), txtDescription.Text);
+                ProductsBLL.Instance.Insert(Convert.ToInt32(cbCategories.SelectedValue.ToString()), Convert.ToInt32(cbSupplier.SelectedValue.ToString()), txtProductName.Text, productImage, txtUnit.Text, Convert.ToDouble(txtPrice.Text), txtDescription.Text);
             }
             else
             {
                 int row = dgvProducts.CurrentRow.Index;
                 int productID = Convert.ToInt32(dgvProducts.Rows[row].Cells[2].Value.ToString());
                 string productImage = imageLocation;
-                CategoriesDTO category = cbCategories.SelectedValue as CategoriesDTO;
-                SuppliersDTO supplier = cbSupplier.SelectedValue as SuppliersDTO;
-                //ProductsBLL.Instance.Update(category.CategoryID, supplier.SupplierID, productID, txtProductName.Text, productImage, txtUnit.Text, Convert.ToDouble(txtPrice.Text), txtDescription.Text);
+                ProductsBLL.Instance.Update(Convert.ToInt32(cbCategories.SelectedValue.ToString()), Convert.ToInt32(cbSupplier.SelectedValue.ToString()), productID, txtProductName.Text, productImage, txtUnit.Text, Convert.ToDouble(txtPrice.Text), txtDescription.Text);
             }
             
 
@@ -160,7 +156,7 @@ namespace GUI
 
             int row = dgvProducts.CurrentRow.Index;
             int productID = Convert.ToInt32(dgvProducts.Rows[row].Cells[2].Value.ToString());
-            //ProductsBLL.Instance.DeleteByProductID(productID);
+            ProductsBLL.Instance.DeleteByProductID(productID);
 
             DisplayData();
         }
@@ -171,8 +167,8 @@ namespace GUI
             LoadData();
             int row = e.RowIndex;
 
-            cbCategories.Text = dgvProducts.Rows[row].Cells[0].Value.ToString();
-            cbSupplier.Text = dgvProducts.Rows[row].Cells[1].Value.ToString();
+            cbCategories.SelectedValue = dgvProducts.Rows[row].Cells[0].Value.ToString();
+            cbSupplier.SelectedValue = dgvProducts.Rows[row].Cells[1].Value.ToString();
             txtProductName.Text = dgvProducts.Rows[row].Cells[3].Value.ToString();
             imageLocation = dgvProducts.Rows[row].Cells[4].Value.ToString();
             Bitmap bitmap = new Bitmap(imageLocation);

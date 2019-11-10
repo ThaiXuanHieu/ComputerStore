@@ -66,23 +66,23 @@ namespace DAL
 
         public void Update(int _orderID, int _productID, int _quantity, double _price, double _amount)
         {
-            string query = "UPDATE OrderDetails SET ProductID = @ProductID, Quantity = @Quantity, Price = @Price, Amount = @Amount" +
-                " WHERE OrderID = @OrderID";
+            string query = "UPDATE OrderDetails SET OrderID = @OrderID, Quantity = @Quantity, Price = @Price, Amount = @Amount" +
+                " WHERE ProductID = @ProductID";
 
             SqlParameter[] parameters = new SqlParameter[5];
 
-            parameters[0] = new SqlParameter("@ProductID", SqlDbType.NVarChar);
+            parameters[0] = new SqlParameter("@ProductID", SqlDbType.Int);
             parameters[0].Value = _productID;
-            parameters[1] = new SqlParameter("@Quantity", SqlDbType.NVarChar);
+            parameters[1] = new SqlParameter("@Quantity", SqlDbType.Int);
             parameters[1].Value = _quantity;
-            parameters[2] = new SqlParameter("@OrderID", SqlDbType.NVarChar);
+            parameters[2] = new SqlParameter("@OrderID", SqlDbType.Int);
             parameters[2].Value = _orderID;
             parameters[3] = new SqlParameter("@Price", SqlDbType.Money);
             parameters[3].Value = _price;
             parameters[4] = new SqlParameter("@Amount", SqlDbType.Money);
             parameters[4].Value = _amount;
 
-            dbConnection.ExecuteInsertQuery(query, parameters);
+            dbConnection.ExecuteUpdateQuery(query, parameters);
         }
 
         public void DeleteByOrderID(int _orderID)

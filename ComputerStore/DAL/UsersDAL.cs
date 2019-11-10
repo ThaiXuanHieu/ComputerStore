@@ -51,6 +51,15 @@ namespace DAL
             return dbConnection.ExecuteSelectQuery(query, parameters);
         }
 
+        public DataTable SelectByUserName(string _userName)
+        {
+            string query = "SELECT * FROM Users WHERE UserName = @userName";
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@userName", SqlDbType.VarChar);
+            parameters[0].Value = _userName;
+
+            return dbConnection.ExecuteSelectQuery(query, parameters);
+        }
 
         public void Insert(string _fullName, string _userName, string _password)
         {

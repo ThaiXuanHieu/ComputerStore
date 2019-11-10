@@ -111,7 +111,7 @@
             this.txtPhone.Location = new System.Drawing.Point(664, 46);
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(178, 34);
+            this.txtPhone.Size = new System.Drawing.Size(289, 34);
             this.txtPhone.TabIndex = 64;
             // 
             // lblPhone
@@ -168,7 +168,7 @@
             this.txtCompanyName.Location = new System.Drawing.Point(164, 45);
             this.txtCompanyName.Multiline = true;
             this.txtCompanyName.Name = "txtCompanyName";
-            this.txtCompanyName.Size = new System.Drawing.Size(207, 34);
+            this.txtCompanyName.Size = new System.Drawing.Size(289, 34);
             this.txtCompanyName.TabIndex = 58;
             // 
             // lblCompanyName
@@ -187,7 +187,7 @@
             this.txtContactName.Location = new System.Drawing.Point(164, 86);
             this.txtContactName.Multiline = true;
             this.txtContactName.Name = "txtContactName";
-            this.txtContactName.Size = new System.Drawing.Size(207, 34);
+            this.txtContactName.Size = new System.Drawing.Size(289, 34);
             this.txtContactName.TabIndex = 56;
             // 
             // lblContactName
@@ -270,6 +270,8 @@
             // 
             // dgvProducts
             // 
+            this.dgvProducts.AllowUserToAddRows = false;
+            this.dgvProducts.AllowUserToDeleteRows = false;
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;

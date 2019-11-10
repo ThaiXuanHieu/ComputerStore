@@ -12,10 +12,13 @@ namespace GUI
 {
     public partial class frmAdmin : Form
     {
+        private StatisticalPage statisticalPage;
+
         public frmAdmin(string _fullName)
         {
             
             InitializeComponent();
+            AddStatisticalUC();
             lblNameUser.Text = _fullName;
             ordersManagementPage.Visible = true;
             productManagementPage.Visible = false;
@@ -24,6 +27,44 @@ namespace GUI
             customerManagementPage.Visible = false;
             supplierManagementPage.Visible = false;
             userPage.Visible = false;
+        }
+
+        public void AddStatisticalUC()
+        {
+            statisticalPage = new StatisticalPage()
+            {
+                Dock = System.Windows.Forms.DockStyle.Fill,
+                Visible = false
+            };
+            pnlWrap.Controls.Add(statisticalPage);
+            Button btnStatisticalPage = new Button()
+            {
+                BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68))))),
+                FlatStyle = System.Windows.Forms.FlatStyle.Flat,
+                //FlatAppearance.BorderSize = 0,
+                Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))),
+                ForeColor = System.Drawing.Color.White,
+                Location = new System.Drawing.Point(7, 443),
+                Size = new System.Drawing.Size(223, 50),
+                Text = "Thống kê",
+                UseVisualStyleBackColor = false
+            };
+
+            pnlLeft.Controls.Add(btnStatisticalPage);
+            btnStatisticalPage.Click += BtnStatisticalPage_Click;
+        }
+
+        private void BtnStatisticalPage_Click(object sender, EventArgs e)
+        {
+            statisticalPage.Visible = true;
+            ordersManagementPage.Visible = false;
+            supplierManagementPage.Visible = false;
+            productManagementPage.Visible = false;
+            categoryManagementPage.Visible = false;
+            warehouseManagementPage.Visible = false;
+            customerManagementPage.Visible = false;
+            userPage.Visible = false;
+
         }
 
         private void btnCreateOrdersPage_Click(object sender, EventArgs e)
@@ -109,5 +150,7 @@ namespace GUI
         {
 
         }
+
+        
     }
 }

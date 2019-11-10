@@ -101,7 +101,7 @@ namespace GUI
                 if (user.UserName.Equals("admin") && user.Password.Equals("123456"))
                 {
                     frmAdmin admin = new frmAdmin(user.FullName);
-                    admin.Show();
+                    admin.ShowDialog();
                     
                 }
                 else if (user.UserName.Equals(txtUsername.Text) && user.Password.Equals(txtPassword.Text))
@@ -121,22 +121,40 @@ namespace GUI
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            try
+            //try
+            //{
+            //    UsersDTO user= UsersBLL.Instance.GetByUerNameAndPassword(txtUsernameNew.Text, txtPasswordNew.Text);
+            //    if ((user.UserName.Equals(txtUsernameNew.Text) && user.Password.Equals(txtPasswordNew.Text)))
+            //    {
+            //        MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TÀI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    }
+            //}
+            //catch (Exception)
+            //{
+            //    UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, txtPasswordNew.Text);
+            //    MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+
+            if(String.IsNullOrEmpty(txtUsernameNew.Text) || String.IsNullOrEmpty(txtPasswordNew.Text) || String.IsNullOrEmpty(txtFullName.Text))
             {
-                UsersDTO user= UsersBLL.Instance.GetByUerNameAndPassword(txtUsernameNew.Text, txtPasswordNew.Text);
-                if ((user.UserName.Equals(txtUsernameNew.Text) && user.Password.Equals(txtPasswordNew.Text)))
-                {
-                    MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TÀI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                MessageBox.Show("BẠN PHẢI NHẬP ĐẨY ĐỦ THÔNG TIN", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
-            catch (Exception)
+            if(UsersBLL.Instance.GetUserByUserName(txtUsernameNew.Text) != null)
             {
-                UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, txtPasswordNew.Text);
-                MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TÀI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
-            
+            if(!txtPassword.Text.Equals(txtReEnterPassword.Text))
+            {
+                MessageBox.Show("MẬT KHẨU KHÔNG KHỚP", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, txtPasswordNew.Text);
+            MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
-        
+
     }
 }

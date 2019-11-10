@@ -30,25 +30,9 @@ namespace BLL
             }
         }
 
-
-        public List<UsersDTO> GetUsers()
+        public DataTable GetUserByUserName(string _userName)
         {
-            DataTable dataTable = UsersDAL.Instance.Select();
-
-            List<UsersDTO> users = new List<UsersDTO>();
-            foreach(DataRow dataRow in dataTable.Rows)
-            {
-                UsersDTO user = new UsersDTO();
-                user.UserID = Int32.Parse(dataRow["UserID"].ToString());
-                user.FullName = dataRow["FullName"].ToString();
-                user.UserName = dataRow["UserName"].ToString();
-                user.Password = dataRow["Password"].ToString();
-                user.Email = dataRow["Email"].ToString();
-                user.Phone = dataRow["Phone"].ToString();
-
-                users.Add(user);
-            }
-            return users;
+            return UsersDAL.Instance.SelectByUserName(_userName);
         }
 
         public UsersDTO GetByUerNameAndPassword(string _userName, string _password)
@@ -72,5 +56,6 @@ namespace BLL
         {
             UsersDAL.Instance.Insert(_fullName, _userName, _password);
         }
+
     }
 }

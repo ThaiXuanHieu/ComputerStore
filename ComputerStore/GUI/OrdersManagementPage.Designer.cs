@@ -37,12 +37,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitlePage = new System.Windows.Forms.Label();
             this.grbInfoOrders = new System.Windows.Forms.GroupBox();
-            this.txtProductID = new System.Windows.Forms.TextBox();
-            this.lblProductID = new System.Windows.Forms.Label();
-            this.txtProductName = new System.Windows.Forms.TextBox();
+            this.cbProducts = new System.Windows.Forms.ComboBox();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.txtUnit = new System.Windows.Forms.TextBox();
-            this.lblUnit = new System.Windows.Forms.Label();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.lblQuantity = new System.Windows.Forms.Label();
@@ -100,12 +96,8 @@
             // 
             // grbInfoOrders
             // 
-            this.grbInfoOrders.Controls.Add(this.txtProductID);
-            this.grbInfoOrders.Controls.Add(this.lblProductID);
-            this.grbInfoOrders.Controls.Add(this.txtProductName);
+            this.grbInfoOrders.Controls.Add(this.cbProducts);
             this.grbInfoOrders.Controls.Add(this.lbl1);
-            this.grbInfoOrders.Controls.Add(this.txtUnit);
-            this.grbInfoOrders.Controls.Add(this.lblUnit);
             this.grbInfoOrders.Controls.Add(this.txtQuantity);
             this.grbInfoOrders.Controls.Add(this.txtPrice);
             this.grbInfoOrders.Controls.Add(this.lblQuantity);
@@ -124,62 +116,23 @@
             this.grbInfoOrders.TabStop = false;
             this.grbInfoOrders.Text = "Thông tin hóa đơn";
             // 
-            // txtProductID
+            // cbProducts
             // 
-            this.txtProductID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductID.Location = new System.Drawing.Point(613, 41);
-            this.txtProductID.Multiline = true;
-            this.txtProductID.Name = "txtProductID";
-            this.txtProductID.Size = new System.Drawing.Size(73, 34);
-            this.txtProductID.TabIndex = 1;
-            // 
-            // lblProductID
-            // 
-            this.lblProductID.AutoSize = true;
-            this.lblProductID.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductID.Location = new System.Drawing.Point(420, 43);
-            this.lblProductID.Name = "lblProductID";
-            this.lblProductID.Size = new System.Drawing.Size(172, 32);
-            this.lblProductID.TabIndex = 68;
-            this.lblProductID.Text = "Mã sản phẩm :";
-            // 
-            // txtProductName
-            // 
-            this.txtProductName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductName.Location = new System.Drawing.Point(188, 44);
-            this.txtProductName.Multiline = true;
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(226, 34);
-            this.txtProductName.TabIndex = 0;
+            this.cbProducts.FormattingEnabled = true;
+            this.cbProducts.Location = new System.Drawing.Point(188, 46);
+            this.cbProducts.Name = "cbProducts";
+            this.cbProducts.Size = new System.Drawing.Size(226, 36);
+            this.cbProducts.TabIndex = 67;
             // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(557, 134);
+            this.lbl1.Location = new System.Drawing.Point(349, 133);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(65, 32);
             this.lbl1.TabIndex = 66;
             this.lbl1.Text = "VND";
-            // 
-            // txtUnit
-            // 
-            this.txtUnit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUnit.Location = new System.Drawing.Point(188, 132);
-            this.txtUnit.Multiline = true;
-            this.txtUnit.Name = "txtUnit";
-            this.txtUnit.Size = new System.Drawing.Size(136, 34);
-            this.txtUnit.TabIndex = 3;
-            // 
-            // lblUnit
-            // 
-            this.lblUnit.AutoSize = true;
-            this.lblUnit.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnit.Location = new System.Drawing.Point(6, 133);
-            this.lblUnit.Name = "lblUnit";
-            this.lblUnit.Size = new System.Drawing.Size(108, 32);
-            this.lblUnit.TabIndex = 64;
-            this.lblUnit.Text = "ĐV tính :";
             // 
             // txtQuantity
             // 
@@ -193,7 +146,7 @@
             // txtPrice
             // 
             this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(415, 134);
+            this.txtPrice.Location = new System.Drawing.Point(188, 131);
             this.txtPrice.Multiline = true;
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(136, 34);
@@ -213,7 +166,7 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(334, 133);
+            this.lblPrice.Location = new System.Drawing.Point(6, 133);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(61, 32);
             this.lblPrice.TabIndex = 62;
@@ -222,7 +175,7 @@
             // txtFirstName
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(704, 131);
+            this.txtFirstName.Location = new System.Drawing.Point(649, 131);
             this.txtFirstName.Multiline = true;
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(275, 34);
@@ -231,7 +184,7 @@
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(704, 91);
+            this.txtLastName.Location = new System.Drawing.Point(649, 91);
             this.txtLastName.Multiline = true;
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(275, 34);
@@ -241,7 +194,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(628, 92);
+            this.label1.Location = new System.Drawing.Point(573, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 32);
             this.label1.TabIndex = 55;
@@ -251,7 +204,7 @@
             // 
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(628, 133);
+            this.lblFirstName.Location = new System.Drawing.Point(573, 133);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(65, 32);
             this.lblFirstName.TabIndex = 55;
@@ -261,7 +214,7 @@
             // 
             this.lblCustomer.AutoSize = true;
             this.lblCustomer.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomer.Location = new System.Drawing.Point(740, 45);
+            this.lblCustomer.Location = new System.Drawing.Point(698, 45);
             this.lblCustomer.Name = "lblCustomer";
             this.lblCustomer.Size = new System.Drawing.Size(153, 32);
             this.lblCustomer.TabIndex = 55;
@@ -279,6 +232,8 @@
             // 
             // dgvOrderDetails
             // 
+            this.dgvOrderDetails.AllowUserToAddRows = false;
+            this.dgvOrderDetails.AllowUserToDeleteRows = false;
             this.dgvOrderDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
@@ -329,6 +284,8 @@
             // 
             // dgvProducts
             // 
+            this.dgvProducts.AllowUserToAddRows = false;
+            this.dgvProducts.AllowUserToDeleteRows = false;
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
@@ -525,7 +482,7 @@
             this.btnCreateOrders.ForeColor = System.Drawing.Color.White;
             this.btnCreateOrders.Image = global::GUI.Properties.Resources.icons8_Purchase_Order_26px;
             this.btnCreateOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCreateOrders.Location = new System.Drawing.Point(810, 32);
+            this.btnCreateOrders.Location = new System.Drawing.Point(810, 20);
             this.btnCreateOrders.Name = "btnCreateOrders";
             this.btnCreateOrders.Size = new System.Drawing.Size(193, 40);
             this.btnCreateOrders.TabIndex = 52;
@@ -742,8 +699,6 @@
         private System.Windows.Forms.Label lblTitlePage;
         private System.Windows.Forms.GroupBox grbInfoOrders;
         private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.TextBox txtUnit;
-        private System.Windows.Forms.Label lblUnit;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblProductName;
@@ -766,9 +721,6 @@
         private System.Windows.Forms.LinkLabel llbListOrders;
         private System.Windows.Forms.Timer Timer;
         private System.Windows.Forms.Label lblCustomer;
-        private System.Windows.Forms.TextBox txtProductName;
-        private System.Windows.Forms.TextBox txtProductID;
-        private System.Windows.Forms.Label lblProductID;
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Button btnCreateOrders;
         private System.Windows.Forms.Label lblTotalAmount;
@@ -784,5 +736,6 @@
         private System.Windows.Forms.DataGridView dgvListOrders;
         private System.Windows.Forms.LinkLabel llbBack;
         private System.Windows.Forms.Label lblListOrders;
+        private System.Windows.Forms.ComboBox cbProducts;
     }
 }
