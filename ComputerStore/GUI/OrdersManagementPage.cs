@@ -177,15 +177,14 @@ namespace GUI
             {
                 // Sửa và lưu
                 int row = dgvOrderDetails.CurrentRow.Index;
-                int orderID = Convert.ToInt32(dgvOrderDetails.Rows[row].Cells[0].Value.ToString());
                 int productID = Convert.ToInt32(cbProducts.SelectedValue.ToString());
                 amount = Convert.ToDouble(txtPrice.Text) * Convert.ToInt32(txtQuantity.Text);
-                OrderDetailsBLL.Instance.Update(orderID, productID, Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
-                
+                OrderDetailsBLL.Instance.Update(orders.OrderID, productID, Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
+                dgvOrderDetails.DataSource = OrderDetailsBLL.Instance.GetByOrderID(orders.OrderID);
             }
 
-
             DisplayData();
+            
             isEnabled(false);
         }
 
@@ -204,9 +203,10 @@ namespace GUI
             if (dialog == System.Windows.Forms.DialogResult.No) return;
 
             int row = dgvOrderDetails.CurrentRow.Index;
-            int orderID = Convert.ToInt32(dgvOrderDetails.Rows[row].Cells[0].Value.ToString());
-            OrderDetailsBLL.Instance.DeleteByOrderID(orderID);
+            int productID = Convert.ToInt32(dgvOrderDetails.Rows[row].Cells[1].Value.ToString());
+            OrderDetailsBLL.Instance.DeleteByProductID(productID);
 
+            dgvOrderDetails.DataSource = OrderDetailsBLL.Instance.GetByOrderID(orders.OrderID);
             DisplayData();
         }
 
@@ -247,11 +247,10 @@ namespace GUI
             DialogResult dialog = new DialogResult();
             dialog = MessageBox.Show("Chắc chắn xóa ... đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == System.Windows.Forms.DialogResult.No) return;
-
-            int row = dgvOrderDetails.CurrentRow.Index;
-            int orderID = Convert.ToInt32(dgvListOrders.Rows[row].Cells[0].Value.ToString());
+            int orderID = Convert.ToInt32(dgvListOrders.SelectedCells[0].OwningRow.Cells["OrderID"].Value.ToString());
             OrdersBLL.Instance.DeleteByOrderID(orderID);
 
+            dgvListOrders.DataSource = OrdersBLL.Instance.GetAll();
             DisplayData();
         }
 

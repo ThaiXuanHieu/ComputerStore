@@ -82,7 +82,6 @@ namespace BLL
 
         public void DeleteByOrderID(int _orderID)
         {
-            OrderDetailsDAL.Instance.DeleteByOrderID(_orderID);
             OrdersDAL.Instance.DeleteByOrderID(_orderID);
         }
     }

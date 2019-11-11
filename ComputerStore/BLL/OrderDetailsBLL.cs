@@ -50,9 +50,9 @@ namespace BLL
             OrderDetailsDAL.Instance.Update(_orderID, _productID, _quantity, _price, _amount);
         }
 
-        public void DeleteByOrderID(int _orderID)
+        public void DeleteByProductID(int _productID)
         {
-            OrderDetailsDAL.Instance.DeleteByOrderID(_orderID);
+            OrderDetailsDAL.Instance.DeleteByProductID(_productID);
         }
     }
 }

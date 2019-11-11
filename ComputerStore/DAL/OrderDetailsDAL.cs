@@ -85,14 +85,14 @@ namespace DAL
             dbConnection.ExecuteUpdateQuery(query, parameters);
         }
 
-        public void DeleteByOrderID(int _orderID)
+        public void DeleteByProductID(int _productID)
         {
-            string query = "DELETE FROM OrderDetails WHERE OrderID = @OrderID";
+            string query = "DELETE FROM OrderDetails WHERE ProductID = @ProductID";
 
             SqlParameter[] parameters = new SqlParameter[1];
 
-            parameters[0] = new SqlParameter("@OrderID", SqlDbType.Int);
-            parameters[0].Value = _orderID;
+            parameters[0] = new SqlParameter("@ProductID", SqlDbType.Int);
+            parameters[0].Value = _productID;
 
             dbConnection.ExecuteDeleteQuery(query, parameters);
 
