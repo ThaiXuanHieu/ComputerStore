@@ -133,8 +133,6 @@ namespace GUI
             userPage.Visible = false;
         }
 
-        
-
         private void btnProfile_Click(object sender, EventArgs e)
         {
             ordersManagementPage.Visible = false;

@@ -35,11 +35,6 @@
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlWrap = new System.Windows.Forms.Panel();
             this.userPage = new GUI.UserPage();
-            this.warehouseManagementPage = new GUI.WarehouseManagementPage();
-            this.supplierManagementPage = new GUI.SupplierManagementPage();
-            this.productManagementPage = new GUI.ProductManagementPage();
-            this.ordersManagementPage = new GUI.OrdersManagementPage();
-            this.customerManagementPage = new GUI.CustomerManagementPage();
             this.categoryManagementPage = new GUI.CategoryManagementPage();
             this.Separator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.Separator2 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -49,6 +44,12 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.Separator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnlLeft = new System.Windows.Forms.Panel();
+            this.ordersManagementPage = new OrdersManagementPage();
+            this.productManagementPage = new ProductManagementPage();
+            this.categoryManagementPage = new CategoryManagementPage();
+            this.customerManagementPage = new CustomerManagementPage();
+            this.supplierManagementPage = new SupplierManagementPage();
+            this.warehouseManagementPage = new WarehouseManagementPage();
             this.btnWarehouseManagementPage = new System.Windows.Forms.Button();
             this.btnSupplierManagementPage = new System.Windows.Forms.Button();
             this.btnCustomerManagementPage = new System.Windows.Forms.Button();
@@ -108,12 +109,12 @@
             // pnlWrap
             // 
             this.pnlWrap.Controls.Add(this.userPage);
-            this.pnlWrap.Controls.Add(this.warehouseManagementPage);
-            this.pnlWrap.Controls.Add(this.supplierManagementPage);
-            this.pnlWrap.Controls.Add(this.productManagementPage);
-            this.pnlWrap.Controls.Add(this.ordersManagementPage);
-            this.pnlWrap.Controls.Add(this.customerManagementPage);
             this.pnlWrap.Controls.Add(this.categoryManagementPage);
+            this.pnlWrap.Controls.Add(this.ordersManagementPage);
+            this.pnlWrap.Controls.Add(this.productManagementPage);
+            this.pnlWrap.Controls.Add(this.customerManagementPage);
+            this.pnlWrap.Controls.Add(this.supplierManagementPage);
+            this.pnlWrap.Controls.Add(this.warehouseManagementPage);
             this.pnlWrap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlWrap.Location = new System.Drawing.Point(317, 46);
             this.pnlWrap.Name = "pnlWrap";
@@ -122,59 +123,42 @@
             // 
             // userPage
             // 
-            this.userPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userPage.Location = new System.Drawing.Point(0, 0);
-            this.userPage.Name = "userPage";
-            this.userPage.Size = new System.Drawing.Size(1020, 684);
-            this.userPage.TabIndex = 6;
-            // 
-            // warehouseManagementPage
-            // 
-            this.warehouseManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.warehouseManagementPage.Location = new System.Drawing.Point(0, 0);
-            this.warehouseManagementPage.Name = "warehouseManagementPage";
-            this.warehouseManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.warehouseManagementPage.TabIndex = 5;
-            // 
-            // supplierManagementPage
-            // 
-            this.supplierManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.supplierManagementPage.Location = new System.Drawing.Point(0, 0);
-            this.supplierManagementPage.Name = "supplierManagementPage";
-            this.supplierManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.supplierManagementPage.TabIndex = 4;
-            // 
-            // productManagementPage
-            // 
-            this.productManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.productManagementPage.Location = new System.Drawing.Point(0, 0);
-            this.productManagementPage.Name = "productManagementPage";
-            this.productManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.productManagementPage.TabIndex = 3;
-            // 
-            // ordersManagementPage
-            // 
             this.ordersManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ordersManagementPage.Location = new System.Drawing.Point(0, 0);
             this.ordersManagementPage.Name = "ordersManagementPage";
             this.ordersManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.ordersManagementPage.TabIndex = 2;
-            // 
+            this.ordersManagementPage.TabIndex = 6;
+            // productManagementPage
+            this.productManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.productManagementPage.Location = new System.Drawing.Point(0, 0);
+            this.productManagementPage.Name = "productManagementPage";
+            this.productManagementPage.Size = new System.Drawing.Size(1020, 684);
+            this.productManagementPage.TabIndex = 6;
             // customerManagementPage
-            // 
             this.customerManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customerManagementPage.Location = new System.Drawing.Point(0, 0);
             this.customerManagementPage.Name = "customerManagementPage";
             this.customerManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.customerManagementPage.TabIndex = 1;
+            this.customerManagementPage.TabIndex = 6;
+            // supplierManagementPage
+            this.supplierManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.supplierManagementPage.Location = new System.Drawing.Point(0, 0);
+            this.supplierManagementPage.Name = "supplierManagementPage";
+            this.supplierManagementPage.Size = new System.Drawing.Size(1020, 684);
+            this.supplierManagementPage.TabIndex = 6;
+            // warehouseManagementPage
+            this.warehouseManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.warehouseManagementPage.Location = new System.Drawing.Point(0, 0);
+            this.warehouseManagementPage.Name = "warehouseManagementPage";
+            this.warehouseManagementPage.Size = new System.Drawing.Size(1020, 684);
+            this.warehouseManagementPage.TabIndex = 6;
             // 
             // categoryManagementPage
             // 
-            this.categoryManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.categoryManagementPage.Location = new System.Drawing.Point(0, 0);
             this.categoryManagementPage.Name = "categoryManagementPage";
             this.categoryManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.categoryManagementPage.TabIndex = 0;
+            this.categoryManagementPage.TabIndex = 7;
             // 
             // Separator1
             // 
@@ -414,11 +398,11 @@
         private System.Windows.Forms.Panel pnlWrap;
         private Bunifu.Framework.UI.BunifuSeparator Separator1;
         private Bunifu.Framework.UI.BunifuSeparator Separator2;
+        private Bunifu.Framework.UI.BunifuSeparator Separator3;
         private System.Windows.Forms.PictureBox picAvatar;
         private System.Windows.Forms.Label lblNameUser;
         private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button btnLogout;
-        private Bunifu.Framework.UI.BunifuSeparator Separator3;
         private System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Button btnCreateOrdersPage;
         private System.Windows.Forms.Button btnWarehouseManagementPage;

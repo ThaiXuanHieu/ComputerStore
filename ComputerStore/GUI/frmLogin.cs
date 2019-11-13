@@ -100,6 +100,7 @@ namespace GUI
                 UsersDTO user = UsersBLL.Instance.GetByUerNameAndPassword(txtUsername.Text, txtPassword.Text);
                 if (user.UserName.Equals("admin") && user.Password.Equals("123456"))
                 {
+                    
                     frmAdmin admin = new frmAdmin(user.FullName);
                     admin.ShowDialog();
                     
@@ -154,7 +155,5 @@ namespace GUI
             MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
-
-
     }
 }

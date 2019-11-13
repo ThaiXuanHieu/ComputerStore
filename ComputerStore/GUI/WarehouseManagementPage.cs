@@ -26,7 +26,7 @@ namespace GUI
         public void DisplayData()
         {
             // Load Data
-            dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetAll();
+            //dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetAll();
 
             // Load Data to cbProducts
 
