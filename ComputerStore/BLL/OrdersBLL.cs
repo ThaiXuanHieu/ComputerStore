@@ -84,5 +84,10 @@ namespace BLL
         {
             OrdersDAL.Instance.DeleteByOrderID(_orderID);
         }
+
+        public DataTable Statistical()
+        {
+            return OrdersDAL.Instance.Statistical();
+        }
     }
 }

@@ -104,5 +104,11 @@ namespace DAL
             dbConnection.ExecuteDeleteQuery(query, parameters);
 
         }
+
+        public DataTable Statistical()
+        {
+            string query = "SELECT MONTH(OrderDate) AS 'Month', SUM(TotalAmount) AS 'Tổng tiền' FROM Orders GROUP BY MONTH(OrderDate)";
+            return dbConnection.ExecuteSelectQuery(query);
+        }
     }
 }

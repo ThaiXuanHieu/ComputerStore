@@ -43,10 +43,6 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblFirstName = new System.Windows.Forms.Label();
             this.lblCustomer = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
             this.dgvOrderDetails = new System.Windows.Forms.DataGridView();
@@ -76,6 +72,10 @@
             this.dgvListOrders = new System.Windows.Forms.DataGridView();
             this.llbBack = new System.Windows.Forms.LinkLabel();
             this.lblListOrders = new System.Windows.Forms.Label();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
             this.grbInfoOrders.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
@@ -171,44 +171,6 @@
             this.lblPrice.Size = new System.Drawing.Size(61, 32);
             this.lblPrice.TabIndex = 62;
             this.lblPrice.Text = "Giá :";
-            // 
-            // txtFirstName
-            // 
-            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(649, 131);
-            this.txtFirstName.Multiline = true;
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(275, 34);
-            this.txtFirstName.TabIndex = 6;
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(649, 91);
-            this.txtLastName.Multiline = true;
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(275, 34);
-            this.txtLastName.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(573, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 32);
-            this.label1.TabIndex = 55;
-            this.label1.Text = "Họ :";
-            // 
-            // lblFirstName
-            // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(573, 133);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(65, 32);
-            this.lblFirstName.TabIndex = 55;
-            this.lblFirstName.Text = "Tên :";
             // 
             // lblCustomer
             // 
@@ -387,6 +349,7 @@
             this.btnPrinter.TabIndex = 13;
             this.btnPrinter.Text = "      In hóa đơn";
             this.btnPrinter.UseVisualStyleBackColor = false;
+            this.btnPrinter.Click += new System.EventHandler(this.btnPrinter_Click);
             // 
             // btnPay
             // 
@@ -655,6 +618,44 @@
             this.lblListOrders.TabIndex = 41;
             this.lblListOrders.Text = "Danh sách hóa đơn";
             // 
+            // txtLastName
+            // 
+            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName.Location = new System.Drawing.Point(649, 91);
+            this.txtLastName.Multiline = true;
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(275, 34);
+            this.txtLastName.TabIndex = 5;
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstName.Location = new System.Drawing.Point(573, 133);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(65, 32);
+            this.lblFirstName.TabIndex = 55;
+            this.lblFirstName.Text = "Tên :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(573, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 32);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "Họ :";
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.Location = new System.Drawing.Point(649, 131);
+            this.txtFirstName.Multiline = true;
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(275, 34);
+            this.txtFirstName.TabIndex = 6;
+            // 
             // OrdersManagementPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -712,12 +713,8 @@
         private System.Windows.Forms.Button btnAddOrder;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.Label lblQuantity;
-        private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.DataGridView dgvProducts;
         private System.Windows.Forms.Label lblListProduct;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel llbListOrders;
         private System.Windows.Forms.Timer Timer;
         private System.Windows.Forms.Label lblCustomer;
@@ -737,5 +734,9 @@
         private System.Windows.Forms.LinkLabel llbBack;
         private System.Windows.Forms.Label lblListOrders;
         private System.Windows.Forms.ComboBox cbProducts;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFirstName;
     }
 }

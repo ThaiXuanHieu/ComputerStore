@@ -53,7 +53,7 @@ namespace DAL
 
         public DataTable SelectByUserName(string _userName)
         {
-            string query = "SELECT * FROM Users WHERE UserName = @userName";
+            string query = "SELECT UserName FROM Users WHERE UserName = @userName";
             SqlParameter[] parameters = new SqlParameter[1];
             parameters[0] = new SqlParameter("@userName", SqlDbType.VarChar);
             parameters[0].Value = _userName;

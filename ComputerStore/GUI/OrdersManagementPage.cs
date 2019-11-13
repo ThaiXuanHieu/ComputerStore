@@ -177,9 +177,9 @@ namespace GUI
             {
                 // Sửa và lưu
                 int row = dgvOrderDetails.CurrentRow.Index;
-                int productID = Convert.ToInt32(cbProducts.SelectedValue.ToString());
+                int productID = Convert.ToInt32(dgvOrderDetails.Rows[row].Cells[1].Value.ToString());
                 amount = Convert.ToDouble(txtPrice.Text) * Convert.ToInt32(txtQuantity.Text);
-                OrderDetailsBLL.Instance.Update(orders.OrderID, productID, Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
+                OrderDetailsBLL.Instance.Update(productID, Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
                 dgvOrderDetails.DataSource = OrderDetailsBLL.Instance.GetByOrderID(orders.OrderID);
             }
 
@@ -234,12 +234,14 @@ namespace GUI
 
         private void btnAddOrders_Click(object sender, EventArgs e)
         {
-
+            Timer.Start();
         }
 
         private void btnEditOrders_Click(object sender, EventArgs e)
         {
-
+            Timer.Start();
+            int orderID = Convert.ToInt32(dgvListOrders.SelectedCells[0].OwningRow.Cells["OrderID"].Value.ToString());
+            dgvOrderDetails.DataSource = OrderDetailsBLL.Instance.GetByOrderID(orderID);
         }
 
         private void btnDeleteOrders_Click(object sender, EventArgs e)
@@ -257,6 +259,12 @@ namespace GUI
         private void btnSearchOrders_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPrinter_Click(object sender, EventArgs e)
+        {
+            PrintDialog printDialog  = new PrintDialog();
+            printDialog.ShowDialog();
         }
     }
 }

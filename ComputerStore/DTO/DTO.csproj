@@ -47,8 +47,11 @@
     <Compile Include="OrdersDTO.cs" />
     <Compile Include="ProductsDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceiptDetailsDTO.cs" />
+    <Compile Include="ReceiptsDTO.cs" />
     <Compile Include="SuppliersDTO.cs" />
     <Compile Include="UsersDTO.cs" />
+    <Compile Include="WarehouseDTO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

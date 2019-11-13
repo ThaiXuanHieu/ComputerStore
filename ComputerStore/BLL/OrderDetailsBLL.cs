@@ -45,9 +45,9 @@ namespace BLL
             OrderDetailsDAL.Instance.Insert(_orderID, _productID, _quantity, _price, _amount);
         }
 
-        public void Update(int _orderID, int _productID, int _quantity, double _price, double _amount)
+        public void Update(int _productID, int _quantity, double _price, double _amount)
         {
-            OrderDetailsDAL.Instance.Update(_orderID, _productID, _quantity, _price, _amount);
+            OrderDetailsDAL.Instance.Update(_productID, _quantity, _price, _amount);
         }
 
         public void DeleteByProductID(int _productID)

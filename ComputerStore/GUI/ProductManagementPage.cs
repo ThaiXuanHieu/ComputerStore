@@ -175,7 +175,7 @@ namespace GUI
             picImageProduct.Image = bitmap;
             txtUnit.Text = dgvProducts.Rows[row].Cells[5].Value.ToString();
             txtPrice.Text = dgvProducts.Rows[row].Cells[6].Value.ToString();
-            txtDescription.Text = dgvProducts.Rows[row].Cells[7].ToString();
+            txtDescription.Text = dgvProducts.Rows[row].Cells[7].Value.ToString();
 
             
         }
