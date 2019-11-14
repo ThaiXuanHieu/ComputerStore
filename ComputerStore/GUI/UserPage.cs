@@ -36,5 +36,7 @@ namespace GUI
                 MessageBox.Show("Lỗi! Không thể tải ảnh lên", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
     }
 }

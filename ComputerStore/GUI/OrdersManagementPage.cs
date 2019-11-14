@@ -81,31 +81,6 @@ namespace GUI
             orders = OrdersBLL.Instance.GetFirstOrders();
         }
 
-        private void btnPay_Click(object sender, EventArgs e)
-        {
-            txtLastName.Enabled = true;
-            txtFirstName.Enabled = true;
-
-            if (txtLastName.Text.Trim() == "")
-            {
-                MessageBox.Show("Vui lòng nhập tên đầy đủ họ tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (txtFirstName.Text.Trim() == "")
-            {
-                MessageBox.Show("Vui lòng nhập tên đầy đủ họ tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            for(var row = 0; row < dgvOrderDetails.Rows.Count; row++)
-            {
-                totalAmount += Convert.ToDouble(dgvOrderDetails.Rows[row].Cells["Amount"].Value.ToString());
-            }
-            lblAmount.Text = totalAmount.ToString();
-            CustomersBLL.Instance.Update(customer.CustomerID, txtFirstName.Text, txtLastName.Text, "", "", "");
-            OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, Convert.ToDouble(lblAmount.Text));
-        }
-
         private void llbBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Timer.Start();
@@ -163,11 +138,6 @@ namespace GUI
                     MessageBox.Show("Vui lòng nhập số lượng sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-                if (txtPrice.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập giá sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
 
                 amount = Convert.ToDouble(txtPrice.Text) * Convert.ToInt32(txtQuantity.Text);
                 OrderDetailsBLL.Instance.Insert(orders.OrderID, Convert.ToInt32(cbProducts.SelectedValue.ToString()), Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
@@ -179,6 +149,7 @@ namespace GUI
                 int row = dgvOrderDetails.CurrentRow.Index;
                 int productID = Convert.ToInt32(dgvOrderDetails.Rows[row].Cells[1].Value.ToString());
                 amount = Convert.ToDouble(txtPrice.Text) * Convert.ToInt32(txtQuantity.Text);
+                // Update By ProductID
                 OrderDetailsBLL.Instance.Update(productID, Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
                 dgvOrderDetails.DataSource = OrderDetailsBLL.Instance.GetByOrderID(orders.OrderID);
             }
@@ -186,6 +157,31 @@ namespace GUI
             DisplayData();
             
             isEnabled(false);
+        }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+            txtLastName.Enabled = true;
+            txtFirstName.Enabled = true;
+
+            if (txtLastName.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên đầy đủ họ tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txtFirstName.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên đầy đủ họ tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            for (var row = 0; row < dgvOrderDetails.Rows.Count; row++)
+            {
+                totalAmount += Convert.ToDouble(dgvOrderDetails.Rows[row].Cells["Amount"].Value.ToString());
+            }
+            lblAmount.Text = totalAmount.ToString();
+            CustomersBLL.Instance.Update(customer.CustomerID, txtFirstName.Text, txtLastName.Text, "", "", "");
+            OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, Convert.ToDouble(lblAmount.Text));
         }
 
         private void btnEditOrder_Click(object sender, EventArgs e)

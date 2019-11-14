@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +10,7 @@ namespace DAL
 {
     public class WarehouseDAL
     {
-        private WarehouseDAL instance;
+        private static WarehouseDAL instance;
         private DBConnection dbConnection;
 
         public WarehouseDAL()
@@ -16,7 +18,7 @@ namespace DAL
             dbConnection = new DBConnection();
         }
 
-        public WarehouseDAL Instance
+        public static WarehouseDAL Instance
         {
             get
             {
@@ -26,6 +28,13 @@ namespace DAL
                 }
                 return instance;
             }
+        }
+
+        public DataTable SelectAll()
+        {
+            string query = "SELECT p.ProductName, p.Price, w.Inventory FROM Products AS p INNER JOIN Warehouse AS w" +
+                " ON p.ProductID = w.ProductID";
+            return dbConnection.ExecuteSelectQuery(query);
         }
     }
 }

@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitlePage = new System.Windows.Forms.Label();
             this.btnPrinter = new System.Windows.Forms.Button();
             this.lblAmount = new System.Windows.Forms.Label();
@@ -52,6 +54,8 @@
             this.btnCreateReceipts = new System.Windows.Forms.Button();
             this.btnAddOrder = new System.Windows.Forms.Button();
             this.grbInfoOrders = new System.Windows.Forms.GroupBox();
+            this.cbCompanyName = new System.Windows.Forms.ComboBox();
+            this.lblCompanyName = new System.Windows.Forms.Label();
             this.cbProducts = new System.Windows.Forms.ComboBox();
             this.lbl1 = new System.Windows.Forms.Label();
             this.txtQuantity = new System.Windows.Forms.TextBox();
@@ -61,13 +65,20 @@
             this.lblSupplier = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
             this.Timer = new System.Windows.Forms.Timer(this.components);
-            this.lblCompanyName = new System.Windows.Forms.Label();
-            this.lblContactName = new System.Windows.Forms.Label();
-            this.cbCompanyName = new System.Windows.Forms.ComboBox();
-            this.cbContactName = new System.Windows.Forms.ComboBox();
+            this.pnlListReceipt = new System.Windows.Forms.Panel();
+            this.btnSearchReceipts = new System.Windows.Forms.Button();
+            this.txtSearchOrders = new System.Windows.Forms.TextBox();
+            this.btnDeleteReceipts = new System.Windows.Forms.Button();
+            this.btnEditReceipts = new System.Windows.Forms.Button();
+            this.btnAddReceipts = new System.Windows.Forms.Button();
+            this.dgvListReceipt = new System.Windows.Forms.DataGridView();
+            this.llbBack = new System.Windows.Forms.LinkLabel();
+            this.lblListOrders = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListProductInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReceiptDetails)).BeginInit();
             this.grbInfoOrders.SuspendLayout();
+            this.pnlListReceipt.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListReceipt)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitlePage
@@ -173,26 +184,26 @@
             this.dgvListProductInventory.AllowUserToAddRows = false;
             this.dgvListProductInventory.AllowUserToDeleteRows = false;
             this.dgvListProductInventory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListProductInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListProductInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListProductInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListProductInventory.Location = new System.Drawing.Point(513, 350);
             this.dgvListProductInventory.Name = "dgvListProductInventory";
             this.dgvListProductInventory.ReadOnly = true;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListProductInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListProductInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListProductInventory.RowTemplate.Height = 24;
             this.dgvListProductInventory.Size = new System.Drawing.Size(490, 286);
             this.dgvListProductInventory.TabIndex = 80;
@@ -202,29 +213,30 @@
             this.dgvReceiptDetails.AllowUserToAddRows = false;
             this.dgvReceiptDetails.AllowUserToDeleteRows = false;
             this.dgvReceiptDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReceiptDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReceiptDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvReceiptDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReceiptDetails.Location = new System.Drawing.Point(16, 350);
             this.dgvReceiptDetails.Name = "dgvReceiptDetails";
             this.dgvReceiptDetails.ReadOnly = true;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReceiptDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReceiptDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvReceiptDetails.RowTemplate.Height = 24;
             this.dgvReceiptDetails.Size = new System.Drawing.Size(490, 286);
             this.dgvReceiptDetails.TabIndex = 81;
+            this.dgvReceiptDetails.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReceiptDetails_RowEnter);
             // 
             // btnSave
             // 
@@ -352,10 +364,8 @@
             // 
             // grbInfoOrders
             // 
-            this.grbInfoOrders.Controls.Add(this.cbContactName);
             this.grbInfoOrders.Controls.Add(this.cbCompanyName);
             this.grbInfoOrders.Controls.Add(this.lblCompanyName);
-            this.grbInfoOrders.Controls.Add(this.lblContactName);
             this.grbInfoOrders.Controls.Add(this.cbProducts);
             this.grbInfoOrders.Controls.Add(this.lbl1);
             this.grbInfoOrders.Controls.Add(this.txtQuantity);
@@ -371,6 +381,24 @@
             this.grbInfoOrders.TabIndex = 76;
             this.grbInfoOrders.TabStop = false;
             this.grbInfoOrders.Text = "Thông tin hóa đơn";
+            // 
+            // cbCompanyName
+            // 
+            this.cbCompanyName.FormattingEnabled = true;
+            this.cbCompanyName.Location = new System.Drawing.Point(704, 90);
+            this.cbCompanyName.Name = "cbCompanyName";
+            this.cbCompanyName.Size = new System.Drawing.Size(259, 36);
+            this.cbCompanyName.TabIndex = 70;
+            // 
+            // lblCompanyName
+            // 
+            this.lblCompanyName.AutoSize = true;
+            this.lblCompanyName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompanyName.Location = new System.Drawing.Point(554, 91);
+            this.lblCompanyName.Name = "lblCompanyName";
+            this.lblCompanyName.Size = new System.Drawing.Size(152, 32);
+            this.lblCompanyName.TabIndex = 69;
+            this.lblCompanyName.Text = "Tên công ty :";
             // 
             // cbProducts
             // 
@@ -432,7 +460,7 @@
             // 
             this.lblSupplier.AutoSize = true;
             this.lblSupplier.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSupplier.Location = new System.Drawing.Point(698, 45);
+            this.lblSupplier.Location = new System.Drawing.Point(733, 47);
             this.lblSupplier.Name = "lblSupplier";
             this.lblSupplier.Size = new System.Drawing.Size(175, 32);
             this.lblSupplier.TabIndex = 55;
@@ -452,46 +480,155 @@
             // 
             this.Timer.Interval = 30;
             // 
-            // lblCompanyName
+            // pnlListReceipt
             // 
-            this.lblCompanyName.AutoSize = true;
-            this.lblCompanyName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompanyName.Location = new System.Drawing.Point(554, 91);
-            this.lblCompanyName.Name = "lblCompanyName";
-            this.lblCompanyName.Size = new System.Drawing.Size(152, 32);
-            this.lblCompanyName.TabIndex = 69;
-            this.lblCompanyName.Text = "Tên công ty :";
+            this.pnlListReceipt.Controls.Add(this.btnSearchReceipts);
+            this.pnlListReceipt.Controls.Add(this.txtSearchOrders);
+            this.pnlListReceipt.Controls.Add(this.btnDeleteReceipts);
+            this.pnlListReceipt.Controls.Add(this.btnEditReceipts);
+            this.pnlListReceipt.Controls.Add(this.btnAddReceipts);
+            this.pnlListReceipt.Controls.Add(this.dgvListReceipt);
+            this.pnlListReceipt.Controls.Add(this.llbBack);
+            this.pnlListReceipt.Controls.Add(this.lblListOrders);
+            this.pnlListReceipt.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlListReceipt.Location = new System.Drawing.Point(0, 0);
+            this.pnlListReceipt.Name = "pnlListReceipt";
+            this.pnlListReceipt.Size = new System.Drawing.Size(10, 684);
+            this.pnlListReceipt.TabIndex = 71;
             // 
-            // lblContactName
+            // btnSearchReceipts
             // 
-            this.lblContactName.AutoSize = true;
-            this.lblContactName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContactName.Location = new System.Drawing.Point(554, 131);
-            this.lblContactName.Name = "lblContactName";
-            this.lblContactName.Size = new System.Drawing.Size(145, 32);
-            this.lblContactName.TabIndex = 68;
-            this.lblContactName.Text = "Tên liên hệ :";
+            this.btnSearchReceipts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(132)))), ((int)(((byte)(150)))));
+            this.btnSearchReceipts.FlatAppearance.BorderSize = 0;
+            this.btnSearchReceipts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchReceipts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchReceipts.ForeColor = System.Drawing.Color.White;
+            this.btnSearchReceipts.Image = global::GUI.Properties.Resources.icons8_Search_26px;
+            this.btnSearchReceipts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearchReceipts.Location = new System.Drawing.Point(850, 113);
+            this.btnSearchReceipts.Name = "btnSearchReceipts";
+            this.btnSearchReceipts.Size = new System.Drawing.Size(151, 40);
+            this.btnSearchReceipts.TabIndex = 72;
+            this.btnSearchReceipts.Text = "     Tìm kiếm";
+            this.btnSearchReceipts.UseVisualStyleBackColor = false;
             // 
-            // cbCompanyName
+            // txtSearchOrders
             // 
-            this.cbCompanyName.FormattingEnabled = true;
-            this.cbCompanyName.Location = new System.Drawing.Point(704, 90);
-            this.cbCompanyName.Name = "cbCompanyName";
-            this.cbCompanyName.Size = new System.Drawing.Size(259, 36);
-            this.cbCompanyName.TabIndex = 70;
+            this.txtSearchOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchOrders.ForeColor = System.Drawing.Color.Black;
+            this.txtSearchOrders.Location = new System.Drawing.Point(576, 113);
+            this.txtSearchOrders.Multiline = true;
+            this.txtSearchOrders.Name = "txtSearchOrders";
+            this.txtSearchOrders.Size = new System.Drawing.Size(268, 40);
+            this.txtSearchOrders.TabIndex = 71;
+            this.txtSearchOrders.Text = "Nhập tên công ty...";
             // 
-            // cbContactName
+            // btnDeleteReceipts
             // 
-            this.cbContactName.FormattingEnabled = true;
-            this.cbContactName.Location = new System.Drawing.Point(704, 130);
-            this.cbContactName.Name = "cbContactName";
-            this.cbContactName.Size = new System.Drawing.Size(259, 36);
-            this.cbContactName.TabIndex = 70;
+            this.btnDeleteReceipts.BackColor = System.Drawing.Color.Red;
+            this.btnDeleteReceipts.FlatAppearance.BorderSize = 0;
+            this.btnDeleteReceipts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteReceipts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteReceipts.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteReceipts.Image = global::GUI.Properties.Resources.icons8_Trash_Can_26px;
+            this.btnDeleteReceipts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeleteReceipts.Location = new System.Drawing.Point(296, 113);
+            this.btnDeleteReceipts.Name = "btnDeleteReceipts";
+            this.btnDeleteReceipts.Size = new System.Drawing.Size(134, 40);
+            this.btnDeleteReceipts.TabIndex = 65;
+            this.btnDeleteReceipts.Text = "   Xóa";
+            this.btnDeleteReceipts.UseVisualStyleBackColor = false;
+            // 
+            // btnEditReceipts
+            // 
+            this.btnEditReceipts.BackColor = System.Drawing.Color.Gold;
+            this.btnEditReceipts.FlatAppearance.BorderSize = 0;
+            this.btnEditReceipts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditReceipts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditReceipts.ForeColor = System.Drawing.Color.Black;
+            this.btnEditReceipts.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
+            this.btnEditReceipts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditReceipts.Location = new System.Drawing.Point(156, 113);
+            this.btnEditReceipts.Name = "btnEditReceipts";
+            this.btnEditReceipts.Size = new System.Drawing.Size(134, 40);
+            this.btnEditReceipts.TabIndex = 66;
+            this.btnEditReceipts.Text = "   Sửa";
+            this.btnEditReceipts.UseVisualStyleBackColor = false;
+            // 
+            // btnAddReceipts
+            // 
+            this.btnAddReceipts.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddReceipts.FlatAppearance.BorderSize = 0;
+            this.btnAddReceipts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddReceipts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddReceipts.ForeColor = System.Drawing.Color.White;
+            this.btnAddReceipts.Image = global::GUI.Properties.Resources.icons8_Plus_Math_26px;
+            this.btnAddReceipts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddReceipts.Location = new System.Drawing.Point(16, 113);
+            this.btnAddReceipts.Name = "btnAddReceipts";
+            this.btnAddReceipts.Size = new System.Drawing.Size(134, 40);
+            this.btnAddReceipts.TabIndex = 70;
+            this.btnAddReceipts.Text = "   Thêm";
+            this.btnAddReceipts.UseVisualStyleBackColor = false;
+            // 
+            // dgvListReceipt
+            // 
+            this.dgvListReceipt.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListReceipt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvListReceipt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListReceipt.Location = new System.Drawing.Point(16, 189);
+            this.dgvListReceipt.Name = "dgvListReceipt";
+            this.dgvListReceipt.ReadOnly = true;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListReceipt.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvListReceipt.RowTemplate.Height = 24;
+            this.dgvListReceipt.Size = new System.Drawing.Size(985, 484);
+            this.dgvListReceipt.TabIndex = 69;
+            // 
+            // llbBack
+            // 
+            this.llbBack.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbBack.AutoSize = true;
+            this.llbBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llbBack.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbBack.Location = new System.Drawing.Point(933, 21);
+            this.llbBack.Name = "llbBack";
+            this.llbBack.Size = new System.Drawing.Size(68, 25);
+            this.llbBack.TabIndex = 68;
+            this.llbBack.TabStop = true;
+            this.llbBack.Text = "Trở về";
+            this.llbBack.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbBack_LinkClicked);
+            // 
+            // lblListOrders
+            // 
+            this.lblListOrders.AutoSize = true;
+            this.lblListOrders.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListOrders.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblListOrders.Location = new System.Drawing.Point(370, 9);
+            this.lblListOrders.Name = "lblListOrders";
+            this.lblListOrders.Size = new System.Drawing.Size(308, 38);
+            this.lblListOrders.TabIndex = 67;
+            this.lblListOrders.Text = "Danh sách phiếu nhập";
             // 
             // WarehouseManagementPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pnlListReceipt);
             this.Controls.Add(this.btnPrinter);
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.lblTotalAmount);
@@ -513,10 +650,14 @@
             this.Controls.Add(this.lblTitlePage);
             this.Name = "WarehouseManagementPage";
             this.Size = new System.Drawing.Size(1020, 684);
+            this.Load += new System.EventHandler(this.WarehouseManagementPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListProductInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReceiptDetails)).EndInit();
             this.grbInfoOrders.ResumeLayout(false);
             this.grbInfoOrders.PerformLayout();
+            this.pnlListReceipt.ResumeLayout(false);
+            this.pnlListReceipt.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListReceipt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -552,8 +693,15 @@
         private System.Windows.Forms.Label lblProductName;
         private System.Windows.Forms.Timer Timer;
         private System.Windows.Forms.Label lblCompanyName;
-        private System.Windows.Forms.Label lblContactName;
         private System.Windows.Forms.ComboBox cbCompanyName;
-        private System.Windows.Forms.ComboBox cbContactName;
+        private System.Windows.Forms.Panel pnlListReceipt;
+        private System.Windows.Forms.Button btnSearchReceipts;
+        private System.Windows.Forms.TextBox txtSearchOrders;
+        private System.Windows.Forms.Button btnDeleteReceipts;
+        private System.Windows.Forms.Button btnEditReceipts;
+        private System.Windows.Forms.Button btnAddReceipts;
+        private System.Windows.Forms.DataGridView dgvListReceipt;
+        private System.Windows.Forms.LinkLabel llbBack;
+        private System.Windows.Forms.Label lblListOrders;
     }
 }
