@@ -44,7 +44,7 @@ namespace GUI
             cbProducts.DisplayMember = "ProductName";
             cbProducts.ValueMember = "ProductID";
 
-            // Load Data to cbProducts
+            // Load Data to cbSuppliers
             DataTable dtSuppliers = SuppliersBLL.Instance.GetAll();
             cbCompanyName.DataSource = dtSuppliers;
             cbCompanyName.DisplayMember = "CompanyName";
@@ -67,17 +67,14 @@ namespace GUI
         }
 
         
+        
 
-        private void llbListReceipt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void cbCompanyName_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            dgvListProductInventory.DataSource = 
         }
 
-        private void llbBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
+        // Chuyện gì sẽ xảy ra khi Button Tạo phiếu nhập được click
         private void btnCreateReceipts_Click(object sender, EventArgs e)
         {
             isEnabled(true);
@@ -86,11 +83,12 @@ namespace GUI
             btnPrinter.Enabled = true;
             lblAmount.Text = "";
 
+            // Tạo một bản ghi cho bảng Phiếu nhập
             ReceiptsBLL.Instance.Insert(0, DateTime.Now, 0);
-            receipts = ReceiptsBLL.Instance.GetFirstReceipts();
+            receipts = ReceiptsBLL.Instance.GetFirstReceipts();// Lấy ra bản ghi vừa tạo
 
         }
-
+        // Thêm mới bản ghi
         private void btnAddOrder_Click(object sender, EventArgs e)
         {
             isEnabled(true);
@@ -98,19 +96,20 @@ namespace GUI
             txtQuantity.Clear();
             txtPrice.Clear();
         }
-
+        // Sửa bản ghi
         private void btnEditOrder_Click(object sender, EventArgs e)
         {
 
         }
-
+        // Xóa bản ghi
         private void btnDeleteOrder_Click(object sender, EventArgs e)
         {
 
         }
-
+        // Lưu bản ghi
         private void btnSave_Click(object sender, EventArgs e)
         {
+            // Nếu Button Add Clicked
             if(isNew == true)
             {
                 if (txtQuantity.Text == "")
@@ -126,6 +125,7 @@ namespace GUI
                 // Display
                 dgvReceiptDetails.DataSource = ReceiptDetailsBLL.Instance.GetByReceiptID(receipts.ReceiptID);
             }
+            // Nếu Button Edit Clicked
             else
             {
                 int row = dgvReceiptDetails.CurrentRow.Index;
@@ -150,6 +150,41 @@ namespace GUI
             cbProducts.SelectedValue = dgvReceiptDetails.Rows[row].Cells[1].Value.ToString();
             txtQuantity.Text = dgvReceiptDetails.Rows[row].Cells[2].Value.ToString();
             txtPrice.Text = dgvReceiptDetails.Rows[row].Cells[3].Value.ToString();
+        }
+
+        // Chuyện gì sẽ xảy ra khi LinkLable Xem danh sách phiếu nhập được click
+        private void llbListReceipt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Timer.Start();
+        }
+        // Chuyện gì sẽ xảy ra khi LinkLable Trở về được click
+        private void llbBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (hidden)
+            {
+                pnlListReceipt.Width = pnlListReceipt.Width + 10;
+                if (pnlListReceipt.Width >= 1020)
+                {
+                    Timer.Stop();
+                    hidden = false;
+                    this.Refresh();
+                }
+            }
+            else
+            {
+                pnlListReceipt.Width = pnlListReceipt.Width - 10;
+                if (pnlListReceipt.Width <= 10)
+                {
+                    Timer.Stop();
+                    hidden = true;
+                    this.Refresh();
+                }
+            }
         }
     }
 }
