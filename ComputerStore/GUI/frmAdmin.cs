@@ -98,8 +98,8 @@ namespace GUI
 
         private void BtnStatisticalPage_Click(object sender, EventArgs e)
         {
-            usersManagementPage.Visible = false;
             statisticalPage.Visible = true;
+            usersManagementPage.Visible = false;
             ordersManagementPage.Visible = false;
             supplierManagementPage.Visible = false;
             productManagementPage.Visible = false;
@@ -112,8 +112,8 @@ namespace GUI
 
         private void btnCreateOrdersPage_Click(object sender, EventArgs e)
         {
-            usersManagementPage.Visible = false;
             ordersManagementPage.Visible = true;
+            usersManagementPage.Visible = false;
             supplierManagementPage.Visible = false;
             productManagementPage.Visible = false;
             categoryManagementPage.Visible = false;
@@ -124,9 +124,9 @@ namespace GUI
 
         private void btnProductManagementPage_Click(object sender, EventArgs e)
         {
+            productManagementPage.Visible = true;
             usersManagementPage.Visible = false;
             ordersManagementPage.Visible = false;
-            productManagementPage.Visible = true;
             categoryManagementPage.Visible = false;
             warehouseManagementPage.Visible = false;
             customerManagementPage.Visible = false;
@@ -136,10 +136,10 @@ namespace GUI
 
         private void btnCategoryManagementPage_Click(object sender, EventArgs e)
         {
+            categoryManagementPage.Visible = true;
             usersManagementPage.Visible = false;
             ordersManagementPage.Visible = false;
             productManagementPage.Visible = false;
-            categoryManagementPage.Visible = true;
             warehouseManagementPage.Visible = false;
             customerManagementPage.Visible = false;
             supplierManagementPage.Visible = false;
@@ -148,9 +148,9 @@ namespace GUI
 
         private void btnWarehouseManagementPage_Click(object sender, EventArgs e)
         {
+            warehouseManagementPage.Visible = true;
             usersManagementPage.Visible = false;
             ordersManagementPage.Visible = false;
-            warehouseManagementPage.Visible = true;
             categoryManagementPage.Visible = false;
             productManagementPage.Visible = false;
             customerManagementPage.Visible = false;
@@ -160,9 +160,9 @@ namespace GUI
 
         private void btnCustomerManagementPage_Click(object sender, EventArgs e)
         {
+            customerManagementPage.Visible = true;
             usersManagementPage.Visible = false;
             ordersManagementPage.Visible = false;
-            customerManagementPage.Visible = true;
             productManagementPage.Visible = false;
             categoryManagementPage.Visible = false;
             warehouseManagementPage.Visible = false;
@@ -172,9 +172,9 @@ namespace GUI
 
         private void btnSupplierManagementPage_Click(object sender, EventArgs e)
         {
+            supplierManagementPage.Visible = true;
             usersManagementPage.Visible = false;
             ordersManagementPage.Visible = false;
-            supplierManagementPage.Visible = true;
             productManagementPage.Visible = false;
             categoryManagementPage.Visible = false;
             warehouseManagementPage.Visible = false;
@@ -184,6 +184,7 @@ namespace GUI
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
+            userPage.Visible = true;
             usersManagementPage.Visible = false;
             ordersManagementPage.Visible = false;
             supplierManagementPage.Visible = false;
@@ -191,7 +192,6 @@ namespace GUI
             categoryManagementPage.Visible = false;
             warehouseManagementPage.Visible = false;
             customerManagementPage.Visible = false;
-            userPage.Visible = true;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
