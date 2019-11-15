@@ -66,12 +66,10 @@ namespace GUI
 
         }
 
-        
-        
-
+        // Chuyện gì sẽ xảy ra
         private void cbCompanyName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dgvListProductInventory.DataSource = 
+            //dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(Convert.ToInt32(cbCompanyName.SelectedValue.ToString()));
         }
 
         // Chuyện gì sẽ xảy ra khi Button Tạo phiếu nhập được click

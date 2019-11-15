@@ -38,3 +38,4 @@ F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\DAL.dll
 F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\DAL.pdb
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmAdmin.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.StatisticalPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.UsersManagementPage.resources

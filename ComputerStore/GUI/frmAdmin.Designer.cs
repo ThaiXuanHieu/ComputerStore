@@ -36,6 +36,11 @@
             this.pnlWrap = new System.Windows.Forms.Panel();
             this.userPage = new GUI.UserPage();
             this.categoryManagementPage = new GUI.CategoryManagementPage();
+            this.ordersManagementPage = new OrdersManagementPage();
+            this.productManagementPage = new ProductManagementPage();
+            this.customerManagementPage = new CustomerManagementPage();
+            this.supplierManagementPage = new SupplierManagementPage();
+            this.warehouseManagementPage = new WarehouseManagementPage();
             this.Separator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.Separator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.picAvatar = new System.Windows.Forms.PictureBox();
@@ -44,12 +49,6 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.Separator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnlLeft = new System.Windows.Forms.Panel();
-            this.ordersManagementPage = new OrdersManagementPage();
-            this.productManagementPage = new ProductManagementPage();
-            this.categoryManagementPage = new CategoryManagementPage();
-            this.customerManagementPage = new CustomerManagementPage();
-            this.supplierManagementPage = new SupplierManagementPage();
-            this.warehouseManagementPage = new WarehouseManagementPage();
             this.btnWarehouseManagementPage = new System.Windows.Forms.Button();
             this.btnSupplierManagementPage = new System.Windows.Forms.Button();
             this.btnCustomerManagementPage = new System.Windows.Forms.Button();
@@ -178,7 +177,7 @@
             this.Separator2.BackColor = System.Drawing.Color.Transparent;
             this.Separator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.Separator2.LineThickness = 1;
-            this.Separator2.Location = new System.Drawing.Point(10, 641);
+            this.Separator2.Location = new System.Drawing.Point(10, 671);
             this.Separator2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Separator2.Name = "Separator2";
             this.Separator2.Size = new System.Drawing.Size(297, 43);

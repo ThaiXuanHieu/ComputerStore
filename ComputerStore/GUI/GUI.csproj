@@ -161,6 +161,12 @@
     <Compile Include="UserPage.Designer.cs">
       <DependentUpon>UserPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UsersManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersManagementPage.Designer.cs">
+      <DependentUpon>UsersManagementPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="WarehouseManagementPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserPage.resx">
       <DependentUpon>UserPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersManagementPage.resx">
+      <DependentUpon>UsersManagementPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WarehouseManagementPage.resx">
       <DependentUpon>WarehouseManagementPage.cs</DependentUpon>

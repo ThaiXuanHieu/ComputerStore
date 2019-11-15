@@ -34,5 +34,9 @@ namespace BLL
             return WarehouseDAL.Instance.SelectAll();
         }
 
+        public DataTable GetBySupplierID(int _supplierID)
+        {
+            return WarehouseDAL.Instance.SelectBySupplierID(_supplierID);
+        }
     }
 }

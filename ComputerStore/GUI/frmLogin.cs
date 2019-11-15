@@ -100,7 +100,7 @@ namespace GUI
                 UsersDTO user = UsersBLL.Instance.GetByUerNameAndPassword(txtUsername.Text, txtPassword.Text);
                 if (user.UserName.Equals("admin") && user.Password.Equals("123456"))
                 {
-                    
+                    this.Hide();
                     frmAdmin admin = new frmAdmin(user.FullName);
                     admin.ShowDialog();
                     
