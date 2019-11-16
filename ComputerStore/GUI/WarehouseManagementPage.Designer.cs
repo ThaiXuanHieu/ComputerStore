@@ -62,18 +62,20 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
-            this.lblSupplier = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.pnlListReceipt = new System.Windows.Forms.Panel();
             this.btnSearchReceipts = new System.Windows.Forms.Button();
             this.txtSearchOrders = new System.Windows.Forms.TextBox();
             this.btnDeleteReceipts = new System.Windows.Forms.Button();
-            this.btnEditReceipts = new System.Windows.Forms.Button();
             this.btnAddReceipts = new System.Windows.Forms.Button();
             this.dgvListReceipt = new System.Windows.Forms.DataGridView();
             this.llbBack = new System.Windows.Forms.LinkLabel();
             this.lblListOrders = new System.Windows.Forms.Label();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListProductInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReceiptDetails)).BeginInit();
             this.grbInfoOrders.SuspendLayout();
@@ -365,14 +367,17 @@
             // grbInfoOrders
             // 
             this.grbInfoOrders.Controls.Add(this.cbCompanyName);
+            this.grbInfoOrders.Controls.Add(this.lblAddress);
+            this.grbInfoOrders.Controls.Add(this.lblPhone);
             this.grbInfoOrders.Controls.Add(this.lblCompanyName);
             this.grbInfoOrders.Controls.Add(this.cbProducts);
+            this.grbInfoOrders.Controls.Add(this.txtAddress);
             this.grbInfoOrders.Controls.Add(this.lbl1);
+            this.grbInfoOrders.Controls.Add(this.txtPhone);
             this.grbInfoOrders.Controls.Add(this.txtQuantity);
             this.grbInfoOrders.Controls.Add(this.txtPrice);
             this.grbInfoOrders.Controls.Add(this.lblQuantity);
             this.grbInfoOrders.Controls.Add(this.lblPrice);
-            this.grbInfoOrders.Controls.Add(this.lblSupplier);
             this.grbInfoOrders.Controls.Add(this.lblProductName);
             this.grbInfoOrders.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbInfoOrders.Location = new System.Drawing.Point(18, 66);
@@ -385,17 +390,17 @@
             // cbCompanyName
             // 
             this.cbCompanyName.FormattingEnabled = true;
-            this.cbCompanyName.Location = new System.Drawing.Point(704, 90);
+            this.cbCompanyName.Location = new System.Drawing.Point(666, 46);
             this.cbCompanyName.Name = "cbCompanyName";
             this.cbCompanyName.Size = new System.Drawing.Size(259, 36);
             this.cbCompanyName.TabIndex = 70;
-            this.cbCompanyName.SelectedIndexChanged += new System.EventHandler(this.cbCompanyName_SelectedIndexChanged);
+            this.cbCompanyName.SelectedValueChanged += new System.EventHandler(this.cbCompanyName_SelectedValueChanged);
             // 
             // lblCompanyName
             // 
             this.lblCompanyName.AutoSize = true;
             this.lblCompanyName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompanyName.Location = new System.Drawing.Point(554, 91);
+            this.lblCompanyName.Location = new System.Drawing.Point(508, 47);
             this.lblCompanyName.Name = "lblCompanyName";
             this.lblCompanyName.Size = new System.Drawing.Size(152, 32);
             this.lblCompanyName.TabIndex = 69;
@@ -457,16 +462,6 @@
             this.lblPrice.TabIndex = 62;
             this.lblPrice.Text = "Giá :";
             // 
-            // lblSupplier
-            // 
-            this.lblSupplier.AutoSize = true;
-            this.lblSupplier.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSupplier.Location = new System.Drawing.Point(733, 47);
-            this.lblSupplier.Name = "lblSupplier";
-            this.lblSupplier.Size = new System.Drawing.Size(175, 32);
-            this.lblSupplier.TabIndex = 55;
-            this.lblSupplier.Text = "Nhà cung cấp :";
-            // 
             // lblProductName
             // 
             this.lblProductName.AutoSize = true;
@@ -487,7 +482,6 @@
             this.pnlListReceipt.Controls.Add(this.btnSearchReceipts);
             this.pnlListReceipt.Controls.Add(this.txtSearchOrders);
             this.pnlListReceipt.Controls.Add(this.btnDeleteReceipts);
-            this.pnlListReceipt.Controls.Add(this.btnEditReceipts);
             this.pnlListReceipt.Controls.Add(this.btnAddReceipts);
             this.pnlListReceipt.Controls.Add(this.dgvListReceipt);
             this.pnlListReceipt.Controls.Add(this.llbBack);
@@ -534,28 +528,12 @@
             this.btnDeleteReceipts.ForeColor = System.Drawing.Color.White;
             this.btnDeleteReceipts.Image = global::GUI.Properties.Resources.icons8_Trash_Can_26px;
             this.btnDeleteReceipts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeleteReceipts.Location = new System.Drawing.Point(296, 113);
+            this.btnDeleteReceipts.Location = new System.Drawing.Point(156, 113);
             this.btnDeleteReceipts.Name = "btnDeleteReceipts";
             this.btnDeleteReceipts.Size = new System.Drawing.Size(134, 40);
             this.btnDeleteReceipts.TabIndex = 65;
             this.btnDeleteReceipts.Text = "   Xóa";
             this.btnDeleteReceipts.UseVisualStyleBackColor = false;
-            // 
-            // btnEditReceipts
-            // 
-            this.btnEditReceipts.BackColor = System.Drawing.Color.Gold;
-            this.btnEditReceipts.FlatAppearance.BorderSize = 0;
-            this.btnEditReceipts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditReceipts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditReceipts.ForeColor = System.Drawing.Color.Black;
-            this.btnEditReceipts.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
-            this.btnEditReceipts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditReceipts.Location = new System.Drawing.Point(156, 113);
-            this.btnEditReceipts.Name = "btnEditReceipts";
-            this.btnEditReceipts.Size = new System.Drawing.Size(134, 40);
-            this.btnEditReceipts.TabIndex = 66;
-            this.btnEditReceipts.Text = "   Sửa";
-            this.btnEditReceipts.UseVisualStyleBackColor = false;
             // 
             // btnAddReceipts
             // 
@@ -626,6 +604,44 @@
             this.lblListOrders.TabIndex = 67;
             this.lblListOrders.Text = "Danh sách phiếu nhập";
             // 
+            // txtPhone
+            // 
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(666, 91);
+            this.txtPhone.Multiline = true;
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(259, 34);
+            this.txtPhone.TabIndex = 2;
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.Location = new System.Drawing.Point(508, 91);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(70, 32);
+            this.lblPhone.TabIndex = 69;
+            this.lblPhone.Text = "SĐT :";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(666, 133);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(259, 34);
+            this.txtAddress.TabIndex = 2;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Location = new System.Drawing.Point(508, 133);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(100, 32);
+            this.lblAddress.TabIndex = 69;
+            this.lblAddress.Text = "Địa chỉ :";
+            // 
             // WarehouseManagementPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -691,7 +707,6 @@
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.Label lblPrice;
-        private System.Windows.Forms.Label lblSupplier;
         private System.Windows.Forms.Label lblProductName;
         private System.Windows.Forms.Timer Timer;
         private System.Windows.Forms.Label lblCompanyName;
@@ -700,10 +715,13 @@
         private System.Windows.Forms.Button btnSearchReceipts;
         private System.Windows.Forms.TextBox txtSearchOrders;
         private System.Windows.Forms.Button btnDeleteReceipts;
-        private System.Windows.Forms.Button btnEditReceipts;
         private System.Windows.Forms.Button btnAddReceipts;
         private System.Windows.Forms.DataGridView dgvListReceipt;
         private System.Windows.Forms.LinkLabel llbBack;
         private System.Windows.Forms.Label lblListOrders;
+        private System.Windows.Forms.Label lblPhone;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.TextBox txtAddress;
     }
 }

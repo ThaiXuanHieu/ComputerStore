@@ -17,7 +17,7 @@ namespace GUI
         private bool hidden;
         private bool isNew = false;
 
-        ReceiptsDTO receipts;
+        ReceiptsDTO receipts = new ReceiptsDTO();
 
         public WarehouseManagementPage()
         {
@@ -30,7 +30,13 @@ namespace GUI
             DisplayData();
             btnPay.Enabled = false;
             btnPrinter.Enabled = false;
-            isEnabled(false);
+            btnAddOrder.Enabled = false;
+            btnDeleteOrder.Enabled = false;
+            btnEditOrder.Enabled = false;
+            btnSave.Enabled = false;
+            cbProducts.Enabled = false;
+            txtPrice.Enabled = false;
+            txtQuantity.Enabled = false;
         }
 
         public void DisplayData()
@@ -67,9 +73,9 @@ namespace GUI
         }
 
         // Chuyện gì sẽ xảy ra
-        private void cbCompanyName_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbCompanyName_SelectedValueChanged(object sender, EventArgs e)
         {
-            //dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(Convert.ToInt32(cbCompanyName.SelectedValue.ToString()));
+            dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(Convert.ToInt32(cbCompanyName.SelectedValue.ToString()));
         }
 
         // Chuyện gì sẽ xảy ra khi Button Tạo phiếu nhập được click
@@ -118,7 +124,7 @@ namespace GUI
                 // 
                 int productID = Convert.ToInt32(cbProducts.SelectedValue.ToString());
                 double amount = Convert.ToDouble(txtPrice.Text) * Convert.ToInt32(txtQuantity.Text);
-                // Insert
+                // Insert to Chi tiết phiếu nhập
                 ReceiptDetailsBLL.Instance.Insert(receipts.ReceiptID, productID, Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
                 // Display
                 dgvReceiptDetails.DataSource = ReceiptDetailsBLL.Instance.GetByReceiptID(receipts.ReceiptID);
@@ -139,7 +145,7 @@ namespace GUI
 
         private void btnSearchProduct_Click(object sender, EventArgs e)
         {
-
+            dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetProductBySearchString(txtSearchProduct.Text);
         }
 
         private void dgvReceiptDetails_RowEnter(object sender, DataGridViewCellEventArgs e)
@@ -184,5 +190,7 @@ namespace GUI
                 }
             }
         }
+
+        
     }
 }

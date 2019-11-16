@@ -25,16 +25,16 @@ namespace GUI
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            if(hidden)
+            if (hidden)
             {
                 pnlSignup.Width = pnlSignup.Width + 10;
-                if(pnlSignup.Width >= 395)
+                if (pnlSignup.Width >= 395)
                 {
                     Timer.Stop();
                     hidden = false;
                     this.Refresh();
                 }
-                
+
             }
             else
             {
@@ -95,58 +95,36 @@ namespace GUI
 
         private void btnSignin_Click(object sender, EventArgs e)
         {
-            try
+            DataTable dtUsers = UsersBLL.Instance.GetByUerNameAndPassword(txtUsername.Text, txtPassword.Text);
+            if (dtUsers.Rows.Count != 0)
             {
-                UsersDTO user = UsersBLL.Instance.GetByUerNameAndPassword(txtUsername.Text, txtPassword.Text);
-                if (user.UserName.Equals("admin") && user.Password.Equals("123456"))
-                {
-                    //this.Hide();
-                    frmAdmin admin = new frmAdmin(user.FullName);
-                    admin.ShowDialog();
-                    
-                }
-                else if (user.UserName.Equals(txtUsername.Text) && user.Password.Equals(txtPassword.Text))
-                {
-                    frmCustomer customer = new frmCustomer(user.FullName);
-                    customer.Show();
-                }
-                
-            }
-            catch (Exception)
-            {
+                string fullName = dtUsers.Rows[0].Field<string>("FullName");
+                this.Hide();
+                frmAdmin admin = new frmAdmin(fullName);
+                admin.ShowDialog();
 
+            }
+            else
+            {
                 MessageBox.Show("TÀI KHOẢN NÀY KHÔNG TỒN TẠI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
         }
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    UsersDTO user= UsersBLL.Instance.GetByUerNameAndPassword(txtUsernameNew.Text, txtPasswordNew.Text);
-            //    if ((user.UserName.Equals(txtUsernameNew.Text) && user.Password.Equals(txtPasswordNew.Text)))
-            //    {
-            //        MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TÀI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    }
-            //}
-            //catch (Exception)
-            //{
-            //    UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, txtPasswordNew.Text);
-            //    MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
 
-            if(String.IsNullOrEmpty(txtUsernameNew.Text) || String.IsNullOrEmpty(txtPasswordNew.Text) || String.IsNullOrEmpty(txtFullName.Text))
+            if (String.IsNullOrEmpty(txtUsernameNew.Text) || String.IsNullOrEmpty(txtPasswordNew.Text) || String.IsNullOrEmpty(txtFullName.Text))
             {
                 MessageBox.Show("BẠN PHẢI NHẬP ĐẨY ĐỦ THÔNG TIN", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if(UsersBLL.Instance.GetUserByUserName(txtUsernameNew.Text) != null)
+            DataTable dtUser = UsersBLL.Instance.GetUserByUserName(txtUsernameNew.Text);
+            if (dtUser.Rows.Count != 0)
             {
                 MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TÀI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if(!txtPassword.Text.Equals(txtReEnterPassword.Text))
+            if (!txtPasswordNew.Text.Equals(txtReEnterPassword.Text))
             {
                 MessageBox.Show("MẬT KHẨU KHÔNG KHỚP", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -154,6 +132,18 @@ namespace GUI
             UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, txtPasswordNew.Text);
             MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+        }
+
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr;
+            dr = MessageBox.Show("BẠN CHẮC CHẮN ĐÓNG ỨNG DỤNG KHÔNG?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == System.Windows.Forms.DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            Application.ExitThread();
         }
     }
 }

@@ -18,8 +18,8 @@ namespace GUI
 
         private bool isNew = false;
 
-        CustomersDTO customer;
-        OrdersDTO orders;
+        CustomersDTO customer= new CustomersDTO();
+        OrdersDTO orders = new OrdersDTO();
 
         double amount;
         double totalAmount = 0;
@@ -35,7 +35,13 @@ namespace GUI
             DisplayData();
             btnPay.Enabled = false;
             btnPrinter.Enabled = false;
-            isEnabled(false);
+            btnAddOrder.Enabled = false;
+            btnEditOrder.Enabled = false;
+            btnDeleteOrder.Enabled = false;
+            btnSave.Enabled = false;
+            cbProducts.Enabled = false;
+            txtQuantity.Enabled = false;
+            txtPrice.Enabled = false;
         }
 
         public void DisplayData()
@@ -73,8 +79,10 @@ namespace GUI
             btnPay.Enabled = true;
             btnPrinter.Enabled = true;
             lblAmount.Text = "";
-            txtFirstName.Clear();
-            txtLastName.Clear();
+            txtPhone.Clear();
+            txtAddress.Clear();
+            txtFullName.Clear();
+            dgvOrderDetails.DataSource = null;
             CustomersBLL.Instance.Insert("", "", "", "", "");
             customer = CustomersBLL.Instance.GetFirstCustomer();
             OrdersBLL.Instance.Insert(customer.CustomerID, DateTime.Now, 0);
@@ -123,8 +131,9 @@ namespace GUI
             isNew = true;
 
             txtQuantity.Clear();
-            txtLastName.Clear();
-            txtFirstName.Clear();
+            txtFullName.Clear();
+            txtAddress.Clear();
+            txtPhone.Clear();
             cbProducts.Focus();
         }
 
@@ -161,26 +170,41 @@ namespace GUI
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            txtLastName.Enabled = true;
-            txtFirstName.Enabled = true;
+            txtFullName.Enabled = true;
+            txtAddress.Enabled = true;
 
-            if (txtLastName.Text.Trim() == "")
+            if (txtFullName.Text.Trim() == "")
             {
-                MessageBox.Show("Vui lòng nhập tên đầy đủ họ tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng nhập đầy đủ họ tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (txtFirstName.Text.Trim() == "")
+            if (txtAddress.Text.Trim() == "")
             {
-                MessageBox.Show("Vui lòng nhập tên đầy đủ họ tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng nhập địa chỉ khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-
+            if (txtPhone.Text.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            // Tách Họ và tên
+            string[] strs = txtFullName.Text.Split(' ');
+            string firstName = "";
+            string lastName = strs[strs.Length - 1];
+            for (int i = 0; i < strs.Length - 1; i++)
+            {
+                firstName += strs[i] + " ";
+            }
+            // Tính tổng tiền
             for (var row = 0; row < dgvOrderDetails.Rows.Count; row++)
             {
                 totalAmount += Convert.ToDouble(dgvOrderDetails.Rows[row].Cells["Amount"].Value.ToString());
             }
             lblAmount.Text = totalAmount.ToString();
-            CustomersBLL.Instance.Update(customer.CustomerID, txtFirstName.Text, txtLastName.Text, "", "", "");
+            // Cập nhật khách hàng
+            CustomersBLL.Instance.Update(customer.CustomerID, firstName.Trim(), lastName.Trim(), txtAddress.Text, txtPhone.Text, "");
+            // Cập nhật lại Hóa đơn
             OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, Convert.ToDouble(lblAmount.Text));
         }
 
@@ -195,13 +219,14 @@ namespace GUI
         {
             // Delete với id
             DialogResult dialog = new DialogResult();
-            dialog = MessageBox.Show("Chắc chắn xóa ... đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            dialog = MessageBox.Show("Chắc chắn xóa bản ghi đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == System.Windows.Forms.DialogResult.No) return;
 
             int row = dgvOrderDetails.CurrentRow.Index;
             int productID = Convert.ToInt32(dgvOrderDetails.Rows[row].Cells[1].Value.ToString());
             OrderDetailsBLL.Instance.DeleteByProductID(productID);
 
+            // Hiển thị dữ liệu
             dgvOrderDetails.DataSource = OrderDetailsBLL.Instance.GetByOrderID(orders.OrderID);
             DisplayData();
         }
@@ -233,17 +258,10 @@ namespace GUI
             Timer.Start();
         }
 
-        private void btnEditOrders_Click(object sender, EventArgs e)
-        {
-            Timer.Start();
-            int orderID = Convert.ToInt32(dgvListOrders.SelectedCells[0].OwningRow.Cells["OrderID"].Value.ToString());
-            dgvOrderDetails.DataSource = OrderDetailsBLL.Instance.GetByOrderID(orderID);
-        }
-
         private void btnDeleteOrders_Click(object sender, EventArgs e)
         {
             DialogResult dialog = new DialogResult();
-            dialog = MessageBox.Show("Chắc chắn xóa ... đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            dialog = MessageBox.Show("Chắc chắn xóa bản ghi đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == System.Windows.Forms.DialogResult.No) return;
             int orderID = Convert.ToInt32(dgvListOrders.SelectedCells[0].OwningRow.Cells["OrderID"].Value.ToString());
             OrdersBLL.Instance.DeleteByOrderID(orderID);

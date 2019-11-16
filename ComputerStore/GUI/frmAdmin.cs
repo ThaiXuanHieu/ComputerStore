@@ -196,9 +196,14 @@ namespace GUI
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("BẠN CHẮC CHẮN MUỐN ĐĂNG XUẤT CHỨ?", "Thông báo",
+            MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                frmLogin login = new frmLogin();
+                login.Show();
+                this.Hide();
+            }
+            
         }
-
-        
     }
 }

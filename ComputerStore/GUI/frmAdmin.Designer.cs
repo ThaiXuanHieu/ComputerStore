@@ -36,11 +36,11 @@
             this.pnlWrap = new System.Windows.Forms.Panel();
             this.userPage = new GUI.UserPage();
             this.categoryManagementPage = new GUI.CategoryManagementPage();
-            this.ordersManagementPage = new OrdersManagementPage();
-            this.productManagementPage = new ProductManagementPage();
-            this.customerManagementPage = new CustomerManagementPage();
-            this.supplierManagementPage = new SupplierManagementPage();
-            this.warehouseManagementPage = new WarehouseManagementPage();
+            this.ordersManagementPage = new GUI.OrdersManagementPage();
+            this.productManagementPage = new GUI.ProductManagementPage();
+            this.customerManagementPage = new GUI.CustomerManagementPage();
+            this.supplierManagementPage = new GUI.SupplierManagementPage();
+            this.warehouseManagementPage = new GUI.WarehouseManagementPage();
             this.Separator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.Separator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.picAvatar = new System.Windows.Forms.PictureBox();

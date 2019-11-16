@@ -38,5 +38,10 @@ namespace BLL
         {
             return WarehouseDAL.Instance.SelectBySupplierID(_supplierID);
         }
+
+        public DataTable GetProductBySearchString(string _searchString)
+        {
+            return WarehouseDAL.Instance.SelectProductBySearchString(_searchString);
+        }
     }
 }

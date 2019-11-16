@@ -35,7 +35,12 @@ namespace BLL
             return UsersDAL.Instance.SelectByUserName(_userName);
         }
 
-        public UsersDTO GetByUerNameAndPassword(string _userName, string _password)
+        public DataTable GetByUerNameAndPassword(string _userName, string _password)
+        {
+            return UsersDAL.Instance.Select(_userName, _password);
+        }
+
+        public UsersDTO GetUser(string _userName, string _password)
         {
             UsersDTO user = new UsersDTO();
             DataTable dataTable = new DataTable();

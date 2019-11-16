@@ -54,7 +54,7 @@ namespace BLL
 
         public CustomersDTO GetByCustomerID(int _customerID)
         {
-            DataTable dataTable = CustomersDAL.Instance.SelectFirstCustomer();
+            DataTable dataTable = CustomersDAL.Instance.SelectByCustomerID(_customerID);
             CustomersDTO customer = new CustomersDTO();
             foreach (DataRow dataRow in dataTable.Rows)
             {

@@ -48,5 +48,13 @@ namespace DAL
 
             return dbConnection.ExecuteSelectQuery(query, parameters);
         }
+
+        public DataTable SelectProductBySearchString(string _searchString)
+        {
+            string query = "SELECT s.CompanyName, p.ProductName, p.Price, w.Inventory FROM Products AS p INNER JOIN Warehouse AS w" +
+                " ON p.ProductID = w.ProductID INNER JOIN Suppliers AS s ON s.SupplierID = p.SupplierID" +
+                " WHERE p.ProductName LIKE N'%" + _searchString + "%'";
+            return dbConnection.ExecuteSelectQuery(query);
+        }
     }
 }
