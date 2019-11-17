@@ -39,3 +39,5 @@ F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\DAL.pdb
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.frmAdmin.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.StatisticalPage.resources
 F:\Software\ComputerStore\ComputerStore\GUI\obj\Debug\GUI.UsersManagementPage.resources
+F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\Common.dll
+F:\Software\ComputerStore\ComputerStore\GUI\bin\Debug\Common.pdb

@@ -32,14 +32,14 @@ namespace DAL
 
         public DataTable SelectAll()
         {
-            string query = "SELECT s.CompanyName, p.ProductName, p.Price, w.Inventory FROM Products AS p INNER JOIN Warehouse AS w" +
+            string query = "SELECT s.CompanyName, p.ProductName, p.Price, w.Stock FROM Products AS p INNER JOIN Warehouse AS w" +
                 " ON p.ProductID = w.ProductID INNER JOIN Suppliers AS s ON s.SupplierID = p.SupplierID";
             return dbConnection.ExecuteSelectQuery(query);
         }
 
         public DataTable SelectBySupplierID(int _supplierID)
         {
-            string query = "SELECT s.CompanyName, p.ProductName, p.Price, w.Inventory FROM Products AS p INNER JOIN Warehouse AS w" +
+            string query = "SELECT s.CompanyName, p.ProductName, p.Price, w.Stock FROM Products AS p INNER JOIN Warehouse AS w" +
                 " ON p.ProductID = w.ProductID INNER JOIN Suppliers AS s ON s.SupplierID = p.SupplierID" +
                 " WHERE s.SupplierID = @SupplierID";
             SqlParameter[] parameters = new SqlParameter[1];
@@ -51,7 +51,7 @@ namespace DAL
 
         public DataTable SelectProductBySearchString(string _searchString)
         {
-            string query = "SELECT s.CompanyName, p.ProductName, p.Price, w.Inventory FROM Products AS p INNER JOIN Warehouse AS w" +
+            string query = "SELECT s.CompanyName, p.ProductName, p.Price, w.Stock FROM Products AS p INNER JOIN Warehouse AS w" +
                 " ON p.ProductID = w.ProductID INNER JOIN Suppliers AS s ON s.SupplierID = p.SupplierID" +
                 " WHERE p.ProductName LIKE N'%" + _searchString + "%'";
             return dbConnection.ExecuteSelectQuery(query);

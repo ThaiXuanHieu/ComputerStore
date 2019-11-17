@@ -78,14 +78,13 @@ namespace GUI
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (txtCategoryName.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên cho danh mục", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             if (isNew == true)
             {
-                if (txtCategoryName.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập tên cho danh mục", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-
                 CategoriesBLL.Instance.Insert(txtCategoryName.Text, txtDescription.Text);
             }
             else

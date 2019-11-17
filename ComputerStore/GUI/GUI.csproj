@@ -256,6 +256,10 @@
       <Project>{d6967b58-49a5-469b-a470-b7e142e0d7fb}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4e2d3f75-1646-47cc-a62f-c24d4179ddc5}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{dbf0be25-9118-4d9d-838d-fab49e590db6}</Project>
       <Name>DTO</Name>

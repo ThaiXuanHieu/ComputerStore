@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
-
+using Common;
 namespace GUI
 {
     public partial class SupplierManagementPage : UserControl
@@ -80,44 +80,43 @@ namespace GUI
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (txtCompanyName.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên công ty", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txtContactName.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên liên hệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txtAddress.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập địa chỉ cho công ty", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            if (!EmailValidation.IsValid(txtEmail.Text.Trim()))
+            {
+                MessageBox.Show("Email không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (!PhoneNumberValidation.IsValid(txtPhone.Text.Trim()))
+            {
+                MessageBox.Show("Số điện thoại không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             if (isNew == true)
             {
-                if (txtCompanyName.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập tên công ty", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtContactName.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập tên liên hệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtAddress.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập địa chỉ cho công ty", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtEmail.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập email cho công ty", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtPhone.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập SĐT cho công ty", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-
                 SuppliersBLL.Instance.Insert(txtCompanyName.Text, txtContactName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
             }
             else
             {
                 int row = dgvSuppliers.CurrentRow.Index;
                 int supplierID = Convert.ToInt32(dgvSuppliers.Rows[row].Cells[0].Value.ToString());
-                CustomersBLL.Instance.Update(supplierID, txtContactName.Text, txtContactName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
+                SuppliersBLL.Instance.Update(supplierID, txtCompanyName.Text, txtContactName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
             }
-
-
+            // Load lại data
             DisplayData();
             isEnabled(false);
         }

@@ -139,15 +139,14 @@ namespace GUI
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (txtQuantity.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập số lượng sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             // Thêm mới
             if (isNew == true)
             {
-                if (txtQuantity.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập số lượng sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-
                 amount = Convert.ToDouble(txtPrice.Text) * Convert.ToInt32(txtQuantity.Text);
                 OrderDetailsBLL.Instance.Insert(orders.OrderID, Convert.ToInt32(cbProducts.SelectedValue.ToString()), Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
                 dgvOrderDetails.DataSource = OrderDetailsBLL.Instance.GetByOrderID(orders.OrderID);

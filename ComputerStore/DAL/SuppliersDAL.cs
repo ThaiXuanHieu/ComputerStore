@@ -80,9 +80,9 @@ namespace DAL
 
             SqlParameter[] parameters = new SqlParameter[6];
 
-            parameters[0] = new SqlParameter("@FirstName", SqlDbType.NVarChar);
+            parameters[0] = new SqlParameter("@CompanyName", SqlDbType.NVarChar);
             parameters[0].Value = _companyName;
-            parameters[1] = new SqlParameter("@LastName", SqlDbType.NVarChar);
+            parameters[1] = new SqlParameter("@ContactName", SqlDbType.NVarChar);
             parameters[1].Value = _contactName;
             parameters[2] = new SqlParameter("@Address", SqlDbType.NVarChar);
             parameters[2].Value = _address;

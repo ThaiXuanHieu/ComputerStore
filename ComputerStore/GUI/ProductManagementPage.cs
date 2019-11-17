@@ -97,30 +97,29 @@ namespace GUI
         private void btnSave_Click(object sender, EventArgs e)
         {
             // Insert
+            if (txtProductName.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txtPrice.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập giá cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txtUnit.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập đơn vị tính cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (picImageProduct.ImageLocation == "")
+            {
+                MessageBox.Show("Vui lòng chọn ảnh cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             if (isNew == true)
             {
-                if (txtProductName.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập tên cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtPrice.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập giá cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtUnit.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập đơn vị tính cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (picImageProduct.ImageLocation == "")
-                {
-                    MessageBox.Show("Vui lòng chọn ảnh cho sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-
                 string productImage = picImageProduct.ImageLocation;
                 //string nameImage = imgPath.Substring(imgPath.LastIndexOf('\\') + 1);
                 //int row = dgvProducts.CurrentRow.Index;

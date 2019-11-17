@@ -9,9 +9,9 @@ namespace DTO
     public class WarehouseDTO
     {
         private int productID;
-        private int inventory;
+        private int stock;
 
         public int ProductID { get => productID; set => productID = value; }
-        public int Inventory { get => inventory; set => inventory = value; }
+        public int Stock { get => stock; set => stock = value; }
     }
 }

@@ -75,7 +75,11 @@ namespace GUI
         // Chuyện gì sẽ xảy ra
         private void cbCompanyName_SelectedValueChanged(object sender, EventArgs e)
         {
-            dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(Convert.ToInt32(cbCompanyName.SelectedValue.ToString()));
+            if(cbCompanyName.SelectedValue != null)
+            {
+                dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(Convert.ToInt32(cbCompanyName.SelectedValue.ToString()));
+            }
+            
         }
 
         // Chuyện gì sẽ xảy ra khi Button Tạo phiếu nhập được click
@@ -113,14 +117,14 @@ namespace GUI
         // Lưu bản ghi
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // Nếu Button Add Clicked
-            if(isNew == true)
+            if (txtQuantity.Text == "")
             {
-                if (txtQuantity.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập số lượng sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
+                MessageBox.Show("Vui lòng nhập số lượng sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            // Nếu Button Add Clicked
+            if (isNew == true)
+            {
                 // 
                 int productID = Convert.ToInt32(cbProducts.SelectedValue.ToString());
                 double amount = Convert.ToDouble(txtPrice.Text) * Convert.ToInt32(txtQuantity.Text);

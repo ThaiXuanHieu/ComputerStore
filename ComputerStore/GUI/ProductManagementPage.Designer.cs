@@ -53,7 +53,7 @@
             this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
-            this.lblListProducts = new System.Windows.Forms.Label();
+            this.lblListProduct = new System.Windows.Forms.Label();
             this.btnEditProduct = new System.Windows.Forms.Button();
             this.grbInfoProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImageProduct)).BeginInit();
@@ -352,16 +352,16 @@
             this.dgvProducts.TabIndex = 51;
             this.dgvProducts.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_RowEnter);
             // 
-            // lblListProducts
+            // lblListProduct
             // 
-            this.lblListProducts.AutoSize = true;
-            this.lblListProducts.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblListProducts.Location = new System.Drawing.Point(359, 312);
-            this.lblListProducts.Name = "lblListProducts";
-            this.lblListProducts.Size = new System.Drawing.Size(287, 38);
-            this.lblListProducts.TabIndex = 45;
-            this.lblListProducts.Text = "Danh sách sản phẩm";
+            this.lblListProduct.AutoSize = true;
+            this.lblListProduct.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblListProduct.Location = new System.Drawing.Point(359, 312);
+            this.lblListProduct.Name = "lblListProduct";
+            this.lblListProduct.Size = new System.Drawing.Size(287, 38);
+            this.lblListProduct.TabIndex = 45;
+            this.lblListProduct.Text = "Danh sách sản phẩm";
             // 
             // btnEditProduct
             // 
@@ -387,7 +387,7 @@
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.grbInfoProduct);
-            this.Controls.Add(this.lblListProducts);
+            this.Controls.Add(this.lblListProduct);
             this.Controls.Add(this.btnSearchProduct);
             this.Controls.Add(this.txtSearchProduct);
             this.Controls.Add(this.btnDeleteProduct);
@@ -430,7 +430,7 @@
         private System.Windows.Forms.Button btnChangeImage;
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.TextBox txtDescription;
-        private System.Windows.Forms.Label lblListProducts;
+        private System.Windows.Forms.Label lblListProduct;
         private System.Windows.Forms.Button btnEditProduct;
     }
 }

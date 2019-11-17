@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using Common;
 namespace GUI
 {
     public partial class CustomerManagementPage : UserControl
@@ -69,34 +70,34 @@ namespace GUI
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (txtLastName.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập họ cho khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txtFirstName.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên cho khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txtAddress.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập địa chỉ cho khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (!EmailValidation.IsValid(txtEmail.Text.Trim()))
+            {
+                MessageBox.Show("Email không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (!PhoneNumberValidation.IsValid(txtPhone.Text.Trim()))
+            {
+                MessageBox.Show("Số điện thoại không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             if (isNew == true)
             {
-                if (txtLastName.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập họ cho khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtFirstName.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập tên cho khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtAddress.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập địa chỉ cho khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtEmail.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập email cho khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (txtPhone.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập SĐT cho khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-
                 CustomersBLL.Instance.Insert(txtFirstName.Text, txtLastName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
             }
             else
