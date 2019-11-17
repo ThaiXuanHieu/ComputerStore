@@ -72,14 +72,13 @@ namespace GUI
 
         }
 
-        // Chuyện gì sẽ xảy ra
+        // Chuyện gì sẽ xảy ra khi value của Combobox được thay đổi
         private void cbCompanyName_SelectedValueChanged(object sender, EventArgs e)
         {
             if(cbCompanyName.SelectedValue != null)
             {
-                dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(Convert.ToInt32(cbCompanyName.SelectedValue.ToString()));
+                //dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(Convert.ToInt32(cbCompanyName.SelectedValue.ToString()));
             }
-            
         }
 
         // Chuyện gì sẽ xảy ra khi Button Tạo phiếu nhập được click

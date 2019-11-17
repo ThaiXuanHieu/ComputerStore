@@ -34,13 +34,6 @@
             this.pnlTop = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlWrap = new System.Windows.Forms.Panel();
-            this.userPage = new GUI.UserPage();
-            this.categoryManagementPage = new GUI.CategoryManagementPage();
-            this.ordersManagementPage = new GUI.OrdersManagementPage();
-            this.productManagementPage = new GUI.ProductManagementPage();
-            this.customerManagementPage = new GUI.CustomerManagementPage();
-            this.supplierManagementPage = new GUI.SupplierManagementPage();
-            this.warehouseManagementPage = new GUI.WarehouseManagementPage();
             this.Separator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.Separator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.picAvatar = new System.Windows.Forms.PictureBox();
@@ -49,6 +42,15 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.Separator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnlLeft = new System.Windows.Forms.Panel();
+
+            this.userPage = new GUI.UserPage();
+            this.categoryManagementPage = new GUI.CategoryManagementPage();
+            this.ordersManagementPage = new GUI.OrdersManagementPage();
+            this.productManagementPage = new GUI.ProductManagementPage();
+            this.customerManagementPage = new GUI.CustomerManagementPage();
+            this.supplierManagementPage = new GUI.SupplierManagementPage();
+            this.warehouseManagementPage = new GUI.WarehouseManagementPage();
+
             this.btnWarehouseManagementPage = new System.Windows.Forms.Button();
             this.btnSupplierManagementPage = new System.Windows.Forms.Button();
             this.btnCustomerManagementPage = new System.Windows.Forms.Button();
@@ -58,7 +60,6 @@
             this.pnlBottom.SuspendLayout();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
-            this.pnlWrap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.pnlLeft.SuspendLayout();
             this.SuspendLayout();
@@ -104,21 +105,6 @@
             this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMenu.TabIndex = 3;
             this.btnMenu.TabStop = false;
-            // 
-            // pnlWrap
-            // 
-            this.pnlWrap.Controls.Add(this.userPage);
-            this.pnlWrap.Controls.Add(this.categoryManagementPage);
-            this.pnlWrap.Controls.Add(this.ordersManagementPage);
-            this.pnlWrap.Controls.Add(this.productManagementPage);
-            this.pnlWrap.Controls.Add(this.customerManagementPage);
-            this.pnlWrap.Controls.Add(this.supplierManagementPage);
-            this.pnlWrap.Controls.Add(this.warehouseManagementPage);
-            this.pnlWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlWrap.Location = new System.Drawing.Point(317, 46);
-            this.pnlWrap.Name = "pnlWrap";
-            this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
-            this.pnlWrap.TabIndex = 0;
             // userPage
             this.userPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userPage.Location = new System.Drawing.Point(0, 0);
@@ -164,6 +150,25 @@
             this.categoryManagementPage.Name = "categoryManagementPage";
             this.categoryManagementPage.Size = new System.Drawing.Size(1020, 684);
             this.categoryManagementPage.TabIndex = 4;
+
+
+            // 
+            // pnlWrap
+            // 
+            this.pnlWrap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlWrap.Location = new System.Drawing.Point(317, 46);
+            this.pnlWrap.Name = "pnlWrap";
+            this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
+            this.pnlWrap.TabIndex = 0;
+
+            this.pnlWrap.Controls.Add(this.userPage);
+            this.pnlWrap.Controls.Add(this.categoryManagementPage);
+            this.pnlWrap.Controls.Add(this.ordersManagementPage);
+            this.pnlWrap.Controls.Add(this.productManagementPage);
+            this.pnlWrap.Controls.Add(this.customerManagementPage);
+            this.pnlWrap.Controls.Add(this.supplierManagementPage);
+            this.pnlWrap.Controls.Add(this.warehouseManagementPage);
+
             // 
             // Separator1
             // 
@@ -382,11 +387,12 @@
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Computer Store";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAdmin_FormClosing);
+            this.Load += new System.EventHandler(this.frmAdmin_Load);
             this.pnlBottom.ResumeLayout(false);
             this.pnlBottom.PerformLayout();
             this.pnlTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
-            this.pnlWrap.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.pnlLeft.ResumeLayout(false);
             this.pnlLeft.PerformLayout();

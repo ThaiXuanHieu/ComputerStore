@@ -14,6 +14,7 @@ namespace DTO
         private string password;
         private string email;
         private string phone;
+        private string avatar;
 
         public int UserID
         {
@@ -38,5 +39,6 @@ namespace DTO
 
         public string Email { get => email; set => email = value; }
         public string Phone { get => phone; set => phone = value; }
+        public string Avatar { get => avatar; set => avatar = value; }
     }
 }

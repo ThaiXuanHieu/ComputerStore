@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,14 +16,26 @@ namespace GUI
         private StatisticalPage statisticalPage;
         private UsersManagementPage usersManagementPage;
 
-        public frmAdmin(string _fullName)
+        public frmAdmin(UsersDTO user)
         {
             
             InitializeComponent();
+            
+            // Load Họ và Tên và Ảnh của người dùng
+            lblNameUser.Text = user.FullName;
+            
+            if(user.Avatar == null)
+            {
+                picAvatar.ImageLocation = null;
+            }
+            picAvatar.ImageLocation = user.Avatar;
+
+        }
+
+        private void frmAdmin_Load(object sender, EventArgs e)
+        {
             AddStatisticalUC();
             AddUsersManagementlUC();
-            lblNameUser.Text = _fullName;
-
             ordersManagementPage.Visible = true;
             productManagementPage.Visible = false;
             categoryManagementPage.Visible = false;
@@ -32,6 +45,7 @@ namespace GUI
             usersManagementPage.Visible = false;
             userPage.Visible = false;
         }
+
         // Thêm UserControl Thống kê
         public void AddStatisticalUC()
         {
@@ -198,7 +212,7 @@ namespace GUI
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("BẠN CHẮC CHẮN MUỐN ĐĂNG XUẤT CHỨ?", "Thông báo",
+            if (MessageBox.Show("BẠN CHẮC CHẮN MUỐN ĐĂNG XUẤT KHÔNG?", "Thông báo",
             MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 frmLogin login = new frmLogin();
@@ -206,6 +220,17 @@ namespace GUI
                 this.Hide();
             }
             
+        }
+
+        private void frmAdmin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("BẠN CHẮC CHẮN ĐÓNG ỨNG DỤNG KHÔNG?", "Thông báo",
+            MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                frmLogin login = new frmLogin();
+                login.Show();
+                this.Hide();
+            }
         }
     }
 }

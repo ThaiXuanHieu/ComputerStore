@@ -30,11 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomer));
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.btnSearchProduct = new System.Windows.Forms.Button();
-            this.txtSearchProduct = new System.Windows.Forms.TextBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.Separator3 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.btnCart = new System.Windows.Forms.Button();
             this.btnSoftwarePage = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnProfile = new System.Windows.Forms.Button();
@@ -56,7 +55,6 @@
             this.accessoriesPage = new GUI.AccessoriesPage();
             this.componentsPage = new GUI.ComponentsPage();
             this.softwarePage = new GUI.SoftwarePage();
-            this.btnCart = new System.Windows.Forms.Button();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.pnlLeft.SuspendLayout();
@@ -68,39 +66,12 @@
             // pnlTop
             // 
             this.pnlTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.pnlTop.Controls.Add(this.btnSearchProduct);
-            this.pnlTop.Controls.Add(this.txtSearchProduct);
             this.pnlTop.Controls.Add(this.btnMenu);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(1337, 46);
             this.pnlTop.TabIndex = 0;
-            // 
-            // btnSearchProduct
-            // 
-            this.btnSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
-            this.btnSearchProduct.FlatAppearance.BorderSize = 0;
-            this.btnSearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchProduct.ForeColor = System.Drawing.Color.White;
-            this.btnSearchProduct.Image = global::GUI.Properties.Resources.icons8_Search_26px;
-            this.btnSearchProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchProduct.Location = new System.Drawing.Point(600, 3);
-            this.btnSearchProduct.Name = "btnSearchProduct";
-            this.btnSearchProduct.Size = new System.Drawing.Size(151, 38);
-            this.btnSearchProduct.TabIndex = 21;
-            this.btnSearchProduct.Text = "     Tìm kiếm";
-            this.btnSearchProduct.UseVisualStyleBackColor = false;
-            // 
-            // txtSearchProduct
-            // 
-            this.txtSearchProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchProduct.Location = new System.Drawing.Point(317, 3);
-            this.txtSearchProduct.Multiline = true;
-            this.txtSearchProduct.Name = "txtSearchProduct";
-            this.txtSearchProduct.Size = new System.Drawing.Size(274, 38);
-            this.txtSearchProduct.TabIndex = 20;
             // 
             // btnMenu
             // 
@@ -149,6 +120,21 @@
             this.Separator3.Transparency = 255;
             this.Separator3.Vertical = false;
             // 
+            // btnCart
+            // 
+            this.btnCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnCart.FlatAppearance.BorderSize = 0;
+            this.btnCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCart.ForeColor = System.Drawing.Color.White;
+            this.btnCart.Location = new System.Drawing.Point(10, 542);
+            this.btnCart.Name = "btnCart";
+            this.btnCart.Size = new System.Drawing.Size(295, 61);
+            this.btnCart.TabIndex = 11;
+            this.btnCart.Text = "Giỏ hàng";
+            this.btnCart.UseVisualStyleBackColor = false;
+            this.btnCart.Click += new System.EventHandler(this.btnSoftwarePage_Click);
+            // 
             // btnSoftwarePage
             // 
             this.btnSoftwarePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
@@ -177,6 +163,7 @@
             this.btnLogout.TabIndex = 10;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnProfile
             // 
@@ -191,6 +178,7 @@
             this.btnProfile.TabIndex = 9;
             this.btnProfile.Text = "Hồ sơ";
             this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnComponentsPage
             // 
@@ -400,21 +388,6 @@
             this.softwarePage.Size = new System.Drawing.Size(1020, 684);
             this.softwarePage.TabIndex = 0;
             // 
-            // btnCart
-            // 
-            this.btnCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnCart.FlatAppearance.BorderSize = 0;
-            this.btnCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCart.ForeColor = System.Drawing.Color.White;
-            this.btnCart.Location = new System.Drawing.Point(10, 542);
-            this.btnCart.Name = "btnCart";
-            this.btnCart.Size = new System.Drawing.Size(295, 61);
-            this.btnCart.TabIndex = 11;
-            this.btnCart.Text = "Giỏ hàng";
-            this.btnCart.UseVisualStyleBackColor = false;
-            this.btnCart.Click += new System.EventHandler(this.btnSoftwarePage_Click);
-            // 
             // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -430,8 +403,8 @@
             this.Name = "frmCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Computer Store";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCustomer_FormClosing);
             this.pnlTop.ResumeLayout(false);
-            this.pnlTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             this.pnlLeft.ResumeLayout(false);
             this.pnlLeft.PerformLayout();
@@ -463,8 +436,6 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button btnSoftwarePage;
-        private System.Windows.Forms.Button btnSearchProduct;
-        private System.Windows.Forms.TextBox txtSearchProduct;
         private Bunifu.Framework.UI.BunifuSeparator Separator3;
         private SoftwarePage softwarePage;
         private ComponentsPage componentsPage;

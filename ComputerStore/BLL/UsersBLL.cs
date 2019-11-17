@@ -53,6 +53,7 @@ namespace BLL
                 user.Password = dataRow["Password"].ToString();
                 user.Email = dataRow["Email"].ToString();
                 user.Phone = dataRow["Phone"].ToString();
+                user.Avatar = dataRow["Avatar"].ToString();
             }
             return user;
         }

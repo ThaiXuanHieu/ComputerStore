@@ -98,9 +98,10 @@ namespace GUI
             DataTable dtUsers = UsersBLL.Instance.GetByUerNameAndPassword(txtUsername.Text, txtPassword.Text);
             if (dtUsers.Rows.Count != 0)
             {
-                string fullName = dtUsers.Rows[0].Field<string>("FullName");
+                //string fullName = dtUsers.Rows[0].Field<string>("FullName");
+                UsersDTO user = UsersBLL.Instance.GetUser(txtUsername.Text, txtPassword.Text);
                 this.Hide();
-                frmAdmin admin = new frmAdmin(fullName);
+                frmAdmin admin = new frmAdmin(user);
                 admin.ShowDialog();
 
             }

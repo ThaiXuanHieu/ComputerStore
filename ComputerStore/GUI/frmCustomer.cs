@@ -86,5 +86,24 @@ namespace GUI
             homePage.Visible = false;
 
         }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmCustomer_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
+        
+
+        
     }
 }
