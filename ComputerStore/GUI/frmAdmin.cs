@@ -35,9 +35,10 @@ namespace GUI
         // Thêm UserControl Thống kê
         public void AddStatisticalUC()
         {
-            statisticalPage = new StatisticalPage()
+            statisticalPage = new GUI.StatisticalPage()
             {
                 Dock = System.Windows.Forms.DockStyle.Fill,
+                Name = "statisticalPage",
                 Visible = false
             };
             pnlWrap.Controls.Add(statisticalPage);
@@ -60,9 +61,10 @@ namespace GUI
         // Thêm UserControl Quản lý người dùng
         public void AddUsersManagementlUC()
         {
-            usersManagementPage = new UsersManagementPage()
+            usersManagementPage = new GUI.UsersManagementPage()
             {
                 Dock = System.Windows.Forms.DockStyle.Fill,
+                Name = "usersManagementPage",
                 Visible = false
             };
             pnlWrap.Controls.Add(usersManagementPage);

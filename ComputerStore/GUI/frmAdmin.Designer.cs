@@ -119,26 +119,32 @@
             this.pnlWrap.Name = "pnlWrap";
             this.pnlWrap.Size = new System.Drawing.Size(1020, 684);
             this.pnlWrap.TabIndex = 0;
-            // 
             // userPage
+            this.userPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userPage.Location = new System.Drawing.Point(0, 0);
+            this.userPage.Name = "userPage";
+            this.userPage.Size = new System.Drawing.Size(1020, 684);
+            this.userPage.TabIndex = 1;
+            // 
+            // ordersManagementPage
             // 
             this.ordersManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ordersManagementPage.Location = new System.Drawing.Point(0, 0);
             this.ordersManagementPage.Name = "ordersManagementPage";
             this.ordersManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.ordersManagementPage.TabIndex = 6;
+            this.ordersManagementPage.TabIndex = 2;
             // productManagementPage
             this.productManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productManagementPage.Location = new System.Drawing.Point(0, 0);
             this.productManagementPage.Name = "productManagementPage";
             this.productManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.productManagementPage.TabIndex = 6;
+            this.productManagementPage.TabIndex = 3;
             // customerManagementPage
             this.customerManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customerManagementPage.Location = new System.Drawing.Point(0, 0);
             this.customerManagementPage.Name = "customerManagementPage";
             this.customerManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.customerManagementPage.TabIndex = 6;
+            this.customerManagementPage.TabIndex = 5;
             // supplierManagementPage
             this.supplierManagementPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.supplierManagementPage.Location = new System.Drawing.Point(0, 0);
@@ -150,14 +156,14 @@
             this.warehouseManagementPage.Location = new System.Drawing.Point(0, 0);
             this.warehouseManagementPage.Name = "warehouseManagementPage";
             this.warehouseManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.warehouseManagementPage.TabIndex = 6;
+            this.warehouseManagementPage.TabIndex = 7;
             // 
             // categoryManagementPage
             // 
             this.categoryManagementPage.Location = new System.Drawing.Point(0, 0);
             this.categoryManagementPage.Name = "categoryManagementPage";
             this.categoryManagementPage.Size = new System.Drawing.Size(1020, 684);
-            this.categoryManagementPage.TabIndex = 7;
+            this.categoryManagementPage.TabIndex = 4;
             // 
             // Separator1
             // 
