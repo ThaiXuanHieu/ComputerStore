@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common;
 
 namespace GUI
 {
@@ -66,6 +67,7 @@ namespace GUI
         private void llbForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Timer1.Start();
+            btnGenNewPassword.Enabled = true;
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -145,6 +147,42 @@ namespace GUI
                 return;
             }
             Application.ExitThread();
+        }
+
+        private void btnGenNewPassword_Click(object sender, EventArgs e)
+        {
+            if(!EmailValidation.IsValid(txtEmail.Text.Trim()))
+            {
+                MessageBox.Show("Email không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            DataTable dtUser = UsersBLL.Instance.GetByEmail(txtEmail.Text);
+            if(dtUser.Rows.Count != 0)// Nếu tồn tại bản ghi
+            {
+                // Phát sinh ngẫu nhiên mật khẩu mới
+                var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                var stringChars = new char[8];
+                var random = new Random();
+
+                for (int i = 0; i < stringChars.Length; i++)
+                {
+                    stringChars[i] = chars[random.Next(chars.Length)];
+                }
+
+                lblNewPassword.Text = new String(stringChars);
+                // Không cho phép tạo mật khẩu mới nhiều lần
+                btnGenNewPassword.Enabled = false;
+
+                // Cập nhật lại mật khẩu cho người dùng
+                int userID = dtUser.Rows[0].Field<int>("UserID");
+                UsersBLL.Instance.UpdatePassword(userID, lblNewPassword.Text);
+                
+            }
+            else
+            {
+                MessageBox.Show("EMAIL NÀY KHÔNG TỒN TẠI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

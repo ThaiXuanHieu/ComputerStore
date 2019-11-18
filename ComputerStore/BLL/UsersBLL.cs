@@ -40,6 +40,11 @@ namespace BLL
             return UsersDAL.Instance.Select(_userName, _password);
         }
 
+        public DataTable GetByEmail(string _email)
+        {
+            return UsersDAL.Instance.SelectByEmail(_email);
+        }
+
         public UsersDTO GetUser(string _userName, string _password)
         {
             UsersDTO user = new UsersDTO();
@@ -61,6 +66,16 @@ namespace BLL
         public void Insert(string _fullName, string _userName, string _password)
         {
             UsersDAL.Instance.Insert(_fullName, _userName, _password);
+        }
+
+        public void UpdateProfile(int _userID, string _fullName, string _userName, string _password, string _gender, string _email, string _phone, string _avatar)
+        {
+            UsersDAL.Instance.UpdateProfile(_userID, _fullName, _userName, _password, _gender, _email, _phone, _avatar);
+        }
+
+        public void UpdatePassword(int _userID, string _newPassword)
+        {
+            UsersDAL.Instance.UpdatePassword(_userID, _newPassword);
         }
 
     }

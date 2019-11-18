@@ -37,7 +37,7 @@
             this.lblNewPassword = new System.Windows.Forms.Label();
             this.lblFotgetPassword = new System.Windows.Forms.Label();
             this.llbBack1 = new System.Windows.Forms.LinkLabel();
-            this.btnNewPassword = new System.Windows.Forms.Button();
+            this.btnGenNewPassword = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.pnlSignup = new System.Windows.Forms.Panel();
             this.txtFullName = new System.Windows.Forms.TextBox();
@@ -103,7 +103,7 @@
             this.pnlRight.Controls.Add(this.lblNewPassword);
             this.pnlRight.Controls.Add(this.lblFotgetPassword);
             this.pnlRight.Controls.Add(this.llbBack1);
-            this.pnlRight.Controls.Add(this.btnNewPassword);
+            this.pnlRight.Controls.Add(this.btnGenNewPassword);
             this.pnlRight.Controls.Add(this.txtEmail);
             this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlRight.Location = new System.Drawing.Point(367, 0);
@@ -148,18 +148,19 @@
             this.llbBack1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
             this.llbBack1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbBack1_LinkClicked);
             // 
-            // btnNewPassword
+            // btnGenNewPassword
             // 
-            this.btnNewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnNewPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewPassword.ForeColor = System.Drawing.Color.White;
-            this.btnNewPassword.Location = new System.Drawing.Point(79, 221);
-            this.btnNewPassword.Name = "btnNewPassword";
-            this.btnNewPassword.Size = new System.Drawing.Size(206, 44);
-            this.btnNewPassword.TabIndex = 7;
-            this.btnNewPassword.Text = "Mật khẩu mới";
-            this.btnNewPassword.UseVisualStyleBackColor = false;
+            this.btnGenNewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnGenNewPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenNewPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenNewPassword.ForeColor = System.Drawing.Color.White;
+            this.btnGenNewPassword.Location = new System.Drawing.Point(79, 221);
+            this.btnGenNewPassword.Name = "btnGenNewPassword";
+            this.btnGenNewPassword.Size = new System.Drawing.Size(206, 44);
+            this.btnGenNewPassword.TabIndex = 7;
+            this.btnGenNewPassword.Text = "Mật khẩu mới";
+            this.btnGenNewPassword.UseVisualStyleBackColor = false;
+            this.btnGenNewPassword.Click += new System.EventHandler(this.btnGenNewPassword_Click);
             // 
             // txtEmail
             // 
@@ -405,7 +406,7 @@
         private System.Windows.Forms.Label lblNewPassword;
         private System.Windows.Forms.Label lblFotgetPassword;
         private System.Windows.Forms.LinkLabel llbBack1;
-        private System.Windows.Forms.Button btnNewPassword;
+        private System.Windows.Forms.Button btnGenNewPassword;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Timer Timer1;
     }
