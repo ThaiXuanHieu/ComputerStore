@@ -219,6 +219,10 @@ namespace GUI
                 login.Show();
                 this.Hide();
             }
+            else
+            {
+                return;
+            }
             
         }
 
@@ -230,6 +234,11 @@ namespace GUI
                 frmLogin login = new frmLogin();
                 login.Show();
                 this.Hide();
+            }
+            else
+            {
+                e.Cancel = true;
+                return;
             }
         }
     }

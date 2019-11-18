@@ -55,9 +55,13 @@
             this.btnAddOrder = new System.Windows.Forms.Button();
             this.grbInfoOrders = new System.Windows.Forms.GroupBox();
             this.cbCompanyName = new System.Windows.Forms.ComboBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblPhone = new System.Windows.Forms.Label();
             this.lblCompanyName = new System.Windows.Forms.Label();
             this.cbProducts = new System.Windows.Forms.ComboBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.lbl1 = new System.Windows.Forms.Label();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.lblQuantity = new System.Windows.Forms.Label();
@@ -72,10 +76,6 @@
             this.dgvListReceipt = new System.Windows.Forms.DataGridView();
             this.llbBack = new System.Windows.Forms.LinkLabel();
             this.lblListOrders = new System.Windows.Forms.Label();
-            this.txtPhone = new System.Windows.Forms.TextBox();
-            this.lblPhone = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.lblAddress = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListProductInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReceiptDetails)).BeginInit();
             this.grbInfoOrders.SuspendLayout();
@@ -96,7 +96,7 @@
             // 
             // btnPrinter
             // 
-            this.btnPrinter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPrinter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
             this.btnPrinter.FlatAppearance.BorderSize = 0;
             this.btnPrinter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrinter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -141,7 +141,7 @@
             // 
             // btnPay
             // 
-            this.btnPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
             this.btnPay.FlatAppearance.BorderSize = 0;
             this.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -270,7 +270,7 @@
             // 
             // btnSearchProduct
             // 
-            this.btnSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(132)))), ((int)(((byte)(150)))));
+            this.btnSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
             this.btnSearchProduct.FlatAppearance.BorderSize = 0;
             this.btnSearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearchProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -332,7 +332,7 @@
             // 
             // btnCreateReceipts
             // 
-            this.btnCreateReceipts.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCreateReceipts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
             this.btnCreateReceipts.FlatAppearance.BorderSize = 0;
             this.btnCreateReceipts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateReceipts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -396,6 +396,26 @@
             this.cbCompanyName.TabIndex = 70;
             this.cbCompanyName.SelectedValueChanged += new System.EventHandler(this.cbCompanyName_SelectedValueChanged);
             // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Location = new System.Drawing.Point(508, 133);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(100, 32);
+            this.lblAddress.TabIndex = 69;
+            this.lblAddress.Text = "Địa chỉ :";
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.Location = new System.Drawing.Point(508, 91);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(70, 32);
+            this.lblPhone.TabIndex = 69;
+            this.lblPhone.Text = "SĐT :";
+            // 
             // lblCompanyName
             // 
             this.lblCompanyName.AutoSize = true;
@@ -414,6 +434,15 @@
             this.cbProducts.Size = new System.Drawing.Size(226, 36);
             this.cbProducts.TabIndex = 67;
             // 
+            // txtAddress
+            // 
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(666, 133);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(259, 34);
+            this.txtAddress.TabIndex = 2;
+            // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
@@ -423,6 +452,15 @@
             this.lbl1.Size = new System.Drawing.Size(65, 32);
             this.lbl1.TabIndex = 66;
             this.lbl1.Text = "VND";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(666, 91);
+            this.txtPhone.Multiline = true;
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(259, 34);
+            this.txtPhone.TabIndex = 2;
             // 
             // txtQuantity
             // 
@@ -603,44 +641,6 @@
             this.lblListOrders.Size = new System.Drawing.Size(308, 38);
             this.lblListOrders.TabIndex = 67;
             this.lblListOrders.Text = "Danh sách phiếu nhập";
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(666, 91);
-            this.txtPhone.Multiline = true;
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(259, 34);
-            this.txtPhone.TabIndex = 2;
-            // 
-            // lblPhone
-            // 
-            this.lblPhone.AutoSize = true;
-            this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(508, 91);
-            this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(70, 32);
-            this.lblPhone.TabIndex = 69;
-            this.lblPhone.Text = "SĐT :";
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(666, 133);
-            this.txtAddress.Multiline = true;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(259, 34);
-            this.txtAddress.TabIndex = 2;
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(508, 133);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(100, 32);
-            this.lblAddress.TabIndex = 69;
-            this.lblAddress.Text = "Địa chỉ :";
             // 
             // WarehouseManagementPage
             // 

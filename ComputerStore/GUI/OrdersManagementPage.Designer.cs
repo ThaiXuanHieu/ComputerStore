@@ -37,14 +37,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitlePage = new System.Windows.Forms.Label();
             this.grbInfoOrders = new System.Windows.Forms.GroupBox();
+            this.btnSearchCustomer = new System.Windows.Forms.Button();
             this.cbProducts = new System.Windows.Forms.ComboBox();
             this.lbl1 = new System.Windows.Forms.Label();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtFullName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
@@ -74,9 +77,6 @@
             this.dgvListOrders = new System.Windows.Forms.DataGridView();
             this.llbBack = new System.Windows.Forms.LinkLabel();
             this.lblListOrders = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtPhone = new System.Windows.Forms.TextBox();
-            this.btnSearchCustomer = new System.Windows.Forms.Button();
             this.grbInfoOrders.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
@@ -118,6 +118,21 @@
             this.grbInfoOrders.TabIndex = 49;
             this.grbInfoOrders.TabStop = false;
             this.grbInfoOrders.Text = "Thông tin hóa đơn";
+            // 
+            // btnSearchCustomer
+            // 
+            this.btnSearchCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnSearchCustomer.FlatAppearance.BorderSize = 0;
+            this.btnSearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnSearchCustomer.Image = global::GUI.Properties.Resources.icons8_Search_26px;
+            this.btnSearchCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearchCustomer.Location = new System.Drawing.Point(931, 44);
+            this.btnSearchCustomer.Name = "btnSearchCustomer";
+            this.btnSearchCustomer.Size = new System.Drawing.Size(48, 34);
+            this.btnSearchCustomer.TabIndex = 68;
+            this.btnSearchCustomer.UseVisualStyleBackColor = false;
             // 
             // cbProducts
             // 
@@ -175,6 +190,15 @@
             this.lblPrice.TabIndex = 62;
             this.lblPrice.Text = "Giá :";
             // 
+            // txtPhone
+            // 
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(618, 130);
+            this.txtPhone.Multiline = true;
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(307, 34);
+            this.txtPhone.TabIndex = 6;
+            // 
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,6 +216,16 @@
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(308, 34);
             this.txtFullName.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(477, 132);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 32);
+            this.label2.TabIndex = 55;
+            this.label2.Text = "SĐT :";
             // 
             // label1
             // 
@@ -367,7 +401,7 @@
             // 
             // btnPrinter
             // 
-            this.btnPrinter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPrinter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
             this.btnPrinter.FlatAppearance.BorderSize = 0;
             this.btnPrinter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrinter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -384,7 +418,7 @@
             // 
             // btnPay
             // 
-            this.btnPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
             this.btnPay.FlatAppearance.BorderSize = 0;
             this.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -418,7 +452,7 @@
             // 
             // btnSearchProduct
             // 
-            this.btnSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(132)))), ((int)(((byte)(150)))));
+            this.btnSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
             this.btnSearchProduct.FlatAppearance.BorderSize = 0;
             this.btnSearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearchProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -469,7 +503,7 @@
             // 
             // btnCreateOrders
             // 
-            this.btnCreateOrders.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCreateOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
             this.btnCreateOrders.FlatAppearance.BorderSize = 0;
             this.btnCreateOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -630,40 +664,6 @@
             this.lblListOrders.Size = new System.Drawing.Size(270, 38);
             this.lblListOrders.TabIndex = 41;
             this.lblListOrders.Text = "Danh sách hóa đơn";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(477, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 32);
-            this.label2.TabIndex = 55;
-            this.label2.Text = "SĐT :";
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(618, 130);
-            this.txtPhone.Multiline = true;
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(307, 34);
-            this.txtPhone.TabIndex = 6;
-            // 
-            // btnSearchCustomer
-            // 
-            this.btnSearchCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(132)))), ((int)(((byte)(150)))));
-            this.btnSearchCustomer.FlatAppearance.BorderSize = 0;
-            this.btnSearchCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchCustomer.ForeColor = System.Drawing.Color.White;
-            this.btnSearchCustomer.Image = global::GUI.Properties.Resources.icons8_Search_26px;
-            this.btnSearchCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchCustomer.Location = new System.Drawing.Point(931, 44);
-            this.btnSearchCustomer.Name = "btnSearchCustomer";
-            this.btnSearchCustomer.Size = new System.Drawing.Size(48, 34);
-            this.btnSearchCustomer.TabIndex = 68;
-            this.btnSearchCustomer.UseVisualStyleBackColor = false;
             // 
             // OrdersManagementPage
             // 
