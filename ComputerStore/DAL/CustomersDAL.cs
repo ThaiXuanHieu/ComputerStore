@@ -37,15 +37,15 @@ namespace DAL
             return dbConnection.ExecuteSelectQuery(query);
         }
 
-        public DataTable Select(string _searchString)
+        public DataTable SelectByPhone(string _searchString)
         {
-            string query = "SELECT * FROM Customers WHERE FirstName LIKE N'%" + _searchString + "%'";
+            string query = "SELECT * FROM Customers WHERE Phone LIKE N'%" + _searchString + "%'";
             return dbConnection.ExecuteSelectQuery(query);
         }
 
         public DataTable SelectFirstCustomer()
         {
-            string query = "SELECT TOP 1 * FROM Customers ORDER BY CustomerID DESC";
+            string query = "SELECT TOP 1 CustomerID FROM Customers ORDER BY CustomerID DESC";
             return dbConnection.ExecuteSelectQuery(query);
         }
 

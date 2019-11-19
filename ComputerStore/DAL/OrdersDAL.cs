@@ -44,7 +44,7 @@ namespace DAL
 
         public DataTable SelectFirstOrders()
         {
-            string query = "SELECT TOP 1 * FROM Orders ORDER BY OrderID DESC";
+            string query = "SELECT TOP 1 OrderID FROM Orders ORDER BY OrderID DESC";
             return dbConnection.ExecuteSelectQuery(query);
         }
 
@@ -57,12 +57,11 @@ namespace DAL
             return dbConnection.ExecuteSelectQuery(query, parameters);
         }
 
-        public void Insert(int _customerID, DateTime _orderDate, double _totalAmount)
+        public void Insert(int? _customerID, DateTime _orderDate, double _totalAmount)
         {
             string query = "INSERT INTO Orders VALUES (@CustomerID, @OrderDate, @TotalAmount)";
 
             SqlParameter[] parameters = new SqlParameter[3];
-
             parameters[0] = new SqlParameter("@CustomerID", SqlDbType.Int);
             parameters[0].Value = _customerID;
             parameters[1] = new SqlParameter("@OrderDate", SqlDbType.DateTime);

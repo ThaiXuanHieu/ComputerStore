@@ -36,7 +36,7 @@ namespace DAL
             return dbConnection.ExecuteSelectQuery(query);
         }
 
-        public DataTable Select(string _searchString)
+        public DataTable SelectBySearchString(string _searchString)
         {
             string query = "SELECT * FROM Suppliers WHERE CompanyName LIKE N'%" + _searchString + "%'";
             return dbConnection.ExecuteSelectQuery(query);

@@ -43,11 +43,6 @@ namespace BLL
             foreach(DataRow dataRow in dataTable.Rows)
             {
                 customer.CustomerID = Convert.ToInt32(dataRow["CustomerID"].ToString());
-                customer.FirstName = dataRow["FirstName"].ToString();
-                customer.LastName = dataRow["LastName"].ToString();
-                customer.Address = dataRow["Address"].ToString();
-                customer.Phone = dataRow["Phone"].ToString();
-                customer.Email = dataRow["Email"].ToString();
             }
             return customer;
         }
@@ -68,9 +63,9 @@ namespace BLL
             return customer;
         }
 
-        public DataTable GetCategoryBySearchString(string _searchString)
+        public DataTable GetCustomerByPhone(string _searchString)
         {
-            return CustomersDAL.Instance.Select(_searchString);
+            return CustomersDAL.Instance.SelectByPhone(_searchString);
         }
 
         public void Insert(string _firstName, string _lastName, string _address, string _phone, string _email)

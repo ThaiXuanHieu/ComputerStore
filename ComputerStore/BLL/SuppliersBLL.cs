@@ -73,7 +73,7 @@ namespace BLL
 
         public DataTable GetSupplierBySearchString(string _searchString)
         {
-            return SuppliersDAL.Instance.Select(_searchString);
+            return SuppliersDAL.Instance.SelectBySearchString(_searchString);
         }
 
         public void Insert(string _companyName, string _contactName, string _address, string _phone, string _email)

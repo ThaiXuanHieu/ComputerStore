@@ -14,14 +14,17 @@ namespace GUI
 {
     public partial class OrdersManagementPage : UserControl
     {
-        private bool hidden;
+        private bool hidden;    // Biến này dùng cho Silding Panel
 
-        private bool isNew = false;
+        private bool isNew = false; // Biến này dùng để kiểm tra thêm mới hay cập nhật
 
-        CustomersDTO customer= new CustomersDTO();
-        OrdersDTO orders = new OrdersDTO();
+        OrdersDTO orders = new OrdersDTO(); // Biến này dùng để giữ đối tượng Order
+                                            // trong cả quá trình tạo hóa đơn
+        CustomersDTO customer = new CustomersDTO(); // Biến này dùng để giữ đối tượng Customer
+                                                    // trong cả quá trình tạo hóa đơn
 
-        double amount;
+        bool isNewCustomer = true; // Biến này dùng để kiểm tra khách hàng mới hay cũ
+        double amount = 0;
         double totalAmount = 0;
 
         public OrdersManagementPage()
@@ -74,6 +77,7 @@ namespace GUI
 
         private void btnCreateOrders_Click(object sender, EventArgs e)
         {
+            //
             isEnabled(true);
             isNew = true;
             btnPay.Enabled = true;
@@ -83,10 +87,9 @@ namespace GUI
             txtAddress.Clear();
             txtFullName.Clear();
             dgvOrderDetails.DataSource = null;
-            CustomersBLL.Instance.Insert("", "", "", "", "");
-            customer = CustomersBLL.Instance.GetFirstCustomer();
-            OrdersBLL.Instance.Insert(customer.CustomerID, DateTime.Now, 0);
-            orders = OrdersBLL.Instance.GetFirstOrders();
+
+
+            
         }
 
         private void llbBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -131,10 +134,51 @@ namespace GUI
             isNew = true;
 
             txtQuantity.Clear();
-            txtFullName.Clear();
-            txtAddress.Clear();
-            txtPhone.Clear();
             cbProducts.Focus();
+        }
+
+        private void btnSearchCustomer_Click(object sender, EventArgs e)
+        {
+            DataTable dtCustomers = CustomersBLL.Instance.GetCustomerByPhone(txtPhone.Text.Trim());
+            if(dtCustomers.Rows.Count != 0) // Kiểm tra có tồn tại bản ghi không
+            {
+                // Load data to TextBox
+                customer.CustomerID = dtCustomers.Rows[0].Field<int>("CustomerID");
+                string firstName = dtCustomers.Rows[0].Field<string>("FirstName");
+                string lastName = dtCustomers.Rows[0].Field<string>("LastName");
+                txtFullName.Text = firstName + " " + lastName;
+                txtAddress.Text = dtCustomers.Rows[0].Field<string>("Address");
+                txtPhone.Text = dtCustomers.Rows[0].Field<string>("Phone");
+
+                // Bây h khách hàng này là khách hàng cũ
+                isNewCustomer = false;
+                // Tạo hóa đơn với khách hàng cũ
+                OrdersBLL.Instance.Insert(customer.CustomerID, DateTime.Now, 0);
+                orders = OrdersBLL.Instance.GetFirstOrders();
+            }
+            else
+            {
+                isNewCustomer = true;
+                
+                MessageBox.Show("KHÁCH HÀNG NÀY CHƯA MUA HÀNG LẦN NÀO!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                // Tạo hóa đơn với khách hàng mới
+                // Tách Họ và tên
+                string[] strs = txtFullName.Text.Split(' ');
+                string firstName = "";
+                string lastName = strs[strs.Length - 1];
+                for (int i = 0; i < strs.Length - 1; i++)
+                {
+                    firstName += strs[i] + " ";
+                }
+                // Thêm vào bảng Khách hàng
+                CustomersBLL.Instance.Insert(firstName.Trim(), lastName.Trim(), txtAddress.Text, txtPhone.Text, "");
+                // Lấy ra khách hàng vừa thêm
+                customer = CustomersBLL.Instance.GetFirstCustomer();
+                OrdersBLL.Instance.Insert(customer.CustomerID, DateTime.Now, 0);
+                orders = OrdersBLL.Instance.GetFirstOrders();
+                return;
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -187,24 +231,26 @@ namespace GUI
                 MessageBox.Show("Vui lòng nhập số điện thoại khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            // Tách Họ và tên
-            string[] strs = txtFullName.Text.Split(' ');
-            string firstName = "";
-            string lastName = strs[strs.Length - 1];
-            for (int i = 0; i < strs.Length - 1; i++)
-            {
-                firstName += strs[i] + " ";
-            }
+            
             // Tính tổng tiền
             for (var row = 0; row < dgvOrderDetails.Rows.Count; row++)
             {
                 totalAmount += Convert.ToDouble(dgvOrderDetails.Rows[row].Cells["Amount"].Value.ToString());
             }
             lblAmount.Text = totalAmount.ToString();
-            // Cập nhật khách hàng
-            CustomersBLL.Instance.Update(customer.CustomerID, firstName.Trim(), lastName.Trim(), txtAddress.Text, txtPhone.Text, "");
-            // Cập nhật lại Hóa đơn
-            OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, Convert.ToDouble(lblAmount.Text));
+
+            if(isNewCustomer == true)   // Nếu là khách hàng mới
+            {
+                
+                // Cập nhật lại Hóa đơn với khách hàng mới
+                OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, Convert.ToDouble(lblAmount.Text));
+            }
+            else
+            {
+                // Cập nhật lại Hóa đơn với khách hàng cũ
+                OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, Convert.ToDouble(lblAmount.Text));
+            }
+            
         }
 
         private void btnEditOrder_Click(object sender, EventArgs e)
@@ -279,5 +325,7 @@ namespace GUI
             PrintDialog printDialog  = new PrintDialog();
             printDialog.ShowDialog();
         }
+
+        
     }
 }

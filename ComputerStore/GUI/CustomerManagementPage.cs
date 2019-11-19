@@ -52,7 +52,12 @@ namespace GUI
         private void btnSearchCustomer_Click(object sender, EventArgs e)
         {
             // Select with SearchString
-            dgvCustomers.DataSource = CustomersBLL.Instance.GetCategoryBySearchString(txtSearchCustomer.Text);
+            if(!PhoneNumberValidation.IsValid(txtSearchCustomer.Text.Trim()))
+            {
+                MessageBox.Show("Số điện thoại không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            dgvCustomers.DataSource = CustomersBLL.Instance.GetCustomerByPhone(txtSearchCustomer.Text);
         }
 
         private void btnAddCustomer_Click(object sender, EventArgs e)

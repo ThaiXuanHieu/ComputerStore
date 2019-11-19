@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitlePage = new System.Windows.Forms.Label();
             this.grbInfoOrders = new System.Windows.Forms.GroupBox();
             this.btnSearchCustomer = new System.Windows.Forms.Button();
@@ -67,7 +67,6 @@
             this.btnSearchProduct = new System.Windows.Forms.Button();
             this.btnDeleteOrder = new System.Windows.Forms.Button();
             this.btnEditOrder = new System.Windows.Forms.Button();
-            this.btnCreateOrders = new System.Windows.Forms.Button();
             this.btnAddOrder = new System.Windows.Forms.Button();
             this.pnlListOrders = new System.Windows.Forms.Panel();
             this.btnSearchOrders = new System.Windows.Forms.Button();
@@ -77,6 +76,7 @@
             this.dgvListOrders = new System.Windows.Forms.DataGridView();
             this.llbBack = new System.Windows.Forms.LinkLabel();
             this.lblListOrders = new System.Windows.Forms.Label();
+            this.btnCreateOrders = new System.Windows.Forms.Button();
             this.grbInfoOrders.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
@@ -128,11 +128,12 @@
             this.btnSearchCustomer.ForeColor = System.Drawing.Color.White;
             this.btnSearchCustomer.Image = global::GUI.Properties.Resources.icons8_Search_26px;
             this.btnSearchCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchCustomer.Location = new System.Drawing.Point(931, 44);
+            this.btnSearchCustomer.Location = new System.Drawing.Point(931, 130);
             this.btnSearchCustomer.Name = "btnSearchCustomer";
             this.btnSearchCustomer.Size = new System.Drawing.Size(48, 34);
-            this.btnSearchCustomer.TabIndex = 68;
+            this.btnSearchCustomer.TabIndex = 6;
             this.btnSearchCustomer.UseVisualStyleBackColor = false;
+            this.btnSearchCustomer.Click += new System.EventHandler(this.btnSearchCustomer_Click);
             // 
             // cbProducts
             // 
@@ -140,7 +141,7 @@
             this.cbProducts.Location = new System.Drawing.Point(188, 46);
             this.cbProducts.Name = "cbProducts";
             this.cbProducts.Size = new System.Drawing.Size(226, 36);
-            this.cbProducts.TabIndex = 67;
+            this.cbProducts.TabIndex = 0;
             // 
             // lbl1
             // 
@@ -159,7 +160,7 @@
             this.txtQuantity.Multiline = true;
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(136, 34);
-            this.txtQuantity.TabIndex = 2;
+            this.txtQuantity.TabIndex = 1;
             // 
             // txtPrice
             // 
@@ -168,7 +169,7 @@
             this.txtPrice.Multiline = true;
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(136, 34);
-            this.txtPrice.TabIndex = 4;
+            this.txtPrice.TabIndex = 2;
             // 
             // lblQuantity
             // 
@@ -197,7 +198,7 @@
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(307, 34);
-            this.txtPhone.TabIndex = 6;
+            this.txtPhone.TabIndex = 5;
             // 
             // txtAddress
             // 
@@ -206,7 +207,7 @@
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(308, 34);
-            this.txtAddress.TabIndex = 6;
+            this.txtAddress.TabIndex = 4;
             // 
             // txtFullName
             // 
@@ -215,7 +216,7 @@
             this.txtFullName.Multiline = true;
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(308, 34);
-            this.txtFullName.TabIndex = 5;
+            this.txtFullName.TabIndex = 3;
             // 
             // label2
             // 
@@ -262,26 +263,26 @@
             this.dgvOrderDetails.AllowUserToAddRows = false;
             this.dgvOrderDetails.AllowUserToDeleteRows = false;
             this.dgvOrderDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvOrderDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvOrderDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.dgvOrderDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOrderDetails.Location = new System.Drawing.Point(16, 350);
             this.dgvOrderDetails.Name = "dgvOrderDetails";
             this.dgvOrderDetails.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvOrderDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvOrderDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvOrderDetails.RowTemplate.Height = 24;
             this.dgvOrderDetails.Size = new System.Drawing.Size(490, 286);
             this.dgvOrderDetails.TabIndex = 59;
@@ -314,26 +315,26 @@
             this.dgvProducts.AllowUserToAddRows = false;
             this.dgvProducts.AllowUserToDeleteRows = false;
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProducts.Location = new System.Drawing.Point(513, 350);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.ReadOnly = true;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProducts.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProducts.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dgvProducts.RowTemplate.Height = 24;
             this.dgvProducts.Size = new System.Drawing.Size(490, 286);
             this.dgvProducts.TabIndex = 59;
@@ -501,23 +502,6 @@
             this.btnEditOrder.UseVisualStyleBackColor = false;
             this.btnEditOrder.Click += new System.EventHandler(this.btnEditOrder_Click);
             // 
-            // btnCreateOrders
-            // 
-            this.btnCreateOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnCreateOrders.FlatAppearance.BorderSize = 0;
-            this.btnCreateOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreateOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateOrders.ForeColor = System.Drawing.Color.White;
-            this.btnCreateOrders.Image = global::GUI.Properties.Resources.icons8_Purchase_Order_26px;
-            this.btnCreateOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCreateOrders.Location = new System.Drawing.Point(810, 20);
-            this.btnCreateOrders.Name = "btnCreateOrders";
-            this.btnCreateOrders.Size = new System.Drawing.Size(193, 40);
-            this.btnCreateOrders.TabIndex = 52;
-            this.btnCreateOrders.Text = "      Tạo hóa đơn";
-            this.btnCreateOrders.UseVisualStyleBackColor = false;
-            this.btnCreateOrders.Click += new System.EventHandler(this.btnCreateOrders_Click);
-            // 
             // btnAddOrder
             // 
             this.btnAddOrder.BackColor = System.Drawing.Color.DodgerBlue;
@@ -590,7 +574,7 @@
             this.btnDeleteOrders.Location = new System.Drawing.Point(158, 111);
             this.btnDeleteOrders.Name = "btnDeleteOrders";
             this.btnDeleteOrders.Size = new System.Drawing.Size(134, 40);
-            this.btnDeleteOrders.TabIndex = 1;
+            this.btnDeleteOrders.TabIndex = 0;
             this.btnDeleteOrders.Text = "   Xóa";
             this.btnDeleteOrders.UseVisualStyleBackColor = false;
             this.btnDeleteOrders.Click += new System.EventHandler(this.btnDeleteOrders_Click);
@@ -615,26 +599,26 @@
             // dgvListOrders
             // 
             this.dgvListOrders.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListOrders.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListOrders.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dgvListOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListOrders.Location = new System.Drawing.Point(18, 187);
             this.dgvListOrders.Name = "dgvListOrders";
             this.dgvListOrders.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListOrders.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListOrders.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dgvListOrders.RowTemplate.Height = 24;
             this.dgvListOrders.Size = new System.Drawing.Size(985, 484);
             this.dgvListOrders.TabIndex = 52;
@@ -664,6 +648,23 @@
             this.lblListOrders.Size = new System.Drawing.Size(270, 38);
             this.lblListOrders.TabIndex = 41;
             this.lblListOrders.Text = "Danh sách hóa đơn";
+            // 
+            // btnCreateOrders
+            // 
+            this.btnCreateOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnCreateOrders.FlatAppearance.BorderSize = 0;
+            this.btnCreateOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateOrders.ForeColor = System.Drawing.Color.White;
+            this.btnCreateOrders.Image = global::GUI.Properties.Resources.icons8_Purchase_Order_26px;
+            this.btnCreateOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCreateOrders.Location = new System.Drawing.Point(810, 20);
+            this.btnCreateOrders.Name = "btnCreateOrders";
+            this.btnCreateOrders.Size = new System.Drawing.Size(193, 40);
+            this.btnCreateOrders.TabIndex = 52;
+            this.btnCreateOrders.Text = "      Tạo hóa đơn";
+            this.btnCreateOrders.UseVisualStyleBackColor = false;
+            this.btnCreateOrders.Click += new System.EventHandler(this.btnCreateOrders_Click);
             // 
             // OrdersManagementPage
             // 
@@ -727,7 +728,6 @@
         private System.Windows.Forms.LinkLabel llbListOrders;
         private System.Windows.Forms.Timer Timer;
         private System.Windows.Forms.Button btnPay;
-        private System.Windows.Forms.Button btnCreateOrders;
         private System.Windows.Forms.Label lblTotalAmount;
         private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.Label lbl2;
@@ -748,5 +748,6 @@
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSearchCustomer;
+        private System.Windows.Forms.Button btnCreateOrders;
     }
 }

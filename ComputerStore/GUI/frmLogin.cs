@@ -157,8 +157,8 @@ namespace GUI
                 return;
             }
 
-            DataTable dtUser = UsersBLL.Instance.GetByEmail(txtEmail.Text);
-            if(dtUser.Rows.Count != 0)// Nếu tồn tại bản ghi
+            DataTable dtUsers = UsersBLL.Instance.GetByEmail(txtEmail.Text);
+            if(dtUsers.Rows.Count != 0)// Nếu tồn tại bản ghi
             {
                 // Phát sinh ngẫu nhiên mật khẩu mới
                 var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -175,7 +175,7 @@ namespace GUI
                 btnGenNewPassword.Enabled = false;
 
                 // Cập nhật lại mật khẩu cho người dùng
-                int userID = dtUser.Rows[0].Field<int>("UserID");
+                int userID = dtUsers.Rows[0].Field<int>("UserID");
                 UsersBLL.Instance.UpdatePassword(userID, lblNewPassword.Text);
                 
             }

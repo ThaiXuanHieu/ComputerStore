@@ -41,11 +41,7 @@ namespace BLL
             OrdersDTO orders = new OrdersDTO();
             foreach (DataRow dataRow in dataTable.Rows)
             {
-                orders.CustomerID = Convert.ToInt32(dataRow["CustomerID"].ToString());
                 orders.OrderID = Convert.ToInt32(dataRow["OrderID"].ToString());
-                orders.OrderDate = (DateTime)(dataRow["OrderDate"]);
-                orders.TotalAmount = Convert.ToDouble(dataRow["TotalAmount"].ToString());
-
             }
             return orders;
         }
@@ -70,7 +66,7 @@ namespace BLL
             return orders;
         }
 
-        public void Insert(int _customerID, DateTime _orderDate, double _totalAmount)
+        public void Insert(int? _customerID, DateTime _orderDate, double _totalAmount)
         {
             OrdersDAL.Instance.Insert(_customerID, _orderDate, _totalAmount);
         }

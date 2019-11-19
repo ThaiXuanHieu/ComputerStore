@@ -112,7 +112,7 @@
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(289, 34);
-            this.txtPhone.TabIndex = 64;
+            this.txtPhone.TabIndex = 3;
             // 
             // lblPhone
             // 
@@ -131,7 +131,7 @@
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(289, 34);
-            this.txtEmail.TabIndex = 62;
+            this.txtEmail.TabIndex = 4;
             // 
             // lblEmail
             // 
@@ -150,7 +150,7 @@
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(289, 34);
-            this.txtAddress.TabIndex = 60;
+            this.txtAddress.TabIndex = 2;
             // 
             // lblAddress
             // 
@@ -169,7 +169,7 @@
             this.txtCompanyName.Multiline = true;
             this.txtCompanyName.Name = "txtCompanyName";
             this.txtCompanyName.Size = new System.Drawing.Size(289, 34);
-            this.txtCompanyName.TabIndex = 58;
+            this.txtCompanyName.TabIndex = 0;
             // 
             // lblCompanyName
             // 
@@ -188,7 +188,7 @@
             this.txtContactName.Multiline = true;
             this.txtContactName.Name = "txtContactName";
             this.txtContactName.Size = new System.Drawing.Size(289, 34);
-            this.txtContactName.TabIndex = 56;
+            this.txtContactName.TabIndex = 1;
             // 
             // lblContactName
             // 

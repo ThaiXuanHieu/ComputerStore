@@ -94,9 +94,9 @@ namespace DAL
                 command.ExecuteNonQuery();
                 adapter.InsertCommand = command;
             }
-            catch(Exception e)
+            catch(Exception)
             {
-                MessageBox.Show(e.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Sản phẩm này đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

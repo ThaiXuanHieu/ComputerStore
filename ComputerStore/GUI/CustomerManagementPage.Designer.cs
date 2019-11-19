@@ -72,7 +72,7 @@
             this.txtSearchCustomer.Name = "txtSearchCustomer";
             this.txtSearchCustomer.Size = new System.Drawing.Size(268, 40);
             this.txtSearchCustomer.TabIndex = 4;
-            this.txtSearchCustomer.Text = "Nhập tên khách hàng...";
+            this.txtSearchCustomer.Text = "Nhập số điện thoại...";
             // 
             // lblTitlePage
             // 
