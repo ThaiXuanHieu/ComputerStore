@@ -34,7 +34,6 @@
             this.lbl = new System.Windows.Forms.Label();
             this.pnlSignin = new System.Windows.Forms.Panel();
             this.pnlRight = new System.Windows.Forms.Panel();
-            this.lblNewPassword = new System.Windows.Forms.Label();
             this.lblFotgetPassword = new System.Windows.Forms.Label();
             this.llbBack1 = new System.Windows.Forms.LinkLabel();
             this.btnGenNewPassword = new System.Windows.Forms.Button();
@@ -100,7 +99,6 @@
             // 
             // pnlRight
             // 
-            this.pnlRight.Controls.Add(this.lblNewPassword);
             this.pnlRight.Controls.Add(this.lblFotgetPassword);
             this.pnlRight.Controls.Add(this.llbBack1);
             this.pnlRight.Controls.Add(this.btnGenNewPassword);
@@ -110,17 +108,6 @@
             this.pnlRight.Name = "pnlRight";
             this.pnlRight.Size = new System.Drawing.Size(10, 369);
             this.pnlRight.TabIndex = 20;
-            // 
-            // lblNewPassword
-            // 
-            this.lblNewPassword.AutoSize = true;
-            this.lblNewPassword.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.lblNewPassword.Location = new System.Drawing.Point(123, 300);
-            this.lblNewPassword.Name = "lblNewPassword";
-            this.lblNewPassword.Size = new System.Drawing.Size(114, 41);
-            this.lblNewPassword.TabIndex = 17;
-            this.lblNewPassword.Text = "--------";
             // 
             // lblFotgetPassword
             // 
@@ -403,7 +390,6 @@
         private System.Windows.Forms.TextBox txtPasswordNew;
         private System.Windows.Forms.TextBox txtUsernameNew;
         private System.Windows.Forms.Panel pnlRight;
-        private System.Windows.Forms.Label lblNewPassword;
         private System.Windows.Forms.Label lblFotgetPassword;
         private System.Windows.Forms.LinkLabel llbBack1;
         private System.Windows.Forms.Button btnGenNewPassword;

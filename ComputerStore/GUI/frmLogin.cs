@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common;
+using System.Net.Mail;
+using System.Net;
 
 namespace GUI
 {
@@ -97,11 +99,11 @@ namespace GUI
 
         private void btnSignin_Click(object sender, EventArgs e)
         {
-            DataTable dtUsers = UsersBLL.Instance.GetByUerNameAndPassword(txtUsername.Text, txtPassword.Text);
+            DataTable dtUsers = UsersBLL.Instance.GetByUerNameAndPassword(txtUsername.Text, Encryption.MD5Hash(txtPassword.Text));
             if (dtUsers.Rows.Count != 0)
             {
                 //string fullName = dtUsers.Rows[0].Field<string>("FullName");
-                UsersDTO user = UsersBLL.Instance.GetUser(txtUsername.Text, txtPassword.Text);
+                UsersDTO user = UsersBLL.Instance.GetUser(txtUsername.Text, Encryption.MD5Hash(txtPassword.Text));
                 this.Hide();
                 frmAdmin admin = new frmAdmin(user);
                 admin.ShowDialog();
@@ -132,7 +134,7 @@ namespace GUI
                 MessageBox.Show("MẬT KHẨU KHÔNG KHỚP", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, txtPasswordNew.Text);
+            UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, Encryption.MD5Hash(txtPasswordNew.Text));
             MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
@@ -170,13 +172,41 @@ namespace GUI
                     stringChars[i] = chars[random.Next(chars.Length)];
                 }
 
-                lblNewPassword.Text = new String(stringChars);
+                string newPassword = new String(stringChars);
                 // Không cho phép tạo mật khẩu mới nhiều lần
                 btnGenNewPassword.Enabled = false;
 
+                try
+                {
+
+                    MailMessage msg = new MailMessage();
+                    msg.From = new MailAddress("likeafternoonqp@gmail.com");
+                    msg.To.Add(txtEmail.Text);
+                    msg.Subject = "Thông báo Bảo mật quan trọng";
+                    msg.Body = "Mật khẩu mới của bạn : " + newPassword;
+
+                    SmtpClient smt = new SmtpClient();
+                    smt.Host = "smtp.gmail.com";
+                    System.Net.NetworkCredential ntcd = new NetworkCredential();
+                    ntcd.UserName = "XTeam";
+                    ntcd.Password = "Matkhauqp1";
+                    smt.Credentials = ntcd;
+                    smt.EnableSsl = true;
+                    smt.Port = 587;
+                    smt.Send(msg);
+
+                    MessageBox.Show("Mật khẩu mới của bạn được gửi về Email của bạn");
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+
                 // Cập nhật lại mật khẩu cho người dùng
                 int userID = dtUsers.Rows[0].Field<int>("UserID");
-                UsersBLL.Instance.UpdatePassword(userID, lblNewPassword.Text);
+                UsersBLL.Instance.UpdatePassword(userID, Encryption.MD5Hash(newPassword));
                 
             }
             else

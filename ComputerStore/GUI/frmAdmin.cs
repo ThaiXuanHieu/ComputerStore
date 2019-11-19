@@ -16,6 +16,7 @@ namespace GUI
         private StatisticalPage statisticalPage;
         private UsersManagementPage usersManagementPage;
 
+
         public frmAdmin(UsersDTO user)
         {
             
@@ -23,7 +24,7 @@ namespace GUI
             
             // Load Họ và Tên và Ảnh của người dùng
             lblNameUser.Text = user.FullName;
-            
+
             if(user.Avatar == null)
             {
                 picAvatar.ImageLocation = null;
