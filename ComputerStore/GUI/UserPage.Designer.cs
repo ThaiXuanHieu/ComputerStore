@@ -32,7 +32,7 @@
             this.grbUserInfo = new System.Windows.Forms.GroupBox();
             this.grbChangePassword = new System.Windows.Forms.GroupBox();
             this.lblReEnterPassword = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnChangePassword = new System.Windows.Forms.Button();
             this.lblNewPassword = new System.Windows.Forms.Label();
             this.lblCurrentPassword = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -54,6 +54,8 @@
             this.picAvatar = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.lblTitlePage = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.grbUserInfo.SuspendLayout();
             this.grbChangePassword.SuspendLayout();
             this.grbMainInfo.SuspendLayout();
@@ -77,9 +79,11 @@
             // grbChangePassword
             // 
             this.grbChangePassword.Controls.Add(this.lblReEnterPassword);
-            this.grbChangePassword.Controls.Add(this.button1);
+            this.grbChangePassword.Controls.Add(this.btnChangePassword);
             this.grbChangePassword.Controls.Add(this.lblNewPassword);
+            this.grbChangePassword.Controls.Add(this.lblUserName);
             this.grbChangePassword.Controls.Add(this.lblCurrentPassword);
+            this.grbChangePassword.Controls.Add(this.txtUsername);
             this.grbChangePassword.Controls.Add(this.txtPassword);
             this.grbChangePassword.Controls.Add(this.txtReEnterPassword);
             this.grbChangePassword.Controls.Add(this.txtNewPassword);
@@ -93,32 +97,33 @@
             // lblReEnterPassword
             // 
             this.lblReEnterPassword.AutoSize = true;
-            this.lblReEnterPassword.Location = new System.Drawing.Point(18, 215);
+            this.lblReEnterPassword.Location = new System.Drawing.Point(34, 294);
             this.lblReEnterPassword.Name = "lblReEnterPassword";
             this.lblReEnterPassword.Size = new System.Drawing.Size(262, 29);
             this.lblReEnterPassword.TabIndex = 4;
             this.lblReEnterPassword.Text = "Nhập lại mật khẩu mới :";
             // 
-            // button1
+            // btnChangePassword
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::GUI.Properties.Resources.icons8_Save_26px;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(23, 332);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "     Thay đổi";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnChangePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
+            this.btnChangePassword.FlatAppearance.BorderSize = 0;
+            this.btnChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePassword.ForeColor = System.Drawing.Color.White;
+            this.btnChangePassword.Image = global::GUI.Properties.Resources.icons8_Save_26px;
+            this.btnChangePassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChangePassword.Location = new System.Drawing.Point(39, 398);
+            this.btnChangePassword.Name = "btnChangePassword";
+            this.btnChangePassword.Size = new System.Drawing.Size(162, 40);
+            this.btnChangePassword.TabIndex = 3;
+            this.btnChangePassword.Text = "     Thay đổi";
+            this.btnChangePassword.UseVisualStyleBackColor = false;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // lblNewPassword
             // 
             this.lblNewPassword.AutoSize = true;
-            this.lblNewPassword.Location = new System.Drawing.Point(18, 135);
+            this.lblNewPassword.Location = new System.Drawing.Point(34, 214);
             this.lblNewPassword.Name = "lblNewPassword";
             this.lblNewPassword.Size = new System.Drawing.Size(167, 29);
             this.lblNewPassword.TabIndex = 4;
@@ -127,7 +132,7 @@
             // lblCurrentPassword
             // 
             this.lblCurrentPassword.AutoSize = true;
-            this.lblCurrentPassword.Location = new System.Drawing.Point(18, 55);
+            this.lblCurrentPassword.Location = new System.Drawing.Point(34, 134);
             this.lblCurrentPassword.Name = "lblCurrentPassword";
             this.lblCurrentPassword.Size = new System.Drawing.Size(204, 29);
             this.lblCurrentPassword.TabIndex = 4;
@@ -135,16 +140,17 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(23, 87);
+            this.txtPassword.Location = new System.Drawing.Point(39, 166);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(289, 34);
             this.txtPassword.TabIndex = 0;
             this.txtPassword.Text = "Password";
+            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // txtReEnterPassword
             // 
-            this.txtReEnterPassword.Location = new System.Drawing.Point(23, 255);
+            this.txtReEnterPassword.Location = new System.Drawing.Point(39, 334);
             this.txtReEnterPassword.Name = "txtReEnterPassword";
             this.txtReEnterPassword.PasswordChar = '*';
             this.txtReEnterPassword.Size = new System.Drawing.Size(289, 34);
@@ -153,7 +159,7 @@
             // 
             // txtNewPassword
             // 
-            this.txtNewPassword.Location = new System.Drawing.Point(23, 167);
+            this.txtNewPassword.Location = new System.Drawing.Point(39, 246);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '*';
             this.txtNewPassword.Size = new System.Drawing.Size(289, 34);
@@ -182,7 +188,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(17, 183);
+            this.lblEmail.Location = new System.Drawing.Point(17, 192);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(86, 29);
             this.lblEmail.TabIndex = 4;
@@ -191,7 +197,7 @@
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(17, 137);
+            this.lblPhone.Location = new System.Drawing.Point(17, 146);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(166, 29);
             this.lblPhone.TabIndex = 4;
@@ -200,7 +206,7 @@
             // lblGender
             // 
             this.lblGender.AutoSize = true;
-            this.lblGender.Location = new System.Drawing.Point(17, 96);
+            this.lblGender.Location = new System.Drawing.Point(17, 105);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(113, 29);
             this.lblGender.TabIndex = 4;
@@ -209,7 +215,7 @@
             // lblFullName
             // 
             this.lblFullName.AutoSize = true;
-            this.lblFullName.Location = new System.Drawing.Point(17, 51);
+            this.lblFullName.Location = new System.Drawing.Point(17, 60);
             this.lblFullName.Name = "lblFullName";
             this.lblFullName.Size = new System.Drawing.Size(135, 29);
             this.lblFullName.TabIndex = 4;
@@ -218,7 +224,7 @@
             // rdOrther
             // 
             this.rdOrther.AutoSize = true;
-            this.rdOrther.Location = new System.Drawing.Point(390, 94);
+            this.rdOrther.Location = new System.Drawing.Point(390, 103);
             this.rdOrther.Name = "rdOrther";
             this.rdOrther.Size = new System.Drawing.Size(88, 33);
             this.rdOrther.TabIndex = 4;
@@ -229,7 +235,7 @@
             // rdFemale
             // 
             this.rdFemale.AutoSize = true;
-            this.rdFemale.Location = new System.Drawing.Point(302, 94);
+            this.rdFemale.Location = new System.Drawing.Point(302, 103);
             this.rdFemale.Name = "rdFemale";
             this.rdFemale.Size = new System.Drawing.Size(65, 33);
             this.rdFemale.TabIndex = 3;
@@ -240,7 +246,7 @@
             // rdMale
             // 
             this.rdMale.AutoSize = true;
-            this.rdMale.Location = new System.Drawing.Point(201, 94);
+            this.rdMale.Location = new System.Drawing.Point(201, 103);
             this.rdMale.Name = "rdMale";
             this.rdMale.Size = new System.Drawing.Size(85, 33);
             this.rdMale.TabIndex = 2;
@@ -250,21 +256,21 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(201, 180);
+            this.txtEmail.Location = new System.Drawing.Point(201, 189);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(277, 34);
             this.txtEmail.TabIndex = 6;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(201, 134);
+            this.txtPhone.Location = new System.Drawing.Point(201, 143);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(277, 34);
             this.txtPhone.TabIndex = 5;
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(201, 48);
+            this.txtFullName.Location = new System.Drawing.Point(201, 57);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(277, 34);
             this.txtFullName.TabIndex = 0;
@@ -320,6 +326,7 @@
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "   Ghi";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblTitlePage
             // 
@@ -332,6 +339,23 @@
             this.lblTitlePage.TabIndex = 41;
             this.lblTitlePage.Text = "Hồ sơ";
             // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(39, 85);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.ReadOnly = true;
+            this.txtUsername.Size = new System.Drawing.Size(289, 34);
+            this.txtUsername.TabIndex = 0;
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Location = new System.Drawing.Point(34, 53);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(131, 29);
+            this.lblUserName.TabIndex = 4;
+            this.lblUserName.Text = "Tài khoản :";
+            // 
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -341,6 +365,7 @@
             this.Controls.Add(this.grbUserInfo);
             this.Name = "UserPage";
             this.Size = new System.Drawing.Size(1020, 684);
+            this.Load += new System.EventHandler(this.UserPage_Load);
             this.grbUserInfo.ResumeLayout(false);
             this.grbChangePassword.ResumeLayout(false);
             this.grbChangePassword.PerformLayout();
@@ -379,6 +404,8 @@
         private System.Windows.Forms.TextBox txtReEnterPassword;
         private System.Windows.Forms.TextBox txtNewPassword;
         private System.Windows.Forms.Button btnChangeImage;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnChangePassword;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.TextBox txtUsername;
     }
 }

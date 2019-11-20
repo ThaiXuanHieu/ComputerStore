@@ -12,6 +12,7 @@ namespace DTO
         private string fullName;
         private string userName;
         private string password;
+        private string gender;
         private string email;
         private string phone;
         private string avatar;
@@ -37,8 +38,10 @@ namespace DTO
             set { password = value; }
         }
 
+        public string Gender { get => gender; set => gender = value; }
         public string Email { get => email; set => email = value; }
         public string Phone { get => phone; set => phone = value; }
         public string Avatar { get => avatar; set => avatar = value; }
+        
     }
 }

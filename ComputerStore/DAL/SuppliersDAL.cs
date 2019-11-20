@@ -94,7 +94,7 @@ namespace DAL
             parameters[5].Value = _supplierID;
 
 
-            dbConnection.ExecuteInsertQuery(query, parameters);
+            dbConnection.ExecuteUpdateQuery(query, parameters);
         }
 
         public void DeleteBySupplierID(int _supplierID)

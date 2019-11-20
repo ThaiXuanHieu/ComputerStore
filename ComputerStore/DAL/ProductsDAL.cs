@@ -118,7 +118,7 @@ namespace DAL
             parameters[7] = new SqlParameter("@ProductID", SqlDbType.Int);
             parameters[7].Value = _productID;
 
-            dbConnection.ExecuteInsertQuery(query, parameters);
+            dbConnection.ExecuteUpdateQuery(query, parameters);
         }
 
         public void DeleteByProductID(int _productID)

@@ -87,7 +87,7 @@ namespace DAL
             parameters[2].Value = _description;
 
 
-            dbConnection.ExecuteInsertQuery(query, parameters);
+            dbConnection.ExecuteUpdateQuery(query, parameters);
         }
 
         public void DeleteByCategoryID(int _categoryID)

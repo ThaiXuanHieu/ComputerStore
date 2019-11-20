@@ -88,7 +88,7 @@ namespace DAL
             parameters[3] = new SqlParameter("@OrderID", SqlDbType.Int);
             parameters[3].Value = _orderID;
 
-            dbConnection.ExecuteInsertQuery(query, parameters);
+            dbConnection.ExecuteUpdateQuery(query, parameters);
         }
 
         public void DeleteByOrderID(int _orderID)

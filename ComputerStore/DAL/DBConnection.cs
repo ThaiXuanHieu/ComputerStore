@@ -96,7 +96,7 @@ namespace DAL
             }
             catch(Exception)
             {
-                MessageBox.Show("Sản phẩm này đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

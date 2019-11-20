@@ -1,4 +1,6 @@
-﻿namespace GUI
+﻿using DTO;
+
+namespace GUI
 {
     partial class frmAdmin
     {
@@ -26,7 +28,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private void InitializeComponent(UsersDTO user)
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
             this.pnlBottom = new System.Windows.Forms.Panel();
@@ -43,7 +45,7 @@
             this.Separator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnlLeft = new System.Windows.Forms.Panel();
 
-            this.userPage = new GUI.UserPage();
+            this.userPage = new GUI.UserPage(user);
             this.categoryManagementPage = new GUI.CategoryManagementPage();
             this.ordersManagementPage = new GUI.OrdersManagementPage();
             this.productManagementPage = new GUI.ProductManagementPage();
@@ -428,5 +430,6 @@
         private OrdersManagementPage ordersManagementPage;
         private CustomerManagementPage customerManagementPage;
         private CategoryManagementPage categoryManagementPage;
+
     }
 }

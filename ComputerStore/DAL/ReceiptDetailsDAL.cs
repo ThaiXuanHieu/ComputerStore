@@ -74,7 +74,7 @@ namespace DAL
             parameters[2].Value = _amount;
             parameters[3] = new SqlParameter("@ProductID", SqlDbType.Int);
             parameters[3].Value = _productID;
-            dbConnection.ExecuteInsertQuery(query, parameters);
+            dbConnection.ExecuteUpdateQuery(query, parameters);
 
         }
     }

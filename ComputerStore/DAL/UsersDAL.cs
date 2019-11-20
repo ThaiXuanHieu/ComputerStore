@@ -85,29 +85,27 @@ namespace DAL
             dbConnection.ExecuteInsertQuery(query, parameters);
         }
 
-        public void UpdateProfile(int _userID, string _fullName, string _userName, string _password, string _gender, string _email, string _phone, string _avatar)
+        public void UpdateProfile(int _userID, string _fullName, string _userName, string _gender, string _email, string _phone, string _avatar)
         {
-            string query = "UPDATE Users SET FullName = @fullName, FullName = @userName, Password = @password" +
+            string query = "UPDATE Users SET FullName = @fullName, UserName = @userName" +
                 ", Gender = @gender, Email = @email, Phone = @phone, Avatar = @avatar WHERE UserID = @userID";
-            SqlParameter[] parameters = new SqlParameter[8];
+            SqlParameter[] parameters = new SqlParameter[7];
             parameters[0] = new SqlParameter("@fullName", SqlDbType.NVarChar);
             parameters[0].Value = _fullName;
             parameters[1] = new SqlParameter("@userName", SqlDbType.VarChar);
             parameters[1].Value = _userName;
-            parameters[2] = new SqlParameter("@password", SqlDbType.VarChar);
-            parameters[2].Value = _password;
-            parameters[3] = new SqlParameter("@gender", SqlDbType.VarChar);
-            parameters[3].Value = _gender;
-            parameters[4] = new SqlParameter("@email", SqlDbType.VarChar);
-            parameters[4].Value = _email;
-            parameters[5] = new SqlParameter("@phone", SqlDbType.VarChar);
-            parameters[5].Value = _phone;
-            parameters[6] = new SqlParameter("@avatar", SqlDbType.VarChar);
-            parameters[6].Value = _avatar;
-            parameters[7] = new SqlParameter("@userID", SqlDbType.Int);
-            parameters[7].Value = _userID;
+            parameters[2] = new SqlParameter("@gender", SqlDbType.NVarChar);
+            parameters[2].Value = _gender;
+            parameters[3] = new SqlParameter("@email", SqlDbType.VarChar);
+            parameters[3].Value = _email;
+            parameters[4] = new SqlParameter("@phone", SqlDbType.VarChar);
+            parameters[4].Value = _phone;
+            parameters[5] = new SqlParameter("@avatar", SqlDbType.NVarChar);
+            parameters[5].Value = _avatar;
+            parameters[6] = new SqlParameter("@userID", SqlDbType.Int);
+            parameters[6].Value = _userID;
 
-            dbConnection.ExecuteInsertQuery(query, parameters);
+            dbConnection.ExecuteUpdateQuery(query, parameters);
         }
 
         public void UpdatePassword(int _userID, string _newPassword)
@@ -119,7 +117,7 @@ namespace DAL
             parameters[1] = new SqlParameter("@userID", SqlDbType.Int);
             parameters[1].Value = _userID;
 
-            dbConnection.ExecuteInsertQuery(query, parameters);
+            dbConnection.ExecuteUpdateQuery(query, parameters);
         }
 
         public void Delete(int _userID)

@@ -16,11 +16,10 @@ namespace GUI
         private StatisticalPage statisticalPage;
         private UsersManagementPage usersManagementPage;
 
-
         public frmAdmin(UsersDTO user)
         {
             
-            InitializeComponent();
+            InitializeComponent(user);
             
             // Load Họ và Tên và Ảnh của người dùng
             lblNameUser.Text = user.FullName;
@@ -201,6 +200,7 @@ namespace GUI
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
+            
             userPage.Visible = true;
             usersManagementPage.Visible = false;
             ordersManagementPage.Visible = false;

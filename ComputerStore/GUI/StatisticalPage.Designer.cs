@@ -73,7 +73,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Tổng tiền";
             this.chartlProductsSold.Series.Add(series1);
-            this.chartlProductsSold.Size = new System.Drawing.Size(480, 264);
+            this.chartlProductsSold.Size = new System.Drawing.Size(458, 264);
             this.chartlProductsSold.TabIndex = 41;
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title1.Name = "titleChart1";
@@ -86,13 +86,13 @@
             this.chartProductsReceipted.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chartProductsReceipted.Legends.Add(legend2);
-            this.chartProductsReceipted.Location = new System.Drawing.Point(519, 406);
+            this.chartProductsReceipted.Location = new System.Drawing.Point(539, 406);
             this.chartProductsReceipted.Name = "chartProductsReceipted";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Tổng tiền";
             this.chartProductsReceipted.Series.Add(series2);
-            this.chartProductsReceipted.Size = new System.Drawing.Size(480, 264);
+            this.chartProductsReceipted.Size = new System.Drawing.Size(460, 264);
             this.chartProductsReceipted.TabIndex = 43;
             title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title2.Name = "titleChart1";
@@ -104,13 +104,13 @@
             this.Separator.BackColor = System.Drawing.Color.Transparent;
             this.Separator.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.Separator.LineThickness = 1;
-            this.Separator.Location = new System.Drawing.Point(26, 356);
+            this.Separator.Location = new System.Drawing.Point(493, 98);
             this.Separator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Separator.Name = "Separator";
-            this.Separator.Size = new System.Drawing.Size(973, 43);
+            this.Separator.Size = new System.Drawing.Size(39, 572);
             this.Separator.TabIndex = 44;
             this.Separator.Transparency = 255;
-            this.Separator.Vertical = false;
+            this.Separator.Vertical = true;
             // 
             // dgvProductsSold
             // 
@@ -118,16 +118,16 @@
             this.dgvProductsSold.Location = new System.Drawing.Point(26, 98);
             this.dgvProductsSold.Name = "dgvProductsSold";
             this.dgvProductsSold.RowTemplate.Height = 24;
-            this.dgvProductsSold.Size = new System.Drawing.Size(480, 251);
+            this.dgvProductsSold.Size = new System.Drawing.Size(458, 251);
             this.dgvProductsSold.TabIndex = 45;
             // 
             // dgvProductsReceipted
             // 
             this.dgvProductsReceipted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductsReceipted.Location = new System.Drawing.Point(519, 98);
+            this.dgvProductsReceipted.Location = new System.Drawing.Point(539, 98);
             this.dgvProductsReceipted.Name = "dgvProductsReceipted";
             this.dgvProductsReceipted.RowTemplate.Height = 24;
-            this.dgvProductsReceipted.Size = new System.Drawing.Size(480, 251);
+            this.dgvProductsReceipted.Size = new System.Drawing.Size(460, 251);
             this.dgvProductsReceipted.TabIndex = 45;
             // 
             // lblProductsSold

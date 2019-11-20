@@ -56,6 +56,7 @@ namespace BLL
                 user.FullName = dataRow["FullName"].ToString();
                 user.UserName = dataRow["UserName"].ToString();
                 user.Password = dataRow["Password"].ToString();
+                user.Gender = dataRow["Gender"].ToString();
                 user.Email = dataRow["Email"].ToString();
                 user.Phone = dataRow["Phone"].ToString();
                 user.Avatar = dataRow["Avatar"].ToString();
@@ -68,9 +69,9 @@ namespace BLL
             UsersDAL.Instance.Insert(_fullName, _userName, _password);
         }
 
-        public void UpdateProfile(int _userID, string _fullName, string _userName, string _password, string _gender, string _email, string _phone, string _avatar)
+        public void UpdateProfile(int _userID, string _fullName, string _userName, string _gender, string _email, string _phone, string _avatar)
         {
-            UsersDAL.Instance.UpdateProfile(_userID, _fullName, _userName, _password, _gender, _email, _phone, _avatar);
+            UsersDAL.Instance.UpdateProfile(_userID, _fullName, _userName, _gender, _email, _phone, _avatar);
         }
 
         public void UpdatePassword(int _userID, string _newPassword)

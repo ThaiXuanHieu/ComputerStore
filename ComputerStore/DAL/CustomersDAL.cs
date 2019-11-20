@@ -101,7 +101,7 @@ namespace DAL
             parameters[5].Value = _customerID;
 
 
-            dbConnection.ExecuteInsertQuery(query, parameters);
+            dbConnection.ExecuteUpdateQuery(query, parameters);
         }
 
         public void DeleteByCustomerID(int _customerID)
