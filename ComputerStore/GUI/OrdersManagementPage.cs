@@ -87,9 +87,7 @@ namespace GUI
             txtAddress.Clear();
             txtFullName.Clear();
             dgvOrderDetails.DataSource = null;
-
-
-            
+ 
         }
 
         private void llbBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

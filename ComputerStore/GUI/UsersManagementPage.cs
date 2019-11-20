@@ -12,9 +12,12 @@ namespace GUI
 {
     public partial class UsersManagementPage : UserControl
     {
+        bool hidden;
+
         public UsersManagementPage()
         {
             InitializeComponent();
+            hidden = true;
         }
 
         private void btnChangeImage_Click(object sender, EventArgs e)
@@ -60,6 +63,40 @@ namespace GUI
         private void btnSearchUser_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void llbRoleManagement_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Timer.Start();
+        }
+
+        private void llbBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (hidden)
+            {
+                pnlRoleManagement.Width += 10;
+                if (pnlRoleManagement.Width >= 1020)
+                {
+                    Timer.Stop();
+                    hidden = false;
+                    this.Refresh();
+                }
+            }
+            else
+            {
+                pnlRoleManagement.Width -= 10;
+                if (pnlRoleManagement.Width <= 10)
+                {
+                    Timer.Stop();
+                    hidden = true;
+                    this.Refresh();
+                }
+            }
         }
     }
 }

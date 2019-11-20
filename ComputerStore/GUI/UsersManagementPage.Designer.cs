@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitlePage = new System.Windows.Forms.Label();
-            this.dgvUsers = new System.Windows.Forms.DataGridView();
+            this.dgvListUser = new System.Windows.Forms.DataGridView();
             this.btnSave = new System.Windows.Forms.Button();
             this.grbInfoUser = new System.Windows.Forms.GroupBox();
             this.lblGender = new System.Windows.Forms.Label();
@@ -56,9 +57,27 @@
             this.btnDeleteUser = new System.Windows.Forms.Button();
             this.btnEditUser = new System.Windows.Forms.Button();
             this.btnAddUser = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.llbRoleManagement = new System.Windows.Forms.LinkLabel();
+            this.pnlRoleManagement = new System.Windows.Forms.Panel();
+            this.llbBack = new System.Windows.Forms.LinkLabel();
+            this.btnSaveRole = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnDeleteRole = new System.Windows.Forms.Button();
+            this.btnEditRole = new System.Windows.Forms.Button();
+            this.btnAddRole = new System.Windows.Forms.Button();
+            this.lblRoleManagement = new System.Windows.Forms.Label();
+            this.dgvRoles = new System.Windows.Forms.DataGridView();
+            this.lblRoles = new System.Windows.Forms.Label();
+            this.dgvRoleUsers = new System.Windows.Forms.DataGridView();
+            this.lblUsers = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListUser)).BeginInit();
             this.grbInfoUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
+            this.pnlRoleManagement.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRoleUsers)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitlePage
@@ -72,34 +91,34 @@
             this.lblTitlePage.TabIndex = 41;
             this.lblTitlePage.Text = "Quản lý người dùng";
             // 
-            // dgvUsers
+            // dgvListUser
             // 
-            this.dgvUsers.AllowUserToAddRows = false;
-            this.dgvUsers.AllowUserToDeleteRows = false;
-            this.dgvUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsers.Location = new System.Drawing.Point(18, 358);
-            this.dgvUsers.Name = "dgvUsers";
-            this.dgvUsers.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvUsers.RowTemplate.Height = 24;
-            this.dgvUsers.Size = new System.Drawing.Size(985, 313);
-            this.dgvUsers.TabIndex = 60;
+            this.dgvListUser.AllowUserToAddRows = false;
+            this.dgvListUser.AllowUserToDeleteRows = false;
+            this.dgvListUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.dgvListUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListUser.Location = new System.Drawing.Point(18, 358);
+            this.dgvListUser.Name = "dgvListUser";
+            this.dgvListUser.ReadOnly = true;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListUser.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dgvListUser.RowTemplate.Height = 24;
+            this.dgvListUser.Size = new System.Drawing.Size(985, 313);
+            this.dgvListUser.TabIndex = 60;
             // 
             // btnSave
             // 
@@ -400,11 +419,210 @@
             this.btnAddUser.UseVisualStyleBackColor = false;
             this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
+            // Timer
+            // 
+            this.Timer.Interval = 30;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // llbRoleManagement
+            // 
+            this.llbRoleManagement.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbRoleManagement.AutoSize = true;
+            this.llbRoleManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llbRoleManagement.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbRoleManagement.Location = new System.Drawing.Point(13, 9);
+            this.llbRoleManagement.Name = "llbRoleManagement";
+            this.llbRoleManagement.Size = new System.Drawing.Size(241, 25);
+            this.llbRoleManagement.TabIndex = 63;
+            this.llbRoleManagement.TabStop = true;
+            this.llbRoleManagement.Text = "Quản lý quyền người dùng";
+            this.llbRoleManagement.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbRoleManagement.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbRoleManagement_LinkClicked);
+            // 
+            // pnlRoleManagement
+            // 
+            this.pnlRoleManagement.Controls.Add(this.dgvRoleUsers);
+            this.pnlRoleManagement.Controls.Add(this.dgvRoles);
+            this.pnlRoleManagement.Controls.Add(this.lblUsers);
+            this.pnlRoleManagement.Controls.Add(this.lblRoles);
+            this.pnlRoleManagement.Controls.Add(this.lblRoleManagement);
+            this.pnlRoleManagement.Controls.Add(this.btnSaveRole);
+            this.pnlRoleManagement.Controls.Add(this.btnSearch);
+            this.pnlRoleManagement.Controls.Add(this.txtSearch);
+            this.pnlRoleManagement.Controls.Add(this.btnDeleteRole);
+            this.pnlRoleManagement.Controls.Add(this.btnEditRole);
+            this.pnlRoleManagement.Controls.Add(this.btnAddRole);
+            this.pnlRoleManagement.Controls.Add(this.llbBack);
+            this.pnlRoleManagement.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlRoleManagement.Location = new System.Drawing.Point(0, 0);
+            this.pnlRoleManagement.Name = "pnlRoleManagement";
+            this.pnlRoleManagement.Size = new System.Drawing.Size(10, 684);
+            this.pnlRoleManagement.TabIndex = 64;
+            // 
+            // llbBack
+            // 
+            this.llbBack.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbBack.AutoSize = true;
+            this.llbBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llbBack.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbBack.Location = new System.Drawing.Point(935, 19);
+            this.llbBack.Name = "llbBack";
+            this.llbBack.Size = new System.Drawing.Size(68, 25);
+            this.llbBack.TabIndex = 64;
+            this.llbBack.TabStop = true;
+            this.llbBack.Text = "Trở về";
+            this.llbBack.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbBack_LinkClicked);
+            // 
+            // btnSaveRole
+            // 
+            this.btnSaveRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(136)))), ((int)(((byte)(56)))));
+            this.btnSaveRole.FlatAppearance.BorderSize = 0;
+            this.btnSaveRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveRole.ForeColor = System.Drawing.Color.White;
+            this.btnSaveRole.Image = global::GUI.Properties.Resources.icons8_Save_26px;
+            this.btnSaveRole.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveRole.Location = new System.Drawing.Point(438, 110);
+            this.btnSaveRole.Name = "btnSaveRole";
+            this.btnSaveRole.Size = new System.Drawing.Size(134, 40);
+            this.btnSaveRole.TabIndex = 71;
+            this.btnSaveRole.Text = "   Ghi";
+            this.btnSaveRole.UseVisualStyleBackColor = false;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Image = global::GUI.Properties.Resources.icons8_Search_26px;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.Location = new System.Drawing.Point(852, 110);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(151, 40);
+            this.btnSearch.TabIndex = 72;
+            this.btnSearch.Text = "     Tìm kiếm";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.Color.Black;
+            this.txtSearch.Location = new System.Drawing.Point(578, 110);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(268, 40);
+            this.txtSearch.TabIndex = 73;
+            this.txtSearch.Text = "Nhập tên người dùng...";
+            // 
+            // btnDeleteRole
+            // 
+            this.btnDeleteRole.BackColor = System.Drawing.Color.Red;
+            this.btnDeleteRole.FlatAppearance.BorderSize = 0;
+            this.btnDeleteRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteRole.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteRole.Image = global::GUI.Properties.Resources.icons8_Trash_Can_26px;
+            this.btnDeleteRole.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeleteRole.Location = new System.Drawing.Point(298, 110);
+            this.btnDeleteRole.Name = "btnDeleteRole";
+            this.btnDeleteRole.Size = new System.Drawing.Size(134, 40);
+            this.btnDeleteRole.TabIndex = 70;
+            this.btnDeleteRole.Text = "   Xóa";
+            this.btnDeleteRole.UseVisualStyleBackColor = false;
+            // 
+            // btnEditRole
+            // 
+            this.btnEditRole.BackColor = System.Drawing.Color.Gold;
+            this.btnEditRole.FlatAppearance.BorderSize = 0;
+            this.btnEditRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditRole.ForeColor = System.Drawing.Color.Black;
+            this.btnEditRole.Image = global::GUI.Properties.Resources.icons8_Edit_26px;
+            this.btnEditRole.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditRole.Location = new System.Drawing.Point(158, 110);
+            this.btnEditRole.Name = "btnEditRole";
+            this.btnEditRole.Size = new System.Drawing.Size(134, 40);
+            this.btnEditRole.TabIndex = 69;
+            this.btnEditRole.Text = "   Sửa";
+            this.btnEditRole.UseVisualStyleBackColor = false;
+            // 
+            // btnAddRole
+            // 
+            this.btnAddRole.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddRole.FlatAppearance.BorderSize = 0;
+            this.btnAddRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddRole.ForeColor = System.Drawing.Color.White;
+            this.btnAddRole.Image = global::GUI.Properties.Resources.icons8_Plus_Math_26px;
+            this.btnAddRole.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddRole.Location = new System.Drawing.Point(18, 110);
+            this.btnAddRole.Name = "btnAddRole";
+            this.btnAddRole.Size = new System.Drawing.Size(134, 40);
+            this.btnAddRole.TabIndex = 68;
+            this.btnAddRole.Text = "   Thêm";
+            this.btnAddRole.UseVisualStyleBackColor = false;
+            // 
+            // lblRoleManagement
+            // 
+            this.lblRoleManagement.AutoSize = true;
+            this.lblRoleManagement.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoleManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblRoleManagement.Location = new System.Drawing.Point(338, 9);
+            this.lblRoleManagement.Name = "lblRoleManagement";
+            this.lblRoleManagement.Size = new System.Drawing.Size(370, 38);
+            this.lblRoleManagement.TabIndex = 74;
+            this.lblRoleManagement.Text = "Quản lý quyền người dùng";
+            // 
+            // dgvRoles
+            // 
+            this.dgvRoles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRoles.Location = new System.Drawing.Point(18, 250);
+            this.dgvRoles.Name = "dgvRoles";
+            this.dgvRoles.RowTemplate.Height = 24;
+            this.dgvRoles.Size = new System.Drawing.Size(496, 421);
+            this.dgvRoles.TabIndex = 75;
+            // 
+            // lblRoles
+            // 
+            this.lblRoles.AutoSize = true;
+            this.lblRoles.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblRoles.Location = new System.Drawing.Point(151, 203);
+            this.lblRoles.Name = "lblRoles";
+            this.lblRoles.Size = new System.Drawing.Size(241, 38);
+            this.lblRoles.TabIndex = 74;
+            this.lblRoles.Text = "Danh sách quyền";
+            // 
+            // dgvRoleUsers
+            // 
+            this.dgvRoleUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRoleUsers.Location = new System.Drawing.Point(520, 250);
+            this.dgvRoleUsers.Name = "dgvRoleUsers";
+            this.dgvRoleUsers.RowTemplate.Height = 24;
+            this.dgvRoleUsers.Size = new System.Drawing.Size(483, 421);
+            this.dgvRoleUsers.TabIndex = 76;
+            // 
+            // lblUsers
+            // 
+            this.lblUsers.AutoSize = true;
+            this.lblUsers.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblUsers.Location = new System.Drawing.Point(669, 203);
+            this.lblUsers.Name = "lblUsers";
+            this.lblUsers.Size = new System.Drawing.Size(177, 38);
+            this.lblUsers.TabIndex = 74;
+            this.lblUsers.Text = "Người dùng";
+            // 
             // UsersManagementPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dgvUsers);
+            this.Controls.Add(this.pnlRoleManagement);
+            this.Controls.Add(this.llbRoleManagement);
+            this.Controls.Add(this.dgvListUser);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.grbInfoUser);
             this.Controls.Add(this.lblListUser);
@@ -416,10 +634,14 @@
             this.Controls.Add(this.lblTitlePage);
             this.Name = "UsersManagementPage";
             this.Size = new System.Drawing.Size(1020, 684);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListUser)).EndInit();
             this.grbInfoUser.ResumeLayout(false);
             this.grbInfoUser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
+            this.pnlRoleManagement.ResumeLayout(false);
+            this.pnlRoleManagement.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRoleUsers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -428,7 +650,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitlePage;
-        private System.Windows.Forms.DataGridView dgvUsers;
+        private System.Windows.Forms.DataGridView dgvListUser;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.GroupBox grbInfoUser;
         private System.Windows.Forms.Button btnChangeImage;
@@ -453,5 +675,20 @@
         private System.Windows.Forms.RadioButton rdOrther;
         private System.Windows.Forms.RadioButton rdFemale;
         private System.Windows.Forms.RadioButton rdMale;
+        private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.LinkLabel llbRoleManagement;
+        private System.Windows.Forms.Panel pnlRoleManagement;
+        private System.Windows.Forms.LinkLabel llbBack;
+        private System.Windows.Forms.Button btnSaveRole;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnDeleteRole;
+        private System.Windows.Forms.Button btnEditRole;
+        private System.Windows.Forms.Button btnAddRole;
+        private System.Windows.Forms.Label lblRoleManagement;
+        private System.Windows.Forms.DataGridView dgvRoles;
+        private System.Windows.Forms.Label lblRoles;
+        private System.Windows.Forms.DataGridView dgvRoleUsers;
+        private System.Windows.Forms.Label lblUsers;
     }
 }
