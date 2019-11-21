@@ -122,8 +122,6 @@ namespace GUI
             {
                 string productImage = picImageProduct.ImageLocation;
                 //string nameImage = imgPath.Substring(imgPath.LastIndexOf('\\') + 1);
-                //int row = dgvProducts.CurrentRow.Index;
-                //string nameImage = dgvProducts.Rows[row].Cells[4].Value.ToString();
                 ProductsBLL.Instance.Insert(Convert.ToInt32(cbCategories.SelectedValue.ToString()), Convert.ToInt32(cbSupplier.SelectedValue.ToString()), txtProductName.Text, productImage, txtUnit.Text, Convert.ToDouble(txtPrice.Text), txtDescription.Text);
             }
             else

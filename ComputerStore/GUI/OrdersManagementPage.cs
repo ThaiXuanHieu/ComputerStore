@@ -33,6 +33,7 @@ namespace GUI
             hidden = true;
         }
 
+        // Chuyện gì sẽ xảy ra khi Form được Load 
         private void OrdersManagementPage_Load(object sender, EventArgs e)
         {
             DisplayData();

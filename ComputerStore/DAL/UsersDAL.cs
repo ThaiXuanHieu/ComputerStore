@@ -71,10 +71,32 @@ namespace DAL
             return dbConnection.ExecuteSelectQuery(query, parameters);
         }
 
+        public void Insert(string _fullName, string _userName, string _password, string _gender, string _email, string _phone, string _avatar)
+        {
+            string query = "INSERT INTO Users VALUES (@fullName, @userName, @password, @gender, @email, @phone, @avatar)";
+            SqlParameter[] parameters = new SqlParameter[7];
+            parameters[0] = new SqlParameter("@fullName", SqlDbType.NVarChar);
+            parameters[0].Value = _fullName;
+            parameters[1] = new SqlParameter("@userName", SqlDbType.VarChar);
+            parameters[1].Value = _userName;
+            parameters[2] = new SqlParameter("@password", SqlDbType.VarChar);
+            parameters[2].Value = _password;
+            parameters[3] = new SqlParameter("@gender", SqlDbType.NVarChar);
+            parameters[3].Value = _gender;
+            parameters[4] = new SqlParameter("@email", SqlDbType.VarChar);
+            parameters[4].Value = _email;
+            parameters[5] = new SqlParameter("@phone", SqlDbType.VarChar);
+            parameters[5].Value = _phone;
+            parameters[6] = new SqlParameter("@avatar", SqlDbType.NVarChar);
+            parameters[6].Value = _avatar;
+
+            dbConnection.ExecuteInsertQuery(query, parameters);
+        }
+
         public void Insert(string _fullName, string _userName, string _password)
         {
             string query = "INSERT INTO Users VALUES (@fullName, @userName, @password)";
-            SqlParameter[] parameters = new SqlParameter[3];
+            SqlParameter[] parameters = new SqlParameter[7];
             parameters[0] = new SqlParameter("@fullName", SqlDbType.NVarChar);
             parameters[0].Value = _fullName;
             parameters[1] = new SqlParameter("@userName", SqlDbType.VarChar);
@@ -85,7 +107,7 @@ namespace DAL
             dbConnection.ExecuteInsertQuery(query, parameters);
         }
 
-        public void UpdateProfile(int _userID, string _fullName, string _userName, string _gender, string _email, string _phone, string _avatar)
+            public void UpdateProfile(int _userID, string _fullName, string _userName, string _gender, string _email, string _phone, string _avatar)
         {
             string query = "UPDATE Users SET FullName = @fullName, UserName = @userName" +
                 ", Gender = @gender, Email = @email, Phone = @phone, Avatar = @avatar WHERE UserID = @userID";

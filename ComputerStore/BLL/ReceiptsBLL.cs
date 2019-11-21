@@ -30,7 +30,10 @@ namespace BLL
             }
         }
 
-
+        public DataTable GetAll()
+        {
+            return ReceiptsDAL.Instance.SelectAll();
+        }
 
         public ReceiptsDTO GetFirstReceipts()
         {

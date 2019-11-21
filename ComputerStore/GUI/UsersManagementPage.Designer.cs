@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitlePage = new System.Windows.Forms.Label();
             this.dgvListUser = new System.Windows.Forms.DataGridView();
             this.btnSave = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@
             this.lblUserName = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
-            this.txtProductName = new System.Windows.Forms.TextBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
             this.lblFullName = new System.Windows.Forms.Label();
             this.lblListUser = new System.Windows.Forms.Label();
             this.btnSearchUser = new System.Windows.Forms.Button();
@@ -60,24 +60,24 @@
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.llbRoleManagement = new System.Windows.Forms.LinkLabel();
             this.pnlRoleManagement = new System.Windows.Forms.Panel();
-            this.llbBack = new System.Windows.Forms.LinkLabel();
+            this.dgvRoleUsers = new System.Windows.Forms.DataGridView();
+            this.dgvRoles = new System.Windows.Forms.DataGridView();
+            this.lblUsers = new System.Windows.Forms.Label();
+            this.lblRoles = new System.Windows.Forms.Label();
+            this.lblRoleManagement = new System.Windows.Forms.Label();
             this.btnSaveRole = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnDeleteRole = new System.Windows.Forms.Button();
             this.btnEditRole = new System.Windows.Forms.Button();
             this.btnAddRole = new System.Windows.Forms.Button();
-            this.lblRoleManagement = new System.Windows.Forms.Label();
-            this.dgvRoles = new System.Windows.Forms.DataGridView();
-            this.lblRoles = new System.Windows.Forms.Label();
-            this.dgvRoleUsers = new System.Windows.Forms.DataGridView();
-            this.lblUsers = new System.Windows.Forms.Label();
+            this.llbBack = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListUser)).BeginInit();
             this.grbInfoUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.pnlRoleManagement.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoleUsers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitlePage
@@ -96,29 +96,30 @@
             this.dgvListUser.AllowUserToAddRows = false;
             this.dgvListUser.AllowUserToDeleteRows = false;
             this.dgvListUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvListUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListUser.Location = new System.Drawing.Point(18, 358);
             this.dgvListUser.Name = "dgvListUser";
             this.dgvListUser.ReadOnly = true;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListUser.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListUser.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvListUser.RowTemplate.Height = 24;
             this.dgvListUser.Size = new System.Drawing.Size(985, 313);
             this.dgvListUser.TabIndex = 60;
+            this.dgvListUser.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListUser_RowEnter);
             // 
             // btnSave
             // 
@@ -153,7 +154,7 @@
             this.grbInfoUser.Controls.Add(this.lblUserName);
             this.grbInfoUser.Controls.Add(this.txtPassword);
             this.grbInfoUser.Controls.Add(this.txtUserName);
-            this.grbInfoUser.Controls.Add(this.txtProductName);
+            this.grbInfoUser.Controls.Add(this.txtFullName);
             this.grbInfoUser.Controls.Add(this.lblFullName);
             this.grbInfoUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbInfoUser.Location = new System.Drawing.Point(18, 66);
@@ -180,7 +181,7 @@
             this.rdOrther.Location = new System.Drawing.Point(690, 43);
             this.rdOrther.Name = "rdOrther";
             this.rdOrther.Size = new System.Drawing.Size(87, 36);
-            this.rdOrther.TabIndex = 74;
+            this.rdOrther.TabIndex = 6;
             this.rdOrther.TabStop = true;
             this.rdOrther.Text = "Khác";
             this.rdOrther.UseVisualStyleBackColor = true;
@@ -192,7 +193,7 @@
             this.rdFemale.Location = new System.Drawing.Point(616, 43);
             this.rdFemale.Name = "rdFemale";
             this.rdFemale.Size = new System.Drawing.Size(68, 36);
-            this.rdFemale.TabIndex = 72;
+            this.rdFemale.TabIndex = 5;
             this.rdFemale.TabStop = true;
             this.rdFemale.Text = "Nữ";
             this.rdFemale.UseVisualStyleBackColor = true;
@@ -200,11 +201,12 @@
             // rdMale
             // 
             this.rdMale.AutoSize = true;
+            this.rdMale.Checked = true;
             this.rdMale.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdMale.Location = new System.Drawing.Point(523, 43);
             this.rdMale.Name = "rdMale";
             this.rdMale.Size = new System.Drawing.Size(87, 36);
-            this.rdMale.TabIndex = 71;
+            this.rdMale.TabIndex = 4;
             this.rdMale.TabStop = true;
             this.rdMale.Text = "Nam";
             this.rdMale.UseVisualStyleBackColor = true;
@@ -241,7 +243,7 @@
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(243, 34);
-            this.txtEmail.TabIndex = 65;
+            this.txtEmail.TabIndex = 8;
             // 
             // lblEmail
             // 
@@ -260,7 +262,7 @@
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(243, 34);
-            this.txtPhone.TabIndex = 63;
+            this.txtPhone.TabIndex = 7;
             // 
             // lblPhone
             // 
@@ -298,8 +300,9 @@
             this.txtPassword.Location = new System.Drawing.Point(144, 130);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(249, 34);
-            this.txtPassword.TabIndex = 56;
+            this.txtPassword.TabIndex = 3;
             // 
             // txtUserName
             // 
@@ -308,16 +311,16 @@
             this.txtUserName.Multiline = true;
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(249, 34);
-            this.txtUserName.TabIndex = 56;
+            this.txtUserName.TabIndex = 2;
             // 
-            // txtProductName
+            // txtFullName
             // 
-            this.txtProductName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductName.Location = new System.Drawing.Point(144, 45);
-            this.txtProductName.Multiline = true;
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(249, 34);
-            this.txtProductName.TabIndex = 56;
+            this.txtFullName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFullName.Location = new System.Drawing.Point(144, 45);
+            this.txtFullName.Multiline = true;
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(249, 34);
+            this.txtFullName.TabIndex = 1;
             // 
             // lblFullName
             // 
@@ -459,20 +462,56 @@
             this.pnlRoleManagement.Size = new System.Drawing.Size(10, 684);
             this.pnlRoleManagement.TabIndex = 64;
             // 
-            // llbBack
+            // dgvRoleUsers
             // 
-            this.llbBack.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.llbBack.AutoSize = true;
-            this.llbBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llbBack.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.llbBack.Location = new System.Drawing.Point(935, 19);
-            this.llbBack.Name = "llbBack";
-            this.llbBack.Size = new System.Drawing.Size(68, 25);
-            this.llbBack.TabIndex = 64;
-            this.llbBack.TabStop = true;
-            this.llbBack.Text = "Trở về";
-            this.llbBack.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.llbBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbBack_LinkClicked);
+            this.dgvRoleUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRoleUsers.Location = new System.Drawing.Point(520, 250);
+            this.dgvRoleUsers.Name = "dgvRoleUsers";
+            this.dgvRoleUsers.RowTemplate.Height = 24;
+            this.dgvRoleUsers.Size = new System.Drawing.Size(483, 421);
+            this.dgvRoleUsers.TabIndex = 76;
+            // 
+            // dgvRoles
+            // 
+            this.dgvRoles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRoles.Location = new System.Drawing.Point(18, 250);
+            this.dgvRoles.Name = "dgvRoles";
+            this.dgvRoles.RowTemplate.Height = 24;
+            this.dgvRoles.Size = new System.Drawing.Size(496, 421);
+            this.dgvRoles.TabIndex = 75;
+            // 
+            // lblUsers
+            // 
+            this.lblUsers.AutoSize = true;
+            this.lblUsers.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblUsers.Location = new System.Drawing.Point(669, 203);
+            this.lblUsers.Name = "lblUsers";
+            this.lblUsers.Size = new System.Drawing.Size(177, 38);
+            this.lblUsers.TabIndex = 74;
+            this.lblUsers.Text = "Người dùng";
+            // 
+            // lblRoles
+            // 
+            this.lblRoles.AutoSize = true;
+            this.lblRoles.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblRoles.Location = new System.Drawing.Point(151, 203);
+            this.lblRoles.Name = "lblRoles";
+            this.lblRoles.Size = new System.Drawing.Size(241, 38);
+            this.lblRoles.TabIndex = 74;
+            this.lblRoles.Text = "Danh sách quyền";
+            // 
+            // lblRoleManagement
+            // 
+            this.lblRoleManagement.AutoSize = true;
+            this.lblRoleManagement.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoleManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblRoleManagement.Location = new System.Drawing.Point(338, 9);
+            this.lblRoleManagement.Name = "lblRoleManagement";
+            this.lblRoleManagement.Size = new System.Drawing.Size(370, 38);
+            this.lblRoleManagement.TabIndex = 74;
+            this.lblRoleManagement.Text = "Quản lý quyền người dùng";
             // 
             // btnSaveRole
             // 
@@ -565,56 +604,20 @@
             this.btnAddRole.Text = "   Thêm";
             this.btnAddRole.UseVisualStyleBackColor = false;
             // 
-            // lblRoleManagement
+            // llbBack
             // 
-            this.lblRoleManagement.AutoSize = true;
-            this.lblRoleManagement.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoleManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblRoleManagement.Location = new System.Drawing.Point(338, 9);
-            this.lblRoleManagement.Name = "lblRoleManagement";
-            this.lblRoleManagement.Size = new System.Drawing.Size(370, 38);
-            this.lblRoleManagement.TabIndex = 74;
-            this.lblRoleManagement.Text = "Quản lý quyền người dùng";
-            // 
-            // dgvRoles
-            // 
-            this.dgvRoles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRoles.Location = new System.Drawing.Point(18, 250);
-            this.dgvRoles.Name = "dgvRoles";
-            this.dgvRoles.RowTemplate.Height = 24;
-            this.dgvRoles.Size = new System.Drawing.Size(496, 421);
-            this.dgvRoles.TabIndex = 75;
-            // 
-            // lblRoles
-            // 
-            this.lblRoles.AutoSize = true;
-            this.lblRoles.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblRoles.Location = new System.Drawing.Point(151, 203);
-            this.lblRoles.Name = "lblRoles";
-            this.lblRoles.Size = new System.Drawing.Size(241, 38);
-            this.lblRoles.TabIndex = 74;
-            this.lblRoles.Text = "Danh sách quyền";
-            // 
-            // dgvRoleUsers
-            // 
-            this.dgvRoleUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRoleUsers.Location = new System.Drawing.Point(520, 250);
-            this.dgvRoleUsers.Name = "dgvRoleUsers";
-            this.dgvRoleUsers.RowTemplate.Height = 24;
-            this.dgvRoleUsers.Size = new System.Drawing.Size(483, 421);
-            this.dgvRoleUsers.TabIndex = 76;
-            // 
-            // lblUsers
-            // 
-            this.lblUsers.AutoSize = true;
-            this.lblUsers.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblUsers.Location = new System.Drawing.Point(669, 203);
-            this.lblUsers.Name = "lblUsers";
-            this.lblUsers.Size = new System.Drawing.Size(177, 38);
-            this.lblUsers.TabIndex = 74;
-            this.lblUsers.Text = "Người dùng";
+            this.llbBack.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbBack.AutoSize = true;
+            this.llbBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llbBack.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbBack.Location = new System.Drawing.Point(935, 19);
+            this.llbBack.Name = "llbBack";
+            this.llbBack.Size = new System.Drawing.Size(68, 25);
+            this.llbBack.TabIndex = 64;
+            this.llbBack.TabStop = true;
+            this.llbBack.Text = "Trở về";
+            this.llbBack.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llbBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbBack_LinkClicked);
             // 
             // UsersManagementPage
             // 
@@ -634,14 +637,15 @@
             this.Controls.Add(this.lblTitlePage);
             this.Name = "UsersManagementPage";
             this.Size = new System.Drawing.Size(1020, 684);
+            this.Load += new System.EventHandler(this.UsersManagementPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListUser)).EndInit();
             this.grbInfoUser.ResumeLayout(false);
             this.grbInfoUser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.pnlRoleManagement.ResumeLayout(false);
             this.pnlRoleManagement.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoleUsers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -661,7 +665,7 @@
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUserName;
-        private System.Windows.Forms.TextBox txtProductName;
+        private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.Label lblListUser;
         private System.Windows.Forms.Button btnSearchUser;

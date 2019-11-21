@@ -30,6 +30,11 @@ namespace BLL
             }
         }
 
+        public DataTable GetAll()
+        {
+            return UsersDAL.Instance.Select();
+        }
+
         public DataTable GetUserByUserName(string _userName)
         {
             return UsersDAL.Instance.SelectByUserName(_userName);
@@ -64,7 +69,12 @@ namespace BLL
             return user;
         }
 
-        public void Insert(string _fullName, string _userName, string _password)
+        public void Insert(string _fullName, string _userName, string _password, string _gender, string _email, string _phone, string _avatar)
+        {
+            UsersDAL.Instance.Insert(_fullName, _userName, _password, _gender, _email, _phone, _avatar);
+        }
+
+        public void Signup(string _fullName, string _userName, string _password)
         {
             UsersDAL.Instance.Insert(_fullName, _userName, _password);
         }
@@ -79,5 +89,9 @@ namespace BLL
             UsersDAL.Instance.UpdatePassword(_userID, _newPassword);
         }
 
+        public void DeleteByUserID(int _userID)
+        {
+            UsersDAL.Instance.Delete(_userID);
+        }
     }
 }

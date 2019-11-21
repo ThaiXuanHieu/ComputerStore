@@ -30,6 +30,12 @@ namespace DAL
             }
         }
 
+        public DataTable SelectAll()
+        {
+            string query = "SELECT * FROM Receipts";
+            return dbConnection.ExecuteSelectQuery(query);
+        }
+
         public DataTable SelectFirstReceipts()
         {
             string query = "SELECT TOP 1 * FROM Receipts ORDER BY ReceiptID DESC";

@@ -55,6 +55,8 @@ namespace GUI
             cbCompanyName.DataSource = dtSuppliers;
             cbCompanyName.DisplayMember = "CompanyName";
             cbCompanyName.ValueMember = "SupplierID";
+
+
         }
 
         private void isEnabled(bool enabled)
@@ -70,15 +72,6 @@ namespace GUI
             btnEditOrder.Enabled = !enabled;
             btnSave.Enabled = enabled;
 
-        }
-
-        // Chuyện gì sẽ xảy ra khi value của Combobox được thay đổi
-        private void cbCompanyName_SelectedValueChanged(object sender, EventArgs e)
-        {
-            if(cbCompanyName.SelectedValue != null)
-            {
-                //dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(Convert.ToInt32(cbCompanyName.SelectedValue.ToString()));
-            }
         }
 
         // Chuyện gì sẽ xảy ra khi Button Tạo phiếu nhập được click
@@ -163,6 +156,7 @@ namespace GUI
         private void llbListReceipt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Timer.Start();
+            dgvListReceipt.DataSource = ReceiptsBLL.Instance.GetAll();
         }
         // Chuyện gì sẽ xảy ra khi LinkLable Trở về được click
         private void llbBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -194,6 +188,12 @@ namespace GUI
             }
         }
 
-        
+        private void dgvListProductInventory_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            //int row = e.RowIndex;
+            //cbProducts.SelectedValue = dgvListProductInventory.Rows[row].Cells[1].Value.ToString();
+            //txtPrice.Text = dgvListProductInventory.Rows[row].Cells[2].Value.ToString();
+
+        }
     }
 }

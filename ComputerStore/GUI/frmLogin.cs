@@ -134,7 +134,7 @@ namespace GUI
                 MessageBox.Show("MẬT KHẨU KHÔNG KHỚP", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, Encryption.MD5Hash(txtPasswordNew.Text));
+            UsersBLL.Instance.Signup(txtFullName.Text, txtUsernameNew.Text, Encryption.MD5Hash(txtPasswordNew.Text));
             MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
