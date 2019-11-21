@@ -212,8 +212,6 @@ namespace GUI
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            txtFullName.Enabled = true;
-            txtAddress.Enabled = true;
 
             if (txtFullName.Text.Trim() == "")
             {
@@ -242,12 +240,12 @@ namespace GUI
             {
                 
                 // Cập nhật lại Hóa đơn với khách hàng mới
-                OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, Convert.ToDouble(lblAmount.Text));
+                OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, totalAmount);
             }
             else
             {
                 // Cập nhật lại Hóa đơn với khách hàng cũ
-                OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, Convert.ToDouble(lblAmount.Text));
+                OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, totalAmount);
             }
             
         }
@@ -311,7 +309,6 @@ namespace GUI
             OrdersBLL.Instance.DeleteByOrderID(orderID);
 
             dgvListOrders.DataSource = OrdersBLL.Instance.GetAll();
-            DisplayData();
         }
 
         private void btnSearchOrders_Click(object sender, EventArgs e)

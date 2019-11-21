@@ -54,5 +54,20 @@ namespace BLL
         {
             ReceiptsDAL.Instance.Insert(_supplierID, _receiptDate, _totalAmount);
         }
+
+        public void Update(int _receiptID, DateTime _receiptDate, double _totalAmount)
+        {
+            ReceiptsDAL.Instance.Update(_receiptID, _receiptDate, _totalAmount);
+        }
+
+        public void Delete(int _receiptID)
+        {
+            ReceiptsDAL.Instance.Delete(_receiptID);
+        }
+
+        public DataTable Statistical()
+        {
+            return ReceiptsDAL.Instance.Statistical();
+        }
     }
 }

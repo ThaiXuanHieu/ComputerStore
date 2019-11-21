@@ -62,7 +62,7 @@ namespace DAL
 
         public void Update(int _productID, int _quantity, double _price, double _amount)
         {
-            string query = "UPDATE ReceiptDetails SET Quantity = @Quantity, Price = @Price, Amount = @Amount)" +
+            string query = "UPDATE ReceiptDetails SET Quantity = @Quantity, Price = @Price, Amount = @Amount" +
                 " WHERE ProductID = @ProductID";
 
             SqlParameter[] parameters = new SqlParameter[4];
@@ -74,8 +74,19 @@ namespace DAL
             parameters[2].Value = _amount;
             parameters[3] = new SqlParameter("@ProductID", SqlDbType.Int);
             parameters[3].Value = _productID;
+
             dbConnection.ExecuteUpdateQuery(query, parameters);
 
+        }
+
+        public void Delete(int _productID)
+        {
+            string query = "DELETE FROM ReceiptDetails WHERE ProductID = @ProductID";
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@ProductID", SqlDbType.Int);
+            parameters[0].Value = _productID;
+
+            dbConnection.ExecuteDeleteQuery(query, parameters);
         }
     }
 }

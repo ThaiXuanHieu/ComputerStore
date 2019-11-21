@@ -44,5 +44,10 @@ namespace BLL
         {
             ReceiptDetailsDAL.Instance.Update(_productID, _quantity, _price, _amount);
         }
+
+        public void Delete(int _productID)
+        {
+            ReceiptDetailsDAL.Instance.Delete(_productID);
+        }
     }
 }

@@ -43,5 +43,20 @@ namespace BLL
         {
             return WarehouseDAL.Instance.SelectProductBySearchString(_searchString);
         }
+
+        public void Insert(int _productID, int _stock)
+        {
+            WarehouseDAL.Instance.Insert(_productID, _stock);
+        }
+
+        public void Update(int _productID, int _stock)
+        {
+            WarehouseDAL.Instance.Update(_productID, _stock);
+        }
+
+        public void Delete(int _productID)
+        {
+            WarehouseDAL.Instance.Delete(_productID);
+        }
     }
 }

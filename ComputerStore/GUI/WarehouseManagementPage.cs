@@ -16,8 +16,11 @@ namespace GUI
     {
         private bool hidden;
         private bool isNew = false;
+        double totalAmount = 0;
+        int supplierID;
 
         ReceiptsDTO receipts = new ReceiptsDTO();
+        
 
         public WarehouseManagementPage()
         {
@@ -50,13 +53,10 @@ namespace GUI
             cbProducts.DisplayMember = "ProductName";
             cbProducts.ValueMember = "ProductID";
 
-            // Load Data to cbSuppliers
             DataTable dtSuppliers = SuppliersBLL.Instance.GetAll();
             cbCompanyName.DataSource = dtSuppliers;
             cbCompanyName.DisplayMember = "CompanyName";
             cbCompanyName.ValueMember = "SupplierID";
-
-
         }
 
         private void isEnabled(bool enabled)
@@ -73,6 +73,7 @@ namespace GUI
             btnSave.Enabled = enabled;
 
         }
+        
 
         // Chuyện gì sẽ xảy ra khi Button Tạo phiếu nhập được click
         private void btnCreateReceipts_Click(object sender, EventArgs e)
@@ -83,10 +84,16 @@ namespace GUI
             btnPrinter.Enabled = true;
             lblAmount.Text = "";
 
+            supplierID = Convert.ToInt32(cbCompanyName.SelectedValue.ToString());
             // Tạo một bản ghi cho bảng Phiếu nhập
-            ReceiptsBLL.Instance.Insert(0, DateTime.Now, 0);
+            ReceiptsBLL.Instance.Insert(supplierID, DateTime.Now, 0);
             receipts = ReceiptsBLL.Instance.GetFirstReceipts();// Lấy ra bản ghi vừa tạo
 
+            cbCompanyName.Enabled = false;
+            txtAddress.Enabled = false;
+            txtPhone.Enabled = false;
+
+            dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(supplierID);
         }
         // Thêm mới bản ghi
         private void btnAddOrder_Click(object sender, EventArgs e)
@@ -99,14 +106,25 @@ namespace GUI
         // Sửa bản ghi
         private void btnEditOrder_Click(object sender, EventArgs e)
         {
-
+            isEnabled(true);
+            cbProducts.Focus();
+            isNew = false;
         }
         // Xóa bản ghi
         private void btnDeleteOrder_Click(object sender, EventArgs e)
         {
+            DialogResult dialog = new DialogResult();
+            dialog = MessageBox.Show("Chắc chắn xóa bản ghi đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == System.Windows.Forms.DialogResult.No) return;
 
+            int row = dgvReceiptDetails.CurrentRow.Index;
+            int receiptID = Convert.ToInt32(dgvReceiptDetails.Rows[row].Cells[0].Value.ToString());
+            int productID = Convert.ToInt32(dgvReceiptDetails.Rows[row].Cells[1].Value.ToString());
+            ReceiptDetailsBLL.Instance.Delete(productID);
+
+            dgvReceiptDetails.DataSource = ReceiptDetailsBLL.Instance.GetByReceiptID(receiptID);
         }
-        // Lưu bản ghi
+
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (txtQuantity.Text == "")
@@ -120,6 +138,7 @@ namespace GUI
                 // 
                 int productID = Convert.ToInt32(cbProducts.SelectedValue.ToString());
                 double amount = Convert.ToDouble(txtPrice.Text) * Convert.ToInt32(txtQuantity.Text);
+
                 // Insert to Chi tiết phiếu nhập
                 ReceiptDetailsBLL.Instance.Insert(receipts.ReceiptID, productID, Convert.ToInt32(txtQuantity.Text), Convert.ToDouble(txtPrice.Text), amount);
                 // Display
@@ -137,8 +156,26 @@ namespace GUI
                 // Display
                 dgvReceiptDetails.DataSource = ReceiptDetailsBLL.Instance.GetByReceiptID(receiptID);
             }
+            dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(supplierID);
+            isEnabled(false);
         }
+        // Thanh toán
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+            for(var row = 0; row < dgvReceiptDetails.Rows.Count; row++)
+            {
+                int productID = Convert.ToInt32(dgvReceiptDetails.Rows[row].Cells["ProductID"].Value.ToString());
+                int quantity = Convert.ToInt32(dgvReceiptDetails.Rows[row].Cells["Quantity"].Value.ToString());
+                int stock = Convert.ToInt32(dgvListProductInventory.Rows[row].Cells["Stock"].Value.ToString());
+                totalAmount += Convert.ToDouble(dgvReceiptDetails.Rows[row].Cells["Amount"].Value.ToString());
+                WarehouseBLL.Instance.Update(productID, quantity + stock);
+            }
+            lblAmount.Text = totalAmount.ToString();
+            dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(supplierID);
+            ReceiptsBLL.Instance.Update(receipts.ReceiptID, DateTime.Now, totalAmount);
 
+        }
+        // Tìm kiếm sản phẩm
         private void btnSearchProduct_Click(object sender, EventArgs e)
         {
             dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetProductBySearchString(txtSearchProduct.Text);
@@ -190,10 +227,28 @@ namespace GUI
 
         private void dgvListProductInventory_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            //int row = e.RowIndex;
-            //cbProducts.SelectedValue = dgvListProductInventory.Rows[row].Cells[1].Value.ToString();
-            //txtPrice.Text = dgvListProductInventory.Rows[row].Cells[2].Value.ToString();
+            int row = e.RowIndex;
+            cbCompanyName.SelectedValue = dgvListProductInventory.Rows[row].Cells[0].Value.ToString();
+            DataTable dtSupplier = SuppliersBLL.Instance.GetSupplierBySearchString(cbCompanyName.Text);
+            txtAddress.Text = dtSupplier.Rows[0].Field<string>("Address");
+            txtPhone.Text = dtSupplier.Rows[0].Field<string>("Phone");
+            cbProducts.SelectedValue = dgvListProductInventory.Rows[row].Cells[2].Value.ToString();
+            txtPrice.Text = dgvListProductInventory.Rows[row].Cells[3].Value.ToString();
 
         }
+        // Xóa phiếu nhập
+        private void btnDeleteReceipts_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = new DialogResult();
+            dialog = MessageBox.Show("Chắc chắn xóa bản ghi đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == System.Windows.Forms.DialogResult.No) return;
+
+            int receiptID = Convert.ToInt32(dgvListReceipt.SelectedCells[0].OwningRow.Cells["ReceiptID"].Value.ToString());
+            ReceiptsBLL.Instance.Delete(receiptID);
+
+            dgvListReceipt.DataSource = ReceiptsBLL.Instance.GetAll();
+        }
+
+        
     }
 }
