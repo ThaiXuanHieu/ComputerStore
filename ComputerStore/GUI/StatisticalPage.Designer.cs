@@ -37,17 +37,17 @@
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.lblTitlePage = new System.Windows.Forms.Label();
-            this.chartlProductsSold = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chartProductsReceipted = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartTotalAmountOrders = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartTotalAmountReceipts = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Separator = new Bunifu.Framework.UI.BunifuSeparator();
             this.dgvProductsSold = new System.Windows.Forms.DataGridView();
-            this.dgvProductsReceipted = new System.Windows.Forms.DataGridView();
+            this.dgvReceipts = new System.Windows.Forms.DataGridView();
             this.lblProductsSold = new System.Windows.Forms.Label();
-            this.lblProductsReceipted = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.chartlProductsSold)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartProductsReceipted)).BeginInit();
+            this.lblReceipts = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTotalAmountOrders)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTotalAmountReceipts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductsSold)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductsReceipted)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReceipts)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitlePage
@@ -61,43 +61,43 @@
             this.lblTitlePage.TabIndex = 40;
             this.lblTitlePage.Text = "Thống kê";
             // 
-            // chartlProductsSold
+            // chartTotalAmountOrders
             // 
             chartArea1.Name = "ChartArea1";
-            this.chartlProductsSold.ChartAreas.Add(chartArea1);
+            this.chartTotalAmountOrders.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chartlProductsSold.Legends.Add(legend1);
-            this.chartlProductsSold.Location = new System.Drawing.Point(26, 406);
-            this.chartlProductsSold.Name = "chartlProductsSold";
+            this.chartTotalAmountOrders.Legends.Add(legend1);
+            this.chartTotalAmountOrders.Location = new System.Drawing.Point(26, 406);
+            this.chartTotalAmountOrders.Name = "chartTotalAmountOrders";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Tổng tiền";
-            this.chartlProductsSold.Series.Add(series1);
-            this.chartlProductsSold.Size = new System.Drawing.Size(458, 264);
-            this.chartlProductsSold.TabIndex = 41;
+            this.chartTotalAmountOrders.Series.Add(series1);
+            this.chartTotalAmountOrders.Size = new System.Drawing.Size(458, 264);
+            this.chartTotalAmountOrders.TabIndex = 41;
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title1.Name = "titleChart1";
             title1.Text = "Tổng doanh thu";
-            this.chartlProductsSold.Titles.Add(title1);
+            this.chartTotalAmountOrders.Titles.Add(title1);
             // 
-            // chartProductsReceipted
+            // chartTotalAmountReceipts
             // 
             chartArea2.Name = "ChartArea1";
-            this.chartProductsReceipted.ChartAreas.Add(chartArea2);
+            this.chartTotalAmountReceipts.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
-            this.chartProductsReceipted.Legends.Add(legend2);
-            this.chartProductsReceipted.Location = new System.Drawing.Point(539, 406);
-            this.chartProductsReceipted.Name = "chartProductsReceipted";
+            this.chartTotalAmountReceipts.Legends.Add(legend2);
+            this.chartTotalAmountReceipts.Location = new System.Drawing.Point(539, 406);
+            this.chartTotalAmountReceipts.Name = "chartTotalAmountReceipts";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Tổng tiền";
-            this.chartProductsReceipted.Series.Add(series2);
-            this.chartProductsReceipted.Size = new System.Drawing.Size(460, 264);
-            this.chartProductsReceipted.TabIndex = 43;
+            this.chartTotalAmountReceipts.Series.Add(series2);
+            this.chartTotalAmountReceipts.Size = new System.Drawing.Size(460, 264);
+            this.chartTotalAmountReceipts.TabIndex = 43;
             title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title2.Name = "titleChart1";
             title2.Text = "Tổng chi";
-            this.chartProductsReceipted.Titles.Add(title2);
+            this.chartTotalAmountReceipts.Titles.Add(title2);
             // 
             // Separator
             // 
@@ -121,56 +121,56 @@
             this.dgvProductsSold.Size = new System.Drawing.Size(458, 251);
             this.dgvProductsSold.TabIndex = 45;
             // 
-            // dgvProductsReceipted
+            // dgvReceipts
             // 
-            this.dgvProductsReceipted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductsReceipted.Location = new System.Drawing.Point(539, 98);
-            this.dgvProductsReceipted.Name = "dgvProductsReceipted";
-            this.dgvProductsReceipted.RowTemplate.Height = 24;
-            this.dgvProductsReceipted.Size = new System.Drawing.Size(460, 251);
-            this.dgvProductsReceipted.TabIndex = 45;
+            this.dgvReceipts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReceipts.Location = new System.Drawing.Point(539, 98);
+            this.dgvReceipts.Name = "dgvReceipts";
+            this.dgvReceipts.RowTemplate.Height = 24;
+            this.dgvReceipts.Size = new System.Drawing.Size(460, 251);
+            this.dgvReceipts.TabIndex = 45;
             // 
             // lblProductsSold
             // 
             this.lblProductsSold.AutoSize = true;
             this.lblProductsSold.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProductsSold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblProductsSold.Location = new System.Drawing.Point(135, 57);
+            this.lblProductsSold.Location = new System.Drawing.Point(128, 57);
             this.lblProductsSold.Name = "lblProductsSold";
-            this.lblProductsSold.Size = new System.Drawing.Size(246, 38);
+            this.lblProductsSold.Size = new System.Drawing.Size(262, 38);
             this.lblProductsSold.TabIndex = 40;
-            this.lblProductsSold.Text = "Sản phẩm đã bán";
+            this.lblProductsSold.Text = "Hóa đơn bán hàng";
             // 
-            // lblProductsReceipted
+            // lblReceipts
             // 
-            this.lblProductsReceipted.AutoSize = true;
-            this.lblProductsReceipted.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductsReceipted.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblProductsReceipted.Location = new System.Drawing.Point(630, 57);
-            this.lblProductsReceipted.Name = "lblProductsReceipted";
-            this.lblProductsReceipted.Size = new System.Drawing.Size(263, 38);
-            this.lblProductsReceipted.TabIndex = 40;
-            this.lblProductsReceipted.Text = "Sản phẩm đã nhập";
+            this.lblReceipts.AutoSize = true;
+            this.lblReceipts.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReceipts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblReceipts.Location = new System.Drawing.Point(652, 57);
+            this.lblReceipts.Name = "lblReceipts";
+            this.lblReceipts.Size = new System.Drawing.Size(239, 38);
+            this.lblReceipts.TabIndex = 40;
+            this.lblReceipts.Text = "Phiếu nhập hàng";
             // 
             // StatisticalPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dgvProductsReceipted);
+            this.Controls.Add(this.dgvReceipts);
             this.Controls.Add(this.dgvProductsSold);
             this.Controls.Add(this.Separator);
-            this.Controls.Add(this.chartProductsReceipted);
-            this.Controls.Add(this.chartlProductsSold);
-            this.Controls.Add(this.lblProductsReceipted);
+            this.Controls.Add(this.chartTotalAmountReceipts);
+            this.Controls.Add(this.chartTotalAmountOrders);
+            this.Controls.Add(this.lblReceipts);
             this.Controls.Add(this.lblProductsSold);
             this.Controls.Add(this.lblTitlePage);
             this.Name = "StatisticalPage";
             this.Size = new System.Drawing.Size(1020, 684);
             this.Load += new System.EventHandler(this.StatisticalPage_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.chartlProductsSold)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartProductsReceipted)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTotalAmountOrders)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTotalAmountReceipts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductsSold)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductsReceipted)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReceipts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,12 +179,12 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitlePage;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartlProductsSold;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartProductsReceipted;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTotalAmountOrders;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTotalAmountReceipts;
         private Bunifu.Framework.UI.BunifuSeparator Separator;
         private System.Windows.Forms.DataGridView dgvProductsSold;
-        private System.Windows.Forms.DataGridView dgvProductsReceipted;
+        private System.Windows.Forms.DataGridView dgvReceipts;
         private System.Windows.Forms.Label lblProductsSold;
-        private System.Windows.Forms.Label lblProductsReceipted;
+        private System.Windows.Forms.Label lblReceipts;
     }
 }

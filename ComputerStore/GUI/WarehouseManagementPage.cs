@@ -83,6 +83,7 @@ namespace GUI
             btnPay.Enabled = true;
             btnPrinter.Enabled = true;
             lblAmount.Text = "";
+            dgvReceiptDetails.DataSource = null;
 
             supplierID = Convert.ToInt32(cbCompanyName.SelectedValue.ToString());
             // Tạo một bản ghi cho bảng Phiếu nhập
@@ -173,7 +174,12 @@ namespace GUI
             lblAmount.Text = totalAmount.ToString();
             dgvListProductInventory.DataSource = WarehouseBLL.Instance.GetBySupplierID(supplierID);
             ReceiptsBLL.Instance.Update(receipts.ReceiptID, DateTime.Now, totalAmount);
-
+            // Lock control
+            isEnabled(true);
+            btnPay.Enabled = false;
+            cbCompanyName.Enabled = true;
+            txtAddress.Enabled = true;
+            txtPhone.Enabled = true;
         }
         // Tìm kiếm sản phẩm
         private void btnSearchProduct_Click(object sender, EventArgs e)

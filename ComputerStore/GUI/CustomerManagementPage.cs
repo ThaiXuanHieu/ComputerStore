@@ -95,6 +95,7 @@ namespace GUI
                 MessageBox.Show("Email không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+
             if (!PhoneNumberValidation.IsValid(txtPhone.Text.Trim()))
             {
                 MessageBox.Show("Số điện thoại không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

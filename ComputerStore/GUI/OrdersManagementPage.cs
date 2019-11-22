@@ -84,9 +84,9 @@ namespace GUI
             btnPay.Enabled = true;
             btnPrinter.Enabled = true;
             lblAmount.Text = "";
-            txtPhone.Clear();
-            txtAddress.Clear();
-            txtFullName.Clear();
+            txtPhone.Enabled = false;
+            txtAddress.Enabled = false;
+            txtFullName.Enabled = false;
             dgvOrderDetails.DataSource = null;
  
         }
@@ -247,7 +247,15 @@ namespace GUI
                 // Cập nhật lại Hóa đơn với khách hàng cũ
                 OrdersBLL.Instance.Update(customer.CustomerID, orders.OrderID, DateTime.Now, totalAmount);
             }
-            
+
+            txtPhone.Enabled = true;
+            txtAddress.Enabled = true;
+            txtFullName.Enabled = true;
+            txtFullName.Clear();
+            txtPhone.Clear();
+            txtAddress.Clear();
+            btnPay.Enabled = false;
+            isEnabled(true);
         }
 
         private void btnEditOrder_Click(object sender, EventArgs e)
