@@ -79,6 +79,11 @@ namespace GUI
         private void btnCreateOrders_Click(object sender, EventArgs e)
         {
             //
+            if(txtPhone.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             isEnabled(true);
             isNew = true;
             btnPay.Enabled = true;
@@ -138,6 +143,12 @@ namespace GUI
 
         private void btnSearchCustomer_Click(object sender, EventArgs e)
         {
+            if (txtPhone.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             DataTable dtCustomers = CustomersBLL.Instance.GetCustomerByPhone(txtPhone.Text.Trim());
             if(dtCustomers.Rows.Count != 0) // Kiểm tra có tồn tại bản ghi không
             {
@@ -210,6 +221,7 @@ namespace GUI
             isEnabled(false);
         }
 
+        // Thanh toán hóa đơn
         private void btnPay_Click(object sender, EventArgs e)
         {
 
@@ -254,8 +266,10 @@ namespace GUI
             txtFullName.Clear();
             txtPhone.Clear();
             txtAddress.Clear();
-            btnPay.Enabled = false;
+
             isEnabled(true);
+            btnSave.Enabled = false;
+            btnPay.Enabled = false;
         }
 
         private void btnEditOrder_Click(object sender, EventArgs e)

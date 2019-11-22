@@ -176,10 +176,12 @@ namespace GUI
             ReceiptsBLL.Instance.Update(receipts.ReceiptID, DateTime.Now, totalAmount);
             // Lock control
             isEnabled(true);
-            btnPay.Enabled = false;
+            
             cbCompanyName.Enabled = true;
             txtAddress.Enabled = true;
             txtPhone.Enabled = true;
+            btnSave.Enabled = false;
+            btnPay.Enabled = false;
         }
         // Tìm kiếm sản phẩm
         private void btnSearchProduct_Click(object sender, EventArgs e)
