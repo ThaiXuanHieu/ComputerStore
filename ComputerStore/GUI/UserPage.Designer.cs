@@ -34,7 +34,9 @@
             this.lblReEnterPassword = new System.Windows.Forms.Label();
             this.btnChangePassword = new System.Windows.Forms.Button();
             this.lblNewPassword = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.lblCurrentPassword = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtReEnterPassword = new System.Windows.Forms.TextBox();
             this.txtNewPassword = new System.Windows.Forms.TextBox();
@@ -54,8 +56,6 @@
             this.picAvatar = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.lblTitlePage = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.lblUserName = new System.Windows.Forms.Label();
             this.grbUserInfo.SuspendLayout();
             this.grbChangePassword.SuspendLayout();
             this.grbMainInfo.SuspendLayout();
@@ -129,6 +129,15 @@
             this.lblNewPassword.TabIndex = 4;
             this.lblNewPassword.Text = "Mật khẩu mới :";
             // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Location = new System.Drawing.Point(34, 53);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(131, 29);
+            this.lblUserName.TabIndex = 4;
+            this.lblUserName.Text = "Tài khoản :";
+            // 
             // lblCurrentPassword
             // 
             this.lblCurrentPassword.AutoSize = true;
@@ -137,6 +146,14 @@
             this.lblCurrentPassword.Size = new System.Drawing.Size(204, 29);
             this.lblCurrentPassword.TabIndex = 4;
             this.lblCurrentPassword.Text = "Mật khẩu hiện tại :";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(39, 85);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.ReadOnly = true;
+            this.txtUsername.Size = new System.Drawing.Size(289, 34);
+            this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
@@ -339,27 +356,11 @@
             this.lblTitlePage.TabIndex = 41;
             this.lblTitlePage.Text = "Hồ sơ";
             // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(39, 85);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.ReadOnly = true;
-            this.txtUsername.Size = new System.Drawing.Size(289, 34);
-            this.txtUsername.TabIndex = 0;
-            // 
-            // lblUserName
-            // 
-            this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(34, 53);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(131, 29);
-            this.lblUserName.TabIndex = 4;
-            this.lblUserName.Text = "Tài khoản :";
-            // 
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lblTitlePage);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.grbUserInfo);

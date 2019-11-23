@@ -242,6 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnEditCategory);
             this.Controls.Add(this.dgvCategories);
             this.Controls.Add(this.btnSave);

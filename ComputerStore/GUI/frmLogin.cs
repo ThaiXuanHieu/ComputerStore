@@ -103,10 +103,8 @@ namespace GUI
             if (dtUsers.Rows.Count != 0)    // Kiểm tra xem có tồn tại bản ghi không
             {
                 //string fullName = dtUsers.Rows[0].Field<string>("FullName");
-                // Lưu value của DataTable vào class User
                 UsersDTO user = UsersBLL.Instance.GetUser(txtUsername.Text, Encryption.MD5Hash(txtPassword.Text));
                 this.Hide();
-                // Truyền qua Form khác bằng cách truyền tham số qua hàm khởi tạo
                 frmAdmin admin = new frmAdmin(user);
                 admin.ShowDialog();
 

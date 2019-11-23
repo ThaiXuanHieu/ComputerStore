@@ -8,21 +8,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common;
+using DTO;
+
 namespace GUI
 {
     public partial class frmCustomer : Form
     {
-        public frmCustomer(string _fullName)
+        CustomersDTO customer;
+        public frmCustomer(CustomersDTO customer)
         {
             InitializeComponent();
-            lblNameCustomer.Text = _fullName;
+
+            this.customer = customer;
+
+        }
+
+        private void frmCustomer_Load(object sender, EventArgs e)
+        {
             homePage.Visible = true;
             softwarePage.Visible = false;
             computerPage.Visible = false;
             laptopPage.Visible = false;
             accessoriesPage.Visible = false;
             componentsPage.Visible = false;
-
         }
 
         private void btnHomePage_Click(object sender, EventArgs e)
@@ -101,8 +109,6 @@ namespace GUI
         {
 
         }
-
-        
 
         
     }

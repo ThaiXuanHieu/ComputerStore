@@ -453,7 +453,7 @@
             // 
             // btnSearchProduct
             // 
-            this.btnSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(132)))), ((int)(((byte)(150)))));
             this.btnSearchProduct.FlatAppearance.BorderSize = 0;
             this.btnSearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearchProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -670,6 +670,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnlListOrders);
             this.Controls.Add(this.btnPrinter);
             this.Controls.Add(this.lblAmount);
