@@ -128,8 +128,7 @@ namespace GUI
             {
                 int row = dgvProducts.CurrentRow.Index;
                 int productID = Convert.ToInt32(dgvProducts.Rows[row].Cells[2].Value.ToString());
-                string productImage = imageLocation;
-                ProductsBLL.Instance.Update(Convert.ToInt32(cbCategories.SelectedValue.ToString()), Convert.ToInt32(cbSupplier.SelectedValue.ToString()), productID, txtProductName.Text, productImage, txtUnit.Text, Convert.ToDouble(txtPrice.Text), txtDescription.Text);
+                ProductsBLL.Instance.Update(Convert.ToInt32(cbCategories.SelectedValue.ToString()), Convert.ToInt32(cbSupplier.SelectedValue.ToString()), productID, txtProductName.Text, imageLocation, txtUnit.Text, Convert.ToDouble(txtPrice.Text), txtDescription.Text);
             }
             
 
@@ -168,8 +167,7 @@ namespace GUI
             cbSupplier.SelectedValue = dgvProducts.Rows[row].Cells[1].Value.ToString();
             txtProductName.Text = dgvProducts.Rows[row].Cells[3].Value.ToString();
             imageLocation = dgvProducts.Rows[row].Cells[4].Value.ToString();
-            Bitmap bitmap = new Bitmap(imageLocation);
-            picImageProduct.Image = bitmap;
+            picImageProduct.ImageLocation = imageLocation;
             txtUnit.Text = dgvProducts.Rows[row].Cells[5].Value.ToString();
             txtPrice.Text = dgvProducts.Rows[row].Cells[6].Value.ToString();
             txtDescription.Text = dgvProducts.Rows[row].Cells[7].Value.ToString();

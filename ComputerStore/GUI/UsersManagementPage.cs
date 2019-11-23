@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using Common;
+using System.Data.SqlClient;
 
 namespace GUI
 {
@@ -18,7 +19,6 @@ namespace GUI
         bool isNew = false;
         string imageLocation = "";
 
-
         public UsersManagementPage()
         {
             InitializeComponent();
@@ -27,12 +27,14 @@ namespace GUI
 
         private void UsersManagementPage_Load(object sender, EventArgs e)
         {
+
             DisplayData();
             isEnabled(false);
         }
 
         private void DisplayData()
         {
+            
             dgvListUser.DataSource = UsersBLL.Instance.GetAll();
         }
 
@@ -147,10 +149,7 @@ namespace GUI
         }
 
         
-        private void btnSearchUser_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void dgvListUser_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
@@ -173,7 +172,8 @@ namespace GUI
             }
             txtEmail.Text = dgvListUser.Rows[row].Cells[5].Value.ToString();
             txtPhone.Text = dgvListUser.Rows[row].Cells[6].Value.ToString();
-            picAvatar.ImageLocation = dgvListUser.Rows[row].Cells[7].Value.ToString();
+            imageLocation = dgvListUser.Rows[row].Cells[7].Value.ToString();
+            picAvatar.ImageLocation = imageLocation;
         }
 
         private void btnChangeImage_Click(object sender, EventArgs e)
@@ -200,6 +200,9 @@ namespace GUI
 
         private void llbRoleManagement_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            dgvRoleUsers.DataSource = UserRoleRelationshipBLL.Instance.GetAll();
+            dgvRoles.DataSource = RolesBLL.Instance.GetRoles();
+
             Timer.Start();
         }
 
@@ -232,6 +235,39 @@ namespace GUI
             }
         }
 
-        
+        private void btnSaveRole_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteRole_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearchUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPermissionRole_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRevoke_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvRoles_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvRoleUsers_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

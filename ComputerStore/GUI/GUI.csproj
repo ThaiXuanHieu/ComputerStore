@@ -305,7 +305,10 @@
     <Content Include="Resources\headphone4.png" />
     <Content Include="Resources\headphone5.png" />
     <Content Include="Resources\headphone6.png" />
+    <None Include="Resources\icons8_Approval_26px.png" />
     <Content Include="Resources\icons8_Edit_26px.png" />
+    <None Include="Resources\icons8_Foreclosure_26px.png" />
+    <None Include="Resources\icons8_Lock_26px.png" />
     <Content Include="Resources\icons8_Plus_Math_26px.png" />
     <Content Include="Resources\icons8_Save_26px.png" />
     <Content Include="Resources\icons8_Search_26px.png" />
