@@ -33,5 +33,20 @@ namespace BLL
         {
             return RolesDAL.Instance.SelectRoles();
         }
+
+        public void Insert(string _roleName)
+        {
+            RolesDAL.Instance.Insert(_roleName);
+        }
+
+        public void Update(int _roleID, string _roleName)
+        {
+            RolesDAL.Instance.Update(_roleID, _roleName);
+        }
+
+        public void Delete(int _roleID)
+        {
+            RolesDAL.Instance.Delete(_roleID);
+        }
     }
 }

@@ -33,5 +33,10 @@ namespace BLL
         {
             return UserRoleRelationshipDAL.Instance.Select();
         }
+
+        public void Update(int _userID, int _roleID)
+        {
+            UserRoleRelationshipDAL.Instance.Update(_userID, _roleID);
+        }
     }
 }

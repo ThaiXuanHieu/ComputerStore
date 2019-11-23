@@ -17,6 +17,9 @@ namespace GUI
     {
         bool hidden;
         bool isNew = false;
+        bool isNew1 = false;
+        int roleID;
+
         string imageLocation = "";
 
         public UsersManagementPage()
@@ -200,6 +203,11 @@ namespace GUI
 
         private void llbRoleManagement_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            DataTable dtUser = UsersBLL.Instance.GetAll();
+            cbFullName.DataSource = dtUser;
+            cbFullName.DisplayMember = "FullName";
+            cbFullName.ValueMember = "UserID";
+
             dgvRoleUsers.DataSource = UserRoleRelationshipBLL.Instance.GetAll();
             dgvRoles.DataSource = RolesBLL.Instance.GetRoles();
 
@@ -235,9 +243,34 @@ namespace GUI
             }
         }
 
+        
+        private void btnAddRole_Click(object sender, EventArgs e)
+        {
+            isNew1 = true;
+        }
+
         private void btnSaveRole_Click(object sender, EventArgs e)
         {
+            if(txtRoleName.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên cho quyền", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if(isNew1 == true)
+            {
+                RolesBLL.Instance.Insert(txtRoleName.Text);
+            }
+            else
+            {
+                RolesBLL.Instance.Update(roleID, txtRoleName.Text);
+            }
 
+            dgvRoles.DataSource = RolesBLL.Instance.GetRoles();
+        }
+
+        private void btnEditRole_Click(object sender, EventArgs e)
+        {
+            isNew1 = false;
         }
 
         private void btnDeleteRole_Click(object sender, EventArgs e)
@@ -252,7 +285,8 @@ namespace GUI
 
         private void btnPermissionRole_Click(object sender, EventArgs e)
         {
-
+            UserRoleRelationshipBLL.Instance.Update(Convert.ToInt32(cbFullName.SelectedValue.ToString()), roleID);
+            dgvRoleUsers.DataSource = UserRoleRelationshipBLL.Instance.GetAll();
         }
 
         private void btnRevoke_Click(object sender, EventArgs e)
@@ -262,12 +296,18 @@ namespace GUI
 
         private void dgvRoles_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-
+            int row = e.RowIndex;
+            roleID = Convert.ToInt32(dgvRoles.Rows[row].Cells[0].Value.ToString());
+            txtRoleName.Text = dgvRoles.Rows[row].Cells[1].Value.ToString();
         }
 
         private void dgvRoleUsers_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-
+            int row = e.RowIndex;
+            cbFullName.SelectedValue = dgvRoleUsers.Rows[row].Cells[0].Value.ToString();
+            txtRoleName.Text = dgvRoleUsers.Rows[row].Cells[2].Value.ToString();
         }
+
+        
     }
 }
