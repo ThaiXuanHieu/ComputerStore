@@ -348,7 +348,6 @@
             // 
             // computerPage
             // 
-            this.computerPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.computerPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.computerPage.Location = new System.Drawing.Point(0, 0);
             this.computerPage.Name = "computerPage";
@@ -381,7 +380,6 @@
             // 
             // softwarePage
             // 
-            this.softwarePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.softwarePage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.softwarePage.Location = new System.Drawing.Point(0, 0);
             this.softwarePage.Name = "softwarePage";

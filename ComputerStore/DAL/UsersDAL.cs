@@ -71,6 +71,16 @@ namespace DAL
             return dbConnection.ExecuteSelectQuery(query, parameters);
         }
 
+        public DataTable SelectByUserID(int _userID)
+        {
+            string query = "SELECT * FROM Users WHERE UserID = @UserID";
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@UserID", SqlDbType.Int);
+            parameters[0].Value = _userID;
+
+            return dbConnection.ExecuteSelectQuery(query, parameters);
+        }
+
         public void Insert(string _fullName, string _userName, string _password, string _gender, string _email, string _phone, string _avatar)
         {
             string query = "INSERT INTO Users VALUES (@fullName, @userName, @password, @gender, @email, @phone, @avatar)";

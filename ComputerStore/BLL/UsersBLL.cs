@@ -50,12 +50,12 @@ namespace BLL
             return UsersDAL.Instance.SelectByEmail(_email);
         }
 
-        public UsersDTO GetUser(string _userName, string _password)
+        public UsersDTO GetUserByUserID(int _userID)
         {
             UsersDTO user = new UsersDTO();
             DataTable dataTable = new DataTable();
-            dataTable = UsersDAL.Instance.Select(_userName, _password);
-            foreach(DataRow dataRow in dataTable.Rows)
+            dataTable = UsersDAL.Instance.SelectByUserID(_userID);
+            foreach (DataRow dataRow in dataTable.Rows)
             {
                 user.UserID = Int32.Parse(dataRow["UserID"].ToString());
                 user.FullName = dataRow["FullName"].ToString();

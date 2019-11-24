@@ -32,41 +32,41 @@
             this.lblTitlePage = new System.Windows.Forms.Label();
             this.fPnlWrapSoftware = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlSoftware3 = new System.Windows.Forms.Panel();
+            this.btnDetail = new System.Windows.Forms.Button();
+            this.btnAddToCart = new System.Windows.Forms.Button();
             this.lblUnitPriceSoftware3 = new System.Windows.Forms.Label();
             this.lblNameSoftware3 = new System.Windows.Forms.Label();
             this.picSoftware3 = new System.Windows.Forms.PictureBox();
             this.pnlSoftware6 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.lblUnitPriceSoftware6 = new System.Windows.Forms.Label();
             this.lblNameSoftware6 = new System.Windows.Forms.Label();
             this.picSoftware6 = new System.Windows.Forms.PictureBox();
             this.pnlSoftware5 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.lblUnitPriceSoftware5 = new System.Windows.Forms.Label();
             this.lblNameSoftware5 = new System.Windows.Forms.Label();
             this.picSoftware5 = new System.Windows.Forms.PictureBox();
             this.pnlSoftware4 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.lblUnitPriceSoftware4 = new System.Windows.Forms.Label();
             this.lblNameSoftware4 = new System.Windows.Forms.Label();
             this.picSoftware4 = new System.Windows.Forms.PictureBox();
             this.pnlSoftware2 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.lblUnitPriceSoftware2 = new System.Windows.Forms.Label();
             this.lblNameSoftware2 = new System.Windows.Forms.Label();
             this.picSoftware2 = new System.Windows.Forms.PictureBox();
             this.pnlSoftware1 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.lblUnitPriceSoftware1 = new System.Windows.Forms.Label();
             this.lblNameSoftware1 = new System.Windows.Forms.Label();
             this.picSoftware1 = new System.Windows.Forms.PictureBox();
-            this.btnDetail = new System.Windows.Forms.Button();
-            this.btnAddToCart = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.fPnlWrapSoftware.SuspendLayout();
             this.pnlSoftware3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSoftware3)).BeginInit();
@@ -111,6 +111,7 @@
             // pnlSoftware3
             // 
             this.pnlSoftware3.BackColor = System.Drawing.Color.White;
+            this.pnlSoftware3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlSoftware3.Controls.Add(this.btnDetail);
             this.pnlSoftware3.Controls.Add(this.btnAddToCart);
             this.pnlSoftware3.Controls.Add(this.lblUnitPriceSoftware3);
@@ -121,6 +122,28 @@
             this.pnlSoftware3.Name = "pnlSoftware3";
             this.pnlSoftware3.Size = new System.Drawing.Size(274, 277);
             this.pnlSoftware3.TabIndex = 20;
+            // 
+            // btnDetail
+            // 
+            this.btnDetail.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetail.Image = ((System.Drawing.Image)(resources.GetObject("btnDetail.Image")));
+            this.btnDetail.Location = new System.Drawing.Point(220, 228);
+            this.btnDetail.Name = "btnDetail";
+            this.btnDetail.Size = new System.Drawing.Size(49, 44);
+            this.btnDetail.TabIndex = 8;
+            this.btnDetail.UseVisualStyleBackColor = false;
+            // 
+            // btnAddToCart
+            // 
+            this.btnAddToCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.btnAddToCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddToCart.Image = ((System.Drawing.Image)(resources.GetObject("btnAddToCart.Image")));
+            this.btnAddToCart.Location = new System.Drawing.Point(2, 228);
+            this.btnAddToCart.Name = "btnAddToCart";
+            this.btnAddToCart.Size = new System.Drawing.Size(49, 44);
+            this.btnAddToCart.TabIndex = 9;
+            this.btnAddToCart.UseVisualStyleBackColor = false;
             // 
             // lblUnitPriceSoftware3
             // 
@@ -155,6 +178,7 @@
             // pnlSoftware6
             // 
             this.pnlSoftware6.BackColor = System.Drawing.Color.White;
+            this.pnlSoftware6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlSoftware6.Controls.Add(this.button1);
             this.pnlSoftware6.Controls.Add(this.button2);
             this.pnlSoftware6.Controls.Add(this.lblUnitPriceSoftware6);
@@ -165,6 +189,28 @@
             this.pnlSoftware6.Name = "pnlSoftware6";
             this.pnlSoftware6.Size = new System.Drawing.Size(274, 277);
             this.pnlSoftware6.TabIndex = 23;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(220, 228);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(49, 44);
+            this.button1.TabIndex = 8;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(2, 228);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(49, 44);
+            this.button2.TabIndex = 9;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // lblUnitPriceSoftware6
             // 
@@ -199,6 +245,7 @@
             // pnlSoftware5
             // 
             this.pnlSoftware5.BackColor = System.Drawing.Color.White;
+            this.pnlSoftware5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlSoftware5.Controls.Add(this.button3);
             this.pnlSoftware5.Controls.Add(this.button4);
             this.pnlSoftware5.Controls.Add(this.lblUnitPriceSoftware5);
@@ -209,6 +256,28 @@
             this.pnlSoftware5.Name = "pnlSoftware5";
             this.pnlSoftware5.Size = new System.Drawing.Size(274, 277);
             this.pnlSoftware5.TabIndex = 22;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(220, 228);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(49, 44);
+            this.button3.TabIndex = 8;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(2, 228);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(49, 44);
+            this.button4.TabIndex = 9;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // lblUnitPriceSoftware5
             // 
@@ -243,6 +312,7 @@
             // pnlSoftware4
             // 
             this.pnlSoftware4.BackColor = System.Drawing.Color.White;
+            this.pnlSoftware4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlSoftware4.Controls.Add(this.button5);
             this.pnlSoftware4.Controls.Add(this.button6);
             this.pnlSoftware4.Controls.Add(this.lblUnitPriceSoftware4);
@@ -253,6 +323,28 @@
             this.pnlSoftware4.Name = "pnlSoftware4";
             this.pnlSoftware4.Size = new System.Drawing.Size(274, 277);
             this.pnlSoftware4.TabIndex = 21;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(221, 228);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(49, 44);
+            this.button5.TabIndex = 8;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(3, 228);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(49, 44);
+            this.button6.TabIndex = 9;
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // lblUnitPriceSoftware4
             // 
@@ -287,6 +379,7 @@
             // pnlSoftware2
             // 
             this.pnlSoftware2.BackColor = System.Drawing.Color.White;
+            this.pnlSoftware2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlSoftware2.Controls.Add(this.button7);
             this.pnlSoftware2.Controls.Add(this.button8);
             this.pnlSoftware2.Controls.Add(this.lblUnitPriceSoftware2);
@@ -297,6 +390,28 @@
             this.pnlSoftware2.Name = "pnlSoftware2";
             this.pnlSoftware2.Size = new System.Drawing.Size(274, 277);
             this.pnlSoftware2.TabIndex = 19;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(220, 228);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(49, 44);
+            this.button7.TabIndex = 8;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(2, 228);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(49, 44);
+            this.button8.TabIndex = 9;
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // lblUnitPriceSoftware2
             // 
@@ -331,6 +446,7 @@
             // pnlSoftware1
             // 
             this.pnlSoftware1.BackColor = System.Drawing.Color.White;
+            this.pnlSoftware1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlSoftware1.Controls.Add(this.button9);
             this.pnlSoftware1.Controls.Add(this.button10);
             this.pnlSoftware1.Controls.Add(this.lblUnitPriceSoftware1);
@@ -341,6 +457,28 @@
             this.pnlSoftware1.Name = "pnlSoftware1";
             this.pnlSoftware1.Size = new System.Drawing.Size(274, 277);
             this.pnlSoftware1.TabIndex = 18;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.Location = new System.Drawing.Point(220, 228);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(49, 44);
+            this.button9.TabIndex = 8;
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.Location = new System.Drawing.Point(2, 228);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(49, 44);
+            this.button10.TabIndex = 9;
+            this.button10.UseVisualStyleBackColor = false;
             // 
             // lblUnitPriceSoftware1
             // 
@@ -371,138 +509,6 @@
             this.picSoftware1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSoftware1.TabIndex = 0;
             this.picSoftware1.TabStop = false;
-            // 
-            // btnDetail
-            // 
-            this.btnDetail.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDetail.Image = ((System.Drawing.Image)(resources.GetObject("btnDetail.Image")));
-            this.btnDetail.Location = new System.Drawing.Point(221, 230);
-            this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Size = new System.Drawing.Size(49, 44);
-            this.btnDetail.TabIndex = 8;
-            this.btnDetail.UseVisualStyleBackColor = false;
-            // 
-            // btnAddToCart
-            // 
-            this.btnAddToCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.btnAddToCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddToCart.Image = ((System.Drawing.Image)(resources.GetObject("btnAddToCart.Image")));
-            this.btnAddToCart.Location = new System.Drawing.Point(3, 230);
-            this.btnAddToCart.Name = "btnAddToCart";
-            this.btnAddToCart.Size = new System.Drawing.Size(49, 44);
-            this.btnAddToCart.TabIndex = 9;
-            this.btnAddToCart.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(221, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 44);
-            this.button1.TabIndex = 8;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(3, 230);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 44);
-            this.button2.TabIndex = 9;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(221, 230);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(49, 44);
-            this.button3.TabIndex = 8;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(3, 230);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(49, 44);
-            this.button4.TabIndex = 9;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(221, 230);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(49, 44);
-            this.button5.TabIndex = 8;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(3, 230);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(49, 44);
-            this.button6.TabIndex = 9;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(221, 230);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(49, 44);
-            this.button7.TabIndex = 8;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(3, 230);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(49, 44);
-            this.button8.TabIndex = 9;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(221, 230);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(49, 44);
-            this.button9.TabIndex = 8;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(190)))), ((int)(((byte)(68)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(3, 230);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(49, 44);
-            this.button10.TabIndex = 9;
-            this.button10.UseVisualStyleBackColor = false;
             // 
             // SoftwarePage
             // 

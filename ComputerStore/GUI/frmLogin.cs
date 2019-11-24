@@ -102,11 +102,31 @@ namespace GUI
             DataTable dtUsers = UsersBLL.Instance.GetByUerNameAndPassword(txtUsername.Text, Encryption.MD5Hash(txtPassword.Text));
             if (dtUsers.Rows.Count != 0)    // Kiểm tra xem có tồn tại bản ghi không
             {
-                //string fullName = dtUsers.Rows[0].Field<string>("FullName");
-                UsersDTO user = UsersBLL.Instance.GetUser(txtUsername.Text, Encryption.MD5Hash(txtPassword.Text));
-                this.Hide();
-                frmAdmin admin = new frmAdmin(user);
-                admin.ShowDialog();
+                int userID = dtUsers.Rows[0].Field<int>("UserID");
+                UsersDTO user = UsersBLL.Instance.GetUserByUserID(userID);
+                DataTable dtUserRoleRelationship = UserRoleRelationshipBLL.Instance.GetByUserID(userID);
+                int roleID = dtUserRoleRelationship.Rows[0].Field<int>("RoleID");
+                if(roleID == 1)
+                {
+                    this.Hide();
+                    frmAdmin admin = new frmAdmin(user);
+                    admin.ShowDialog();
+                }
+                else if(roleID == 2)
+                {
+                    this.Hide();
+                    frmAdmin admin = new frmAdmin(user);
+                    admin.ShowDialog();
+                }
+                else
+                {
+                    this.Hide();
+                    frmCustomer customer = new frmCustomer(user);
+                    customer.ShowDialog();
+                }
+                
+
+
 
             }
             else

@@ -34,6 +34,11 @@ namespace BLL
             return UserRoleRelationshipDAL.Instance.Select();
         }
 
+        public DataTable GetByUserID(int _userID)
+        {
+            return UserRoleRelationshipDAL.Instance.SelectByUserID(_userID);
+        }
+
         public void Update(int _userID, int _roleID)
         {
             UserRoleRelationshipDAL.Instance.Update(_userID, _roleID);

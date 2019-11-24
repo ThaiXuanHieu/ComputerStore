@@ -14,17 +14,19 @@ namespace GUI
 {
     public partial class frmCustomer : Form
     {
-        CustomersDTO customer;
-        public frmCustomer(CustomersDTO customer)
+        UsersDTO user;
+        public frmCustomer(UsersDTO user)
         {
             InitializeComponent();
 
-            this.customer = customer;
+            this.user = user;
 
         }
 
         private void frmCustomer_Load(object sender, EventArgs e)
         {
+            picAvatar.ImageLocation = user.Avatar;
+            lblNameCustomer.Text = user.FullName;
             homePage.Visible = true;
             softwarePage.Visible = false;
             computerPage.Visible = false;
@@ -102,12 +104,33 @@ namespace GUI
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("BẠN CHẮC CHẮN MUỐN ĐĂNG XUẤT KHÔNG?", "Thông báo",
+            MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                frmLogin login = new frmLogin();
+                login.Show();
+                this.Hide();
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void frmCustomer_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            if (MessageBox.Show("BẠN CHẮC CHẮN ĐÓNG ỨNG DỤNG KHÔNG?", "Thông báo",
+            MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                frmLogin login = new frmLogin();
+                login.Show();
+                this.Hide();
+            }
+            else
+            {
+                e.Cancel = true;
+                return;
+            }
         }
 
         

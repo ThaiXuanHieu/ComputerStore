@@ -37,6 +37,15 @@ namespace DAL
             return dbConnection.ExecuteSelectQuery(query);
         }
 
+        public DataTable SelectByUserID(int _userID)
+        {
+            string query = "SELECT UserID, RoleID FROM UserRoleRelationship WHERE UserID = @UserID";
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@UserID", SqlDbType.Int);
+            parameters[0].Value = _userID;
+            return dbConnection.ExecuteSelectQuery(query, parameters);
+        }
+
         public void Update(int _userID, int _roleID)
         {
             string query = "UPDATE UserRoleRelationship SET RoleID = @RoleID WHERE UserID = @UserID";
