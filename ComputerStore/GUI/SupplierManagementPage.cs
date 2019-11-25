@@ -22,8 +22,8 @@ namespace GUI
 
         public void DisplayData()
         {
-            // Load Data
-            dgvSuppliers.DataSource = SuppliersBLL.Instance.GetAll();
+            // Hiển thị data lên datagridview
+            dgvSuppliers.DataSource = SuppliersBLL.Instance.GetAll(); 
         }
 
         private void isEnabled(bool enabled)
@@ -73,7 +73,7 @@ namespace GUI
 
             int row = dgvSuppliers.CurrentRow.Index;
             int supplierID = Convert.ToInt32(dgvSuppliers.Rows[row].Cells[0].Value.ToString());
-            SuppliersBLL.Instance.DeleteBySupplierID(supplierID);
+            SuppliersBLL.Instance.DeleteBySupplierID(supplierID); // Xóa theo supplierID
 
             DisplayData();
         }
@@ -106,14 +106,16 @@ namespace GUI
                 MessageBox.Show("Số điện thoại không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (isNew == true)
+            if (isNew == true)// Nút thêm được nhấn
             {
+                // Insert vào db
                 SuppliersBLL.Instance.Insert(txtCompanyName.Text, txtContactName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
             }
             else
             {
                 int row = dgvSuppliers.CurrentRow.Index;
                 int supplierID = Convert.ToInt32(dgvSuppliers.Rows[row].Cells[0].Value.ToString());
+                // Update với supplierID
                 SuppliersBLL.Instance.Update(supplierID, txtCompanyName.Text, txtContactName.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
             }
             // Load lại data
@@ -123,7 +125,7 @@ namespace GUI
 
         private void btnSearchSupplier_Click(object sender, EventArgs e)
         {
-            // Select with SearchString
+            // Tìm kiếm và hiển thị data lên datagridview
             dgvSuppliers.DataSource = SuppliersBLL.Instance.GetSupplierBySearchString(txtSearchSupplier.Text);
         }
 
@@ -137,7 +139,7 @@ namespace GUI
             txtPhone.Text = dgvSuppliers.Rows[row].Cells[4].Value.ToString();
             txtEmail.Text = dgvSuppliers.Rows[row].Cells[5].Value.ToString();
         }
-
+        // Nút Edit được nhấn
         private void btnEditSupplier_Click(object sender, EventArgs e)
         {
             isEnabled(true);

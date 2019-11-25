@@ -24,6 +24,7 @@ namespace GUI
             this.user = user;
         }
 
+        // Sự kiện nút thay đổi hình ảnh được nhấn
         private void btnChangeImage_Click(object sender, EventArgs e)
         {
             try

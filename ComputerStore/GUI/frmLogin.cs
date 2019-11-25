@@ -17,12 +17,12 @@ namespace GUI
 {
     public partial class frmLogin : Form
     {
-        bool hidden;
+        bool hidden;    // Biến này kiểm tra xem pnl có ẩn hay ko. 
         bool hidden1;
         public frmLogin()
         {
             InitializeComponent();
-            hidden = true;
+            hidden = true; //Bản đầu nó ẩn
             hidden1 = true;
         }
 
@@ -66,12 +66,14 @@ namespace GUI
             Timer1.Start();
         }
 
+        // LinkLabel Quên mật khẩu được nhấn
         private void llbForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Timer1.Start();
+            Timer1.Start(); // Bắt đầu chạy luồng
             btnGenNewPassword.Enabled = true;
         }
 
+        // Sự kiện này sau thời gian bao nhiều ml giây sẽ quay lại thực hiện
         private void Timer1_Tick(object sender, EventArgs e)
         {
             if (hidden1)
@@ -96,14 +98,14 @@ namespace GUI
                 }
             }
         }
-
+        // Chuyện gì sẽ xảy ra khi nút Đăng nhập được nhấn
         private void btnSignin_Click(object sender, EventArgs e)
         {
             DataTable dtUsers = UsersBLL.Instance.GetByUerNameAndPassword(txtUsername.Text, Encryption.MD5Hash(txtPassword.Text));
             if (dtUsers.Rows.Count != 0)    // Kiểm tra xem có tồn tại bản ghi không
             {
-                int userID = dtUsers.Rows[0].Field<int>("UserID");
-                UsersDTO user = UsersBLL.Instance.GetUserByUserID(userID);
+                int userID = dtUsers.Rows[0].Field<int>("UserID"); // Lấy dữ liệu theo tên cột
+                UsersDTO user = UsersBLL.Instance.GetUserByUserID(userID); // Lấy ra đối tượng User đã set dữ liệu ở UsersBLL
                 DataTable dtUserRoleRelationship = UserRoleRelationshipBLL.Instance.GetByUserID(userID);
                 int roleID = dtUserRoleRelationship.Rows[0].Field<int>("RoleID");
                 if(roleID == 1)
@@ -124,10 +126,6 @@ namespace GUI
                     frmCustomer customer = new frmCustomer(user);
                     customer.ShowDialog();
                 }
-                
-
-
-
             }
             else
             {
@@ -135,6 +133,7 @@ namespace GUI
             }
         }
 
+        // Chuyện gì sẽ xảy ra khi nút Đăng ký được nhấn
         private void btnSignup_Click(object sender, EventArgs e)
         {
 
@@ -144,7 +143,7 @@ namespace GUI
                 return;
             }
             DataTable dtUser = UsersBLL.Instance.GetUserByUserName(txtUsernameNew.Text);
-            if (dtUser.Rows.Count != 0)
+            if (dtUser.Rows.Count != 0) // Kiểm tra có tồn tại bản ghi không
             {
                 MessageBox.Show("TÀI KHOẢN NÀY ĐÃ TỒN TÀI", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -154,11 +153,14 @@ namespace GUI
                 MessageBox.Show("MẬT KHẨU KHÔNG KHỚP", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            UsersBLL.Instance.Signup(txtFullName.Text, txtUsernameNew.Text, Encryption.MD5Hash(txtPasswordNew.Text));
+            // Sau khi kiểm tra xem đầu vào đã hợp lệ
+            // Thực hiện thêm vào db
+            UsersBLL.Instance.Insert(txtFullName.Text, txtUsernameNew.Text, Encryption.MD5Hash(txtPasswordNew.Text));
             MessageBox.Show("ĐĂNG KÝ THÀNH CÔNG", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
+        // Sự kiện nhấn nút WindowsClose
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult dr;
@@ -171,6 +173,7 @@ namespace GUI
             Application.ExitThread();
         }
 
+        // Hàm lấy lại mật khẩu
         private void btnGenNewPassword_Click(object sender, EventArgs e)
         {
             if(!EmailValidation.IsValid(txtEmail.Text.Trim()))
@@ -198,7 +201,7 @@ namespace GUI
 
                 try
                 {
-
+                    // Gửi mật khẩu về Gmail
                     MailMessage msg = new MailMessage();
                     msg.From = new MailAddress("likeafternoonqp@gmail.com");
                     msg.To.Add(txtEmail.Text);

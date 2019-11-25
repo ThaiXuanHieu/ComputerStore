@@ -20,7 +20,7 @@ namespace GUI
         bool isNew1 = false;
         int roleID;
 
-        string imageLocation = "";
+        string imageLocation = ""; // Lưu đường dẫn ảnh khi nhấn nút thay đổi hình ảnh
 
         public UsersManagementPage()
         {
@@ -37,7 +37,7 @@ namespace GUI
 
         private void DisplayData()
         {
-            
+            // Hiển thị data
             dgvListUser.DataSource = UsersBLL.Instance.GetAll();
         }
 

@@ -74,7 +74,7 @@ namespace BLL
             UsersDAL.Instance.Insert(_fullName, _userName, _password, _gender, _email, _phone, _avatar);
         }
 
-        public void Signup(string _fullName, string _userName, string _password)
+        public void Insert(string _fullName, string _userName, string _password)
         {
             UsersDAL.Instance.Insert(_fullName, _userName, _password);
         }
