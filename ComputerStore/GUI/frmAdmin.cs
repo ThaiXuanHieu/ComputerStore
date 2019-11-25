@@ -216,9 +216,10 @@ namespace GUI
             if (MessageBox.Show("BẠN CHẮC CHẮN MUỐN ĐĂNG XUẤT KHÔNG?", "Thông báo",
             MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                frmLogin login = new frmLogin();
-                login.Show();
                 this.Hide();
+                frmLogin login = new frmLogin();
+                login.ShowDialog();
+                
             }
             else
             {
@@ -232,9 +233,10 @@ namespace GUI
             if (MessageBox.Show("BẠN CHẮC CHẮN ĐÓNG ỨNG DỤNG KHÔNG?", "Thông báo",
             MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                frmLogin login = new frmLogin();
-                login.Show();
                 this.Hide();
+                frmLogin login = new frmLogin();
+                login.ShowDialog();
+                
             }
             else
             {
