@@ -261,8 +261,9 @@ namespace GUI
             {
                 RolesBLL.Instance.Update(roleID, txtRoleName.Text);
             }
-
+            // Hiển thị lại data
             dgvRoles.DataSource = RolesBLL.Instance.GetRoles();
+            dgvRoleUsers.DataSource = UserRoleRelationshipBLL.Instance.GetAll();
         }
 
         private void btnEditRole_Click(object sender, EventArgs e)
@@ -272,7 +273,16 @@ namespace GUI
 
         private void btnDeleteRole_Click(object sender, EventArgs e)
         {
+            DialogResult dialog = new DialogResult();
+            dialog = MessageBox.Show("Chắc chắn xóa quyền đã chọn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == System.Windows.Forms.DialogResult.No) return;
 
+            int row = dgvRoles.CurrentRow.Index;
+            int roleID = Convert.ToInt32(dgvRoles.Rows[row].Cells[0].Value.ToString());
+            RolesBLL.Instance.Delete(roleID);
+            // Hiển thị lại data
+            dgvRoles.DataSource = RolesBLL.Instance.GetRoles();
+            dgvRoleUsers.DataSource = UserRoleRelationshipBLL.Instance.GetAll();
         }
 
         private void btnSearchUser_Click(object sender, EventArgs e)

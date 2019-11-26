@@ -84,7 +84,7 @@ namespace GUI
                 MessageBox.Show("Mật khẩu không khớp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            UsersBLL.Instance.UpdatePassword(user.UserID, Encryption.MD5Hash(txtPassword.Text));
+            UsersBLL.Instance.UpdatePassword(user.UserID, Encryption.MD5Hash(txtNewPassword.Text));
             MessageBox.Show("Đổi mật khẩu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
