@@ -151,9 +151,6 @@ namespace GUI
             DisplayData();
         }
 
-        
-        
-
         private void dgvListUser_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             int row = e.RowIndex;

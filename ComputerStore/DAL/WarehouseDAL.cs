@@ -37,6 +37,15 @@ namespace DAL
             return dbConnection.ExecuteSelectQuery(query);
         }
 
+        public DataTable SelectByProductID(int _productID)
+        {
+            string query = "SELECT * FROM Warehouse WHERE ProductID = @ProductID";
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@ProductID", SqlDbType.Int);
+            parameters[0].Value = _productID;
+            return dbConnection.ExecuteSelectQuery(query, parameters);
+        }
+
         public DataTable SelectBySupplierID(int _supplierID)
         {
             string query = "SELECT s.SupplierID, s.CompanyName, p.ProductID, p.Price, w.Stock FROM Products AS p INNER JOIN Warehouse AS w" +

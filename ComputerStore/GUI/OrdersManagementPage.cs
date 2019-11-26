@@ -240,11 +240,17 @@ namespace GUI
                 MessageBox.Show("Vui lòng nhập số điện thoại khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            
+
             // Tính tổng tiền
+            WarehouseDTO warehouse;
             for (var row = 0; row < dgvOrderDetails.Rows.Count; row++)
             {
+                int quantity = Convert.ToInt32(dgvOrderDetails.Rows[row].Cells["Quantity"].Value.ToString());
                 totalAmount += Convert.ToDouble(dgvOrderDetails.Rows[row].Cells["Amount"].Value.ToString());
+                // Lấy ra Sản phẩm và số lượng tồn kho
+                warehouse = WarehouseBLL.Instance.GetByProductID(Convert.ToInt32(dgvOrderDetails.Rows[row].Cells["ProductID"].Value.ToString()));
+                // Cập nhật lại số lượng tồn kho sau khi bán sản phẩm
+                WarehouseBLL.Instance.Update(warehouse.ProductID, warehouse.Stock - quantity);
             }
             lblAmount.Text = totalAmount.ToString();
 
@@ -263,10 +269,7 @@ namespace GUI
             txtPhone.Enabled = true;
             txtAddress.Enabled = true;
             txtFullName.Enabled = true;
-            txtFullName.Clear();
-            txtPhone.Clear();
-            txtAddress.Clear();
-
+            
             isEnabled(true);
             btnSave.Enabled = false;
             btnPay.Enabled = false;
@@ -335,13 +338,18 @@ namespace GUI
 
         private void btnSearchOrders_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnPrinter_Click(object sender, EventArgs e)
         {
             PrintDialog printDialog  = new PrintDialog();
             printDialog.ShowDialog();
+
+            txtQuantity.Clear();
+            txtFullName.Clear();
+            txtPhone.Clear();
+            txtAddress.Clear();
         }
 
         

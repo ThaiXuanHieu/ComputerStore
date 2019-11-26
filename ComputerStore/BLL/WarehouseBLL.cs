@@ -1,4 +1,5 @@
 ﻿using DAL;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -32,6 +33,20 @@ namespace BLL
         public DataTable GetAll()
         {
             return WarehouseDAL.Instance.SelectAll();
+        }
+
+        public WarehouseDTO GetByProductID(int _productID)
+        {
+            WarehouseDTO warehouse = new WarehouseDTO();
+            DataTable dtWarehouse = WarehouseDAL.Instance.SelectByProductID(_productID);
+
+            foreach(DataRow row in dtWarehouse.Rows)
+            {
+                warehouse.ProductID = Convert.ToInt32(row["ProductID"].ToString());
+                warehouse.Stock = Convert.ToInt32(row["Stock"].ToString());
+            }
+            return warehouse;
+
         }
 
         public DataTable GetBySupplierID(int _supplierID)
