@@ -320,6 +320,8 @@ namespace GUI
             txtPrice.Text = dgvOrderDetails.Rows[row].Cells[3].Value.ToString();
         }
 
+
+        //----------------Orders-----------------//
         private void btnAddOrders_Click(object sender, EventArgs e)
         {
             Timer.Start();
