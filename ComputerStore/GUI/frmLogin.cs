@@ -224,7 +224,7 @@ namespace GUI
                 catch (Exception ex)
                 {
 
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 // Cập nhật lại mật khẩu cho người dùng
