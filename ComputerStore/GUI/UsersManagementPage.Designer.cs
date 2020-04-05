@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersManagementPage));
             this.lblTitlePage = new System.Windows.Forms.Label();
             this.dgvListUser = new System.Windows.Forms.DataGridView();
             this.grbInfoUser = new System.Windows.Forms.GroupBox();
@@ -222,6 +223,7 @@
             // picAvatar
             // 
             this.picAvatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picAvatar.Image = ((System.Drawing.Image)(resources.GetObject("picAvatar.Image")));
             this.picAvatar.Location = new System.Drawing.Point(800, 18);
             this.picAvatar.Name = "picAvatar";
             this.picAvatar.Size = new System.Drawing.Size(179, 154);

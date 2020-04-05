@@ -371,5 +371,6 @@
     <Content Include="Resources\workstation5.png" />
     <Content Include="Resources\workstation6.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
