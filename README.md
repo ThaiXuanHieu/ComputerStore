@@ -1,6 +1,10 @@
 # ComputerStore
  
 ## How to Install
-# Open ComputerStore.sln -> Open Folder DATA in DAL -> File DBComputerStore.sql
- -- Open SqlServer -> Open flie DBComputerStore.sql -> Press F5
- -- Click Start on Visual Studio
+1. Open ComputerStore.sln
+2. Open Folder DATA in DAL
+3. File DBComputerStore.sql
+4. Open SqlServer
+5. Open flie DBComputerStore.sql
+6. Press F5
+7. Click Start on Visual Studio
